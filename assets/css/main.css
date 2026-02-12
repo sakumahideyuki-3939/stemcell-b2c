@@ -281,3 +281,19 @@ section{
 #concept-upper .fill{
   outline: 6px solid #00ff00;
 }
+
+.index-slider__overlay{
+  position:relative;
+  z-index:2;
+  height:100%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+}
+
+.index-slider__text{
+  width:100%;
+  max-width:960px;
+  margin:0 auto;
+}
