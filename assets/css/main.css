@@ -272,3 +272,12 @@ section{
   font-size: 12px;
   opacity: .85;
 }
+
+#concept-upper{
+  scroll-margin-top: 120px;
+  background: #d7ffd7;
+}
+
+#concept-upper .fill{
+  outline: 6px solid #00ff00;
+}
