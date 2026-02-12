@@ -2,6 +2,8 @@
 // index.php（トップ）
 // 6セクション固定：HEADER / SLIDER / CONCEPT上 / CONCEPT下 / WORK / FOOTER
 // 1920/480グリッドで「枠」を先に確定（中身は後で差し替え）
+//
+// ※いまは「白紙を消して構造を成立させる」ため、SLIDER/CONCEPT/FOOTER に仮表示を入れている。
 
 $page_title = "TOP";
 $page_body_class = "page-index"; // layout_open 側で拾えるなら拾う（拾えなくても害なし）
@@ -27,15 +29,16 @@ foreach ($layout_close_candidates as $p) {
   if (is_file($p)) { $layout_close = $p; break; }
 }
 
+// WORK（8枠）— 画像は仮。存在しない場合はブラウザで壊れて見えるので注意。
 $work_items = [
-  ["title" => "ABOUT", "href" => "./about.php", "img" => "./assets/img/work/work-1.jpg"],
+  ["title" => "ABOUT",   "href" => "./about.php",   "img" => "./assets/img/work/work-1.jpg"],
   ["title" => "CONCEPT", "href" => "./concept.php", "img" => "./assets/img/work/work-2.jpg"],
-  ["title" => "EVIDENCE", "href" => "./evidence.php", "img" => "./assets/img/work/work-3.jpg"],
+  ["title" => "EVIDENCE","href" => "./evidence.php","img" => "./assets/img/work/work-3.jpg"],
   ["title" => "COMPANY", "href" => "./company.php", "img" => "./assets/img/work/work-4.jpg"],
   ["title" => "CONTACT", "href" => "./contact.php", "img" => "./assets/img/work/work-5.jpg"],
-  ["title" => "WORK", "href" => "./work.php", "img" => "./assets/img/work/work-6.jpg"],
-  ["title" => "WORK 07", "href" => "./work.php", "img" => "./assets/img/work/work-7.jpg"],
-  ["title" => "WORK 08", "href" => "./work.php", "img" => "./assets/img/work/work-8.jpg"],
+  ["title" => "WORK",    "href" => "./work.php",    "img" => "./assets/img/work/work-6.jpg"],
+  ["title" => "WORK 07", "href" => "./work.php",    "img" => "./assets/img/work/work-7.jpg"],
+  ["title" => "WORK 08", "href" => "./work.php",    "img" => "./assets/img/work/work-8.jpg"],
 ];
 
 // layout_open が見つからない場合は最小フォールバック（通常ここには来ない想定）
@@ -69,7 +72,11 @@ foreach ($header_candidates as $p) {
   <!-- 2) SLIDER：1920×960 -->
   <section class="index-wrap">
     <div class="index-1920 h-960">
-      <div class="fill">
+      <div class="fill" style="background:#e9eef5; display:flex; align-items:center; justify-content:center;">
+        <div style="text-align:center;">
+          <h1 style="font-size:28px; letter-spacing:.25em; margin:0 0 10px;">SLIDER</h1>
+          <p style="margin:0; font-size:14px; color:#555;">ここに画像（1920×960）を入れる</p>
+        </div>
       </div>
     </div>
   </section>
@@ -77,11 +84,14 @@ foreach ($header_candidates as $p) {
   <!-- 3) CONCEPT［上］：1920×960（左480×960 / 中480×960 / 右960×960） -->
   <section class="index-wrap">
     <div class="index-1920 h-960 grid-1920">
-      <div class="col-1 row-2 fill">
+      <div class="col-1 row-2 fill" style="background:#f6f6f6; display:flex; align-items:center; justify-content:center;">
+        <p style="margin:0; font-size:14px; letter-spacing:.2em;">CONCEPT</p>
       </div>
-      <div class="col-1 row-2 fill">
+      <div class="col-1 row-2 fill" style="background:#f0f0f0; display:flex; align-items:center; justify-content:center;">
+        <p style="margin:0; font-size:14px; letter-spacing:.2em;">CONCEPT</p>
       </div>
-      <div class="col-2 row-2 fill">
+      <div class="col-2 row-2 fill" style="background:#ededed; display:flex; align-items:center; justify-content:center;">
+        <p style="margin:0; font-size:14px; letter-spacing:.2em;">CONCEPT（BIG）</p>
       </div>
     </div>
   </section>
@@ -89,11 +99,14 @@ foreach ($header_candidates as $p) {
   <!-- 4) CONCEPT［下］：1920×960（左960×960 / 中480×960 / 右480×960） -->
   <section class="index-wrap">
     <div class="index-1920 h-960 grid-1920">
-      <div class="col-2 row-2 fill">
+      <div class="col-2 row-2 fill" style="background:#ededed; display:flex; align-items:center; justify-content:center;">
+        <p style="margin:0; font-size:14px; letter-spacing:.2em;">CONCEPT（BIG）</p>
       </div>
-      <div class="col-1 row-2 fill">
+      <div class="col-1 row-2 fill" style="background:#f0f0f0; display:flex; align-items:center; justify-content:center;">
+        <p style="margin:0; font-size:14px; letter-spacing:.2em;">CONCEPT</p>
       </div>
-      <div class="col-1 row-2 fill">
+      <div class="col-1 row-2 fill" style="background:#f6f6f6; display:flex; align-items:center; justify-content:center;">
+        <p style="margin:0; font-size:14px; letter-spacing:.2em;">CONCEPT</p>
       </div>
     </div>
   </section>
@@ -102,9 +115,14 @@ foreach ($header_candidates as $p) {
   <section class="index-wrap">
     <div class="index-1920 h-960 grid-1920">
       <?php foreach ($work_items as $item): ?>
-        <div class="col-1 row-1 fill">
-          <a href="<?php echo htmlspecialchars($item["href"], ENT_QUOTES, "UTF-8"); ?>">
-            <img src="<?php echo htmlspecialchars($item["img"], ENT_QUOTES, "UTF-8"); ?>" alt="<?php echo htmlspecialchars($item["title"], ENT_QUOTES, "UTF-8"); ?>">
+        <div class="col-1 row-1 fill" style="overflow:hidden;">
+          <a href="<?php echo htmlspecialchars($item["href"], ENT_QUOTES, "UTF-8"); ?>" style="display:block; width:100%; height:100%;">
+            <img
+              src="<?php echo htmlspecialchars($item["img"], ENT_QUOTES, "UTF-8"); ?>"
+              alt="<?php echo htmlspecialchars($item["title"], ENT_QUOTES, "UTF-8"); ?>"
+              style="width:100%; height:100%; object-fit:cover; display:block;"
+              onerror="this.style.display='none'; this.parentNode.style.background='#ddd'; this.parentNode.style.display='flex'; this.parentNode.style.alignItems='center'; this.parentNode.style.justifyContent='center'; this.parentNode.innerHTML='<span style=&quot;font-size:12px; letter-spacing:.12em; color:#333;&quot;><?php echo htmlspecialchars($item['title'], ENT_QUOTES, 'UTF-8'); ?></span>';"
+            >
           </a>
         </div>
       <?php endforeach; ?>
@@ -114,7 +132,8 @@ foreach ($header_candidates as $p) {
   <!-- 6) FOOTER：1920×960 -->
   <section class="index-wrap">
     <div class="index-1920 h-960">
-      <div class="fill">
+      <div class="fill" style="background:#2f2f2f; color:#fff; display:flex; align-items:center; justify-content:center;">
+        <p style="margin:0; font-size:14px; letter-spacing:.2em;">FOOTER</p>
       </div>
     </div>
   </section>
