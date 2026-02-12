@@ -1,16 +1,19 @@
-<?php
-// components/header.php
-?><!doctype html>
-<html lang="ja">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="/assets/css/main.css">
-  <title><?php echo isset($page_title) ? $page_title : 'algo-site'; ?></title>
-</head>
-<body>
-<header>
-  <div class="container">
-    <a href="/">algo-site</a>
+<header class="algo-header">
+  <div class="algo-header__inner">
+    <div class="algo-header__logo">
+      <a href="/index.php">ALGO Inc.</a>
+    </div>
+
+    <nav class="algo-header__nav" aria-label="Primary">
+      <ul class="algo-header__navlist">
+        <li><a href="/index.php">HOME</a></li>
+        <li><a href="/about.php">ABOUT</a></li>
+        <li><a href="/concept.php">CONCEPT</a></li>
+        <li><a href="/evidence.php">EVIDENCE</a></li>
+        <li><a href="/company.php">COMPANY</a></li>
+        <li><a href="/contact.php" class="is-cta">CONTACT</a></li>
+        <li><a href="/blog/">BLOG</a></li>
+      </ul>
+    </nav>
   </div>
 </header>

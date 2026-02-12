@@ -1,1 +1,76 @@
-/* main.css - global styles (placeholder) */
+/* ==================================================
+  HEADER（Sticky）
+  目的：ヘッダーだけを独立して直せるようにする
+================================================== */
+
+.algo-header{
+  width: 100%;
+  height: 100px;
+  background: #fff;
+  border-bottom: 1px solid #f0f0f0;
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.algo-header__inner{
+  width: 100%;
+  max-width: 1920px;
+  padding: 0 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.algo-header__logo a{
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 0.4em;
+  color: #2f2f2f;
+  text-decoration: none;
+}
+
+.algo-header__navlist{
+  display: flex;
+  list-style: none;
+  gap: 40px;
+  margin: 0;
+  padding: 0;
+}
+
+.algo-header__navlist a{
+  font-size: 11px;
+  letter-spacing: 0.2em;
+  color: #2f2f2f;
+  text-decoration: none;
+}
+
+.algo-header__navlist a.is-cta{
+  border: 1px solid #2f2f2f;
+  padding: 8px 16px;
+}
+
+/* ==================================================
+  HEADER（Mobile）
+================================================== */
+@media (max-width: 959px){
+  .algo-header{
+    height: auto;
+    padding: 10px 0;
+  }
+
+  .algo-header__inner{
+    flex-direction: column;
+    padding: 14px 20px;
+  }
+
+  .algo-header__navlist{
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 12px;
+  }
+}
