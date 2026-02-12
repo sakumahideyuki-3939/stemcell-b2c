@@ -103,9 +103,9 @@ main{
 }
 
 .page-index .grid-1920{
-  display: grid;
-  grid-template-columns: repeat(4, 480px);
-  grid-template-rows: repeat(2, 480px);
+  width:100%;
+  max-width:1920px;
+  margin:0 auto;
 }
 
 .page-index .col-1{ grid-column: span 1; }
