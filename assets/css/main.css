@@ -110,40 +110,267 @@ main{
   margin-top: 40px;
 }
 /* ==================================================
-  INDEX GRID (1920 / 480 system)
+  INDEX: STRUCTURE ONLY (fixed spec)
 ================================================== */
+.page-index .index-shell{
+  padding-top: 0;
+}
 
-.index-wrap{
+.page-index .index-section{
   width: 100%;
   display: flex;
   justify-content: center;
 }
 
-.index-1920{
-  width: 100%;
-  max-width: 1920px;
+.page-index .index-1920{
+  width: 1920px;
 }
 
-.h-960{ height: 960px; }
-
-.grid-1920{
+.page-index .grid-4x1,
+.page-index .grid-4x2{
   display: grid;
-  grid-template-columns: repeat(4, 480px); /* 480×4=1920 */
-  grid-auto-rows: 480px;                  /* 480単位 */
+  grid-template-columns: repeat(4, 480px);
+  grid-auto-rows: 480px;
 }
 
-.col-1{ grid-column: span 1; } /* 480 */
-.col-2{ grid-column: span 2; } /* 960 */
-.col-4{ grid-column: span 4; } /* 1920 */
+.page-index .grid-4x1{
+  grid-template-rows: 120px;
+}
 
-.row-1{ grid-row: span 1; }    /* 480 */
-.row-2{ grid-row: span 2; }    /* 960 */
+.page-index .section-slider .grid-4x2,
+.page-index .section-concept-top .grid-4x2,
+.page-index .section-concept-bottom .grid-4x2,
+.page-index .section-work .grid-4x2,
+.page-index .section-footer .grid-4x2{
+  height: 960px;
+}
 
-.fill{
+.page-index .cell{ min-height: 0; }
+.page-index .c1{ grid-column: span 1; }
+.page-index .c2{ grid-column: span 2; }
+.page-index .c4{ grid-column: span 4; }
+.page-index .r1{ grid-row: span 1; }
+.page-index .r2{ grid-row: span 2; }
+
+.page-index [data-slider]{
+  position: relative;
+  overflow: hidden;
+}
+
+.page-index [data-slider] .slide{
+  display: none;
   width: 100%;
   height: 100%;
 }
 
+.page-index [data-slider] .slide.is-active{
+  display: block;
+}
 
+.page-index [data-slider] .slider-controls{
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
 
+.page-index [data-slider] .slider-arrow,
+.page-index [data-slider] .slider-dot{
+  border: 1px solid #2f2f2f;
+  background: #fff;
+  color: #2f2f2f;
+  cursor: pointer;
+}
 
+.page-index [data-slider] .slider-arrow{
+  width: 34px;
+  height: 34px;
+  border-radius: 9999px;
+  line-height: 1;
+}
+
+.page-index [data-slider] .slider-dots{
+  display: flex;
+  gap: 6px;
+}
+
+.page-index [data-slider] .slider-dot{
+  width: 10px;
+  height: 10px;
+  border-radius: 9999px;
+  padding: 0;
+}
+
+.page-index [data-slider] .slider-dot.is-active{
+  background: #2f2f2f;
+}
+
+.page-index .cta-support{
+  margin-top: 12px;
+  font-size: 12px;
+  line-height: 1.8;
+  color: #666;
+}
+
+.fixed-consult-btn{
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 10000;
+  display: inline-block;
+  padding: 12px 18px;
+  background: #2f2f2f;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 9999px;
+  font-size: 14px;
+  line-height: 1;
+}
+
+.fixed-consult-note{
+  position: fixed;
+  right: 20px;
+  bottom: 62px;
+  z-index: 9999;
+  margin: 0;
+  font-size: 11px;
+  line-height: 1.5;
+  color: #444;
+  background: rgba(255, 255, 255, 0.92);
+  padding: 6px 8px;
+  border-radius: 6px;
+}
+
+@media (max-width: 959px){
+  .fixed-consult-btn{
+    right: 12px;
+    bottom: 12px;
+    padding: 11px 14px;
+    font-size: 13px;
+  }
+
+  .page-index [data-slider] .slider-controls{
+    right: 12px;
+    bottom: 12px;
+  }
+
+  .fixed-consult-note{
+    right: 12px;
+    bottom: 56px;
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 767px){
+  .page-index .index-section{
+    padding-left: 12px;
+    padding-right: 12px;
+    box-sizing: border-box;
+  }
+
+  .page-index .index-1920{
+    width: 100%;
+  }
+
+  .page-index .grid-4x1,
+  .page-index .grid-4x2{
+    grid-template-columns: 1fr;
+    grid-auto-rows: auto;
+    height: auto !important;
+  }
+
+  .page-index .grid-4x1{
+    grid-template-rows: auto;
+  }
+
+  .page-index .c1,
+  .page-index .c2,
+  .page-index .c4{
+    grid-column: span 1;
+  }
+
+  .page-index .r1,
+  .page-index .r2{
+    grid-row: span 1;
+  }
+
+  .page-index [data-slider] .slide{
+    min-height: 360px;
+  }
+
+  .page-index [data-slider] .slide h1{
+    font-size: 24px;
+    line-height: 1.45;
+  }
+
+  .page-index [data-slider] .slide p{
+    font-size: 14px;
+    line-height: 1.8;
+  }
+
+  .page-index .mosaic-block{
+    padding: 18px 0;
+  }
+
+  .page-index .mosaic-block h2,
+  .page-index .mosaic-block h3{
+    font-size: 20px;
+    line-height: 1.5;
+    margin: 0 0 10px;
+  }
+
+  .page-index .mosaic-block p{
+    font-size: 14px;
+    line-height: 1.8;
+    margin: 0 0 10px;
+  }
+
+  .page-index .work-grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .page-index .work-card{
+    display: block;
+    padding: 14px;
+    border: 1px solid #e5e5e5;
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .page-index .work-cat{
+    font-size: 11px;
+    letter-spacing: .08em;
+    margin-bottom: 6px;
+  }
+
+  .page-index .work-ttl{
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 6px;
+  }
+
+  .page-index .work-txt{
+    font-size: 13px;
+    line-height: 1.7;
+  }
+
+  .fixed-consult-btn{
+    right: 10px;
+    bottom: 10px;
+    padding: 10px 12px;
+    font-size: 12px;
+  }
+
+  .fixed-consult-note{
+    right: 10px;
+    bottom: 48px;
+    max-width: calc(100vw - 20px);
+    font-size: 10px;
+    line-height: 1.4;
+  }
+}
