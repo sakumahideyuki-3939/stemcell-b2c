@@ -1,38 +1,48 @@
-/* BASE FONT FIX */
-html, body, button, input, select, textarea{
-  font-family: "Noto Sans JP", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Yu Gothic", Meiryo, sans-serif;
-}
-
 /* ==================================================
-  BASE（全ページ共通フォント）
-=================================================== */
-html, body{
-  font-family: "Noto Sans JP", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Yu Gothic", Meiryo, sans-serif;
+   BASE
+================================================== */
+html,
+body,
+button,
+input,
+select,
+textarea{
+  font-family: "Noto Sans JP", system-ui, -apple-system, "Segoe UI",
+  Roboto, "Helvetica Neue", Arial,
+  "Hiragino Kaku Gothic ProN", "Yu Gothic", Meiryo, sans-serif;
 }
 
 body{
   margin: 0;
+  background: #fff;
+  color: #111;
 }
 
-/* 固定ヘッダー分の押し下げ */
+img{
+  max-width: 100%;
+  display: block;
+}
+
+/* 固定ヘッダー分 */
 main{
-  padding-top: 120px; /* ヘッダー高さ100px + 余白 */
+  padding-top: 100px;
 }
 
 /* ==================================================
-  HEADER（固定）
-=================================================== */
+   HEADER
+================================================== */
 .algo-header{
   width: 100%;
   height: 100px;
   background: #fff;
-  border-bottom: 1px solid #f0f0f0;
+  border-bottom: 1px solid #eee;
   position: fixed;
   top: 0;
+  left: 0;
   z-index: 9999;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
 }
 
 .algo-header__inner{
@@ -46,58 +56,86 @@ main{
 
 .algo-header__logo a{
   font-size: 20px;
-  font-weight: 600;
-  letter-spacing: 0.4em;
-  color: #2f2f2f;
+  letter-spacing: .3em;
   text-decoration: none;
+  color: #111;
+  font-weight: 600;
 }
 
 .algo-header__navlist{
-  display: flex;
   list-style: none;
-  gap: 40px;
+  display: flex;
+  gap: 30px;
   margin: 0;
   padding: 0;
 }
 
 .algo-header__navlist a{
-  font-size: 11px;
-  letter-spacing: 0.2em;
-  color: #2f2f2f;
   text-decoration: none;
+  font-size: 12px;
+  letter-spacing: .15em;
+  color: #111;
 }
 
 .algo-header__navlist a.is-cta{
-  border: 1px solid #2f2f2f;
-  padding: 8px 16px;
+  border: 1px solid #111;
+  padding: 6px 14px;
 }
 
 /* ==================================================
-  HEADER（モバイル）
-=================================================== */
-@media (max-width: 959px){
-  .algo-header{
-    height: auto;
-    padding: 10px 0;
-  }
+   INDEX LAYOUT SYSTEM
+================================================== */
 
-  .algo-header__inner{
-    flex-direction: column;
-    padding: 14px 20px;
-  }
+.page-index .index-wrap{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
 
-  .algo-header__navlist{
-    gap: 15px;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 12px;
-  }
+.page-index .index-1920{
+  width: 1920px;
+  max-width: 100%;
+  position: relative;
+}
+
+.page-index .h-960{
+  height: 960px;
+}
+
+.page-index .grid-1920{
+  display: grid;
+  grid-template-columns: repeat(4, 480px);
+  grid-template-rows: repeat(2, 480px);
+}
+
+.page-index .col-1{ grid-column: span 1; }
+.page-index .col-2{ grid-column: span 2; }
+.page-index .col-4{ grid-column: span 4; }
+
+.page-index .row-1{ grid-row: span 1; }
+.page-index .row-2{ grid-row: span 2; }
+
+/* ブロック枠を見える化 */
+.page-index .fill{
+  width: 100%;
+  height: 100%;
+  border: 1px solid #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* WORK画像用 */
+.page-index .grid-1920 img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 /* ==================================================
-  FOOTER（1列固定）
-  ※フッターが2列になるのを防ぐ
-=================================================== */
+   FOOTER
+================================================== */
 .algo-footer__inner{
   display: block;
 }
@@ -111,71 +149,25 @@ main{
 }
 
 /* ==================================================
-  INDEX: STRUCTURE ONLY v2（fixed spec）
-  契約：index.php の class と一致させる
-  HTML側：index-wrap / index-1920 / grid-1920 / col-1|2 / row-1|2 / fill
+   MOBILE
 ================================================== */
+@media (max-width: 959px){
 
-.page-index .index-wrap{
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
-
-.page-index .index-1920{
-  width: 100%;
-  max-width: 1920px;
-}
-
-/* index.phpに h-960 が出てくるため、index限定で定義 */
-.page-index .h-960{
-  height: 960px;
-}
-
-/* 1920 = 480×4 の物理グリッド */
-.page-index .grid-1920{
-  display: grid;
-  grid-template-columns: repeat(4, 480px);
-  grid-auto-rows: 480px;
-  width: 100%;
-  max-width: 1920px;
-}
-
-/* 幅（480/960） */
-.page-index .col-1{ grid-column: span 1; } /* 480 */
-.page-index .col-2{ grid-column: span 2; } /* 960 */
-.page-index .col-4{ grid-column: span 4; } /* 1920（念のため） */
-
-/* 高さ（480/960） */
-.page-index .row-1{ grid-row: span 1; }    /* 480 */
-.page-index .row-2{ grid-row: span 2; }    /* 960 */
-
-.page-index .fill{
-  width: 100%;
-  height: 100%;
-  display: block;
-}
-
-/* SP：1列に落とす */
-@media (max-width: 767px){
-  .page-index .index-wrap{
-    padding-left: 12px;
-    padding-right: 12px;
-    box-sizing: border-box;
+  main{
+    padding-top: 80px;
   }
 
-  .page-index .index-1920{
-    max-width: 100%;
+  .algo-header{
+    height: 80px;
   }
 
-  .page-index .h-960{
-    height: auto;
+  .algo-header__inner{
+    padding: 0 20px;
   }
 
   .page-index .grid-1920{
     grid-template-columns: 1fr;
-    grid-auto-rows: auto;
-    max-width: 100%;
+    grid-template-rows: auto;
   }
 
   .page-index .col-1,
@@ -186,10 +178,14 @@ main{
 
   .page-index .row-1,
   .page-index .row-2{
-    grid-row: auto;
+    grid-row: span 1;
+  }
+
+  .page-index .h-960{
+    height: auto;
   }
 
   .page-index .fill{
-    min-height: 360px;
+    min-height: 300px;
   }
 }
