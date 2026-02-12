@@ -70,71 +70,54 @@ foreach ($header_candidates as $p) {
 <main class="page-index">
 
   <!-- 2) SLIDER：1920×960 -->
-  <section class="index-wrap">
-    <div class="index-1920 h-960">
-      <div class="fill" style="background:#e9eef5; display:flex; align-items:center; justify-content:center;">
-        <div style="text-align:center;">
-          <h1 style="font-size:28px; letter-spacing:.25em; margin:0 0 10px;">SLIDER</h1>
-          <p style="margin:0; font-size:14px; color:#555;">ここに画像（1920×960）を入れる</p>
-        </div>
-      </div>
+  <section class="grid-1920 h-960">
+    <div class="fill" style="background:#111; color:#fff; display:flex; align-items:center; justify-content:center; font-size:40px;">
+      INDEX: SLIDER / TEXT OK
     </div>
   </section>
 
-  <!-- 3) CONCEPT［上］：1920×960（左480×960 / 中480×960 / 右960×960） -->
-  <section class="index-wrap">
-    <div class="index-1920 h-960 grid-1920">
-      <div class="col-1 row-2 fill" style="background:#f6f6f6; display:flex; align-items:center; justify-content:center;">
-        <p style="margin:0; font-size:14px; letter-spacing:.2em;">CONCEPT</p>
-      </div>
-      <div class="col-1 row-2 fill" style="background:#f0f0f0; display:flex; align-items:center; justify-content:center;">
-        <p style="margin:0; font-size:14px; letter-spacing:.2em;">CONCEPT</p>
-      </div>
-      <div class="col-2 row-2 fill" style="background:#ededed; display:flex; align-items:center; justify-content:center;">
-        <p style="margin:0; font-size:14px; letter-spacing:.2em;">CONCEPT（BIG）</p>
-      </div>
+  <!-- 3) CONCEPT［上］：1920×960（480/480/960） -->
+  <section class="grid-1920 h-960" style="display:grid; grid-template-columns:480px 480px 960px;">
+    <div class="fill" style="background:#eee; display:flex; align-items:center; justify-content:center;">
+      INDEX: CONCEPT UPPER / LEFT
+    </div>
+    <div class="fill" style="background:#e5e5e5; display:flex; align-items:center; justify-content:center;">
+      INDEX: CONCEPT UPPER / CENTER
+    </div>
+    <div class="fill" style="background:#ddd; display:flex; align-items:center; justify-content:center;">
+      INDEX: CONCEPT UPPER / RIGHT
     </div>
   </section>
 
-  <!-- 4) CONCEPT［下］：1920×960（左960×960 / 中480×960 / 右480×960） -->
-  <section class="index-wrap">
-    <div class="index-1920 h-960 grid-1920">
-      <div class="col-2 row-2 fill" style="background:#ededed; display:flex; align-items:center; justify-content:center;">
-        <p style="margin:0; font-size:14px; letter-spacing:.2em;">CONCEPT（BIG）</p>
-      </div>
-      <div class="col-1 row-2 fill" style="background:#f0f0f0; display:flex; align-items:center; justify-content:center;">
-        <p style="margin:0; font-size:14px; letter-spacing:.2em;">CONCEPT</p>
-      </div>
-      <div class="col-1 row-2 fill" style="background:#f6f6f6; display:flex; align-items:center; justify-content:center;">
-        <p style="margin:0; font-size:14px; letter-spacing:.2em;">CONCEPT</p>
-      </div>
+  <!-- 4) CONCEPT［下］：1920×960（960/480/480） -->
+  <section class="grid-1920 h-960" style="display:grid; grid-template-columns:960px 480px 480px;">
+    <div class="fill" style="background:#ddd; display:flex; align-items:center; justify-content:center;">
+      INDEX: CONCEPT LOWER / LEFT
+    </div>
+    <div class="fill" style="background:#e5e5e5; display:flex; align-items:center; justify-content:center;">
+      INDEX: CONCEPT LOWER / CENTER
+    </div>
+    <div class="fill" style="background:#eee; display:flex; align-items:center; justify-content:center;">
+      INDEX: CONCEPT LOWER / RIGHT
     </div>
   </section>
 
-  <!-- 5) WORK：1920×960（480×480 ×8＝4列×2段） -->
-  <section class="index-wrap">
-    <div class="index-1920 h-960 grid-1920">
-      <?php foreach ($work_items as $item): ?>
-        <div class="col-1 row-1 fill" style="overflow:hidden;">
-          <a href="<?php echo htmlspecialchars($item["href"], ENT_QUOTES, "UTF-8"); ?>" style="display:block; width:100%; height:100%;">
-            <img
-              src="<?php echo htmlspecialchars($item["img"], ENT_QUOTES, "UTF-8"); ?>"
-              alt="<?php echo htmlspecialchars($item["title"], ENT_QUOTES, "UTF-8"); ?>"
-              style="width:100%; height:100%; object-fit:cover; display:block;"
-              onerror="this.style.display='none'; this.parentNode.style.background='#ddd'; this.parentNode.style.display='flex'; this.parentNode.style.alignItems='center'; this.parentNode.style.justifyContent='center'; this.parentNode.innerHTML='<span style=&quot;font-size:12px; letter-spacing:.12em; color:#333;&quot;><?php echo htmlspecialchars($item['title'], ENT_QUOTES, 'UTF-8'); ?></span>';"
-            >
-          </a>
-        </div>
-      <?php endforeach; ?>
-    </div>
+  <!-- 5) WORK：1920×960（480×480 × 8） -->
+  <section class="grid-1920 h-960" style="display:grid; grid-template-columns:repeat(4,480px); grid-template-rows:repeat(2,480px);">
+    <div class="fill" style="background:#e85d5d; display:flex; align-items:center; justify-content:center; font-size:60px; font-weight:700;">1</div>
+    <div class="fill" style="background:#f0b35a; display:flex; align-items:center; justify-content:center; font-size:60px; font-weight:700;">2</div>
+    <div class="fill" style="background:#f1e35c; display:flex; align-items:center; justify-content:center; font-size:60px; font-weight:700;">3</div>
+    <div class="fill" style="background:#7cc96f; display:flex; align-items:center; justify-content:center; font-size:60px; font-weight:700;">4</div>
+    <div class="fill" style="background:#5fb0d8; display:flex; align-items:center; justify-content:center; font-size:60px; font-weight:700;">5</div>
+    <div class="fill" style="background:#6c72d9; display:flex; align-items:center; justify-content:center; font-size:60px; font-weight:700;">6</div>
+    <div class="fill" style="background:#a56bd8; display:flex; align-items:center; justify-content:center; font-size:60px; font-weight:700;">7</div>
+    <div class="fill" style="background:#d870b4; display:flex; align-items:center; justify-content:center; font-size:60px; font-weight:700;">8</div>
   </section>
 
   <!-- 6) FOOTER：1920×960 -->
-  <section class="index-wrap">
-    <div class="index-1920 h-960">
-      <div class="fill" style="background:#2f2f2f; color:#fff; display:flex; align-items:center; justify-content:center;">
-        <p style="margin:0; font-size:14px; letter-spacing:.2em;">FOOTER</p>
-      </div>
+  <section class="grid-1920 h-960">
+    <div class="fill" style="background:#222; color:#fff; display:flex; align-items:center; justify-content:center; font-size:30px;">
+      INDEX: FOOTER / TEXT OK
     </div>
   </section>
 
