@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CONCEPT | ALGO Inc.</title>
   <link rel="stylesheet" href="./assets/css/main.css?v=<?php echo time(); ?>
-<?php include __DIR__ . "/components/layout_open.php"; ?>
+<?php include __DIR__ . "/components/layout_open.php"; ?>">
   <?php include __DIR__ . "/components/head.php"; ?>
 </head>
 <body class="page-concept">

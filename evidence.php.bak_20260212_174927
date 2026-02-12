@@ -3,12 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CONCEPT | ALGO Inc.</title>
-  <link rel="stylesheet" href="./assets/css/main.css?v=<?php echo time(); ?>
-<?php include __DIR__ . "/components/layout_open.php"; ?>
+  <title>EVIDENCE | ALGO Inc.</title>
+  <link rel="stylesheet" href="./assets/css/main.css?v=<?php echo time(); ?>">
   <?php include __DIR__ . "/components/head.php"; ?>
 </head>
-<body class="page-concept">
+<body class="page-evidence">
 <div class="algo-site">
   <?php include __DIR__ . "/components/header.php"; ?>
 
@@ -16,8 +15,8 @@
     <section class="grid-row h-480">
       <div class="u-4">
         <div class="inner-pad-center" style="align-items:center; text-align:center;">
-          <div class="addr-tag">CONCEPT</div>
-          <h1 style="font-size:32px; letter-spacing:0.4em;">CONCEPT</h1>
+          <div class="addr-tag">EVIDENCE</div>
+          <h1 style="font-size:32px; letter-spacing:0.4em;">EVIDENCE</h1>
           <p style="margin-top:20px; color:#888; font-size:12px; letter-spacing:0.2em;">準備中</p>
         </div>
       </div>
@@ -28,4 +27,3 @@
 </div>
 </body>
 </html>
-<?php include __DIR__ . "/components/layout_close.php"; ?>

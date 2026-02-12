@@ -4,7 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ABOUT | ALGO Inc.</title>
-  <link rel="stylesheet" href="./assets/css/main.css?v=<?php echo time(); ?>">
+  <link rel="stylesheet" href="./assets/css/main.css?v=<?php echo time(); ?>
+<?php include __DIR__ . "/components/layout_open.php"; ?>
+  <?php include __DIR__ . "/components/head.php"; ?>
 </head>
 <body class="page-about">
 <div class="algo-site">
@@ -26,3 +28,4 @@
 </div>
 </body>
 </html>
+<?php include __DIR__ . "/components/layout_close.php"; ?>
