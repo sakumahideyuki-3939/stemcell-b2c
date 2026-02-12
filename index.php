@@ -27,6 +27,17 @@ foreach ($layout_close_candidates as $p) {
   if (is_file($p)) { $layout_close = $p; break; }
 }
 
+$work_items = [
+  ["title" => "ABOUT", "href" => "./about.php", "img" => "./assets/img/work/work-1.jpg"],
+  ["title" => "CONCEPT", "href" => "./concept.php", "img" => "./assets/img/work/work-2.jpg"],
+  ["title" => "EVIDENCE", "href" => "./evidence.php", "img" => "./assets/img/work/work-3.jpg"],
+  ["title" => "COMPANY", "href" => "./company.php", "img" => "./assets/img/work/work-4.jpg"],
+  ["title" => "CONTACT", "href" => "./contact.php", "img" => "./assets/img/work/work-5.jpg"],
+  ["title" => "WORK", "href" => "./work.php", "img" => "./assets/img/work/work-6.jpg"],
+  ["title" => "WORK 07", "href" => "./work.php", "img" => "./assets/img/work/work-7.jpg"],
+  ["title" => "WORK 08", "href" => "./work.php", "img" => "./assets/img/work/work-8.jpg"],
+];
+
 // layout_open が見つからない場合は最小フォールバック（通常ここには来ない想定）
 if ($layout_open) {
   include $layout_open;
@@ -59,7 +70,6 @@ foreach ($header_candidates as $p) {
   <section class="index-wrap">
     <div class="index-1920 h-960">
       <div class="fill">
-        <p style="padding:20px;">SLIDER 1920×960（仮）</p>
       </div>
     </div>
   </section>
@@ -68,13 +78,10 @@ foreach ($header_candidates as $p) {
   <section class="index-wrap">
     <div class="index-1920 h-960 grid-1920">
       <div class="col-1 row-2 fill">
-        <p style="padding:20px;">CONCEPT 上：左 480×960（仮）</p>
       </div>
       <div class="col-1 row-2 fill">
-        <p style="padding:20px;">CONCEPT 上：中 480×960（仮）</p>
       </div>
       <div class="col-2 row-2 fill">
-        <p style="padding:20px;">CONCEPT 上：右 960×960（仮）</p>
       </div>
     </div>
   </section>
@@ -83,13 +90,10 @@ foreach ($header_candidates as $p) {
   <section class="index-wrap">
     <div class="index-1920 h-960 grid-1920">
       <div class="col-2 row-2 fill">
-        <p style="padding:20px;">CONCEPT 下：左 960×960（仮）</p>
       </div>
       <div class="col-1 row-2 fill">
-        <p style="padding:20px;">CONCEPT 下：中 480×960（仮）</p>
       </div>
       <div class="col-1 row-2 fill">
-        <p style="padding:20px;">CONCEPT 下：右 480×960（仮）</p>
       </div>
     </div>
   </section>
@@ -97,11 +101,13 @@ foreach ($header_candidates as $p) {
   <!-- 5) WORK：1920×960（480×480 ×8＝4列×2段） -->
   <section class="index-wrap">
     <div class="index-1920 h-960 grid-1920">
-      <?php for ($i = 1; $i <= 8; $i++): ?>
+      <?php foreach ($work_items as $item): ?>
         <div class="col-1 row-1 fill">
-          <p style="padding:20px;">WORK <?php echo $i; ?>（480×480 仮）</p>
+          <a href="<?php echo htmlspecialchars($item["href"], ENT_QUOTES, "UTF-8"); ?>">
+            <img src="<?php echo htmlspecialchars($item["img"], ENT_QUOTES, "UTF-8"); ?>" alt="<?php echo htmlspecialchars($item["title"], ENT_QUOTES, "UTF-8"); ?>">
+          </a>
         </div>
-      <?php endfor; ?>
+      <?php endforeach; ?>
     </div>
   </section>
 
@@ -109,7 +115,6 @@ foreach ($header_candidates as $p) {
   <section class="index-wrap">
     <div class="index-1920 h-960">
       <div class="fill">
-        <p style="padding:20px;">FOOTER 1920×960（仮）</p>
       </div>
     </div>
   </section>
