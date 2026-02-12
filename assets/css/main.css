@@ -203,3 +203,11 @@ main{
   opacity:1 !important;
   visibility:visible !important;
 }
+
+.page-index .fill {
+  color: #000 !important;
+}
+
+.page-index .fill p {
+  color: #000 !important;
+}
