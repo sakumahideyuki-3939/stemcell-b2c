@@ -235,3 +235,40 @@ section{
   text-align:center;
   background:rgba(0,0,0,.25);
 }
+
+.index-slider__text{
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+.index-slider__text h1{
+  margin: 0 0 12px;
+  font-size: 56px;
+  letter-spacing: .12em;
+}
+.index-slider__text .lead{
+  margin: 0 0 10px;
+  font-size: 18px;
+  letter-spacing: .12em;
+}
+.index-slider__text .sub{
+  margin: 0 0 24px;
+  font-size: 14px;
+  opacity: .9;
+}
+.index-slider__text .btn{
+  display: inline-block;
+  padding: 12px 18px;
+  border: 1px solid rgba(255,255,255,.8);
+  color: #fff;
+  text-decoration: none;
+}
+.index-slider__scroll{
+  position: absolute;
+  left: 50%;
+  bottom: 24px;
+  transform: translateX(-50%);
+  letter-spacing: .4em;
+  font-size: 12px;
+  opacity: .85;
+}

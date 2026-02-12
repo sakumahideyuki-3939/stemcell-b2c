@@ -75,13 +75,18 @@ foreach ($header_candidates as $p) {
       <img src="./assets/img/slide-1.jpg" alt="SLIDER" loading="lazy">
     </div>
     <div class="index-slider__overlay">
-      <h1>SLIDER</h1>
-      <p>1920×960</p>
+      <div class="index-slider__text">
+        <h1>STEMCELL B2C</h1>
+        <p class="lead">幹細胞点鼻タイプ｜医療従事者向け情報提供</p>
+        <p class="sub">※画像は後で差し替え。いまはスクロール確認用の仮テキスト。</p>
+        <a class="btn" href="#concept-upper">CONCEPTへ</a>
+      </div>
+      <div class="index-slider__scroll">SCROLL</div>
     </div>
   </section>
 
   <!-- 3) CONCEPT［上］：1920×960（480/480/960） -->
-  <section class="grid-1920 h-960" style="display:grid; grid-template-columns:480px 480px 960px;">
+  <section id="concept-upper" class="grid-1920 h-960" style="display:grid; grid-template-columns:480px 480px 960px;">
     <div class="fill" style="background:#eee; display:flex; align-items:center; justify-content:center;">
       INDEX: CONCEPT UPPER / LEFT
     </div>
