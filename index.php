@@ -70,9 +70,13 @@ foreach ($header_candidates as $p) {
 <main class="page-index">
 
   <!-- 2) SLIDER：1920×960 -->
-  <section class="grid-1920 h-960">
-    <div class="fill" style="background:#111; color:#fff; display:flex; align-items:center; justify-content:center; font-size:40px;">
-      INDEX: SLIDER / TEXT OK
+  <section class="grid-1920 h-960 index-slider">
+    <div class="index-slider__media">
+      <img src="./assets/img/slide-1.jpg" alt="SLIDER" loading="lazy">
+    </div>
+    <div class="index-slider__overlay">
+      <h1>SLIDER</h1>
+      <p>1920×960</p>
     </div>
   </section>
 
