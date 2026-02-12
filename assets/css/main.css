@@ -211,3 +211,11 @@ main{
 .page-index .fill p {
   color: #000 !important;
 }
+
+.h-960{
+  height:960px;
+}
+
+section{
+  overflow:hidden;
+}
