@@ -86,17 +86,10 @@ foreach ($header_candidates as $p) {
   </section>
 
   <!-- 3) CONCEPT［上］：1920×960（480/480/960） -->
-  <section id="concept-upper" class="grid-1920 h-960" style="display:grid; grid-template-columns:480px 480px 960px; position:relative;">
-    <div style="position:absolute;top:120px;left:20px;z-index:999999;background:#00ff00;color:#000;padding:6px 10px;font-size:14px;">ANCHOR TARGET: concept-upper</div>
-    <div class="fill" style="background:#eee; display:flex; align-items:center; justify-content:center;">
-      INDEX: CONCEPT UPPER / LEFT
-    </div>
-    <div class="fill" style="background:#e5e5e5; display:flex; align-items:center; justify-content:center;">
-      INDEX: CONCEPT UPPER / CENTER
-    </div>
-    <div class="fill" style="background:#ddd; display:flex; align-items:center; justify-content:center;">
-      INDEX: CONCEPT UPPER / RIGHT
-    </div>
+  <section id="concept-upper" class="grid-1920 h-960 concept-upper">
+    <div class="concept-col concept-col-1">LEFT 480</div>
+    <div class="concept-col concept-col-2">CENTER 480</div>
+    <div class="concept-col concept-col-3">RIGHT 960</div>
   </section>
 
   <!-- 4) CONCEPT［下］：1920×960（960/480/480） -->
