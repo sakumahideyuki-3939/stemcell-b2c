@@ -4,13 +4,13 @@ on:
   push:
     branches:
       - work/index-rebuild
+      - main
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
       - name: Setup SSH (agent)
         uses: webfactory/ssh-agent@v0.9.0
@@ -24,7 +24,12 @@ jobs:
           echo "${{ secrets.SSH_KNOWN_HOSTS }}" > ~/.ssh/known_hosts
           chmod 644 ~/.ssh/known_hosts
 
-      - name: Deploy (git pull on server)
+      - name: Deploy (checkout same branch on server, then reset)
+        env:
+          BRANCH: ${{ github.ref_name }}
         run: |
           ssh -o StrictHostKeyChecking=yes "${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}" \
-          'cd /home/algo-inc/www/lab.algo-cosme.com && git reset --hard && git pull --ff-only'
+          "cd /home/algo-inc/www/lab.algo-cosme.com && \
+           git fetch origin ${BRANCH} && \
+           git checkout ${BRANCH} && \
+           git reset --hard origin/${BRANCH}"
