@@ -54,6 +54,11 @@ include __DIR__ . "/components/header.php";
 .concept-lower__box{border:1px solid #eee;display:flex;flex-direction:column;justify-content:center;align-items:center;background:#f7f7f7;}
 .concept-lower__box.big{background:#efefef;}
 
+/* ===== WORK：4列×2段（8個） ===== */
+.work-grid{height:960px;background:#fff;}
+.work-grid__inner{display:grid;grid-template-columns:repeat(4,1fr);grid-template-rows:repeat(2,1fr);height:960px;}
+.work-grid__cell{border:1px solid #eee;display:flex;justify-content:center;align-items:center;background:#f7f7f7;font-size:48px;}
+
 </style>
 
 <div class="index-section s-100">HEADER</div>
@@ -87,7 +92,7 @@ include __DIR__ . "/components/header.php";
 960 × 960</div><div class="concept-lower__box">CONCEPT LOWER
 480 × 960</div><div class="concept-lower__box">CONCEPT LOWER
 480 × 960</div></div></div></div></section>
-<div class="index-section s-960.alt">WORK</div>
+<section class="work-grid"><div class="index-wrap"><div class="index-1920"><div class="work-grid__inner"><div class="work-grid__cell">1</div><div class="work-grid__cell">2</div><div class="work-grid__cell">3</div><div class="work-grid__cell">4</div><div class="work-grid__cell">5</div><div class="work-grid__cell">6</div><div class="work-grid__cell">7</div><div class="work-grid__cell">8</div></div></div></div></section>
 <div class="index-section s-960">FOOTER</div>
 
 <?php include __DIR__ . "/components/footer.php"; ?>
