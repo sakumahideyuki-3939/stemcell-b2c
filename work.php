@@ -22,7 +22,27 @@
         </div>
       </div>
     </section>
-  </main>
+  
+<!-- ==================================================
+  BLOCK 2
+  1920 × 960
+=================================================== -->
+<section class="grid-row h-960">
+  <div class="u-4">
+    <div class="inner-pad-center">
+      <div style="max-width:1000px; margin:0 auto; text-align:left; line-height:2; font-size:14px;">
+        <p>
+        ここにWORKの詳細説明文を入れます。
+        ABOUTと同様、余白を大きく取り、中央にテキストブロックを配置します。
+        </p>
+        <p>
+        プロジェクトの背景、目的、取り組み内容、成果などを記載するエリアです。
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
 
   <?php include __DIR__ . "/components/footer.php"; ?>
 </div>
