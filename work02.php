@@ -31,6 +31,6 @@ include __DIR__ . "/components/header.php";
 
 <section class="work-hero">WORK TITLE</section>
 <section class="work-content">CONTENT BLOCK</section>
-<section class="work-cta">CONTACT CTA</section>
+<?php include __DIR__ . "/components/cta-work.php"; ?>
 
 <?php include __DIR__ . "/components/footer.php"; ?>
