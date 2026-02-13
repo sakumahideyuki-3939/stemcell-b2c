@@ -3,7 +3,6 @@ name: Deploy to Sakura
 on:
   push:
     branches:
-      - work/index-rebuild
       - main
 
 jobs:
