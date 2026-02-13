@@ -1,7 +1,3 @@
-<?php
-// components/header.php
-// 使い方：各ページで  <?php include __DIR__ . "/components/header.php"; ?>
-?>
 <header class="algo-header">
   <div class="algo-header__inner">
 
