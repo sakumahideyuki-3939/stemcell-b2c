@@ -34,7 +34,7 @@ include __DIR__ . "/components/header.php";
 }
 .concept-upper__grid{
   display:grid;
-  grid-template-columns:480px 480px 960px;
+  grid-template-columns:1fr 1fr 2fr;
   height:960px;
 }
 .concept-upper__box{
