@@ -1,13 +1,36 @@
 <?php
-$page_title = "実績";
-require __DIR__ . "/config.php";
+$page_title = "WORK | stemcell-b2c";
 include __DIR__ . "/components/header.php";
-include __DIR__ . "/components/page_nav.php";
 ?>
-<?php include __DIR__ . "/components/layout_open.php"; ?>
-<main class="container">
-  <h1>実績</h1>
-  <?php include __DIR__ . "/pages/works/work-1.php"; ?>
-</main>
+
+<style>
+.work-hero{
+  height:960px;
+  background:#e6e6e6;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.work-content{
+  height:960px;
+  background:#f2f2f2;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.work-cta{
+  height:480px;
+  background:#dddddd;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+</style>
+
+<section class="work-hero">WORK TITLE</section>
+<section class="work-content">CONTENT BLOCK</section>
+<section class="work-cta">CONTACT CTA</section>
+
 <?php include __DIR__ . "/components/footer.php"; ?>
-<?php include __DIR__ . "/components/layout_close.php"; ?>
