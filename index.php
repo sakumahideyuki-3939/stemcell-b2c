@@ -99,7 +99,8 @@ include __DIR__ . "/components/header.php";
 
 <div class="index-section s-100">HEADER</div>
 
-<section class="hero" aria-label="Slider"><div class="hero__bg"></div><div class="index-wrap"><div class="index-1920"><div class="hero__inner"><div><div class="hero__title">STEMCELL B2C</div><div class="hero__lead">幹細胞培養上清を用いた美容医療向け専用商材<br>導入をご検討の方向けに情報をまとめています</div><a class="hero__btn" href="./concept.php">CONCEPT</a></div></div></div></div></section>
+<section class="hero" aria-label="Slider"><div class="hero__bg"></div><div class="index-wrap"><div class="index-1920"><div class="hero__inner"><div><div class="hero__title">幹細胞点鼻タイプ</div><div class="hero__lead">再生医療の可能性を日常へ。
+医療機関向け幹細胞由来製品の情報を掲載しています。</div><a class="hero__btn" href="./concept.php">CONCEPT</a></div></div></div></div></section>
 
 <!-- CONCEPT 上（精密化） -->
 <section class="concept-upper">
