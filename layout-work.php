@@ -8,7 +8,16 @@ include __DIR__ . "/components/header.php";
   background:#e5e5e5;
   display:flex;
   align-items:center;
-  justify-content:center;
+}
+.work-hero__inner{
+  max-width:1200px;
+  margin:0 auto;
+  width:100%;
+}
+.work-hero__title{
+  font-size:42px;
+  letter-spacing:0.2em;
+  font-weight:600;
 }
 .work-hero__inner{
   max-width:1200px;
