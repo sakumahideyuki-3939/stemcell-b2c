@@ -545,11 +545,11 @@ html, body{
 /* ===============================
 
 /* ===============================
-   WORK DETAIL (moved from layout-work.php) - UI tuned
+   WORK DETAIL (moved from layout-work.php) - FINAL
 ================================ */
 .work-hero{
   background:#e5e5e5;
-  padding:140px 20px 100px;
+  padding:120px 20px 80px;
 }
 .work-hero__inner{
   max-width:1200px;
@@ -558,13 +558,13 @@ html, body{
   text-align:center;
 }
 .work-hero__title{
-  font-size:42px;
-  letter-spacing:0.25em;
+  font-size:40px;
+  letter-spacing:0.22em;
   font-weight:600;
 }
 
 .work-content{
-  padding:80px 20px;
+  padding:64px 20px;
   background:#f7f7f7;
 }
 .work-content__inner{
@@ -572,7 +572,7 @@ html, body{
   margin:0 auto;
   display:grid;
   grid-template-columns:1fr 1fr;
-  gap:64px;
+  gap:48px;
 }
 .work-content__left,
 .work-content__right{
