@@ -505,3 +505,13 @@ html, body{
 .work-content{ max-width:960px; margin:0 auto; padding:60px 20px 100px; line-height:1.9; font-size:16px; }
 .work-content p{ margin-bottom:24px; }
 .work-cta-wrap{ margin-top:80px; }
+
+/* ===============================
+   WORK DETAIL UI ADJUST (SP)
+================================ */
+@media (max-width: 768px){
+  .work-hero{ padding: 110px 16px 56px; }
+  .work-hero h1{ font-size: 28px; letter-spacing: 0.08em; }
+  .work-content{ padding: 40px 16px 72px; font-size: 15px; line-height: 1.85; }
+  .work-cta-wrap{ margin-top: 56px; }
+}
