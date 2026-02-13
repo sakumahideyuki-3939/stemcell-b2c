@@ -1,175 +1,136 @@
 <?php
-// index.php（トップ）
-// 6セクション固定：HEADER / SLIDER / CONCEPT上 / CONCEPT下 / WORK / FOOTER
-// 1920/480グリッドで「枠」を先に確定（中身は後で差し替え）
-//
-// ※いまは「白紙を消して構造を成立させる」ため、SLIDER/CONCEPT/FOOTER に仮表示を入れている。
-
-$page_title = "TOP";
-$page_body_class = "page-index"; // layout_open 側で拾えるなら拾う（拾えなくても害なし）
-
-// layout_open / layout_close の場所が環境で揺れても迷子にならないように自動検出
-$layout_open_candidates = [
-  __DIR__ . "/components/layout_open.php",
-  __DIR__ . "/layout_open.php",
-];
-
-$layout_close_candidates = [
-  __DIR__ . "/components/layout_close.php",
-  __DIR__ . "/layout_close.php",
-];
-
-$layout_open = null;
-foreach ($layout_open_candidates as $p) {
-  if (is_file($p)) { $layout_open = $p; break; }
-}
-
-$layout_close = null;
-foreach ($layout_close_candidates as $p) {
-  if (is_file($p)) { $layout_close = $p; break; }
-}
-
-// WORK（8枠）— 画像は仮。存在しない場合はブラウザで壊れて見えるので注意。
-$work_items = [
-  ["title" => "ABOUT",   "href" => "./about.php",   "img" => "./assets/img/work/work-1.jpg"],
-  ["title" => "CONCEPT", "href" => "./concept.php", "img" => "./assets/img/work/work-2.jpg"],
-  ["title" => "EVIDENCE","href" => "./evidence.php","img" => "./assets/img/work/work-3.jpg"],
-  ["title" => "COMPANY", "href" => "./company.php", "img" => "./assets/img/work/work-4.jpg"],
-  ["title" => "CONTACT", "href" => "./contact.php", "img" => "./assets/img/work/work-5.jpg"],
-  ["title" => "WORK",    "href" => "./work.php",    "img" => "./assets/img/work/work-6.jpg"],
-  ["title" => "WORK 07", "href" => "./work.php",    "img" => "./assets/img/work/work-7.jpg"],
-  ["title" => "WORK 08", "href" => "./work.php",    "img" => "./assets/img/work/work-8.jpg"],
-];
-
-// layout_open が見つからない場合は最小フォールバック（通常ここには来ない想定）
-if ($layout_open) {
-  include $layout_open;
-} else {
-  ?><!doctype html>
-  <html lang="ja">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="/assets/css/main.css?v=<?php echo time(); ?>">
-    <title><?php echo htmlspecialchars($page_title, ENT_QUOTES, 'UTF-8'); ?></title>
-  </head>
-  <body class="<?php echo htmlspecialchars($page_body_class, ENT_QUOTES, 'UTF-8'); ?>">
-  <?php
-}
-
-// header.php（通常は各ページで include する運用）
-$header_candidates = [
-  __DIR__ . "/components/header.php",
-  __DIR__ . "/header.php",
-];
-foreach ($header_candidates as $p) {
-  if (is_file($p)) { include $p; break; }
-}
+$page_title = "HOME";
+include __DIR__ . "/components/header.php";
 ?>
 
-<main class="page-index">
-
-  <!-- 2) SLIDER：1920×960 -->
-  <section class="grid-1920 h-960 index-slider">
-    <div class="index-slider__media">
-      <img src="./assets/img/slide-1.jpg" alt="SLIDER" loading="lazy">
-    </div>
-    <div class="index-slider__overlay">
-      <div class="index-slider__text">
-        <h1>STEMCELL B2C</h1>
-        <p class="lead">幹細胞点鼻タイプ｜医療従事者向け情報提供</p>
-        <p class="sub">※画像は後で差し替え。いまはスクロール確認用の仮テキスト。</p>
-        <a class="btn" href="#concept-upper">CONCEPTへ</a>
-      </div>
-      <div class="index-slider__scroll">SCROLL</div>
-    </div>
-  </section>
-
-  <!-- 3) CONCEPT［上］：1920×960（480/480/960） -->
-  <section id="concept-upper" class="grid-1920 h-960 concept-upper">
-    <div class="w-480">
-      <div class="algo-block">
-        <div class="algo-block__inner">
-          <div class="algo-block__tag">CONCEPT UPPER</div>
-          <div class="algo-block__meta">480 × 960</div>
-        </div>
-      </div>
-    </div>
-    <div class="w-480">
-      <div class="algo-block algo-block--tone2">
-        <div class="algo-block__inner">
-          <div class="algo-block__tag">CONCEPT UPPER</div>
-          <div class="algo-block__meta">480 × 960</div>
-        </div>
-      </div>
-    </div>
-    <div class="w-960">
-      <div class="algo-block algo-block--tone3">
-        <div class="algo-block__inner">
-          <div class="algo-block__tag">CONCEPT UPPER</div>
-          <div class="algo-block__meta">960 × 960</div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ==============================================
-  CONCEPT LOWER
-  960 / 480 / 480
-  ============================================== -->
-  <section id="concept-lower" class="grid-1920 h-960">
-
-  <div class="algo-block algo-block--lg">
-    <div class="algo-block__inner">
-      <div class="algo-block__tag">CONCEPT LOWER</div>
-      <div class="algo-block__title">LEFT</div>
-      <div class="algo-block__meta">960 × 960</div>
-    </div>
-  </div>
-
-  <div class="algo-block algo-block--sm algo-block--tone2">
-    <div class="algo-block__inner">
-      <div class="algo-block__tag">CONCEPT LOWER</div>
-      <div class="algo-block__title">CENTER</div>
-      <div class="algo-block__meta">480 × 960</div>
-    </div>
-  </div>
-
-  <div class="algo-block algo-block--sm algo-block--tone3">
-    <div class="algo-block__inner">
-      <div class="algo-block__tag">CONCEPT LOWER</div>
-      <div class="algo-block__title">RIGHT</div>
-      <div class="algo-block__meta">480 × 960</div>
-    </div>
-  </div>
-
-  </section>
-
-  <!-- 5) WORK：1920×960（480×480 × 8） -->
-  <section class="grid-1920 h-960" style="display:grid; grid-template-columns:repeat(4,480px); grid-template-rows:repeat(2,480px);">
-    <div class="fill" style="background:#e85d5d; display:flex; align-items:center; justify-content:center; font-size:60px; font-weight:700;">1</div>
-    <div class="fill" style="background:#f0b35a; display:flex; align-items:center; justify-content:center; font-size:60px; font-weight:700;">2</div>
-    <div class="fill" style="background:#f1e35c; display:flex; align-items:center; justify-content:center; font-size:60px; font-weight:700;">3</div>
-    <div class="fill" style="background:#7cc96f; display:flex; align-items:center; justify-content:center; font-size:60px; font-weight:700;">4</div>
-    <div class="fill" style="background:#5fb0d8; display:flex; align-items:center; justify-content:center; font-size:60px; font-weight:700;">5</div>
-    <div class="fill" style="background:#6c72d9; display:flex; align-items:center; justify-content:center; font-size:60px; font-weight:700;">6</div>
-    <div class="fill" style="background:#a56bd8; display:flex; align-items:center; justify-content:center; font-size:60px; font-weight:700;">7</div>
-    <div class="fill" style="background:#d870b4; display:flex; align-items:center; justify-content:center; font-size:60px; font-weight:700;">8</div>
-  </section>
-
-  <!-- 6) FOOTER：1920×960 -->
-  <section class="grid-1920 h-960">
-    <div class="fill" style="background:#222; color:#fff; display:flex; align-items:center; justify-content:center; font-size:30px;">
-      INDEX: FOOTER / TEXT OK
-    </div>
-  </section>
-
-</main>
-
-<?php
-if ($layout_close) {
-  include $layout_close;
-} else {
-  ?></body></html><?php
+<style>
+/* ===== HEADER ===== */
+.index-section{
+  width:100%;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  font-size:28px;
+  letter-spacing:0.2em;
 }
-?>
+.s-100{ height:100px; background:#f5f5f5; }
+.s-960{ height:960px; background:#eaeaea; }
+.s-960.alt{ background:#dedede; }
+
+/* ===== SLIDER ===== */
+.index-wrap{
+  width:100%;
+  display:flex;
+  justify-content:center;
+}
+.index-1920{
+  width:100%;
+  max-width:1920px;
+}
+.hero{height:960px;background:#d9d9d9;position:relative;overflow:hidden;}
+.hero__bg{position:absolute;inset:0;background:linear-gradient(rgba(0,0,0,0.15),rgba(0,0,0,0.15));}
+.hero__inner{position:relative;height:960px;display:flex;align-items:center;justify-content:center;text-align:center;color:#fff;}
+.hero__title{font-size:48px;letter-spacing:0.2em;font-weight:600;}
+.hero__lead{margin-top:18px;font-size:14px;line-height:1.8;letter-spacing:0.12em;opacity:0.95;}
+.hero__btn{display:inline-block;margin-top:22px;padding:12px 22px;border:1px solid rgba(255,255,255,0.85);color:#fff;text-decoration:none;font-size:12px;letter-spacing:0.2em;}
+
+/* ===== CONCEPT上 ===== */
+.concept-upper{
+  height:960px;
+  background:#fff;
+}
+.concept-upper__grid{
+  display:grid;
+  grid-template-columns:1fr 1fr 2fr;
+  height:960px;
+}
+.concept-upper__box{
+  border:1px solid #eee;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  background:#f7f7f7;
+}
+.concept-upper__box.big{
+  background:#efefef;
+}
+
+/* ===== CONCEPT下 ===== */
+.concept-lower{
+  height:960px;
+  background:#fff;
+}
+.concept-lower__grid{
+  display:grid;
+  grid-template-columns:2fr 1fr 1fr;
+  height:960px;
+}
+.concept-lower__box{
+  border:1px solid #eee;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background:#f2f2f2;
+}
+.concept-lower__box.big{
+  background:#e6e6e6;
+}
+
+/* ===== WORK ===== */
+.work-grid{height:960px;background:#fff;}
+.work-grid__inner{display:grid;grid-template-columns:repeat(4,1fr);grid-template-rows:repeat(2,1fr);height:960px;}
+.work-grid__cell{border:1px solid #eee;display:flex;justify-content:center;align-items:center;background:#f7f7f7;font-size:48px;}
+
+/* ===== FOOTER ===== */
+.index-footer{height:960px;background:#eaeaea;}
+.index-footer__inner{height:960px;display:flex;align-items:center;justify-content:center;font-size:28px;letter-spacing:0.2em;color:#666;}
+/* ===== WORK：リンク土台（画像なし） ===== */
+.work-grid__cell a{width:100%;height:100%;display:flex;align-items:center;justify-content:center;text-decoration:none;color:#333;}
+.work-grid__cell a:hover{background:rgba(0,0,0,0.04);}
+.work-grid__cell a:focus{outline:2px solid rgba(0,0,0,0.25);outline-offset:-2px;}
+
+/* ===== CONCEPT LOWER：リンク土台 ===== */
+.concept-lower__box a{width:100%;height:100%;display:flex;align-items:center;justify-content:center;text-decoration:none;color:#333;}
+.concept-lower__box a:hover{background:rgba(0,0,0,0.04);}
+.concept-lower__box a:focus{outline:2px solid rgba(0,0,0,0.25);outline-offset:-2px;}
+
+</style>
+
+<div class="index-section s-100">HEADER</div>
+
+<section class="hero" aria-label="Slider"><div class="hero__bg"></div><div class="index-wrap"><div class="index-1920"><div class="hero__inner"><div><div class="hero__title">幹細胞点鼻タイプ</div><div class="hero__lead">再生医療の可能性を日常へ。
+医療機関向け幹細胞由来製品の情報を掲載しています。</div><a class="hero__btn" href="./concept.php">CONCEPT</a></div></div></div></div></section>
+
+<!-- CONCEPT 上（精密化） -->
+<section class="concept-upper">
+  <div class="index-wrap">
+    <div class="index-1920">
+      <div class="concept-upper__grid">
+        <div class="concept-upper__box">
+          <div>製品コンセプト<br><small>Concept</small></div>
+          <div>480 × 960</div>
+        </div>
+        <div class="concept-upper__box">
+          <div>製品コンセプト<br><small>Concept</small></div>
+          <div>480 × 960</div>
+        </div>
+        <div class="concept-upper__box big">
+          <div>製品コンセプト<br><small>Concept</small></div>
+          <div>960 × 960</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ここから下は骨組みのまま -->
+<section class="concept-lower"><div class="index-wrap"><div class="index-1920"><div class="concept-lower__grid"><div class="concept-lower__box big">安全性とエビデンス
+960 × 960</div><div class="concept-lower__box">導入メリット
+480 × 960</div><div class="concept-lower__box">導入メリット
+480 × 960</div></div></div></div></section>
+<section class="work-grid"><div class="index-wrap"><div class="index-1920"><div class="work-grid__inner"><div class="work-grid__cell"><a href="./work.php">WORK 1</a></div><div class="work-grid__cell"><a href="./work.php">WORK 2</a></div><div class="work-grid__cell"><a href="./work.php">WORK 3</a></div><div class="work-grid__cell"><a href="./work.php">WORK 4</a></div><div class="work-grid__cell"><a href="./work.php">WORK 5</a></div><div class="work-grid__cell"><a href="./work.php">WORK 6</a></div><div class="work-grid__cell"><a href="./work.php">WORK 7</a></div><div class="work-grid__cell"><a href="./work.php">WORK 8</a></div></div></div></div></section>
+<section class="index-footer"><div class="index-wrap"><div class="index-1920"><div class="index-footer__inner">FOOTER</div></div></div></section>
+
+<?php include __DIR__ . "/components/footer.php"; ?>
+<?php /* UNUSED CSS CLASSES (index.php): .s-960, .s-960.alt */ ?>
