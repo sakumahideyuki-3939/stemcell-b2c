@@ -37,7 +37,7 @@ jobs:
         run: |
           set -e
           # merge conflict markers (ONLY real markers at line start)
-          if grep -RIn --exclude-dir=.git --exclude='*.bak_*' -E '^(<<<<<<<|=======|>>>>>>>)' .; then
+          if grep -RIn --exclude-dir=.git --exclude='*.bak_*' -E '^(<<<<<<<|=======$|>>>>>>>)' .; then
             echo "ERROR: merge conflict markers found"
             exit 1
           fi
