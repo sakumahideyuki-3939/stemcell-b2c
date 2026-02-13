@@ -9,8 +9,16 @@ include __DIR__ . "/components/header.php";
   display:flex;
   align-items:center;
   justify-content:center;
-  font-size:32px;
-  letter-spacing:0.2em;
+}
+.work-hero__inner{
+  max-width:1200px;
+  width:100%;
+  text-align:center;
+}
+.work-hero__title{
+  font-size:42px;
+  letter-spacing:0.25em;
+  font-weight:600;
 }
 
 .work-content{
@@ -32,9 +40,7 @@ include __DIR__ . "/components/header.php";
 .work-content__right{ background:#dddddd; }
 </style>
 
-<section class="work-hero">
-  <?php echo $work_title; ?>
-</section>
+<section class="work-hero"><div class="work-hero__inner"><div class="work-hero__title"><?php echo $work_title; ?></div></div></section>
 
 <section class="work-content">
   <div class="work-content__left">
