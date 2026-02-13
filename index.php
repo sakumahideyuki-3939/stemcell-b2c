@@ -85,6 +85,11 @@ include __DIR__ . "/components/header.php";
 /* ===== FOOTER ===== */
 .index-footer{height:960px;background:#eaeaea;}
 .index-footer__inner{height:960px;display:flex;align-items:center;justify-content:center;font-size:28px;letter-spacing:0.2em;color:#666;}
+/* ===== WORK：リンク土台（画像なし） ===== */
+.work-grid__cell a{width:100%;height:100%;display:flex;align-items:center;justify-content:center;text-decoration:none;color:#333;}
+.work-grid__cell a:hover{background:rgba(0,0,0,0.04);}
+.work-grid__cell a:focus{outline:2px solid rgba(0,0,0,0.25);outline-offset:-2px;}
+
 </style>
 
 <div class="index-section s-100">HEADER</div>
@@ -118,7 +123,7 @@ include __DIR__ . "/components/header.php";
 960 × 960</div><div class="concept-lower__box">CONCEPT LOWER
 480 × 960</div><div class="concept-lower__box">CONCEPT LOWER
 480 × 960</div></div></div></div></section>
-<section class="work-grid"><div class="index-wrap"><div class="index-1920"><div class="work-grid__inner"><div class="work-grid__cell">1</div><div class="work-grid__cell">2</div><div class="work-grid__cell">3</div><div class="work-grid__cell">4</div><div class="work-grid__cell">5</div><div class="work-grid__cell">6</div><div class="work-grid__cell">7</div><div class="work-grid__cell">8</div></div></div></div></section>
+<section class="work-grid"><div class="index-wrap"><div class="index-1920"><div class="work-grid__inner"><div class="work-grid__cell"><a href="./work.php">WORK 1</a></div><div class="work-grid__cell"><a href="./work.php">WORK 2</a></div><div class="work-grid__cell"><a href="./work.php">WORK 3</a></div><div class="work-grid__cell"><a href="./work.php">WORK 4</a></div><div class="work-grid__cell"><a href="./work.php">WORK 5</a></div><div class="work-grid__cell"><a href="./work.php">WORK 6</a></div><div class="work-grid__cell"><a href="./work.php">WORK 7</a></div><div class="work-grid__cell"><a href="./work.php">WORK 8</a></div></div></div></div></section>
 <section class="index-footer"><div class="index-wrap"><div class="index-1920"><div class="index-footer__inner">FOOTER</div></div></div></section>
 
 <?php include __DIR__ . "/components/footer.php"; ?>
