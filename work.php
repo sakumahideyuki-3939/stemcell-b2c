@@ -1,13 +1,26 @@
 <?php
-$page_title = "実績";
-require __DIR__ . "/config.php";
-include __DIR__ . "/components/header.php";
-include __DIR__ . "/components/page_nav.php";
-?>
-<?php include __DIR__ . "/components/layout_open.php"; ?>
-<main class="container">
-  <h1>実績</h1>
-  <?php include __DIR__ . "/pages/works/work-1.php"; ?>
-</main>
-<?php include __DIR__ . "/components/footer.php"; ?>
-<?php include __DIR__ . "/components/layout_close.php"; ?>
+$id = isset($_GET['id']) ? (string)$_GET['id'] : '1';
+
+if (!preg_match('/^[1-9][0-9]*$/', $id)) {
+  $id = '1';
+}
+
+$data_file = __DIR__ . '/data/work.json';
+$data = [];
+
+if (is_file($data_file)) {
+  $json = file_get_contents($data_file);
+  $decoded = json_decode((string)$json, true);
+  if (is_array($decoded)) {
+    $data = $decoded;
+  }
+}
+
+if (!isset($data[$id]) || !is_array($data[$id])) {
+  $id = '1';
+}
+
+$work_title = isset($data[$id]['title']) ? (string)$data[$id]['title'] : 'WORK';
+$work_text = isset($data[$id]['text']) ? (string)$data[$id]['text'] : '';
+
+include __DIR__ . '/layout-work.php';
