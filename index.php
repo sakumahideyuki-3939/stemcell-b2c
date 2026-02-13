@@ -108,15 +108,15 @@ include __DIR__ . "/components/header.php";
     <div class="index-1920">
       <div class="concept-upper__grid">
         <div class="concept-upper__box">
-          <div>CONCEPT UPPER</div>
+          <div>製品コンセプト<br><small>Concept</small></div>
           <div>480 × 960</div>
         </div>
         <div class="concept-upper__box">
-          <div>CONCEPT UPPER</div>
+          <div>製品コンセプト<br><small>Concept</small></div>
           <div>480 × 960</div>
         </div>
         <div class="concept-upper__box big">
-          <div>CONCEPT UPPER</div>
+          <div>製品コンセプト<br><small>Concept</small></div>
           <div>960 × 960</div>
         </div>
       </div>
@@ -125,9 +125,9 @@ include __DIR__ . "/components/header.php";
 </section>
 
 <!-- ここから下は骨組みのまま -->
-<section class="concept-lower"><div class="index-wrap"><div class="index-1920"><div class="concept-lower__grid"><div class="concept-lower__box big">CONCEPT LOWER
-960 × 960</div><div class="concept-lower__box">CONCEPT LOWER
-480 × 960</div><div class="concept-lower__box">CONCEPT LOWER
+<section class="concept-lower"><div class="index-wrap"><div class="index-1920"><div class="concept-lower__grid"><div class="concept-lower__box big">安全性とエビデンス
+960 × 960</div><div class="concept-lower__box">導入メリット
+480 × 960</div><div class="concept-lower__box">導入メリット
 480 × 960</div></div></div></div></section>
 <section class="work-grid"><div class="index-wrap"><div class="index-1920"><div class="work-grid__inner"><div class="work-grid__cell"><a href="./work.php">WORK 1</a></div><div class="work-grid__cell"><a href="./work.php">WORK 2</a></div><div class="work-grid__cell"><a href="./work.php">WORK 3</a></div><div class="work-grid__cell"><a href="./work.php">WORK 4</a></div><div class="work-grid__cell"><a href="./work.php">WORK 5</a></div><div class="work-grid__cell"><a href="./work.php">WORK 6</a></div><div class="work-grid__cell"><a href="./work.php">WORK 7</a></div><div class="work-grid__cell"><a href="./work.php">WORK 8</a></div></div></div></div></section>
 <section class="index-footer"><div class="index-wrap"><div class="index-1920"><div class="index-footer__inner">FOOTER</div></div></div></section>
