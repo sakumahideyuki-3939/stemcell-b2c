@@ -545,7 +545,6 @@ html, body{
 /* ===============================
    WORK DETAIL (moved from layout-work.php)
 ================================ */
-<style>
 .work-hero{
   height:960px;
   background:#e5e5e5;
@@ -607,7 +606,7 @@ html, body{
 
 
 /* ===== Responsive ===== */
- (max-width: 1024px){
+@media (max-width: 1024px){
   .work-content__inner{
     grid-template-columns:1fr;
     gap:40px;
@@ -623,7 +622,7 @@ html, body{
   }
 }
 
- (max-width: 600px){
+@media (max-width: 600px){
   .work-hero{
     height:480px;
   }
@@ -632,4 +631,3 @@ html, body{
   }
 }
 
-</style>
