@@ -2,8 +2,7 @@
 include __DIR__ . "/components/layout_open.php";
 ?>
 <?php
- = "page-work";
-include __DIR__ . "/components/header.php";
+ = "page-work";include __DIR__ . "/components/header.php";
 ?>
 
 <style>
