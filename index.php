@@ -90,6 +90,11 @@ include __DIR__ . "/components/header.php";
 .work-grid__cell a:hover{background:rgba(0,0,0,0.04);}
 .work-grid__cell a:focus{outline:2px solid rgba(0,0,0,0.25);outline-offset:-2px;}
 
+/* ===== CONCEPT LOWER：リンク土台 ===== */
+.concept-lower__box a{width:100%;height:100%;display:flex;align-items:center;justify-content:center;text-decoration:none;color:#333;}
+.concept-lower__box a:hover{background:rgba(0,0,0,0.04);}
+.concept-lower__box a:focus{outline:2px solid rgba(0,0,0,0.25);outline-offset:-2px;}
+
 </style>
 
 <div class="index-section s-100">HEADER</div>
