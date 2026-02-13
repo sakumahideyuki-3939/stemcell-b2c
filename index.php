@@ -87,22 +87,62 @@ foreach ($header_candidates as $p) {
 
   <!-- 3) CONCEPT［上］：1920×960（480/480/960） -->
   <section id="concept-upper" class="grid-1920 h-960 concept-upper">
-    <div class="concept-col concept-col-1">LEFT 480</div>
-    <div class="concept-col concept-col-2">CENTER 480</div>
-    <div class="concept-col concept-col-3">RIGHT 960</div>
+    <div class="w-480">
+      <div class="algo-block">
+        <div class="algo-block__inner">
+          <div class="algo-block__tag">CONCEPT UPPER</div>
+          <div class="algo-block__meta">480 × 960</div>
+        </div>
+      </div>
+    </div>
+    <div class="w-480">
+      <div class="algo-block algo-block--tone2">
+        <div class="algo-block__inner">
+          <div class="algo-block__tag">CONCEPT UPPER</div>
+          <div class="algo-block__meta">480 × 960</div>
+        </div>
+      </div>
+    </div>
+    <div class="w-960">
+      <div class="algo-block algo-block--tone3">
+        <div class="algo-block__inner">
+          <div class="algo-block__tag">CONCEPT UPPER</div>
+          <div class="algo-block__meta">960 × 960</div>
+        </div>
+      </div>
+    </div>
   </section>
 
-  <!-- 4) CONCEPT［下］：1920×960（960/480/480） -->
-  <section class="grid-1920 h-960" style="display:grid; grid-template-columns:960px 480px 480px;">
-    <div class="fill" style="background:#ddd; display:flex; align-items:center; justify-content:center;">
-      INDEX: CONCEPT LOWER / LEFT
+  <!-- ==============================================
+  CONCEPT LOWER
+  960 / 480 / 480
+  ============================================== -->
+  <section id="concept-lower" class="grid-1920 h-960">
+
+  <div class="algo-block algo-block--lg">
+    <div class="algo-block__inner">
+      <div class="algo-block__tag">CONCEPT LOWER</div>
+      <div class="algo-block__title">LEFT</div>
+      <div class="algo-block__meta">960 × 960</div>
     </div>
-    <div class="fill" style="background:#e5e5e5; display:flex; align-items:center; justify-content:center;">
-      INDEX: CONCEPT LOWER / CENTER
+  </div>
+
+  <div class="algo-block algo-block--sm algo-block--tone2">
+    <div class="algo-block__inner">
+      <div class="algo-block__tag">CONCEPT LOWER</div>
+      <div class="algo-block__title">CENTER</div>
+      <div class="algo-block__meta">480 × 960</div>
     </div>
-    <div class="fill" style="background:#eee; display:flex; align-items:center; justify-content:center;">
-      INDEX: CONCEPT LOWER / RIGHT
+  </div>
+
+  <div class="algo-block algo-block--sm algo-block--tone3">
+    <div class="algo-block__inner">
+      <div class="algo-block__tag">CONCEPT LOWER</div>
+      <div class="algo-block__title">RIGHT</div>
+      <div class="algo-block__meta">480 × 960</div>
     </div>
+  </div>
+
   </section>
 
   <!-- 5) WORK：1920×960（480×480 × 8） -->
