@@ -1,3 +1,27 @@
+/* =================================
+   WORK detail page layout
+================================= */
+
+.work-block-2{
+  height:960px;
+  display:flex;
+  justify-content:center;
+  align-items:flex-start;
+  padding-top:120px;
+  background:#ffffff;
+}
+
+.work-block-2__inner{
+  width:1000px;
+  max-width:100%;
+}
+
+.work-block-2__inner p{
+  line-height:2;
+  font-size:14px;
+  letter-spacing:0.05em;
+}
+
 /* ==================================================
    BASE
 ================================================== */
