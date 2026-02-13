@@ -22,11 +22,25 @@ include __DIR__ . "/components/header.php";
 }
 
 .work-content{
-  height:960px;
+  padding:120px 0;
   background:#f7f7f7;
+}
+.work-content__inner{
+  max-width:1200px;
+  margin:0 auto;
   display:grid;
   grid-template-columns:1fr 1fr;
+  gap:80px;
 }
+.work-content__left,
+.work-content__right{
+  min-height:600px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+.work-content__left{ background:#ffffff; }
+.work-content__right{ background:#dddddd; }
 
 .work-content__left,
 .work-content__right{
@@ -42,14 +56,7 @@ include __DIR__ . "/components/header.php";
 
 <section class="work-hero"><div class="work-hero__inner"><div class="work-hero__title"><?php echo $work_title; ?></div></div></section>
 
-<section class="work-content">
-  <div class="work-content__left">
-    <?php echo $work_text; ?>
-  </div>
-  <div class="work-content__right">
-    IMAGE AREA
-  </div>
-</section>
+<section class="work-content"><div class="work-content__inner"><div class="work-content__left"><?php echo $work_text; ?></div><div class="work-content__right">IMAGE AREA</div></div></section>
 
 <?php include __DIR__ . "/components/cta-work.php"; ?>
 <?php include __DIR__ . "/components/footer.php"; ?>
