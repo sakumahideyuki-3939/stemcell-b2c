@@ -3,7 +3,6 @@ name: Deploy to Sakura
 on:
   push:
     branches:
-     
       - main
 
 jobs:
@@ -11,6 +10,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+
+      - name: PHP syntax check
+        run: |
+          php -v
+          find . -name "*.php" -print0 | xargs -0 -n 1 php -l
 
       - name: Setup SSH (agent)
         uses: webfactory/ssh-agent@v0.9.0
