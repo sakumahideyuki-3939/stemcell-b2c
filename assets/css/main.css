@@ -515,3 +515,28 @@ html, body{
   .work-content{ padding: 40px 16px 72px; font-size: 15px; line-height: 1.85; }
   .work-cta-wrap{ margin-top: 56px; }
 }
+
+/* ===============================
+   WORK DETAIL EMERGENCY FIX
+   目的：崩れを止める（workページ限定）
+================================ */
+.page-work .work-hero,
+.page-work .work-content,
+.page-work .work-cta-wrap{
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.page-work .work-content{
+  display: block;
+}
+
+.page-work img{
+  max-width: 100%;
+  height: auto;
+}
+
+.page-work .work-content *{
+  max-width: 100%;
+}
+
