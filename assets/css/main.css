@@ -1,3 +1,43 @@
+.work-block-1{
+  height:460px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  background:#ffffff;
+  width:100%;
+}
+
+.work-block-1__inner{
+  width:100%;
+  max-width:none;        /* ← 1920で止めない */
+  padding:0 60px;        /* ← ABOUTの左右余白感に合わせる */
+  box-sizing:border-box;
+}
+.work-block-2{
+  min-height:960px;
+  display:flex;
+  justify-content:center;
+  align-items:flex-start;
+  padding:140px 0 120px;  /* ← 下にも余白 */
+  background:#ffffff;
+  width:100%;
+}
+
+.work-block-2__inner{
+  width:100%;
+  max-width:1000px;
+  margin:0 auto;
+  padding:0 60px;         /* ← 左右余白を確実に入れる */
+  box-sizing:border-box;
+}
+@media (max-width: 959px){
+  .work-block-1__inner,
+  .work-block-2__inner{
+    padding:0 20px;
+  }
+}
+
 /* ==================================================
    BASE
 ================================================== */
