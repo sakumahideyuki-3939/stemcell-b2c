@@ -50,7 +50,7 @@ if ($layout_open) {
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="./assets/css/main.css?v=<?php echo time(); ?>">
+    <link rel="stylesheet" href="/assets/css/main.css?v=<?php echo time(); ?>">
     <title><?php echo htmlspecialchars($page_title, ENT_QUOTES, 'UTF-8'); ?></title>
   </head>
   <body class="<?php echo htmlspecialchars($page_body_class, ENT_QUOTES, 'UTF-8'); ?>">
