@@ -61,6 +61,34 @@ include __DIR__ . "/components/header.php";
 
 .work-content__left{ background:#ffffff; }
 .work-content__right{ background:#dddddd; }
+
+
+/* ===== Responsive ===== */
+ (max-width: 1024px){
+  .work-content__inner{
+    grid-template-columns:1fr;
+    gap:40px;
+  }
+  .work-hero{
+    height:600px;
+  }
+  .work-content{
+    padding:80px 20px;
+  }
+  .work-hero__inner{
+    padding:0 20px;
+  }
+}
+
+ (max-width: 600px){
+  .work-hero{
+    height:480px;
+  }
+  .work-hero__title{
+    font-size:28px;
+  }
+}
+
 </style>
 
 <section class="work-hero"><div class="work-hero__inner"><div class="work-hero__title"><?php echo $work_title; ?></div></div></section>
