@@ -10,7 +10,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;600&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="/assets/css/main.css?v=<?php echo time(); ?>">
+  <link rel="stylesheet" href="./assets/css/main.css?v=<?php echo time(); ?>">
 
   <title><?php echo isset($page_title) ? $page_title : 'ALGO'; ?></title>
 </head>
