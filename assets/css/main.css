@@ -313,3 +313,17 @@ section{
 .concept-col-1{ background:#f3f3f3; }
 .concept-col-2{ background:#e5e5e5; }
 .concept-col-3{ background:#d8d8d8; }
+
+html, body{
+  min-width:1920px;
+  overflow-x:auto !important;
+}
+
+.algo-site{
+  min-width:1920px;
+  overflow-x:visible !important;
+}
+
+.page-index{
+  overflow-x:visible !important;
+}
