@@ -134,3 +134,5 @@ include __DIR__ . "/components/header.php";
 
 <?php include __DIR__ . "/components/footer.php"; ?>
 <?php /* UNUSED CSS CLASSES (index.php): .s-960, .s-960.alt */ ?>
+
+<!-- auto-deploy smoke test -->
