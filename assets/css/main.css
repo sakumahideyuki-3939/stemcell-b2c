@@ -576,7 +576,7 @@ html, body{
 }
 .work-content__left,
 .work-content__right{
-  min-height:520px;
+  min-height:420px;
   display:flex;
   align-items:center;
   justify-content:center;
