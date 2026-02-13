@@ -495,3 +495,6 @@ html, body{
   width:100%;
   text-align:center;
 }
+
+/* CSS_TEST */
+body{outline:8px solid red !important;}
