@@ -129,7 +129,7 @@ include __DIR__ . "/components/header.php";
 960 × 960</div><div class="concept-lower__box">導入メリット
 480 × 960</div><div class="concept-lower__box">導入メリット
 480 × 960</div></div></div></div></section>
-<section class="work-grid"><div class="index-wrap"><div class="index-1920"><div class="work-grid__inner"><div class="work-grid__cell"><a href="./work01.php">WORK 1</a></div><div class="work-grid__cell"><a href="./work02.php">WORK 2</a></div><div class="work-grid__cell"><a href="./work03.php">WORK 3</a></div><div class="work-grid__cell"><a href="./work04.php">WORK 4</a></div><div class="work-grid__cell"><a href="./work05.php">WORK 5</a></div><div class="work-grid__cell"><a href="./work06.php">WORK 6</a></div><div class="work-grid__cell"><a href="./work07.php">WORK 7</a></div><div class="work-grid__cell"><a href="./work08.php">WORK 8</a></div></div></div></div></section>
+<section class="work-grid"><div class="index-wrap"><div class="index-1920"><div class="work-grid__inner"><div class="work-grid__cell"><a href="./work.php">WORK 1</a></div><div class="work-grid__cell"><a href="./work.php">WORK 2</a></div><div class="work-grid__cell"><a href="./work.php">WORK 3</a></div><div class="work-grid__cell"><a href="./work.php">WORK 4</a></div><div class="work-grid__cell"><a href="./work.php">WORK 5</a></div><div class="work-grid__cell"><a href="./work.php">WORK 6</a></div><div class="work-grid__cell"><a href="./work.php">WORK 7</a></div><div class="work-grid__cell"><a href="./work.php">WORK 8</a></div></div></div></div></section>
 <section class="index-footer"><div class="index-wrap"><div class="index-1920"><div class="index-footer__inner">FOOTER</div></div></div></section>
 
 <?php include __DIR__ . "/components/footer.php"; ?>
