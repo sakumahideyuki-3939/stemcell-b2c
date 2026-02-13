@@ -15,4 +15,4 @@
   <title><?php echo isset($page_title) ? $page_title : 'ALGO'; ?></title>
 </head>
 <body class="<?php echo isset($page_body_class) ? $page_body_class : ''; ?>">
-<div class="algo-site">
+<div class="algo-site" style="outline:12px solid red !important;">
