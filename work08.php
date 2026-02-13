@@ -1,36 +1,55 @@
 <?php
-$page_title = "WORK | stemcell-b2c";
+$page_title = "WORK";
 include __DIR__ . "/components/header.php";
 ?>
 
 <style>
 .work-hero{
   height:960px;
-  background:#e6e6e6;
+  background:#e5e5e5;
   display:flex;
   align-items:center;
   justify-content:center;
+  font-size:32px;
+  letter-spacing:0.2em;
 }
 
 .work-content{
   height:960px;
-  background:#f2f2f2;
-  display:flex;
-  align-items:center;
-  justify-content:center;
+  background:#f7f7f7;
+  display:grid;
+  grid-template-columns:1fr 1fr;
 }
 
-.work-cta{
-  height:480px;
-  background:#dddddd;
+.work-content__left,
+.work-content__right{
   display:flex;
   align-items:center;
   justify-content:center;
+  border:1px solid #eee;
+}
+
+.work-content__left{
+  background:#ffffff;
+}
+
+.work-content__right{
+  background:#dddddd;
 }
 </style>
 
-<section class="work-hero">WORK TITLE</section>
-<section class="work-content">CONTENT BLOCK</section>
-<?php include __DIR__ . "/components/cta-work.php"; ?>
+<section class="work-hero">
+  WORK TITLE
+</section>
 
+<section class="work-content">
+  <div class="work-content__left">
+    TEXT AREA
+  </div>
+  <div class="work-content__right">
+    IMAGE AREA
+  </div>
+</section>
+
+<?php include __DIR__ . "/components/cta-work.php"; ?>
 <?php include __DIR__ . "/components/footer.php"; ?>
