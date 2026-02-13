@@ -67,6 +67,10 @@ include __DIR__ . "/components/header.php";
 .hero__lead{margin-top:18px;font-size:14px;line-height:1.8;letter-spacing:0.12em;opacity:0.95;}
 .hero__btn{display:inline-block;margin-top:22px;padding:12px 22px;border:1px solid rgba(255,255,255,0.85);color:#fff;text-decoration:none;font-size:12px;letter-spacing:0.2em;}
 
+/* ===== INDEX FOOTER（1920×960 本番箱） ===== */
+.index-footer{height:960px;background:#eaeaea;}
+.index-footer__inner{height:960px;display:flex;align-items:center;justify-content:center;font-size:28px;letter-spacing:0.2em;color:#666;}
+
 </style>
 
 <div class="index-section s-100">HEADER</div>
@@ -101,7 +105,7 @@ include __DIR__ . "/components/header.php";
 480 × 960</div><div class="concept-lower__box">CONCEPT LOWER
 480 × 960</div></div></div></div></section>
 <section class="work-grid"><div class="index-wrap"><div class="index-1920"><div class="work-grid__inner"><div class="work-grid__cell">1</div><div class="work-grid__cell">2</div><div class="work-grid__cell">3</div><div class="work-grid__cell">4</div><div class="work-grid__cell">5</div><div class="work-grid__cell">6</div><div class="work-grid__cell">7</div><div class="work-grid__cell">8</div></div></div></div></section>
-<div class="index-section s-960">FOOTER</div>
+<section class="index-footer"><div class="index-wrap"><div class="index-1920"><div class="index-footer__inner">FOOTER</div></div></div></section>
 
 <?php include __DIR__ . "/components/footer.php"; ?>
 
