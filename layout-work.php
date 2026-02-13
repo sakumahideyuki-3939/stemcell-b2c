@@ -2,7 +2,8 @@
 include __DIR__ . "/components/layout_open.php";
 ?>
 <?php
- = "page-work";include __DIR__ . "/components/header.php";
+$page_body_class = "page-work";
+include __DIR__ . "/components/header.php";
 ?>
 
 <style>
