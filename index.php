@@ -48,6 +48,12 @@ include __DIR__ . "/components/header.php";
 .concept-upper__box.big{
   background:#efefef;
 }
+/* ===== CONCEPT 下：2fr / 1fr / 1fr ===== */
+.concept-lower{height:960px;background:#fff;}
+.concept-lower__grid{display:grid;grid-template-columns:2fr 1fr 1fr;height:960px;}
+.concept-lower__box{border:1px solid #eee;display:flex;flex-direction:column;justify-content:center;align-items:center;background:#f7f7f7;}
+.concept-lower__box.big{background:#efefef;}
+
 </style>
 
 <div class="index-section s-100">HEADER</div>
@@ -77,8 +83,33 @@ include __DIR__ . "/components/header.php";
 </section>
 
 <!-- ここから下は骨組みのまま -->
-<div class="index-section s-960">CONCEPT 下</div>
+<section class="concept-lower"><div class="index-wrap"><div class="index-1920"><div class="concept-lower__grid"><div class="concept-lower__box big">CONCEPT LOWER
+960 × 960</div><div class="concept-lower__box">CONCEPT LOWER
+480 × 960</div><div class="concept-lower__box">CONCEPT LOWER
+480 × 960</div></div></div></div></section>
 <div class="index-section s-960.alt">WORK</div>
 <div class="index-section s-960">FOOTER</div>
 
 <?php include __DIR__ . "/components/footer.php"; ?>
+
+<style>
+/* ===== CONCEPT 下：2fr / 1fr / 1fr ===== */
+.concept-lower{
+  height:960px;
+}
+.concept-lower__grid{
+  display:grid;
+  grid-template-columns:2fr 1fr 1fr;
+  height:960px;
+}
+.concept-lower__box{
+  border:1px solid #eee;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background:#f2f2f2;
+}
+.concept-lower__box.big{
+  background:#e6e6e6;
+}
+</style>
