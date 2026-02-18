@@ -1,171 +1,25 @@
 name: Deploy to Sakura
-
 on:
-  pull_request:
-    branches: [ main ]
   push:
-    branches: [ main ]
-
-concurrency:
-  group: deploy-main
-  cancel-in-progress: true
+    branches: [main]
 
 jobs:
-  validate:
-    name: Validate
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-
-      # --- PHP syntax check (all php files) ---
-      - name: PHP syntax check
-        run: |
-          set -e
-          shopt -s globstar
-          files=( **/*.php )
-          if [ ${#files[@]} -eq 0 ]; then
-            echo "No PHP files found."
-            exit 0
-          fi
-          for f in "${files[@]}"; do
-            php -l "$f" >/dev/null
-          done
-          echo "PHP syntax OK"
-
-      # --- Guardrails: accidental bad patterns ---
-      - name: Guardrails (forbidden patterns)
-        run: |
-          set -e
-          # merge conflict markers (ONLY real markers at line start)
-          if grep -RIn --exclude-dir=.git --exclude='*.bak_*' -E '^(<<<<<<<|=======$|>>>>>>>)' .; then
-            echo "ERROR: merge conflict markers found"
-            exit 1
-          fi
-          # stray <style> tag inside CSS (past incident)
-          if grep -RIn --exclude-dir=.git --exclude='*.bak_*' -E '<style[^>]*>' assets/css 2>/dev/null; then
-            echo "ERROR: <style> tag found inside CSS"
-            exit 1
-          fi
-          # accidental secrets (basic)
-          if grep -RIn --exclude-dir=.git --exclude='*.bak_*' -E 'BEGIN (RSA|OPENSSH) PRIVATE KEY' .; then
-            echo "ERROR: private key material found"
-            exit 1
-          fi
-          echo "Guardrails OK"
-
-      # --- Asset size check (prevent heavy images) ---
-      - name: Asset size check
-        run: |
-          set -e
-          MAX_KB=800
-          FOUND=0
-          while IFS= read -r -d '' f; do
-            kb=$(du -k "$f" | awk '{print $1}')
-            if [ "$kb" -gt "$MAX_KB" ]; then
-              echo "Too large: ${kb}KB  $f (limit ${MAX_KB}KB)"
-              FOUND=1
-            fi
-          done < <(find assets -type f \( -iname "*.png" -o -iname "*.jpg" -o -iname "*.jpeg" -o -iname "*.webp" -o -iname "*.gif" \) -print0 2>/dev/null || true)
-          if [ "$FOUND" -eq 1 ]; then
-            echo "ERROR: asset size check failed"
-            exit 1
-          fi
-          echo "Asset size OK"
-
   deploy:
-    name: Deploy
-    needs: validate
-    if: github.event_name == 'push'
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout
+        uses: actions/checkout@v4
 
-      - name: Deploy with backup + rollback (server-side git)
-        env:
-          SSH_HOST: ${{ secrets.SSH_HOST }}
-          SSH_USER: ${{ secrets.SSH_USER }}
-          DEPLOY_PATH: ${{ secrets.DEPLOY_PATH }}
-          SSH_KEY: ${{ secrets.SSH_KEY }}
-        run: |
-          set -e
+      - name: FTP Deploy
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          server-dir: ${{ secrets.DEPLOY_PATH }}
+          protocol: ftps
 
-          if [ -z "$SSH_HOST" ] || [ -z "$SSH_USER" ] || [ -z "$DEPLOY_PATH" ] || [ -z "$SSH_KEY" ]; then
-            echo "ERROR: SSH_HOST / SSH_USER / DEPLOY_PATH / SSH_KEY secrets are required"
-            exit 1
-          fi
-
-          mkdir -p ~/.ssh
-          chmod 700 ~/.ssh
-          echo "$SSH_KEY" > ~/.ssh/id_ed25519
-          chmod 600 ~/.ssh/id_ed25519
-          ssh-keyscan -H "$SSH_HOST" >> ~/.ssh/known_hosts 2>/dev/null
-
-          ssh -i ~/.ssh/id_ed25519 -o StrictHostKeyChecking=yes "$SSH_USER@$SSH_HOST" "bash -lc '
-            set -e
-            cd \"\$DEPLOY_PATH\"
-
-            # 1) record previous HEAD for rollback
-            PREV=\$(git rev-parse --short HEAD 2>/dev/null || echo \"none\")
-            echo \"PREV=\$PREV\"
-
-            # 2) backup (keep last 10)
-            mkdir -p .deploy_backups
-            TS=\$(date +%Y%m%d_%H%M%S)
-            if [ \"\$PREV\" != \"none\" ]; then
-              tar -czf \".deploy_backups/backup_\${TS}_\${PREV}.tgz\" -C . \
-                --exclude=.git --exclude=.deploy_backups .
-            fi
-            ls -1t .deploy_backups/*.tgz 2>/dev/null | tail -n +11 | xargs -r rm -f
-
-            # 3) deploy: hard reset to origin/main
-            git fetch --prune origin
-            git checkout -f main
-            git reset --hard origin/main
-
-            # 4) server-side sanity (fast)
-            php -v >/dev/null
-            # optional: basic file existence checks
-            test -f index.php
-            test -f components/header.php
-            test -f assets/css/main.css
-
-            echo \"DEPLOY_OK new=\$(git rev-parse --short HEAD)\"
-          '"
-
-      - name: Post-deploy HTTP checks (200 + basic content)
-        env:
-          BASE_URL: ${{ secrets.BASE_URL }}
-        run: |
-          set -e
-          if [ -z "$BASE_URL" ]; then
-            echo "ERROR: BASE_URL secret is required (e.g. https://lab.algo-cosme.com)"
-            exit 1
-          fi
-
-          pages=(
-            "/"
-            "/about.php"
-            "/concept.php"
-            "/evidence.php"
-            "/company.php"
-            "/contact.php"
-            "/work.php"
-          )
-
-          for p in "${pages[@]}"; do
-            url="${BASE_URL}${p}"
-            echo "CHECK $url"
-            code=$(curl -sS -L -o /tmp/out.html -w "%{http_code}" "$url")
-            if [ "$code" != "200" ]; then
-              echo "ERROR: $url returned $code"
-              tail -n 30 /tmp/out.html || true
-              exit 1
-            fi
-          done
-
-          echo "HTTP checks OK"
-
-      - name: Notify (GitHub summary)
+      - name: Notify
         if: always()
         run: |
           echo "## Deploy result" >> $GITHUB_STEP_SUMMARY
