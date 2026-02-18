@@ -1,31 +1,36 @@
-<!DOCTYPE html>
-<html lang="ja">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CONCEPT | ALGO Inc.</title>
-  <link rel="stylesheet" href="./assets/css/main.css?v=<?php echo time(); ?>
-<?php include __DIR__ . "/components/layout_open.php"; ?>
-  <?php include __DIR__ . "/components/head.php"; ?>
-</head>
-<body class="page-concept">
-<div class="algo-site">
-  <?php include __DIR__ . "/components/header.php"; ?>
+<?php
+$page_title   = 'CONCEPT';
+$page_eyebrow = 'CONCEPT';
+$page_lead    = '幹細胞由来の「濾液」を活用した、新しい無細胞療法のご紹介です。';
+$page_prev    = null;
+$page_next    = ['url' => './evidence.php', 'label' => 'EVIDENCE'];
 
-  <main>
-    <section class="grid-row h-480">
-      <div class="u-4">
-        <div class="inner-pad-center" style="align-items:center; text-align:center;">
-          <div class="addr-tag">CONCEPT</div>
-          <h1 style="font-size:32px; letter-spacing:0.4em;">CONCEPT</h1>
-          <p style="margin-top:20px; color:#888; font-size:12px; letter-spacing:0.2em;">準備中</p>
-        </div>
-      </div>
-    </section>
-  </main>
+ob_start(); ?>
 
-  <?php include __DIR__ . "/components/footer.php"; ?>
-</div>
-</body>
-</html>
-<?php include __DIR__ . "/components/layout_close.php"; ?>
+<h2>無細胞療法とは</h2>
+<p>
+  無細胞療法は、幹細胞そのものを投与するのではなく、幹細胞が産生する成長因子やサイトカインなどの
+  有用成分を含む「濾液（ろえき）」を活用するアプローチです。細胞を直接投与しないため、
+  がん化リスクの低減が期待されています。
+</p>
+
+<h2>点鼻タイプの特徴</h2>
+<p>
+  脂肪組織や骨髄由来の間葉系幹細胞を高度に培養・濾過し、得られた上清液を点鼻投与する製剤です。
+  鼻腔粘膜は毛細血管が豊富であり、有用成分が効率よく吸収される経路として注目されています。
+</p>
+<ul>
+  <li>非侵襲的な投与方法により、患者さまの負担軽減が見込まれます</li>
+  <li>保存・製剤化が容易で、医療機関での取り扱いがしやすい設計です</li>
+  <li>細胞そのものを含まないため、品質の均一性を保ちやすいとされています</li>
+</ul>
+
+<h2>従来の細胞療法との違い</h2>
+<p>
+  従来の幹細胞療法では、生きた細胞を体内に投与するため、細胞の生存率や分化の制御が課題と
+  されてきました。無細胞療法では、有用な分泌因子のみを利用するため、これらの課題に対する
+  新たなアプローチとして研究が進められています。
+</p>
+
+<?php $page_content = ob_get_clean(); ?>
+<?php include __DIR__ . '/components/page-template.php'; ?>

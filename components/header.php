@@ -1,4 +1,5 @@
 <link rel="stylesheet" href="./assets/css/design-system.css">
+<link rel="stylesheet" href="./assets/css/page.css">
 <header class="algo-header">
   <div class="algo-header__inner">
 

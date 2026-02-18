@@ -1,31 +1,36 @@
-<!DOCTYPE html>
-<html lang="ja">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>EVIDENCE | ALGO Inc.</title>
-  <link rel="stylesheet" href="./assets/css/main.css?v=<?php echo time(); ?>
-<?php include __DIR__ . "/components/layout_open.php"; ?>
-  <?php include __DIR__ . "/components/head.php"; ?>
-</head>
-<body class="page-evidence">
-<div class="algo-site">
-  <?php include __DIR__ . "/components/header.php"; ?>
+<?php
+$page_title   = 'EVIDENCE';
+$page_eyebrow = 'EVIDENCE & SAFETY';
+$page_lead    = '安全性と品質管理に関する情報をご紹介します。';
+$page_prev    = ['url' => './concept.php', 'label' => 'CONCEPT'];
+$page_next    = ['url' => './about.php', 'label' => 'ABOUT'];
 
-  <main>
-    <section class="grid-row h-480">
-      <div class="u-4">
-        <div class="inner-pad-center" style="align-items:center; text-align:center;">
-          <div class="addr-tag">EVIDENCE</div>
-          <h1 style="font-size:32px; letter-spacing:0.4em;">EVIDENCE</h1>
-          <p style="margin-top:20px; color:#888; font-size:12px; letter-spacing:0.2em;">準備中</p>
-        </div>
-      </div>
-    </section>
-  </main>
+ob_start(); ?>
 
-  <?php include __DIR__ . "/components/footer.php"; ?>
-</div>
-</body>
-</html>
-<?php include __DIR__ . "/components/layout_close.php"; ?>
+<h2>安全性への取り組み</h2>
+<p>
+  本製品は、細胞そのものを含まない無細胞製剤です。幹細胞由来の濾液を高度な
+  フィルトレーション工程で処理し、不要な細胞成分を除去しています。
+  これにより、細胞移植に伴うがん化リスクの低減が期待されています。
+</p>
+
+<h2>製造プロセス</h2>
+<p>
+  GMP（医薬品製造管理基準）に準じた管理体制のもと、以下の工程で製造されています。
+</p>
+<ul>
+  <li>ドナースクリーニング：感染症検査等による安全性確認</li>
+  <li>細胞培養：無血清培地を用いた間葉系幹細胞の培養</li>
+  <li>濾過・精製：多段階フィルトレーションによる上清液の精製</li>
+  <li>品質検査：無菌試験、エンドトキシン試験等の実施</li>
+  <li>充填・包装：クリーンルーム環境での最終製剤化</li>
+</ul>
+
+<h2>品質管理</h2>
+<p>
+  ロットごとに品質検査を実施し、規格に適合した製品のみを出荷しています。
+  トレーサビリティの確保により、製造から医療機関への納品まで一貫した管理を行っています。
+</p>
+
+<?php $page_content = ob_get_clean(); ?>
+<?php include __DIR__ . '/components/page-template.php'; ?>

@@ -1,0 +1,112 @@
+/* ============================================================
+   PAGE — 2nd-level page styles
+   ============================================================ */
+
+/* ── Breadcrumb ── */
+.page-breadcrumb {
+  padding-top: calc(100px + var(--sp-5)); /* fixed header offset + gap */
+  padding-bottom: var(--sp-4);
+  font-size: var(--fs-caption);
+  color: var(--text-tertiary);
+  display: flex;
+  align-items: center;
+  gap: var(--sp-2);
+}
+.page-breadcrumb a {
+  color: var(--text-secondary);
+  text-decoration: none;
+}
+.page-breadcrumb a:hover {
+  color: var(--accent);
+}
+
+/* ── Page Hero ── */
+.page-hero {
+  padding-block: var(--sp-11) var(--sp-10);
+}
+
+/* ── Prose (content typography) ── */
+.prose h2 {
+  font-family: var(--ff-display);
+  font-size: var(--fs-h2);
+  font-weight: var(--fw-semibold);
+  line-height: var(--lh-heading);
+  letter-spacing: var(--ls-tight);
+  margin-top: var(--sp-10);
+  margin-bottom: var(--sp-5);
+}
+.prose h3 {
+  font-family: var(--ff-display);
+  font-size: var(--fs-h3);
+  font-weight: var(--fw-semibold);
+  line-height: var(--lh-heading);
+  margin-top: var(--sp-8);
+  margin-bottom: var(--sp-4);
+}
+.prose p {
+  font-size: var(--fs-body);
+  line-height: var(--lh-loose);
+  color: var(--text-secondary);
+  margin-bottom: var(--sp-5);
+}
+.prose ul,
+.prose ol {
+  padding-left: var(--sp-5);
+  margin-bottom: var(--sp-5);
+  color: var(--text-secondary);
+  line-height: var(--lh-loose);
+}
+.prose li {
+  margin-bottom: var(--sp-2);
+}
+.prose table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: var(--sp-6);
+  font-size: var(--fs-body);
+}
+.prose th,
+.prose td {
+  padding: var(--sp-4) var(--sp-5);
+  border-bottom: 1px solid var(--border-light);
+  text-align: left;
+}
+.prose th {
+  font-weight: var(--fw-semibold);
+  color: var(--text-primary);
+  white-space: nowrap;
+  width: 30%;
+}
+.prose td {
+  color: var(--text-secondary);
+}
+.prose > *:first-child {
+  margin-top: 0;
+}
+
+/* ── Page Nav (prev / next) ── */
+.page-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-block: var(--sp-8);
+  border-top: 1px solid var(--border-light);
+  margin-bottom: var(--sp-8);
+}
+.page-nav__prev,
+.page-nav__next {
+  min-width: 0;
+}
+.page-nav .c-btn--ghost::after {
+  content: none;
+}
+
+/* ── Mobile ── */
+@media (max-width: 768px) {
+  .page-breadcrumb {
+    padding-top: calc(80px + var(--sp-4));
+  }
+  .page-hero {
+    padding-block: var(--sp-9) var(--sp-8);
+  }
+}
