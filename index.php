@@ -1,5 +1,6 @@
 <?php
 $page_title = "HOME";
+$page_description = "ALGO Inc. — 幹細胞点鼻タイプ。再生医療の可能性を日常へ。医療機関向け幹細胞由来製品の情報サイトです。";
 
 // Load work data
 $work_json = file_get_contents(__DIR__ . '/data/work.json');
@@ -18,6 +19,7 @@ ksort($works, SORT_NATURAL);
   <link rel="stylesheet" href="./assets/css/design-system.css?v=<?php echo time(); ?>">
   <link rel="stylesheet" href="./assets/css/main.css?v=<?php echo time(); ?>">
   <title><?php echo $page_title; ?></title>
+  <?php include __DIR__ . '/components/head-meta.php'; ?>
 </head>
 <body>
 

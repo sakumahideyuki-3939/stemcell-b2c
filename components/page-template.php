@@ -4,6 +4,9 @@
 //   $page_title, $page_eyebrow, $page_lead,
 //   $page_content, $page_prev, $page_next
 ?>
+<?php
+if (!isset($page_description) && isset($page_lead)) { $page_description = $page_lead; }
+?>
 <!doctype html>
 <html lang="ja">
 <head>
@@ -16,6 +19,7 @@
   <link rel="stylesheet" href="./assets/css/page.css?v=<?php echo time(); ?>">
   <link rel="stylesheet" href="./assets/css/main.css?v=<?php echo time(); ?>">
   <title><?php echo htmlspecialchars($page_title, ENT_QUOTES, 'UTF-8'); ?> | ALGO Inc.</title>
+  <?php include __DIR__ . '/head-meta.php'; ?>
 </head>
 <body>
 

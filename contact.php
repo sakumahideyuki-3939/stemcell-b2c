@@ -1,4 +1,7 @@
-<?php $page_title = 'CONTACT'; ?>
+<?php
+$page_title = 'CONTACT';
+$page_description = '製品の詳細や導入に関するお問い合わせフォームです。';
+?>
 <!doctype html>
 <html lang="ja">
 <head>
@@ -11,6 +14,7 @@
   <link rel="stylesheet" href="./assets/css/page.css?v=<?php echo time(); ?>">
   <link rel="stylesheet" href="./assets/css/main.css?v=<?php echo time(); ?>">
   <title>CONTACT | ALGO Inc.</title>
+  <?php include __DIR__ . '/components/head-meta.php'; ?>
 </head>
 <body>
 

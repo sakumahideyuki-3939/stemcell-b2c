@@ -1,5 +1,6 @@
 <?php
 $page_title = 'WORKS';
+$page_description = 'ALGO Inc. の導入実績一覧です。';
 
 // Load work data
 $work_json = file_get_contents(__DIR__ . '/data/work.json');
@@ -19,6 +20,7 @@ ksort($works, SORT_NATURAL);
   <link rel="stylesheet" href="./assets/css/page.css?v=<?php echo time(); ?>">
   <link rel="stylesheet" href="./assets/css/main.css?v=<?php echo time(); ?>">
   <title><?php echo $page_title; ?> | ALGO Inc.</title>
+  <?php include __DIR__ . '/components/head-meta.php'; ?>
 </head>
 <body>
 

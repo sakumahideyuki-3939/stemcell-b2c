@@ -21,6 +21,7 @@ $next_id = ($pos !== false && $pos < count($ids) - 1) ? $ids[$pos + 1] : null;
 
 $page_title = $work['title'];
 $num = sprintf('%02d', $work_id);
+$page_description = $work['title'] . ' — ' . mb_substr($work['text'], 0, 80, 'UTF-8');
 ?>
 <!doctype html>
 <html lang="ja">
@@ -34,6 +35,7 @@ $num = sprintf('%02d', $work_id);
   <link rel="stylesheet" href="./assets/css/page.css?v=<?php echo time(); ?>">
   <link rel="stylesheet" href="./assets/css/main.css?v=<?php echo time(); ?>">
   <title><?php echo htmlspecialchars($page_title, ENT_QUOTES, 'UTF-8'); ?> | ALGO Inc.</title>
+  <?php include __DIR__ . '/head-meta.php'; ?>
 </head>
 <body>
 
