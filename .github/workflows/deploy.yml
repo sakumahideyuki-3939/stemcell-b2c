@@ -11,13 +11,17 @@ jobs:
         uses: actions/checkout@v4
 
       - name: FTP Deploy
-        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        uses: sand4rt/ftp-deployer@v1.8
         with:
-          server: ${{ secrets.FTP_SERVER }}
+          sftp: false
+          host: ${{ secrets.FTP_SERVER }}
+          port: 21
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
-          server-dir: ${{ secrets.DEPLOY_PATH }}
-          protocol: ftp
+          remote_folder: ${{ secrets.DEPLOY_PATH }}
+          local_folder: ./
+          cleanup: false
+          pasv: true
 
       - name: Notify
         if: always()
