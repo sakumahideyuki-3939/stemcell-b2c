@@ -1,6 +1,6 @@
 <?php
-$page_title = 'WORKS';
-$page_description = 'ALGO Inc. の導入実績一覧です。';
+$page_title = 'あなたのペースで、ひとつずつ。';
+$page_description = '幹細胞治療を検討するための8つのコンテンツ。知ることから始めましょう。';
 
 // Load work data
 $work_json = file_get_contents(__DIR__ . '/data/work.json');
@@ -38,9 +38,9 @@ ksort($works, SORT_NATURAL);
 <!-- Page Hero -->
 <section class="page-hero l-section--sunken">
   <div class="l-container t-center">
-    <p class="t-micro">WORKS</p>
-    <h1 class="t-h1" style="margin-top:var(--sp-3);">導入実績</h1>
-    <p class="t-body-lg t-secondary" style="margin-top:var(--sp-4);max-width:640px;margin-inline:auto;">これまでの導入事例をご紹介します。</p>
+    <p class="t-micro">CONTENTS</p>
+    <h1 class="t-h1" style="margin-top:var(--sp-3);">あなたのペースで、ひとつずつ。</h1>
+    <p class="t-body-lg t-secondary" style="margin-top:var(--sp-4);max-width:640px;margin-inline:auto;">知ることから始まる8つのステップ。気になるところから、自由にお読みください。</p>
   </div>
 </section>
 
@@ -52,7 +52,7 @@ ksort($works, SORT_NATURAL);
       <a href="./work<?php echo sprintf('%02d', (int)$id); ?>.php" class="c-card c-card--compact reveal" style="text-decoration:none;color:inherit;">
         <img class="c-card__image" src="./assets/img/work/work-<?php echo (int)$id; ?>.jpg" alt="<?php echo htmlspecialchars($w['title'], ENT_QUOTES, 'UTF-8'); ?>">
         <div class="c-card__body">
-          <div class="c-card__eyebrow">WORK <?php echo sprintf('%02d', (int)$id); ?></div>
+          <div class="c-card__eyebrow"><?php echo htmlspecialchars(isset($w['cat']) ? $w['cat'] : 'WORK ' . sprintf('%02d', (int)$id), ENT_QUOTES, 'UTF-8'); ?></div>
           <div class="c-card__title"><?php echo htmlspecialchars($w['title'], ENT_QUOTES, 'UTF-8'); ?></div>
           <p class="c-card__text"><?php echo htmlspecialchars($w['text'], ENT_QUOTES, 'UTF-8'); ?></p>
         </div>
@@ -65,10 +65,10 @@ ksort($works, SORT_NATURAL);
 <!-- CTA Band -->
 <section class="l-section l-section--dark">
   <div class="l-container t-center">
-    <h2 class="t-h2" style="color:var(--text-inverse);">導入をご検討の医療機関さまへ</h2>
-    <p class="t-body-lg" style="color:var(--text-inverse);opacity:0.72;margin-top:var(--sp-4);max-width:600px;margin-inline:auto;">製品の詳細やお見積もりなど、お気軽にお問い合わせください。</p>
+    <h2 class="t-h2" style="color:var(--text-inverse);">まずは、話すことから。</h2>
+    <p class="t-body-lg" style="color:var(--text-inverse);opacity:0.72;margin-top:var(--sp-4);max-width:600px;margin-inline:auto;">決める前に、整理する。押し売りのない相談窓口として、お気軽にご利用ください。</p>
     <div style="margin-top:var(--sp-7);">
-      <a href="./contact.php" class="c-btn c-btn--primary c-btn--lg">お問い合わせ</a>
+      <a href="./contact.php" class="c-btn c-btn--primary c-btn--lg">無料相談を予約する</a>
     </div>
   </div>
 </section>
