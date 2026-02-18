@@ -89,6 +89,7 @@ ksort($works, SORT_NATURAL);
 }
 @media(max-width:768px){
   .hero-slider__track{ height:560px; }
+  .hero-slider .t-body-lg br{ display:none; }
 }
 </style>
 

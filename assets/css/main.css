@@ -181,6 +181,9 @@ body.drawer-open {
 }
 .algo-drawer__inner {
   text-align: center;
+  max-height: 100vh;
+  overflow-y: auto;
+  padding: var(--sp-10) var(--sp-5);
 }
 .algo-drawer__close {
   position: absolute;
