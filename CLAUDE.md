@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-Japanese-language B2C website for ALGO Inc. (幹細胞点鼻タイプ — stem cell nasal spray products). Traditional server-side PHP with no frameworks, no build tools, and no package managers. All content is in Japanese.
+Japanese-language B2C website for ALGO Inc. — 幹細胞治療（stem cell therapy）の情報整理・教育コンテンツサイト。消費者が後悔のない判断をできるよう、仕組み・安全性・費用・根拠などを8つのコンテンツで整理。Traditional server-side PHP with no frameworks, no build tools, and no package managers. All content is in Japanese.
 
 ## Development
 
@@ -33,30 +33,31 @@ There are no automated tests. CI runs PHP lint, guardrail pattern checks, and po
 ### Page composition pattern
 
 Pages include shared components from `components/`:
-- `header.php` — global nav (included at top of every page)
-- `footer.php` — global footer (included at bottom)
-- `layout_open.php` / `layout_close.php` — HTML boilerplate (`<head>`, Google Fonts, CSS link, `<body>`)
+- `header.php` — global nav (5 items + CTA)
+- `footer.php` — global footer with 4-column grid
+- `head-meta.php` — OGP / meta tags (included inside `<head>`)
+- `page-template.php` — standard 2nd-level page template. Variables: `$page_title`, `$page_eyebrow`, `$page_lead`, `$page_content` (via `ob_start()`/`ob_get_clean()`), `$page_prev`, `$page_next`
+- `work-detail-template.php` — work detail page template. Extends page-template with `$work_page_title`, `$work_lead`, `$work_content`. Eyebrow from `work.json` `cat` field. Image section conditionally hidden when `$work_content` is set.
 
-Some pages (like `index.php`) use `header.php`/`footer.php` directly without the `layout_open`/`layout_close` wrappers. This inconsistency is intentional for now.
+`index.php` manages its own `<head>` and includes `header.php`/`footer.php` directly. Other pages use either `page-template.php` or `work-detail-template.php`.
 
-### Layout system
+### CSS architecture (Apple-inspired design system)
 
-- 1920px max-width container (`.index-1920`)
-- 960px baseline section height
-- CSS grid for homepage sections (concept grids, work grid)
-- Mobile breakpoint at 959px
-- Styles are in `assets/css/main.css` plus per-page `<style>` blocks in PHP files
+Three-layer CSS, no per-page `<style>` blocks:
+- `design-system.css` — design tokens as CSS custom properties (`--color-*`, `--fs-*`, `--sp-*`, `--radius-*`). Warm greys, trust blue `#0071E3`.
+- `page.css` — 2nd-level page styles (breadcrumb, hero, prose, form, prev/next nav)
+- `main.css` — homepage-specific components (slider, mosaic grid, work cards, CTA bands)
 
 ### Data layer
 
-Work items are stored in `data/work.json` (flat JSON object keyed by string IDs "1"–"8"). The admin panel (`admin/`) reads and writes this file with `file_get_contents`/`file_put_contents` using `LOCK_EX`.
+Work items are stored in `data/work.json` (flat JSON object keyed by string IDs "1"–"8", each with `cat`, `title`, `text` fields). The admin panel (`admin/`) reads and writes this file with `file_get_contents`/`file_put_contents` using `LOCK_EX`.
 
 ### Key directories
 
-- `components/` — reusable PHP includes (header, footer, layout, CTAs, breadcrumbs)
-- `pages/blocks/`, `pages/slides/`, `pages/works/` — sub-templates included by main pages
+- `components/` — reusable PHP includes (header, footer, templates, CTAs, meta)
+- `pages/` — legacy sub-templates (blocks, slides, works); homepage still references some
 - `admin/` — simple CRUD for work items (list → edit → save via POST)
-- `assets/css/` — single `main.css` stylesheet
+- `assets/css/` — `design-system.css`, `page.css`, `main.css`
 - `assets/img/work/` — work portfolio images
 
 ## Conventions
@@ -65,7 +66,7 @@ Work items are stored in `data/work.json` (flat JSON object keyed by string IDs 
 - URL parameters use `rawurlencode()`
 - JSON is written with `JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES`
 - CSS cache busting via `?v=<?php echo time(); ?>` query string
-- Several pages are stubs showing "準備中" (under preparation): about, concept, evidence
+- All pages have finalized Japanese copy (no stubs remain)
 - Backup files (`*.bak_*`, `*.fix_*`) are gitignored
 
 ## Project Rules
