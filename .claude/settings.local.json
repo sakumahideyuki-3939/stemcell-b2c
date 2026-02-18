@@ -10,7 +10,11 @@
       "Bash(php -l:*)",
       "Bash(grep:*)",
       "Bash(for:*)",
-      "Bash(php -r:*)"
+      "Bash(php -r:*)",
+      "Bash(git -C /Users/sakumahideyuki/Desktop/_sites/stemcell-b2c__edit remote:*)",
+      "Bash(gh run list:*)",
+      "Bash(brew list:*)",
+      "WebFetch(domain:api.github.com)"
     ]
   }
 }

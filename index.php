@@ -87,6 +87,19 @@ ksort($works, SORT_NATURAL);
   background:var(--text-primary);
   transform:scale(1.3);
 }
+.hero-slider__slide--bg-2{
+  background:url('./assets/img/hero-slide-2.jpg') center/cover no-repeat;
+}
+.hero-slider__slide--bg-2::after{
+  content:'';
+  position:absolute;
+  inset:0;
+  background:rgba(245,245,247,0.75);
+}
+.hero-slider__slide--bg-2 > .l-container{
+  position:relative;
+  z-index:1;
+}
 @media(max-width:768px){
   .hero-slider__track{ height:560px; }
   .hero-slider .t-body-lg br{ display:none; }
@@ -108,7 +121,7 @@ ksort($works, SORT_NATURAL);
         </div>
       </div>
     </div>
-    <div class="hero-slider__slide" style="background-color:var(--surface-sunken);">
+    <div class="hero-slider__slide hero-slider__slide--bg-2">
       <div class="l-container t-center">
         <p class="t-micro">BEYOND SUPERNATANT</p>
         <h2 class="t-hero" style="margin-top:var(--sp-4);">上清だけでは届かない領域へ。</h2>
