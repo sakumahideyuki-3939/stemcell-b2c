@@ -100,30 +100,30 @@ ksort($works, SORT_NATURAL);
     <div class="hero-slider__slide is-active" style="background-color:var(--surface-recessed);">
       <div class="l-container t-center">
         <p class="t-micro">STEMCELL NASAL TYPE</p>
-        <h1 class="t-hero" style="margin-top:var(--sp-4);">幹細胞点鼻タイプ</h1>
-        <p class="t-body-lg t-secondary" style="margin-top:var(--sp-5);max-width:600px;margin-inline:auto;">再生医療の可能性を日常へ。<br>医療機関向け幹細胞由来製品の情報を掲載しています。</p>
+        <h1 class="t-hero" style="margin-top:var(--sp-4);">迷いを減らす、幹細胞治療の入口。</h1>
+        <p class="t-body-lg t-secondary" style="margin-top:var(--sp-5);max-width:600px;margin-inline:auto;">幹細胞治療に興味はある。でも情報が多すぎて、何を信じていいか分からない。<br>このページでは、期待値を上げすぎずに「選び方」と「相談の流れ」を整理し、あなたに合う受診先へつなげます。</p>
         <div style="margin-top:var(--sp-7);">
-          <a href="./concept.php" class="c-btn c-btn--primary c-btn--lg">CONCEPT</a>
+          <a href="./concept.php" class="c-btn c-btn--primary c-btn--lg">相談の流れを見る</a>
         </div>
       </div>
     </div>
     <div class="hero-slider__slide" style="background-color:var(--surface-sunken);">
       <div class="l-container t-center">
-        <p class="t-micro">EVIDENCE &amp; SAFETY</p>
-        <h2 class="t-hero" style="margin-top:var(--sp-4);">安全性とエビデンス</h2>
-        <p class="t-body-lg t-secondary" style="margin-top:var(--sp-5);max-width:600px;margin-inline:auto;">臨床データに基づく高い安全性。<br>がん化リスクを抑えた無細胞療法。</p>
+        <p class="t-micro">BEYOND SUPERNATANT</p>
+        <h2 class="t-hero" style="margin-top:var(--sp-4);">上清だけでは届かない領域へ。</h2>
+        <p class="t-body-lg t-secondary" style="margin-top:var(--sp-5);max-width:600px;margin-inline:auto;">"分泌された成分だけ"ではなく、細胞内に眠るタンパク質や情報分子まで視野に入れたアプローチが注目されています。<br>大切なのは、言葉の強さではなく「説明の透明性」。納得して選ぶための基準を、ここで整えます。</p>
         <div style="margin-top:var(--sp-7);">
-          <a href="./evidence.php" class="c-btn c-btn--primary c-btn--lg">EVIDENCE</a>
+          <a href="./evidence.php" class="c-btn c-btn--primary c-btn--lg">詳しく見る</a>
         </div>
       </div>
     </div>
     <div class="hero-slider__slide" style="background-color:var(--surface-recessed);">
       <div class="l-container t-center">
-        <p class="t-micro">FOR MEDICAL INSTITUTIONS</p>
-        <h2 class="t-hero" style="margin-top:var(--sp-4);">医療機関の皆さまへ</h2>
-        <p class="t-body-lg t-secondary" style="margin-top:var(--sp-5);max-width:600px;margin-inline:auto;">導入から運用まで、トータルサポート。<br>お気軽にご相談ください。</p>
+        <p class="t-micro">GETTING STARTED</p>
+        <h2 class="t-hero" style="margin-top:var(--sp-4);">あなたに合う進み方を、先に決める。</h2>
+        <p class="t-body-lg t-secondary" style="margin-top:var(--sp-5);max-width:600px;margin-inline:auto;">この領域は、調べるほど情報が増えて迷いやすいです。<br>だからこそ、最初に「何を目的に」「何が不安で」「どこで判断するか」を決めると、検討が一気にラクになります。</p>
         <div style="margin-top:var(--sp-7);">
-          <a href="./contact.php" class="c-btn c-btn--primary c-btn--lg">CONTACT</a>
+          <a href="./contact.php" class="c-btn c-btn--primary c-btn--lg">目的別ナビへ</a>
         </div>
       </div>
     </div>
@@ -140,49 +140,49 @@ ksort($works, SORT_NATURAL);
   <div class="l-container">
     <div class="t-center" style="margin-bottom:var(--sp-9);">
       <p class="t-micro">CONCEPT</p>
-      <h2 class="t-h1" style="margin-top:var(--sp-3);">製品コンセプト</h2>
+      <h2 class="t-h1" style="margin-top:var(--sp-3);">選ぶ前に、整える。</h2>
     </div>
     <div class="l-grid-3 reveal-stagger">
       <div class="c-card c-card--glass reveal">
         <div class="c-card__body t-center">
           <div class="c-card__eyebrow">CONCEPT 01</div>
-          <div class="c-card__title">無細胞療法</div>
-          <p class="c-card__text">細胞そのものを投与しないため、がん化リスクを抑えた安全な治療法です。</p>
+          <div class="c-card__title">選ぶ前に、仕組みを知る。</div>
+          <p class="c-card__text">幹細胞関連のケアにはいくつかの系統があります。その中で「生搾り（Lysate）」は、幹細胞を物理的に処理して、内部成分まで含む"濾液"として設計された考え方です。</p>
         </div>
       </div>
       <div class="c-card c-card--glass reveal">
         <div class="c-card__body t-center">
           <div class="c-card__eyebrow">CONCEPT 02</div>
-          <div class="c-card__title">高度濾過技術</div>
-          <p class="c-card__text">脂肪組織・骨髄由来の幹細胞を高度に濾過した「濾液」を活用します。</p>
+          <div class="c-card__title">根拠は、言い切りではなく提示。</div>
+          <p class="c-card__text">どんな医療でも、重要なのは「すごい」ではなく「何が分かっていて、何が分かっていないか」。研究・特許・学会発表などの情報は、万能な保証ではありませんが、説明の土台になります。</p>
         </div>
       </div>
       <div class="c-card c-card--glass reveal">
         <div class="c-card__body t-center">
           <div class="c-card__eyebrow">CONCEPT 03</div>
-          <div class="c-card__title">簡便な投与</div>
-          <p class="c-card__text">点鼻タイプにより、手軽に投与できる新しい治療選択肢を提供します。</p>
+          <div class="c-card__title">"期待しすぎない"が、後悔を減らす。</div>
+          <p class="c-card__text">大切なのは、あなたの目的に対して、どんな説明が必要かを整理すること。このページは、受診の判断を急がせるためではなく、「納得して選ぶ」ための下準備を整える場所です。</p>
         </div>
       </div>
       <div class="c-card c-card--glass reveal">
         <div class="c-card__body t-center">
-          <div class="c-card__eyebrow">EVIDENCE</div>
-          <div class="c-card__title">臨床エビデンス</div>
-          <p class="c-card__text">臨床データに基づく高い安全性と有効性を実証しています。</p>
+          <div class="c-card__eyebrow">CONCERNS</div>
+          <div class="c-card__title">不安の中心は、いつも同じ。</div>
+          <p class="c-card__text">相談で多い不安は、だいたい3つに集約されます。安全性、費用、自分に合うか。当サイトは、これらを「短時間で整理」し、受診先で聞くべき質問リストまで落とし込みます。</p>
         </div>
       </div>
       <div class="c-card c-card--glass reveal">
         <div class="c-card__body t-center">
-          <div class="c-card__eyebrow">BEAUTY</div>
-          <div class="c-card__title">美容への応用</div>
-          <p class="c-card__text">再生医療技術を美容分野にも展開し、新たな可能性を開きます。</p>
+          <div class="c-card__eyebrow">VOICES</div>
+          <div class="c-card__title">相談者の声</div>
+          <p class="c-card__text">「情報が整理できて、何を確認すべきかが分かった」「売り込みではなく、判断基準を一緒に作ってもらえた」まずは"焦らずに整える"。そこからで十分間に合います。</p>
         </div>
       </div>
       <div class="c-card c-card--glass reveal">
         <div class="c-card__body t-center">
-          <div class="c-card__eyebrow">SUPPORT</div>
-          <div class="c-card__title">導入サポート</div>
-          <p class="c-card__text">医療機関への導入から運用まで、トータルでサポートいたします。</p>
+          <div class="c-card__eyebrow">CONSULT</div>
+          <div class="c-card__title">相談→紹介まで、ここで完結。</div>
+          <p class="c-card__text">無料相談では、あなたの目的・地域・希望時期をもとに、候補となる医療機関の情報を整理してご案内します。押し売りのない相談窓口としてご利用ください。</p>
         </div>
       </div>
     </div>
@@ -194,14 +194,14 @@ ksort($works, SORT_NATURAL);
   <div class="l-container l-container--wide">
     <div class="t-center" style="margin-bottom:var(--sp-9);">
       <p class="t-micro">WORKS</p>
-      <h2 class="t-h1" style="margin-top:var(--sp-3);">導入実績</h2>
+      <h2 class="t-h1" style="margin-top:var(--sp-3);">コンテンツ一覧</h2>
     </div>
     <div class="l-grid-4 reveal-stagger">
       <?php foreach ($works as $id => $w): ?>
       <a href="./work<?php echo sprintf('%02d', (int)$id); ?>.php" class="c-card c-card--compact reveal" style="text-decoration:none;color:inherit;">
         <img class="c-card__image" src="./assets/img/work/work-<?php echo (int)$id; ?>.jpg" alt="<?php echo htmlspecialchars($w['title'], ENT_QUOTES, 'UTF-8'); ?>">
         <div class="c-card__body">
-          <div class="c-card__eyebrow">WORK <?php echo sprintf('%02d', (int)$id); ?></div>
+          <div class="c-card__eyebrow"><?php echo htmlspecialchars(isset($w['cat']) ? $w['cat'] : 'WORK ' . sprintf('%02d', (int)$id), ENT_QUOTES, 'UTF-8'); ?></div>
           <div class="c-card__title"><?php echo htmlspecialchars($w['title'], ENT_QUOTES, 'UTF-8'); ?></div>
           <p class="c-card__text"><?php echo htmlspecialchars($w['text'], ENT_QUOTES, 'UTF-8'); ?></p>
         </div>

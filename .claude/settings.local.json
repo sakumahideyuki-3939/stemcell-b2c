@@ -9,7 +9,8 @@
       "Bash(done)",
       "Bash(php -l:*)",
       "Bash(grep:*)",
-      "Bash(for:*)"
+      "Bash(for:*)",
+      "Bash(php -r:*)"
     ]
   }
 }
