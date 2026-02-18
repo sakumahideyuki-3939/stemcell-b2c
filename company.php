@@ -1,5 +1,5 @@
 <?php
-$page_title   = 'COMPANY';
+$page_title   = '会社概要';
 $page_eyebrow = 'COMPANY';
 $page_lead    = '株式会社アルゴの会社情報です。';
 $page_prev    = null;

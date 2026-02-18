@@ -1,6 +1,7 @@
 <?php
 // components/work-detail-template.php
 // Caller sets: $work_id (int, 1-8)
+// Optional: $work_page_title, $work_lead, $work_content
 
 $data_file = __DIR__ . '/../data/work.json';
 $works = [];
@@ -19,9 +20,10 @@ $pos = array_search($id_str, $ids);
 $prev_id = ($pos !== false && $pos > 0) ? $ids[$pos - 1] : null;
 $next_id = ($pos !== false && $pos < count($ids) - 1) ? $ids[$pos + 1] : null;
 
-$page_title = $work['title'];
+$page_title = isset($work_page_title) ? $work_page_title : $work['title'];
 $num = sprintf('%02d', $work_id);
-$page_description = $work['title'] . ' — ' . mb_substr($work['text'], 0, 80, 'UTF-8');
+$eyebrow = isset($work['cat']) ? $work['cat'] : 'WORK ' . $num;
+$page_description = $page_title . ' — ' . mb_substr($work['text'], 0, 80, 'UTF-8');
 ?>
 <!doctype html>
 <html lang="ja">
@@ -55,23 +57,32 @@ $page_description = $work['title'] . ' — ' . mb_substr($work['text'], 0, 80, '
 <!-- Page Hero -->
 <section class="page-hero l-section--sunken">
   <div class="l-container t-center">
-    <p class="t-micro">WORK <?php echo $num; ?></p>
+    <p class="t-micro"><?php echo htmlspecialchars($eyebrow, ENT_QUOTES, 'UTF-8'); ?></p>
     <h1 class="t-h1" style="margin-top:var(--sp-3);"><?php echo htmlspecialchars($page_title, ENT_QUOTES, 'UTF-8'); ?></h1>
+    <?php if (!empty($work_lead)): ?>
+    <p class="t-body-lg t-secondary" style="margin-top:var(--sp-4);max-width:640px;margin-inline:auto;"><?php echo htmlspecialchars($work_lead, ENT_QUOTES, 'UTF-8'); ?></p>
+    <?php endif; ?>
   </div>
 </section>
 
+<?php if (!isset($work_content)): ?>
 <!-- Work Image -->
 <section class="l-section">
   <div class="l-container" style="max-width:960px;">
     <img src="./assets/img/work/work-<?php echo $work_id; ?>.jpg" alt="<?php echo htmlspecialchars($page_title, ENT_QUOTES, 'UTF-8'); ?>" style="width:100%;border-radius:var(--radius-lg);">
   </div>
 </section>
+<?php endif; ?>
 
 <!-- Work Content -->
 <section class="l-section--compact">
   <div class="l-container l-container--narrow">
     <div class="prose">
+      <?php if (isset($work_content)): ?>
+      <?php echo $work_content; ?>
+      <?php else: ?>
       <p><?php echo htmlspecialchars($work['text'], ENT_QUOTES, 'UTF-8'); ?></p>
+      <?php endif; ?>
     </div>
   </div>
 </section>

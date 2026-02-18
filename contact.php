@@ -34,7 +34,7 @@ $page_description = '製品の詳細や導入に関するお問い合わせフ�
   <div class="l-container t-center">
     <p class="t-micro">CONTACT</p>
     <h1 class="t-h1" style="margin-top:var(--sp-3);">お問い合わせ</h1>
-    <p class="t-body-lg t-secondary" style="margin-top:var(--sp-4);max-width:640px;margin-inline:auto;">製品の詳細や導入に関するご質問など、下記フォームよりお気軽にお問い合わせください。</p>
+    <p class="t-body-lg t-secondary" style="margin-top:var(--sp-4);max-width:640px;margin-inline:auto;">ご質問・ご相談は下記フォームよりお気軽にお送りください。</p>
   </div>
 </section>
 
