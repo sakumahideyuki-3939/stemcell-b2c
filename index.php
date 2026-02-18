@@ -87,6 +87,19 @@ ksort($works, SORT_NATURAL);
   background:var(--text-primary);
   transform:scale(1.3);
 }
+.hero-slider__slide--bg-1{
+  background:url('./assets/img/hero-slide-1.jpg') center/cover no-repeat;
+}
+.hero-slider__slide--bg-1::after{
+  content:'';
+  position:absolute;
+  inset:0;
+  background:rgba(245,245,247,0.75);
+}
+.hero-slider__slide--bg-1 > .l-container{
+  position:relative;
+  z-index:1;
+}
 .hero-slider__slide--bg-2{
   background:url('./assets/img/hero-slide-2.jpg') center/cover no-repeat;
 }
@@ -97,6 +110,19 @@ ksort($works, SORT_NATURAL);
   background:rgba(245,245,247,0.75);
 }
 .hero-slider__slide--bg-2 > .l-container{
+  position:relative;
+  z-index:1;
+}
+.hero-slider__slide--bg-3{
+  background:url('./assets/img/hero-slide-3.jpg') center/cover no-repeat;
+}
+.hero-slider__slide--bg-3::after{
+  content:'';
+  position:absolute;
+  inset:0;
+  background:rgba(245,245,247,0.75);
+}
+.hero-slider__slide--bg-3 > .l-container{
   position:relative;
   z-index:1;
 }
@@ -111,7 +137,7 @@ ksort($works, SORT_NATURAL);
 <!-- T1: Hero Slider -->
 <section class="hero-slider" aria-label="Hero">
   <div class="hero-slider__track">
-    <div class="hero-slider__slide is-active" style="background-color:var(--surface-recessed);">
+    <div class="hero-slider__slide hero-slider__slide--bg-1 is-active">
       <div class="l-container t-center">
         <p class="t-micro">STEMCELL NASAL TYPE</p>
         <h1 class="t-hero" style="margin-top:var(--sp-4);">迷いを減らす、幹細胞治療の入口。</h1>
@@ -131,7 +157,7 @@ ksort($works, SORT_NATURAL);
         </div>
       </div>
     </div>
-    <div class="hero-slider__slide" style="background-color:var(--surface-recessed);">
+    <div class="hero-slider__slide hero-slider__slide--bg-3">
       <div class="l-container t-center">
         <p class="t-micro">GETTING STARTED</p>
         <h2 class="t-hero" style="margin-top:var(--sp-4);">あなたに合う進み方を、先に決める。</h2>
