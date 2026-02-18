@@ -145,3 +145,34 @@
   resize: vertical;
   min-height: 160px;
 }
+
+/* ── Section boundary soft gradient ── */
+.l-section {
+  position: relative;
+}
+.l-section:not(.l-section--dark)::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 48px;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.03), transparent);
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* ── Reveal stagger timing (100ms intervals) ── */
+.reveal-stagger > .reveal:nth-child(1) { transition-delay: 0ms; }
+.reveal-stagger > .reveal:nth-child(2) { transition-delay: 100ms; }
+.reveal-stagger > .reveal:nth-child(3) { transition-delay: 200ms; }
+.reveal-stagger > .reveal:nth-child(4) { transition-delay: 300ms; }
+.reveal-stagger > .reveal:nth-child(5) { transition-delay: 400ms; }
+.reveal-stagger > .reveal:nth-child(6) { transition-delay: 500ms; }
+.reveal-stagger > .reveal:nth-child(7) { transition-delay: 600ms; }
+.reveal-stagger > .reveal:nth-child(8) { transition-delay: 700ms; }
+
+/* Image cards: slightly slower reveal */
+.c-card--compact.reveal {
+  transition-duration: 1000ms;
+}

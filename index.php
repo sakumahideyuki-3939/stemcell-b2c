@@ -43,12 +43,25 @@ ksort($works, SORT_NATURAL);
   align-items:center;
   justify-content:center;
   opacity:0;
-  transition:opacity var(--duration-slow) var(--ease-out-expo);
+  transition:opacity 800ms var(--ease-out-expo);
   pointer-events:none;
 }
 .hero-slider__slide.is-active{
   opacity:1;
   pointer-events:auto;
+}
+/* Slide text fade-up */
+.hero-slider__slide > .l-container{
+  opacity:0;
+  transform:translateY(30px);
+  transition:opacity 600ms var(--ease-out-expo),
+             transform 600ms var(--ease-out-expo);
+  transition-delay:0ms;
+}
+.hero-slider__slide.is-active > .l-container{
+  opacity:1;
+  transform:translateY(0);
+  transition-delay:200ms;
 }
 .hero-slider__dots{
   position:absolute;

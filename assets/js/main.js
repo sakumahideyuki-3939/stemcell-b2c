@@ -65,7 +65,7 @@
           observer.unobserve(entry.target);
         }
       });
-    }, { threshold: 0.15 });
+    }, { threshold: 0.1, rootMargin: '0px 0px -60px 0px' });
     reveals.forEach(function (el) { observer.observe(el); });
   } else {
     reveals.forEach(function (el) { el.classList.add('is-visible'); });

@@ -6,7 +6,8 @@
       "Bash(git push:*)",
       "Bash(for f in components/work-detail-template.php work01.php work02.php work03.php work04.php work05.php work06.php work07.php work08.php work.php company.php contact.php)",
       "Bash(do php -l \"$f\")",
-      "Bash(done)"
+      "Bash(done)",
+      "Bash(php -l:*)"
     ]
   }
 }
