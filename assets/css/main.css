@@ -62,29 +62,17 @@
 }
 
 /* ==================================================
-   BASE
+   BASE — disabled: design-system.css handles resets
 ================================================== */
-html,
-body,
-button,
-input,
-select,
-textarea{
+/*
+html,body,button,input,select,textarea{
   font-family: "Noto Sans JP", system-ui, -apple-system, "Segoe UI",
   Roboto, "Helvetica Neue", Arial,
   "Hiragino Kaku Gothic ProN", "Yu Gothic", Meiryo, sans-serif;
 }
-
-body{
-  margin: 0;
-  background: #fff;
-  color: #111;
-}
-
-img{
-  max-width: 100%;
-  display: block;
-}
+body{ margin:0; background:#fff; color:#111; }
+img{ max-width:100%; display:block; }
+*/
 
 /* 固定ヘッダー分 */
 main{
@@ -146,70 +134,30 @@ main{
 }
 
 /* ==================================================
-   INDEX LAYOUT SYSTEM
+   INDEX LAYOUT SYSTEM — disabled: replaced by design-system.css grid
 ================================================== */
-
-.page-index .index-wrap{
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
-
-.page-index .index-1920{
-  width: 1920px;
-  max-width: 100%;
-  position: relative;
-}
-
-.page-index .h-960{
-  height: 960px;
-}
-
-.page-index .grid-1920{
-  width:100%;
-  max-width:1920px;
-  margin:0 auto;
-}
-
-.page-index .col-1{ grid-column: span 1; }
-.page-index .col-2{ grid-column: span 2; }
-.page-index .col-4{ grid-column: span 4; }
-
-.page-index .row-1{ grid-row: span 1; }
-.page-index .row-2{ grid-row: span 2; }
-
-/* ブロック枠を見える化 */
-.page-index .fill{
-  width: 100%;
-  height: 100%;
-  border: 1px solid #ddd;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
-
-/* WORK画像用 */
-.page-index .grid-1920 img{
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
+/*
+.page-index .index-wrap{ width:100%; display:flex; justify-content:center; }
+.page-index .index-1920{ width:1920px; max-width:100%; position:relative; }
+.page-index .h-960{ height:960px; }
+.page-index .grid-1920{ width:100%; max-width:1920px; margin:0 auto; }
+.page-index .col-1{ grid-column:span 1; }
+.page-index .col-2{ grid-column:span 2; }
+.page-index .col-4{ grid-column:span 4; }
+.page-index .row-1{ grid-row:span 1; }
+.page-index .row-2{ grid-row:span 2; }
+.page-index .fill{ width:100%; height:100%; border:1px solid #ddd; display:flex; align-items:center; justify-content:center; text-align:center; }
+.page-index .grid-1920 img{ width:100%; height:100%; object-fit:cover; }
+*/
 
 /* ==================================================
-   FOOTER
+   FOOTER — disabled: replaced by c-footer in design-system.css
 ================================================== */
-.algo-footer__inner{
-  display: block;
-}
-
-.algo-footer__inner > *{
-  width: 100%;
-}
-
-.algo-footer__inner > * + *{
-  margin-top: 40px;
-}
+/*
+.algo-footer__inner{ display:block; }
+.algo-footer__inner > *{ width:100%; }
+.algo-footer__inner > * + *{ margin-top:40px; }
+*/
 
 /* ==================================================
    MOBILE
@@ -228,29 +176,7 @@ main{
     padding: 0 20px;
   }
 
-  .page-index .grid-1920{
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
-  }
-
-  .page-index .col-1,
-  .page-index .col-2,
-  .page-index .col-4{
-    grid-column: span 1;
-  }
-
-  .page-index .row-1,
-  .page-index .row-2{
-    grid-row: span 1;
-  }
-
-  .page-index .h-960{
-    height: auto;
-  }
-
-  .page-index .fill{
-    min-height: 300px;
-  }
+  /* index-specific mobile grid — disabled (replaced by design-system.css) */
 }
 /* =================================
    WORK PAGE (ABOUT形式固定)

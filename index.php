@@ -1,138 +1,214 @@
 <?php
 $page_title = "HOME";
-include __DIR__ . "/components/header.php";
+
+// Load work data
+$work_json = file_get_contents(__DIR__ . '/data/work.json');
+$works = json_decode($work_json, true);
+if (!is_array($works)) { $works = []; }
+ksort($works, SORT_NATURAL);
 ?>
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/design-system.css?v=<?php echo time(); ?>">
+  <link rel="stylesheet" href="./assets/css/main.css?v=<?php echo time(); ?>">
+  <title><?php echo $page_title; ?></title>
+</head>
+<body>
+
+<?php include __DIR__ . "/components/header.php"; ?>
 
 <style>
-/* ===== HEADER ===== */
-.index-section{
-  width:100%;
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  font-size:28px;
-  letter-spacing:0.2em;
-}
-.s-100{ height:100px; background:#f5f5f5; }
-.s-960{ height:960px; background:#eaeaea; }
-.s-960.alt{ background:#dedede; }
-
-/* ===== SLIDER ===== */
-.index-wrap{
-  width:100%;
-  display:flex;
-  justify-content:center;
-}
-.index-1920{
+/* ===== HERO SLIDER ===== */
+.hero-slider{
+  position:relative;
   width:100%;
   max-width:1920px;
+  margin:0 auto;
+  overflow:hidden;
 }
-.hero{height:960px;background:#d9d9d9;position:relative;overflow:hidden;}
-.hero__bg{position:absolute;inset:0;background:linear-gradient(rgba(0,0,0,0.15),rgba(0,0,0,0.15));}
-.hero__inner{position:relative;height:960px;display:flex;align-items:center;justify-content:center;text-align:center;color:#fff;}
-.hero__title{font-size:48px;letter-spacing:0.2em;font-weight:600;}
-.hero__lead{margin-top:18px;font-size:14px;line-height:1.8;letter-spacing:0.12em;opacity:0.95;}
-.hero__btn{display:inline-block;margin-top:22px;padding:12px 22px;border:1px solid rgba(255,255,255,0.85);color:#fff;text-decoration:none;font-size:12px;letter-spacing:0.2em;}
-
-/* ===== CONCEPT上 ===== */
-.concept-upper{
-  height:960px;
-  background:#fff;
+.hero-slider__track{
+  position:relative;
+  height:768px; /* 480 × 1.6 LiftKit ratio */
 }
-.concept-upper__grid{
-  display:grid;
-  grid-template-columns:1fr 1fr 2fr;
-  height:960px;
-}
-.concept-upper__box{
-  border:1px solid #eee;
+.hero-slider__slide{
+  position:absolute;
+  inset:0;
   display:flex;
-  flex-direction:column;
-  justify-content:center;
   align-items:center;
-  background:#f7f7f7;
+  justify-content:center;
+  opacity:0;
+  transition:opacity var(--duration-slow) var(--ease-out-expo);
+  pointer-events:none;
 }
-.concept-upper__box.big{
-  background:#efefef;
+.hero-slider__slide.is-active{
+  opacity:1;
+  pointer-events:auto;
 }
-
-/* ===== CONCEPT下 ===== */
-.concept-lower{
-  height:960px;
-  background:#fff;
-}
-.concept-lower__grid{
-  display:grid;
-  grid-template-columns:2fr 1fr 1fr;
-  height:960px;
-}
-.concept-lower__box{
-  border:1px solid #eee;
+.hero-slider__dots{
+  position:absolute;
+  bottom:var(--sp-7);
+  left:50%;
+  transform:translateX(-50%);
   display:flex;
-  justify-content:center;
-  align-items:center;
-  background:#f2f2f2;
+  gap:var(--sp-3);
+  z-index:2;
 }
-.concept-lower__box.big{
-  background:#e6e6e6;
+.hero-slider__dot{
+  width:10px;
+  height:10px;
+  border-radius:var(--radius-full);
+  border:none;
+  background:var(--border-heavy);
+  cursor:pointer;
+  transition:background var(--duration-fast),transform var(--duration-fast);
 }
-
-/* ===== WORK ===== */
-.work-grid{height:960px;background:#fff;}
-.work-grid__inner{display:grid;grid-template-columns:repeat(4,1fr);grid-template-rows:repeat(2,1fr);height:960px;}
-.work-grid__cell{border:1px solid #eee;display:flex;justify-content:center;align-items:center;background:#f7f7f7;font-size:48px;}
-
-/* ===== FOOTER ===== */
-.index-footer{height:960px;background:#eaeaea;}
-.index-footer__inner{height:960px;display:flex;align-items:center;justify-content:center;font-size:28px;letter-spacing:0.2em;color:#666;}
-/* ===== WORK：リンク土台（画像なし） ===== */
-.work-grid__cell a{width:100%;height:100%;display:flex;align-items:center;justify-content:center;text-decoration:none;color:#333;}
-.work-grid__cell a:hover{background:rgba(0,0,0,0.04);}
-.work-grid__cell a:focus{outline:2px solid rgba(0,0,0,0.25);outline-offset:-2px;}
-
-/* ===== CONCEPT LOWER：リンク土台 ===== */
-.concept-lower__box a{width:100%;height:100%;display:flex;align-items:center;justify-content:center;text-decoration:none;color:#333;}
-.concept-lower__box a:hover{background:rgba(0,0,0,0.04);}
-.concept-lower__box a:focus{outline:2px solid rgba(0,0,0,0.25);outline-offset:-2px;}
-
+.hero-slider__dot.is-active{
+  background:var(--text-primary);
+  transform:scale(1.3);
+}
+@media(max-width:768px){
+  .hero-slider__track{ height:560px; }
+}
 </style>
 
-<div class="index-section s-100">HEADER</div>
+<main>
 
-<section class="hero" aria-label="Slider"><div class="hero__bg"></div><div class="index-wrap"><div class="index-1920"><div class="hero__inner"><div><div class="hero__title">幹細胞点鼻タイプ</div><div class="hero__lead">再生医療の可能性を日常へ。
-医療機関向け幹細胞由来製品の情報を掲載しています。</div><a class="hero__btn" href="./concept.php">CONCEPT</a></div></div></div></div></section>
+<!-- T1: Hero Slider -->
+<section class="hero-slider" aria-label="Hero">
+  <div class="hero-slider__track">
+    <div class="hero-slider__slide is-active" style="background-color:var(--surface-recessed);">
+      <div class="l-container t-center">
+        <p class="t-micro">STEMCELL NASAL TYPE</p>
+        <h1 class="t-hero" style="margin-top:var(--sp-4);">幹細胞点鼻タイプ</h1>
+        <p class="t-body-lg t-secondary" style="margin-top:var(--sp-5);max-width:600px;margin-inline:auto;">再生医療の可能性を日常へ。<br>医療機関向け幹細胞由来製品の情報を掲載しています。</p>
+        <div style="margin-top:var(--sp-7);">
+          <a href="./concept.php" class="c-btn c-btn--primary c-btn--lg">CONCEPT</a>
+        </div>
+      </div>
+    </div>
+    <div class="hero-slider__slide" style="background-color:var(--surface-sunken);">
+      <div class="l-container t-center">
+        <p class="t-micro">EVIDENCE &amp; SAFETY</p>
+        <h2 class="t-hero" style="margin-top:var(--sp-4);">安全性とエビデンス</h2>
+        <p class="t-body-lg t-secondary" style="margin-top:var(--sp-5);max-width:600px;margin-inline:auto;">臨床データに基づく高い安全性。<br>がん化リスクを抑えた無細胞療法。</p>
+        <div style="margin-top:var(--sp-7);">
+          <a href="./evidence.php" class="c-btn c-btn--primary c-btn--lg">EVIDENCE</a>
+        </div>
+      </div>
+    </div>
+    <div class="hero-slider__slide" style="background-color:var(--surface-recessed);">
+      <div class="l-container t-center">
+        <p class="t-micro">FOR MEDICAL INSTITUTIONS</p>
+        <h2 class="t-hero" style="margin-top:var(--sp-4);">医療機関の皆さまへ</h2>
+        <p class="t-body-lg t-secondary" style="margin-top:var(--sp-5);max-width:600px;margin-inline:auto;">導入から運用まで、トータルサポート。<br>お気軽にご相談ください。</p>
+        <div style="margin-top:var(--sp-7);">
+          <a href="./contact.php" class="c-btn c-btn--primary c-btn--lg">CONTACT</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="hero-slider__dots">
+    <button class="hero-slider__dot is-active" data-slide="0" aria-label="Slide 1"></button>
+    <button class="hero-slider__dot" data-slide="1" aria-label="Slide 2"></button>
+    <button class="hero-slider__dot" data-slide="2" aria-label="Slide 3"></button>
+  </div>
+</section>
 
-<!-- CONCEPT 上（精密化） -->
-<section class="concept-upper">
-  <div class="index-wrap">
-    <div class="index-1920">
-      <div class="concept-upper__grid">
-        <div class="concept-upper__box">
-          <div>製品コンセプト<br><small>Concept</small></div>
-          <div>480 × 960</div>
+<!-- T2: Mosaic -->
+<section class="l-section">
+  <div class="l-container">
+    <div class="t-center" style="margin-bottom:var(--sp-9);">
+      <p class="t-micro">CONCEPT</p>
+      <h2 class="t-h1" style="margin-top:var(--sp-3);">製品コンセプト</h2>
+    </div>
+    <div class="l-grid-3 reveal-stagger">
+      <div class="c-card c-card--glass reveal">
+        <div class="c-card__body t-center">
+          <div class="c-card__eyebrow">CONCEPT 01</div>
+          <div class="c-card__title">無細胞療法</div>
+          <p class="c-card__text">細胞そのものを投与しないため、がん化リスクを抑えた安全な治療法です。</p>
         </div>
-        <div class="concept-upper__box">
-          <div>製品コンセプト<br><small>Concept</small></div>
-          <div>480 × 960</div>
+      </div>
+      <div class="c-card c-card--glass reveal">
+        <div class="c-card__body t-center">
+          <div class="c-card__eyebrow">CONCEPT 02</div>
+          <div class="c-card__title">高度濾過技術</div>
+          <p class="c-card__text">脂肪組織・骨髄由来の幹細胞を高度に濾過した「濾液」を活用します。</p>
         </div>
-        <div class="concept-upper__box big">
-          <div>製品コンセプト<br><small>Concept</small></div>
-          <div>960 × 960</div>
+      </div>
+      <div class="c-card c-card--glass reveal">
+        <div class="c-card__body t-center">
+          <div class="c-card__eyebrow">CONCEPT 03</div>
+          <div class="c-card__title">簡便な投与</div>
+          <p class="c-card__text">点鼻タイプにより、手軽に投与できる新しい治療選択肢を提供します。</p>
+        </div>
+      </div>
+      <div class="c-card c-card--glass reveal">
+        <div class="c-card__body t-center">
+          <div class="c-card__eyebrow">EVIDENCE</div>
+          <div class="c-card__title">臨床エビデンス</div>
+          <p class="c-card__text">臨床データに基づく高い安全性と有効性を実証しています。</p>
+        </div>
+      </div>
+      <div class="c-card c-card--glass reveal">
+        <div class="c-card__body t-center">
+          <div class="c-card__eyebrow">BEAUTY</div>
+          <div class="c-card__title">美容への応用</div>
+          <p class="c-card__text">再生医療技術を美容分野にも展開し、新たな可能性を開きます。</p>
+        </div>
+      </div>
+      <div class="c-card c-card--glass reveal">
+        <div class="c-card__body t-center">
+          <div class="c-card__eyebrow">SUPPORT</div>
+          <div class="c-card__title">導入サポート</div>
+          <p class="c-card__text">医療機関への導入から運用まで、トータルでサポートいたします。</p>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ここから下は骨組みのまま -->
-<section class="concept-lower"><div class="index-wrap"><div class="index-1920"><div class="concept-lower__grid"><div class="concept-lower__box big">安全性とエビデンス
-960 × 960</div><div class="concept-lower__box">導入メリット
-480 × 960</div><div class="concept-lower__box">導入メリット
-480 × 960</div></div></div></div></section>
-<section class="work-grid"><div class="index-wrap"><div class="index-1920"><div class="work-grid__inner"><div class="work-grid__cell"><a href="./work.php">WORK 1</a></div><div class="work-grid__cell"><a href="./work.php">WORK 2</a></div><div class="work-grid__cell"><a href="./work.php">WORK 3</a></div><div class="work-grid__cell"><a href="./work.php">WORK 4</a></div><div class="work-grid__cell"><a href="./work.php">WORK 5</a></div><div class="work-grid__cell"><a href="./work.php">WORK 6</a></div><div class="work-grid__cell"><a href="./work.php">WORK 7</a></div><div class="work-grid__cell"><a href="./work.php">WORK 8</a></div></div></div></div></section>
-<section class="index-footer"><div class="index-wrap"><div class="index-1920"><div class="index-footer__inner">FOOTER</div></div></div></section>
+<!-- Work Cards -->
+<section class="l-section l-section--sunken">
+  <div class="l-container l-container--wide">
+    <div class="t-center" style="margin-bottom:var(--sp-9);">
+      <p class="t-micro">WORKS</p>
+      <h2 class="t-h1" style="margin-top:var(--sp-3);">導入実績</h2>
+    </div>
+    <div class="l-grid-4 reveal-stagger">
+      <?php foreach ($works as $id => $w): ?>
+      <a href="./work<?php echo sprintf('%02d', (int)$id); ?>.php" class="c-card c-card--compact reveal" style="text-decoration:none;color:inherit;">
+        <img class="c-card__image" src="./assets/img/work/work-<?php echo (int)$id; ?>.jpg" alt="<?php echo htmlspecialchars($w['title'], ENT_QUOTES, 'UTF-8'); ?>">
+        <div class="c-card__body">
+          <div class="c-card__eyebrow">WORK <?php echo sprintf('%02d', (int)$id); ?></div>
+          <div class="c-card__title"><?php echo htmlspecialchars($w['title'], ENT_QUOTES, 'UTF-8'); ?></div>
+          <p class="c-card__text"><?php echo htmlspecialchars($w['text'], ENT_QUOTES, 'UTF-8'); ?></p>
+        </div>
+      </a>
+      <?php endforeach; ?>
+    </div>
+  </div>
+</section>
+
+<!-- CTA Band -->
+<section class="l-section l-section--dark">
+  <div class="l-container t-center">
+    <h2 class="t-h2" style="color:var(--text-inverse);">導入をご検討の医療機関さまへ</h2>
+    <p class="t-body-lg" style="color:var(--text-inverse);opacity:0.72;margin-top:var(--sp-4);max-width:600px;margin-inline:auto;">製品の詳細やお見積もりなど、お気軽にお問い合わせください。</p>
+    <div style="margin-top:var(--sp-7);display:flex;gap:var(--sp-4);justify-content:center;flex-wrap:wrap;">
+      <a href="./contact.php" class="c-btn c-btn--primary c-btn--lg">お問い合わせ</a>
+      <a href="./concept.php" class="c-btn c-btn--secondary c-btn--lg" style="color:#fff;box-shadow:inset 0 0 0 1.5px rgba(255,255,255,0.6);">コンセプトを見る</a>
+    </div>
+  </div>
+</section>
+
+</main>
 
 <?php include __DIR__ . "/components/footer.php"; ?>
-<?php /* UNUSED CSS CLASSES (index.php): .s-960, .s-960.alt */ ?>
-
 <!-- auto-deploy smoke test -->
