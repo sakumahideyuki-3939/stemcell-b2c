@@ -70,6 +70,8 @@ Work items are stored in `data/work.json` (flat JSON object keyed by string IDs 
 
 ## Project Rules
 
+Rule Mode: PROPOSE_DIFF_OK_APPLY
+
 - 変更は必ず「提案 → 差分提示 → OK後に適用」の順で行う
 - 勝手にコマンド実行しない（必要な場合は都度確認）
 - git commit は私の許可後
