@@ -54,7 +54,7 @@
   padding:0 60px;         /* ← 左右余白を確実に入れる */
   box-sizing:border-box;
 }
-@media (max-width: 959px){
+@media (max-width: 768px){
   .work-block-1__inner,
   .work-block-2__inner{
     padding:0 20px;
@@ -133,6 +133,125 @@ main{
   padding: 6px 14px;
 }
 
+/* ── Hamburger button (mobile only) ── */
+.algo-header__burger {
+  display: none;
+  width: 44px;
+  height: 44px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+.algo-header__burger span {
+  display: block;
+  width: 20px;
+  height: 1.5px;
+  background: #111;
+  border-radius: 1px;
+}
+
+/* ── Mobile Drawer (Apple-style fullscreen overlay) ── */
+.algo-drawer {
+  position: fixed;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.96);
+  backdrop-filter: blur(24px) saturate(180%);
+  -webkit-backdrop-filter: blur(24px) saturate(180%);
+  z-index: 10000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity var(--duration-normal) var(--ease-out-expo),
+              visibility 0s var(--duration-normal);
+}
+.algo-drawer.is-open {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity var(--duration-normal) var(--ease-out-expo),
+              visibility 0s;
+}
+body.drawer-open {
+  overflow: hidden;
+}
+.algo-drawer__inner {
+  text-align: center;
+}
+.algo-drawer__close {
+  position: absolute;
+  top: 24px;
+  right: 20px;
+  width: 44px;
+  height: 44px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.algo-drawer__close span {
+  position: absolute;
+  width: 22px;
+  height: 1.5px;
+  background: var(--text-primary);
+}
+.algo-drawer__close span:first-child { transform: rotate(45deg); }
+.algo-drawer__close span:last-child  { transform: rotate(-45deg); }
+
+.algo-drawer__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.algo-drawer__list li {
+  opacity: 0;
+  transform: translateY(12px);
+  transition: opacity 400ms var(--ease-out-expo),
+              transform 400ms var(--ease-out-expo);
+}
+.algo-drawer__list li + li {
+  margin-top: var(--sp-7);
+}
+.algo-drawer.is-open .algo-drawer__list li {
+  opacity: 1;
+  transform: translateY(0);
+}
+.algo-drawer.is-open .algo-drawer__list li:nth-child(1) { transition-delay: 80ms; }
+.algo-drawer.is-open .algo-drawer__list li:nth-child(2) { transition-delay: 120ms; }
+.algo-drawer.is-open .algo-drawer__list li:nth-child(3) { transition-delay: 160ms; }
+.algo-drawer.is-open .algo-drawer__list li:nth-child(4) { transition-delay: 200ms; }
+.algo-drawer.is-open .algo-drawer__list li:nth-child(5) { transition-delay: 240ms; }
+
+.algo-drawer__list a {
+  font-family: var(--ff-display);
+  font-size: var(--fs-h2);
+  font-weight: var(--fw-semibold);
+  color: var(--text-primary);
+  text-decoration: none;
+  letter-spacing: var(--ls-tight);
+}
+.algo-drawer__list a:hover {
+  color: var(--accent);
+}
+
+.algo-drawer__cta {
+  margin-top: var(--sp-9);
+  opacity: 0;
+  transform: translateY(12px);
+  transition: opacity 400ms var(--ease-out-expo) 300ms,
+              transform 400ms var(--ease-out-expo) 300ms;
+}
+.algo-drawer.is-open .algo-drawer__cta {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 /* ==================================================
    INDEX LAYOUT SYSTEM — disabled: replaced by design-system.css grid
 ================================================== */
@@ -162,7 +281,7 @@ main{
 /* ==================================================
    MOBILE
 ================================================== */
-@media (max-width: 959px){
+@media (max-width: 768px){
 
   main{
     padding-top: 80px;
@@ -176,7 +295,12 @@ main{
     padding: 0 20px;
   }
 
-  /* index-specific mobile grid — disabled (replaced by design-system.css) */
+  .algo-header__nav {
+    display: none;
+  }
+  .algo-header__burger {
+    display: flex;
+  }
 }
 /* =================================
    WORK PAGE (ABOUT形式固定)

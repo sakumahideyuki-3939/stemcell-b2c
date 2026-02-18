@@ -84,6 +84,17 @@
   margin-top: 0;
 }
 
+/* ── Table scroll wrapper (mobile) ── */
+.prose-table-wrap {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin-bottom: var(--sp-6);
+}
+.prose-table-wrap table {
+  margin-bottom: 0;
+  min-width: 480px;
+}
+
 /* ── Page Nav (prev / next) ── */
 .page-nav {
   display: flex;

@@ -70,4 +70,34 @@
   } else {
     reveals.forEach(function (el) { el.classList.add('is-visible'); });
   }
+
+  /* ── Mobile Drawer ── */
+  var burger = document.querySelector('.algo-header__burger');
+  var drawer = document.querySelector('.algo-drawer');
+  var drawerClose = document.querySelector('.algo-drawer__close');
+
+  if (burger && drawer) {
+    function openDrawer() {
+      drawer.classList.add('is-open');
+      drawer.setAttribute('aria-hidden', 'false');
+      burger.setAttribute('aria-expanded', 'true');
+      document.body.classList.add('drawer-open');
+    }
+    function closeDrawer() {
+      drawer.classList.remove('is-open');
+      drawer.setAttribute('aria-hidden', 'true');
+      burger.setAttribute('aria-expanded', 'false');
+      document.body.classList.remove('drawer-open');
+    }
+    burger.addEventListener('click', openDrawer);
+    if (drawerClose) { drawerClose.addEventListener('click', closeDrawer); }
+    drawer.querySelectorAll('a').forEach(function (link) {
+      link.addEventListener('click', closeDrawer);
+    });
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape' && drawer.classList.contains('is-open')) {
+        closeDrawer();
+      }
+    });
+  }
 })();

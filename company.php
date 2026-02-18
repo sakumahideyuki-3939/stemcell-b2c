@@ -15,12 +15,14 @@ ob_start(); ?>
 </p>
 
 <h2>会社概要</h2>
+<div class="prose-table-wrap">
 <table>
   <tr><th>会社名</th><td>株式会社アルゴ（ALGO Inc.）</td></tr>
   <tr><th>所在地</th><td>〒150-0011 東京都渋谷区東2-29-7-201</td></tr>
   <tr><th>アクセス</th><td>恵比寿駅より徒歩5分</td></tr>
   <tr><th>事業内容</th><td>幹細胞由来製品の研究開発・製造販売</td></tr>
 </table>
+</div>
 
 <h2>アクセス</h2>
 <p>
