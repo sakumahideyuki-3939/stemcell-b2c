@@ -152,9 +152,11 @@ ksort($works, SORT_NATURAL);
       ?>
       <?php foreach ($works as $id => $w): ?>
       <a href="./work<?php echo sprintf('%02d', (int)$id); ?>.php" class="c-card c-card--compact reveal" style="text-decoration:none;color:inherit;">
-        <img class="c-card__image" src="./assets/img/work/work-<?php echo (int)$id; ?>.jpg" alt="<?php echo htmlspecialchars($w['title'], ENT_QUOTES, 'UTF-8'); ?>">
+        <div class="c-card__thumb">
+          <span class="c-card__thumb-num"><?php echo sprintf('%02d', (int)$id); ?></span>
+          <i data-lucide="<?php echo htmlspecialchars($work_icons[$id] ?? 'circle', ENT_QUOTES, 'UTF-8'); ?>"></i>
+        </div>
         <div class="c-card__body">
-          <div class="c-card__icon"><i data-lucide="<?php echo htmlspecialchars($work_icons[$id] ?? 'circle', ENT_QUOTES, 'UTF-8'); ?>"></i></div>
           <div class="c-card__eyebrow"><?php echo htmlspecialchars(isset($w['cat']) ? $w['cat'] : 'WORK ' . sprintf('%02d', (int)$id), ENT_QUOTES, 'UTF-8'); ?></div>
           <div class="c-card__title"><?php echo htmlspecialchars($w['title'], ENT_QUOTES, 'UTF-8'); ?></div>
           <p class="c-card__text"><?php echo htmlspecialchars($w['text'], ENT_QUOTES, 'UTF-8'); ?></p>
@@ -168,11 +170,10 @@ ksort($works, SORT_NATURAL);
 <!-- CTA Band -->
 <section class="l-section l-section--dark">
   <div class="l-container t-center">
-    <h2 class="t-h2" style="color:var(--text-inverse);">導入をご検討の医療機関さまへ</h2>
-    <p class="t-body-lg" style="color:var(--text-inverse);opacity:0.72;margin-top:var(--sp-4);max-width:600px;margin-inline:auto;">製品の詳細やお見積もりなど、お気軽にお問い合わせください。</p>
-    <div style="margin-top:var(--sp-7);display:flex;gap:var(--sp-4);justify-content:center;flex-wrap:wrap;">
-      <a href="./contact.php" class="c-btn c-btn--primary c-btn--lg">お問い合わせ</a>
-      <a href="./concept.php" class="c-btn c-btn--secondary c-btn--lg" style="color:#fff;box-shadow:inset 0 0 0 1.5px rgba(255,255,255,0.6);">コンセプトを見る</a>
+    <h2 class="t-h2" style="color:var(--text-inverse);">まずは、話すことから。</h2>
+    <p class="t-body-lg" style="color:var(--text-inverse);opacity:0.72;margin-top:var(--sp-4);max-width:600px;margin-inline:auto;">決める前に、整理する。押し売りのない相談窓口として、お気軽にご利用ください。</p>
+    <div style="margin-top:var(--sp-7);">
+      <a href="./work07.php" class="c-btn c-btn--primary c-btn--lg">無料相談を予約する</a>
     </div>
   </div>
 </section>
