@@ -94,7 +94,7 @@ ksort($works, SORT_NATURAL);
   content:'';
   position:absolute;
   inset:0;
-  background:rgba(245,245,247,0.75);
+  background:rgba(245,245,247,0.35);
 }
 .hero-slider__slide--bg-1 > .l-container{
   position:relative;
@@ -107,7 +107,7 @@ ksort($works, SORT_NATURAL);
   content:'';
   position:absolute;
   inset:0;
-  background:rgba(245,245,247,0.75);
+  background:rgba(245,245,247,0.35);
 }
 .hero-slider__slide--bg-2 > .l-container{
   position:relative;
@@ -120,7 +120,7 @@ ksort($works, SORT_NATURAL);
   content:'';
   position:absolute;
   inset:0;
-  background:rgba(245,245,247,0.75);
+  background:rgba(245,245,247,0.35);
 }
 .hero-slider__slide--bg-3 > .l-container{
   position:relative;
