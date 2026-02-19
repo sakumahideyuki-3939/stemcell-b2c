@@ -16,16 +16,18 @@
 
 /* ── Breadcrumb ── */
 .page-breadcrumb {
-  padding-top: calc(100px + var(--sp-5)); /* fixed header offset + gap */
-  padding-bottom: var(--sp-4);
-  font-size: var(--fs-caption);
+  padding-top: calc(100px + var(--sp-3)); /* fixed header offset + gap */
+  padding-bottom: var(--sp-2);
+  font-size: var(--fs-micro);
   color: var(--text-tertiary);
   display: flex;
   align-items: center;
   gap: var(--sp-2);
+  background: none;
+  border: none;
 }
 .page-breadcrumb a {
-  color: var(--text-secondary);
+  color: var(--text-tertiary);
   text-decoration: none;
 }
 .page-breadcrumb a:hover {
