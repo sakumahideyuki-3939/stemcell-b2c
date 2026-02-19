@@ -16,8 +16,9 @@
 
 /* ── Breadcrumb ── */
 .page-breadcrumb {
-  padding-top: calc(100px + var(--sp-3)); /* fixed header offset + gap */
-  padding-bottom: var(--sp-2);
+  padding-top: calc(100px + var(--sp-2)); /* fixed header offset + minimal gap */
+  padding-bottom: 0;
+  margin-bottom: 0;
   font-size: var(--fs-micro);
   color: var(--text-tertiary);
   display: flex;
@@ -135,7 +136,7 @@
 /* ── Mobile ── */
 @media (max-width: 768px) {
   .page-breadcrumb {
-    padding-top: calc(80px + var(--sp-4));
+    padding-top: calc(80px + var(--sp-2));
   }
   .page-hero {
     padding-block: var(--lk-5) var(--lk-6); /* 52px / 83px */
