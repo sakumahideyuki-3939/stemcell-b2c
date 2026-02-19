@@ -1,88 +1,17 @@
-/* 2ブロック：960 */
-.work-block-2{
-  min-height:960px;
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  background:#ffffff;
-  padding:0 40px;
-}
+/* ============================================================
+   MAIN — Site-wide layout & homepage components
+   ============================================================ */
 
-.work-block-2__inner{
-  width:100%;
-  max-width:800px;
-  margin:0 auto;
-  text-align:center;
-}
-
-.work-block-2__inner p{
-  line-height:2;
-  font-size:14px;
-  letter-spacing:0.05em;
-}
-
-.work-block-1{
-  height:460px;
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  text-align:center;
-  background:#ffffff;
-  width:100%;
-}
-
-.work-block-1__inner{
-  width:100%;
-  max-width:none;        /* ← 1920で止めない */
-  padding:0 60px;        /* ← ABOUTの左右余白感に合わせる */
-  box-sizing:border-box;
-}
-.work-block-2{
-  min-height:960px;
-  display:flex;
-  justify-content:center;
-  align-items:flex-start;
-  padding:140px 0 120px;  /* ← 下にも余白 */
-  background:#ffffff;
-  width:100%;
-}
-
-.work-block-2__inner{
-  width:100%;
-  max-width:1000px;
-  margin:0 auto;
-  padding:0 60px;         /* ← 左右余白を確実に入れる */
-  box-sizing:border-box;
-}
-@media (max-width: 768px){
-  .work-block-1__inner,
-  .work-block-2__inner{
-    padding:0 20px;
-  }
-}
-
-/* ==================================================
-   BASE — disabled: design-system.css handles resets
-================================================== */
-/*
-html,body,button,input,select,textarea{
-  font-family: "Noto Sans JP", system-ui, -apple-system, "Segoe UI",
-  Roboto, "Helvetica Neue", Arial,
-  "Hiragino Kaku Gothic ProN", "Yu Gothic", Meiryo, sans-serif;
-}
-body{ margin:0; background:#fff; color:#111; }
-img{ max-width:100%; display:block; }
-*/
-
-/* 固定ヘッダー分 */
-main{
+/* ── Fixed header offset ── */
+main {
   padding-top: 100px;
 }
+
 
 /* ==================================================
    HEADER
 ================================================== */
-.algo-header{
+.algo-header {
   width: 100%;
   height: 100px;
   background: #fff;
@@ -96,7 +25,7 @@ main{
   justify-content: center;
 }
 
-.algo-header__inner{
+.algo-header__inner {
   width: 100%;
   max-width: 1920px;
   padding: 0 60px;
@@ -105,7 +34,7 @@ main{
   align-items: center;
 }
 
-.algo-header__logo a{
+.algo-header__logo a {
   font-size: 20px;
   letter-spacing: .3em;
   text-decoration: none;
@@ -113,7 +42,7 @@ main{
   font-weight: 600;
 }
 
-.algo-header__navlist{
+.algo-header__navlist {
   list-style: none;
   display: flex;
   gap: 30px;
@@ -121,14 +50,14 @@ main{
   padding: 0;
 }
 
-.algo-header__navlist a{
+.algo-header__navlist a {
   text-decoration: none;
   font-size: 12px;
   letter-spacing: .15em;
   color: #111;
 }
 
-.algo-header__navlist a.is-cta{
+.algo-header__navlist a.is-cta {
   border: 1px solid #111;
   padding: 6px 14px;
 }
@@ -255,46 +184,120 @@ body.drawer-open {
   transform: translateY(0);
 }
 
-/* ==================================================
-   INDEX LAYOUT SYSTEM — disabled: replaced by design-system.css grid
-================================================== */
-/*
-.page-index .index-wrap{ width:100%; display:flex; justify-content:center; }
-.page-index .index-1920{ width:1920px; max-width:100%; position:relative; }
-.page-index .h-960{ height:960px; }
-.page-index .grid-1920{ width:100%; max-width:1920px; margin:0 auto; }
-.page-index .col-1{ grid-column:span 1; }
-.page-index .col-2{ grid-column:span 2; }
-.page-index .col-4{ grid-column:span 4; }
-.page-index .row-1{ grid-row:span 1; }
-.page-index .row-2{ grid-row:span 2; }
-.page-index .fill{ width:100%; height:100%; border:1px solid #ddd; display:flex; align-items:center; justify-content:center; text-align:center; }
-.page-index .grid-1920 img{ width:100%; height:100%; object-fit:cover; }
-*/
 
 /* ==================================================
-   FOOTER — disabled: replaced by c-footer in design-system.css
+   HERO SLIDER (homepage)
 ================================================== */
-/*
-.algo-footer__inner{ display:block; }
-.algo-footer__inner > *{ width:100%; }
-.algo-footer__inner > * + *{ margin-top:40px; }
-*/
+.hero-slider {
+  position: relative;
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.hero-slider__track {
+  position: relative;
+  height: 768px; /* 480 × 1.6 LiftKit ratio */
+}
+.hero-slider__slide {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 800ms var(--ease-out-expo);
+  pointer-events: none;
+}
+.hero-slider__slide.is-active {
+  opacity: 1;
+  pointer-events: auto;
+}
+/* Slide text fade-up */
+.hero-slider__slide > .l-container {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 600ms var(--ease-out-expo),
+              transform 600ms var(--ease-out-expo);
+  transition-delay: 0ms;
+}
+.hero-slider__slide.is-active > .l-container {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 200ms;
+}
+.hero-slider__dots {
+  position: absolute;
+  bottom: var(--sp-7);
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: var(--sp-3);
+  z-index: 2;
+}
+.hero-slider__dot {
+  width: 10px;
+  height: 10px;
+  border-radius: var(--radius-full);
+  border: none;
+  background: var(--border-heavy);
+  cursor: pointer;
+  transition: background var(--duration-fast), transform var(--duration-fast);
+}
+.hero-slider__dot.is-active {
+  background: var(--text-primary);
+  transform: scale(1.3);
+}
+
+/* Slide backgrounds */
+.hero-slider__slide--bg-1 {
+  background: url('../img/hero-slide-1.jpg') center/cover no-repeat;
+}
+.hero-slider__slide--bg-2 {
+  background: url('../img/hero-slide-2.jpg') center/cover no-repeat;
+}
+.hero-slider__slide--bg-3 {
+  background: url('../img/hero-slide-3.jpg') center/cover no-repeat;
+}
+.hero-slider__slide--bg-1::after,
+.hero-slider__slide--bg-2::after,
+.hero-slider__slide--bg-3::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(245, 245, 247, 0.35);
+}
+.hero-slider__slide--bg-1 > .l-container,
+.hero-slider__slide--bg-2 > .l-container,
+.hero-slider__slide--bg-3 > .l-container {
+  position: relative;
+  z-index: 1;
+}
+
+
+/* ==================================================
+   LUCIDE ICON OVERRIDES
+================================================== */
+.c-card__icon { margin-bottom: var(--sp-4); }
+.c-card__icon i { width: 28px; height: 28px; color: var(--accent); }
+.c-card--compact .c-card__icon { margin-bottom: var(--sp-3); }
+.c-card--compact .c-card__icon i { width: 40px; height: 40px; color: var(--accent); opacity: 0.6; }
+
 
 /* ==================================================
    MOBILE
 ================================================== */
-@media (max-width: 768px){
+@media (max-width: 768px) {
 
-  main{
+  main {
     padding-top: 80px;
   }
 
-  .algo-header{
+  .algo-header {
     height: 80px;
   }
 
-  .algo-header__inner{
+  .algo-header__inner {
     padding: 0 20px;
   }
 
@@ -304,44 +307,7 @@ body.drawer-open {
   .algo-header__burger {
     display: flex;
   }
-}
-/* =================================
-   WORK PAGE (ABOUT形式固定)
-================================= */
 
-/* 1ブロック：460 */
-.work-block-1{
-  height:460px;
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  text-align:center;
-  background:#ffffff;
-}
-
-.work-block-1__inner{
-  width:100%;
-  max-width:1920px;
-}
-
-/* 2ブロック：960 */
-.work-block-2{
-min-height:960px;
-  display:flex;
-  justify-content:center;
-  align-items:flex-start;
-  padding-top:140px;
-  background:#ffffff;
-}
-
-.work-block-2__inner{
-  width:100%;
-  max-width:1000px;   /* テキスト幅だけ制御 */
-  margin:0 auto;
-}
-
-.work-block-2__inner p{
-  line-height:2;
-  font-size:14px;
-  letter-spacing:0.05em;
+  .hero-slider__track { height: 560px; }
+  .hero-slider .t-body-lg br { display: none; }
 }

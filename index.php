@@ -17,126 +17,15 @@ ksort($works, SORT_NATURAL);
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./assets/css/design-system.css?v=<?php echo time(); ?>">
+  <link rel="stylesheet" href="./assets/css/page.css?v=<?php echo time(); ?>">
   <link rel="stylesheet" href="./assets/css/main.css?v=<?php echo time(); ?>">
-  <title><?php echo $page_title; ?></title>
+  <title><?php echo htmlspecialchars($page_title, ENT_QUOTES, 'UTF-8'); ?> | ALGO Inc.</title>
   <?php include __DIR__ . '/components/head-meta.php'; ?>
   <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 <body>
 
 <?php include __DIR__ . "/components/header.php"; ?>
-
-<style>
-/* ===== HERO SLIDER ===== */
-.hero-slider{
-  position:relative;
-  width:100%;
-  max-width:1920px;
-  margin:0 auto;
-  overflow:hidden;
-}
-.hero-slider__track{
-  position:relative;
-  height:768px; /* 480 × 1.6 LiftKit ratio */
-}
-.hero-slider__slide{
-  position:absolute;
-  inset:0;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  opacity:0;
-  transition:opacity 800ms var(--ease-out-expo);
-  pointer-events:none;
-}
-.hero-slider__slide.is-active{
-  opacity:1;
-  pointer-events:auto;
-}
-/* Slide text fade-up */
-.hero-slider__slide > .l-container{
-  opacity:0;
-  transform:translateY(30px);
-  transition:opacity 600ms var(--ease-out-expo),
-             transform 600ms var(--ease-out-expo);
-  transition-delay:0ms;
-}
-.hero-slider__slide.is-active > .l-container{
-  opacity:1;
-  transform:translateY(0);
-  transition-delay:200ms;
-}
-.hero-slider__dots{
-  position:absolute;
-  bottom:var(--sp-7);
-  left:50%;
-  transform:translateX(-50%);
-  display:flex;
-  gap:var(--sp-3);
-  z-index:2;
-}
-.hero-slider__dot{
-  width:10px;
-  height:10px;
-  border-radius:var(--radius-full);
-  border:none;
-  background:var(--border-heavy);
-  cursor:pointer;
-  transition:background var(--duration-fast),transform var(--duration-fast);
-}
-.hero-slider__dot.is-active{
-  background:var(--text-primary);
-  transform:scale(1.3);
-}
-.hero-slider__slide--bg-1{
-  background:url('./assets/img/hero-slide-1.jpg') center/cover no-repeat;
-}
-.hero-slider__slide--bg-1::after{
-  content:'';
-  position:absolute;
-  inset:0;
-  background:rgba(245,245,247,0.35);
-}
-.hero-slider__slide--bg-1 > .l-container{
-  position:relative;
-  z-index:1;
-}
-.hero-slider__slide--bg-2{
-  background:url('./assets/img/hero-slide-2.jpg') center/cover no-repeat;
-}
-.hero-slider__slide--bg-2::after{
-  content:'';
-  position:absolute;
-  inset:0;
-  background:rgba(245,245,247,0.35);
-}
-.hero-slider__slide--bg-2 > .l-container{
-  position:relative;
-  z-index:1;
-}
-.hero-slider__slide--bg-3{
-  background:url('./assets/img/hero-slide-3.jpg') center/cover no-repeat;
-}
-.hero-slider__slide--bg-3::after{
-  content:'';
-  position:absolute;
-  inset:0;
-  background:rgba(245,245,247,0.35);
-}
-.hero-slider__slide--bg-3 > .l-container{
-  position:relative;
-  z-index:1;
-}
-@media(max-width:768px){
-  .hero-slider__track{ height:560px; }
-  .hero-slider .t-body-lg br{ display:none; }
-}
-/* Lucide icon styles */
-.c-card__icon { margin-bottom: var(--sp-4); }
-.c-card__icon i { width: 28px; height: 28px; color: var(--accent); }
-.c-card--compact .c-card__icon { margin-bottom: var(--sp-3); }
-.c-card--compact .c-card__icon i { width: 40px; height: 40px; color: var(--accent); opacity: 0.6; }
-</style>
 
 <main>
 
