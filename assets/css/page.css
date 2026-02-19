@@ -1,6 +1,18 @@
 /* ============================================================
    PAGE — 2nd-level page styles
+   LiftKit 1:1.6 ratio spacing
    ============================================================ */
+
+/* ── LiftKit scale (8px base × 1.6) ── */
+:root {
+  --lk-1: 0.5rem;      /*  8px  */
+  --lk-2: 0.8125rem;   /* 13px  */
+  --lk-3: 1.25rem;     /* 20px  */
+  --lk-4: 2rem;        /* 32px  */
+  --lk-5: 3.25rem;     /* 52px  */
+  --lk-6: 5.1875rem;   /* 83px  */
+  --lk-7: 8.375rem;    /* 134px */
+}
 
 /* ── Breadcrumb ── */
 .page-breadcrumb {
@@ -22,42 +34,48 @@
 
 /* ── Page Hero ── */
 .page-hero {
-  padding-block: var(--sp-11) var(--sp-10);
+  padding-block: var(--lk-6) var(--lk-7); /* 83px / 134px = 1:1.6 */
+}
+
+/* ── Section padding (2nd-level 1:1.6 override) ── */
+.l-section {
+  position: relative;
+  padding-block: var(--lk-5) var(--lk-6); /* 52px / 83px = 1:1.6 */
 }
 
 /* ── Prose (content typography) ── */
 .prose h2 {
   font-family: var(--ff-display);
-  font-size: var(--fs-h2);
+  font-size: clamp(1.625rem, 3vw, 2.5rem); /* 26–40px */
   font-weight: var(--fw-semibold);
   line-height: var(--lh-heading);
   letter-spacing: var(--ls-tight);
-  margin-top: var(--sp-10);
-  margin-bottom: var(--sp-5);
+  margin-top: var(--lk-6);    /* 83px */
+  margin-bottom: var(--lk-4); /* 32px */
 }
 .prose h3 {
   font-family: var(--ff-display);
-  font-size: var(--fs-h3);
+  font-size: clamp(1.0625rem, 1.8vw, 1.5625rem); /* 17–25px  h2:h3 = 40:25 = 1.6 */
   font-weight: var(--fw-semibold);
   line-height: var(--lh-heading);
-  margin-top: var(--sp-8);
-  margin-bottom: var(--sp-4);
+  margin-top: var(--lk-5);    /* 52px */
+  margin-bottom: var(--lk-3); /* 20px */
 }
 .prose p {
   font-size: var(--fs-body);
   line-height: var(--lh-loose);
   color: var(--text-secondary);
-  margin-bottom: var(--sp-5);
+  margin-bottom: var(--lk-3); /* 20px */
 }
 .prose ul,
 .prose ol {
   padding-left: var(--sp-5);
-  margin-bottom: var(--sp-5);
+  margin-bottom: var(--lk-3); /* 20px */
   color: var(--text-secondary);
   line-height: var(--lh-loose);
 }
 .prose li {
-  margin-bottom: var(--sp-2);
+  margin-bottom: var(--lk-2); /* 13px */
 }
 .prose table {
   width: 100%;
@@ -67,7 +85,7 @@
 }
 .prose th,
 .prose td {
-  padding: var(--sp-4) var(--sp-5);
+  padding: var(--lk-3) var(--lk-4); /* 20px / 32px */
   border-bottom: 1px solid var(--border-light);
   text-align: left;
 }
@@ -100,9 +118,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-block: var(--sp-8);
+  padding-block: var(--lk-5); /* 52px */
   border-top: 1px solid var(--border-light);
-  margin-bottom: var(--sp-8);
+  margin-bottom: var(--lk-5); /* 52px */
 }
 .page-nav__prev,
 .page-nav__next {
@@ -118,7 +136,10 @@
     padding-top: calc(80px + var(--sp-4));
   }
   .page-hero {
-    padding-block: var(--sp-9) var(--sp-8);
+    padding-block: var(--lk-5) var(--lk-6); /* 52px / 83px */
+  }
+  .l-section {
+    padding-block: var(--lk-4) var(--lk-5); /* 32px / 52px = 1:1.6 */
   }
 }
 
@@ -158,9 +179,6 @@
 }
 
 /* ── Section boundary soft gradient ── */
-.l-section {
-  position: relative;
-}
 .l-section:not(.l-section--dark)::before {
   content: '';
   position: absolute;
