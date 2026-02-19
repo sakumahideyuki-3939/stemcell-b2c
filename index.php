@@ -153,7 +153,6 @@ ksort($works, SORT_NATURAL);
       <?php foreach ($works as $id => $w): ?>
       <a href="./work<?php echo sprintf('%02d', (int)$id); ?>.php" class="c-card c-card--compact reveal" style="text-decoration:none;color:inherit;">
         <div class="c-card__thumb">
-          <span class="c-card__thumb-num"><?php echo sprintf('%02d', (int)$id); ?></span>
           <i data-lucide="<?php echo htmlspecialchars($work_icons[$id] ?? 'circle', ENT_QUOTES, 'UTF-8'); ?>"></i>
         </div>
         <div class="c-card__body">
