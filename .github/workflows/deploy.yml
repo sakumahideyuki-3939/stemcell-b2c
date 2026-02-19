@@ -20,7 +20,7 @@ jobs:
           password: ${{ secrets.FTP_PASSWORD }}
           remote_folder: ${{ secrets.DEPLOY_PATH }}
           local_folder: ./
-          cleanup: false
+          cleanup: true
           pasv: true
 
       - name: Notify
