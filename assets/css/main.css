@@ -260,12 +260,29 @@ body.drawer-open {
   background: url('../img/hero-slide-3.jpg') center/cover no-repeat;
 }
 .hero-slider__slide--bg-1::after,
-.hero-slider__slide--bg-2::after,
 .hero-slider__slide--bg-3::after {
   content: '';
   position: absolute;
   inset: 0;
   background: rgba(245, 245, 247, 0.35);
+}
+.hero-slider__slide--bg-2::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+}
+/* Slide 2 — dark overlay, white text */
+.hero-slider__slide--bg-2 { color: #fff; }
+.hero-slider__slide--bg-2 .t-hero { color: #fff; }
+.hero-slider__slide--bg-2 .t-micro { color: rgba(255, 255, 255, 0.72); }
+.hero-slider__slide--bg-2 .t-secondary { color: rgba(255, 255, 255, 0.72); }
+.hero-slider__slide--bg-2 .c-btn--primary {
+  background: #fff;
+  color: var(--accent);
+}
+.hero-slider__slide--bg-2 .c-btn--primary:hover {
+  background: var(--surface-base);
 }
 .hero-slider__slide--bg-1 > .l-container,
 .hero-slider__slide--bg-2 > .l-container,
@@ -287,12 +304,13 @@ body.drawer-open {
   align-items: center;
   justify-content: center;
   background: var(--surface-sunken);
-  aspect-ratio: 4 / 3;
+  padding: var(--sp-6);
+  border-bottom: 1px solid var(--border-light);
   border-radius: var(--radius-lg) var(--radius-lg) 0 0;
 }
 .c-card__thumb i {
-  width: 40px;
-  height: 40px;
+  width: 56px;
+  height: 56px;
   color: var(--accent);
   opacity: 0.6;
 }
