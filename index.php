@@ -20,6 +20,7 @@ ksort($works, SORT_NATURAL);
   <link rel="stylesheet" href="./assets/css/main.css?v=<?php echo time(); ?>">
   <title><?php echo $page_title; ?></title>
   <?php include __DIR__ . '/components/head-meta.php'; ?>
+  <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 <body>
 
@@ -130,6 +131,11 @@ ksort($works, SORT_NATURAL);
   .hero-slider__track{ height:560px; }
   .hero-slider .t-body-lg br{ display:none; }
 }
+/* Lucide icon styles */
+.c-card__icon { margin-bottom: var(--sp-4); }
+.c-card__icon i { width: 28px; height: 28px; color: var(--accent); }
+.c-card--compact .c-card__icon { margin-bottom: var(--sp-3); }
+.c-card--compact .c-card__icon i { width: 40px; height: 40px; color: var(--accent); opacity: 0.6; }
 </style>
 
 <main>
@@ -185,6 +191,7 @@ ksort($works, SORT_NATURAL);
     <div class="l-grid-3 reveal-stagger">
       <div class="c-card c-card--glass reveal">
         <div class="c-card__body t-center">
+          <div class="c-card__icon"><i data-lucide="microscope"></i></div>
           <div class="c-card__eyebrow">CONCEPT 01</div>
           <div class="c-card__title">選ぶ前に、仕組みを知る。</div>
           <p class="c-card__text">幹細胞関連のケアにはいくつかの系統があります。その中で「生搾り（Lysate）」は、幹細胞を物理的に処理して、内部成分まで含む"濾液"として設計された考え方です。</p>
@@ -192,6 +199,7 @@ ksort($works, SORT_NATURAL);
       </div>
       <div class="c-card c-card--glass reveal">
         <div class="c-card__body t-center">
+          <div class="c-card__icon"><i data-lucide="file-check"></i></div>
           <div class="c-card__eyebrow">CONCEPT 02</div>
           <div class="c-card__title">根拠は、言い切りではなく提示。</div>
           <p class="c-card__text">どんな医療でも、重要なのは「すごい」ではなく「何が分かっていて、何が分かっていないか」。研究・特許・学会発表などの情報は、万能な保証ではありませんが、説明の土台になります。</p>
@@ -199,6 +207,7 @@ ksort($works, SORT_NATURAL);
       </div>
       <div class="c-card c-card--glass reveal">
         <div class="c-card__body t-center">
+          <div class="c-card__icon"><i data-lucide="scale"></i></div>
           <div class="c-card__eyebrow">CONCEPT 03</div>
           <div class="c-card__title">"期待しすぎない"が、後悔を減らす。</div>
           <p class="c-card__text">大切なのは、あなたの目的に対して、どんな説明が必要かを整理すること。このページは、受診の判断を急がせるためではなく、「納得して選ぶ」ための下準備を整える場所です。</p>
@@ -206,6 +215,7 @@ ksort($works, SORT_NATURAL);
       </div>
       <div class="c-card c-card--glass reveal">
         <div class="c-card__body t-center">
+          <div class="c-card__icon"><i data-lucide="shield-check"></i></div>
           <div class="c-card__eyebrow">CONCERNS</div>
           <div class="c-card__title">不安の中心は、いつも同じ。</div>
           <p class="c-card__text">相談で多い不安は、だいたい3つに集約されます。安全性、費用、自分に合うか。当サイトは、これらを「短時間で整理」し、受診先で聞くべき質問リストまで落とし込みます。</p>
@@ -213,6 +223,7 @@ ksort($works, SORT_NATURAL);
       </div>
       <div class="c-card c-card--glass reveal">
         <div class="c-card__body t-center">
+          <div class="c-card__icon"><i data-lucide="message-circle"></i></div>
           <div class="c-card__eyebrow">VOICES</div>
           <div class="c-card__title">相談者の声</div>
           <p class="c-card__text">「情報が整理できて、何を確認すべきかが分かった」「売り込みではなく、判断基準を一緒に作ってもらえた」まずは"焦らずに整える"。そこからで十分間に合います。</p>
@@ -220,6 +231,7 @@ ksort($works, SORT_NATURAL);
       </div>
       <div class="c-card c-card--glass reveal">
         <div class="c-card__body t-center">
+          <div class="c-card__icon"><i data-lucide="handshake"></i></div>
           <div class="c-card__eyebrow">CONSULT</div>
           <div class="c-card__title">相談→紹介まで、ここで完結。</div>
           <p class="c-card__text">無料相談では、あなたの目的・地域・希望時期をもとに、候補となる医療機関の情報を整理してご案内します。押し売りのない相談窓口としてご利用ください。</p>
@@ -237,10 +249,23 @@ ksort($works, SORT_NATURAL);
       <h2 class="t-h1" style="margin-top:var(--sp-3);">コンテンツ一覧</h2>
     </div>
     <div class="l-grid-4 reveal-stagger">
+      <?php
+      $work_icons = [
+        '1' => 'compass',
+        '2' => 'list-checks',
+        '3' => 'shield',
+        '4' => 'calculator',
+        '5' => 'flask-conical',
+        '6' => 'book-open',
+        '7' => 'message-square',
+        '8' => 'building-2',
+      ];
+      ?>
       <?php foreach ($works as $id => $w): ?>
       <a href="./work<?php echo sprintf('%02d', (int)$id); ?>.php" class="c-card c-card--compact reveal" style="text-decoration:none;color:inherit;">
         <img class="c-card__image" src="./assets/img/work/work-<?php echo (int)$id; ?>.jpg" alt="<?php echo htmlspecialchars($w['title'], ENT_QUOTES, 'UTF-8'); ?>">
         <div class="c-card__body">
+          <div class="c-card__icon"><i data-lucide="<?php echo htmlspecialchars($work_icons[$id] ?? 'circle', ENT_QUOTES, 'UTF-8'); ?>"></i></div>
           <div class="c-card__eyebrow"><?php echo htmlspecialchars(isset($w['cat']) ? $w['cat'] : 'WORK ' . sprintf('%02d', (int)$id), ENT_QUOTES, 'UTF-8'); ?></div>
           <div class="c-card__title"><?php echo htmlspecialchars($w['title'], ENT_QUOTES, 'UTF-8'); ?></div>
           <p class="c-card__text"><?php echo htmlspecialchars($w['text'], ENT_QUOTES, 'UTF-8'); ?></p>
@@ -265,5 +290,6 @@ ksort($works, SORT_NATURAL);
 
 </main>
 
+<script>lucide.createIcons();</script>
 <?php include __DIR__ . "/components/footer.php"; ?>
 <!-- auto-deploy smoke test -->
