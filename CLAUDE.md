@@ -69,6 +69,41 @@ Work items are stored in `data/work.json` (flat JSON object keyed by string IDs 
 - All pages have finalized Japanese copy (no stubs remain)
 - Backup files (`*.bak_*`, `*.fix_*`) are gitignored
 
+## リポジトリ・サーバー情報
+| 項目 | 値 |
+|------|-----|
+| GitHub | stemcell-b2c（Private） |
+| 本番URL | https://cells.algo-cosme.com/（※B2Bサイトと同ドメイン、パス未確定） |
+| ローカルパス | ~/stemcell-b2c/ |
+| デプロイ | GitHub Actions自動（mainへpush → FTP Deploy） |
+| サーバー | さくらサーバー（FTP） |
+
+### デプロイの仕組み
+- `.github/workflows/deploy.yml` で `sand4rt/ftp-deployer@v1.8` を使用
+- mainブランチへのpushがトリガー
+- FTP接続情報・デプロイパスはGitHub Secrets（`FTP_SERVER`, `FTP_USERNAME`, `FTP_PASSWORD`, `DEPLOY_PATH`）
+- `cleanup: true` で削除されたファイルもサーバーから除去
+
+## 作業ステータス
+- [x] デザインシステム構築（design-system.css / page.css / main.css 3層CSS）
+- [x] 全ページPHP部品化（header / footer / page-template / work-detail-template）
+- [x] TOPページ（ヒーロースライダー + モザイクグリッド + WORK一覧）
+- [x] ABOUT / CONCEPT / EVIDENCE / COMPANY / CONTACT ページ
+- [x] WORK詳細8ページ（work01〜work08）+ work.json データ管理
+- [x] 管理画面（admin/）— WORKデータのCRUD
+- [x] GitHub Actions FTPデプロイ設定
+- [x] LiftKit 1:1.6比率適用
+- [x] Lucide SVGアイコン導入
+- [ ] バックアップファイル（*.bak_*, *.fix_*）の整理・削除
+- [ ] OGP / SEO meta情報の充実
+- [ ] CONTACTフォームの実装（現在は情報掲載のみ）
+
+## よくあるトラブル・注意点
+- **バックアップファイルが多数残っている**: `*.bak_*`, `*.fix_*` が各所にある。.gitignoreで除外済みだがローカルには存在
+- **pages/ は旧構成**: `pages/blocks/`, `pages/slides/`, `pages/works/` はレガシー。index.phpから一部参照されているが、work01〜08.phpが正規版
+- **CSSは3層構造を守る**: design-system.css（トークン）→ page.css（下層ページ）→ main.css（TOP専用）。`<style>`タグをPHPに書かない
+- **デザイン構造を崩さない**: 1920/480グリッド + LiftKit 1:1.6比率が基本
+
 ## Project Rules
 
 Rule Mode: PROPOSE_DIFF_OK_APPLY
@@ -79,3 +114,18 @@ Rule Mode: PROPOSE_DIFF_OK_APPLY
 - deploy は私の許可後
 - 既存デザイン構造（1920/480グリッド）を崩さない
 - LiftKit思想（1:1.6比率）を優先
+
+## 最終更新
+- **日付**: 2026-03-02
+- **更新者**: Hide
+- **内容**: CLAUDE.md にリポジトリ情報・作業ステータス・注意点・終了時ルールを追記
+- **次回やること**: バックアップファイル整理、CONTACTフォーム実装
+
+---
+
+## 終了時ルール
+Hideが「終了」「終わり」「おわり」と言ったら、以下を実行すること：
+1. 作業ステータスを更新（完了したものに[x]をつける）
+2. 最終更新の日付・次回やることを更新
+3. ハマったポイントがあれば「よくあるトラブル」に追記
+4. git add → commit → push
