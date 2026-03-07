@@ -1,6 +1,6 @@
 <?php
-$page_title = 'あなたのペースで、ひとつずつ。';
-$page_description = '幹細胞治療を検討するための8つのコンテンツ。知ることから始めましょう。';
+$page_title = 'コンテンツ一覧';
+$page_description = '幹細胞治療を検討するための8つのコンテンツ。仕組み・安全性・費用・選び方・相談の流れまで、知ることから始められる情報整理ページです。';
 
 // Load work data
 $work_json = file_get_contents(__DIR__ . '/data/work.json');
@@ -19,7 +19,7 @@ ksort($works, SORT_NATURAL);
   <link rel="stylesheet" href="./assets/css/design-system.css?v=<?php echo time(); ?>">
   <link rel="stylesheet" href="./assets/css/page.css?v=<?php echo time(); ?>">
   <link rel="stylesheet" href="./assets/css/main.css?v=<?php echo time(); ?>">
-  <title><?php echo $page_title; ?> | ALGO Inc.</title>
+  <title><?php echo htmlspecialchars($page_title, ENT_QUOTES, 'UTF-8'); ?>｜ALGO LAB</title>
   <?php include __DIR__ . '/components/head-meta.php'; ?>
 </head>
 <body>

@@ -36,8 +36,19 @@ $page_description = $page_title . ' — ' . mb_substr($work['text'], 0, 80, 'UTF
   <link rel="stylesheet" href="./assets/css/design-system.css?v=<?php echo time(); ?>">
   <link rel="stylesheet" href="./assets/css/page.css?v=<?php echo time(); ?>">
   <link rel="stylesheet" href="./assets/css/main.css?v=<?php echo time(); ?>">
-  <title><?php echo htmlspecialchars($page_title, ENT_QUOTES, 'UTF-8'); ?> | ALGO Inc.</title>
+  <title><?php echo htmlspecialchars($page_title, ENT_QUOTES, 'UTF-8'); ?>｜ALGO LAB</title>
   <?php include __DIR__ . '/head-meta.php'; ?>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "HOME", "item": "https://lab.algo-cosme.com/"},
+    {"@type": "ListItem", "position": 2, "name": "WORKS", "item": "https://lab.algo-cosme.com/work.php"},
+    {"@type": "ListItem", "position": 3, "name": "<?php echo htmlspecialchars($page_title, ENT_QUOTES, 'UTF-8'); ?>"}
+  ]
+}
+</script>
 </head>
 <body>
 
@@ -104,10 +115,10 @@ $page_description = $page_title . ' — ' . mb_substr($work['text'], 0, 80, 'UTF
 <!-- CTA Band -->
 <section class="l-section l-section--dark">
   <div class="l-container t-center">
-    <h2 class="t-h2" style="color:var(--text-inverse);">お気軽にご相談ください</h2>
-    <p class="t-body-lg" style="color:var(--text-inverse);opacity:0.72;margin-top:var(--sp-4);max-width:600px;margin-inline:auto;">製品の詳細や導入に関するご質問など、お問い合わせをお待ちしております。</p>
+    <h2 class="t-h2" style="color:var(--text-inverse);">まずは、話すことから。</h2>
+    <p class="t-body-lg" style="color:var(--text-inverse);opacity:0.72;margin-top:var(--sp-4);max-width:600px;margin-inline:auto;">決める前に、整理する。押し売りのない相談窓口として、お気軽にご利用ください。</p>
     <div style="margin-top:var(--sp-7);">
-      <a href="./contact.php" class="c-btn c-btn--primary c-btn--lg">お問い合わせ</a>
+      <a href="./contact.php" class="c-btn c-btn--primary c-btn--lg">まずは情報を整理してみる（無料・約2分）</a>
     </div>
   </div>
 </section>

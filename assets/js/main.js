@@ -100,4 +100,54 @@
       }
     });
   }
+  /* ── Step Form ── */
+  var stepForm = document.querySelector('.step-form');
+  if (stepForm) {
+    var panels = stepForm.querySelectorAll('.step-panel');
+    var dots = stepForm.querySelectorAll('.step-dot');
+    var currentStep = 1;
+
+    function showStep(step) {
+      panels.forEach(function (panel) {
+        var s = parseInt(panel.dataset.step, 10);
+        panel.classList.toggle('active', s === step);
+      });
+      dots.forEach(function (dot) {
+        var s = parseInt(dot.dataset.step, 10);
+        dot.classList.remove('active', 'done');
+        if (s === step) { dot.classList.add('active'); }
+        else if (s < step) { dot.classList.add('done'); }
+      });
+      currentStep = step;
+      stepForm.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+
+    stepForm.addEventListener('click', function (e) {
+      var btn = e.target.closest('.step-next, .step-prev');
+      if (!btn) return;
+      if (btn.classList.contains('step-next')) {
+        showStep(currentStep + 1);
+      } else if (btn.classList.contains('step-prev')) {
+        showStep(currentStep - 1);
+      }
+    });
+  }
+
+  /* ── FAQ Accordion ── */
+  var faqList = document.querySelector('.faq-list');
+  if (faqList) {
+    faqList.addEventListener('click', function (e) {
+      var btn = e.target.closest('.faq-question');
+      if (!btn) return;
+      var expanded = btn.getAttribute('aria-expanded') === 'true';
+      var answer = document.getElementById(btn.getAttribute('aria-controls'));
+      if (!answer) return;
+      btn.setAttribute('aria-expanded', String(!expanded));
+      if (expanded) {
+        answer.setAttribute('hidden', '');
+      } else {
+        answer.removeAttribute('hidden');
+      }
+    });
+  }
 })();

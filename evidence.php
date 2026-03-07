@@ -1,5 +1,5 @@
 <?php
-$page_title   = '「根拠」は、信じ込むためではなく、後悔を減らすために見る。';
+$page_title   = '幹細胞治療の研究・特許・エビデンスの見方';
 $page_eyebrow = 'EVIDENCE & SAFETY';
 $page_lead    = '再生医療や幹細胞領域は、言葉が強くなりやすい分野です。だからこそ、根拠を「すごそうに見える材料」として扱うのではなく、判断のための材料として扱う必要があります。';
 $page_prev    = ['url' => './concept.php', 'label' => 'CONCEPT'];
