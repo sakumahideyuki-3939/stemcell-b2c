@@ -38,41 +38,36 @@ for f in **/*.php; do php -l "$f"; done
 
 ```
 stemcell-b2c/
-├── index.php              # TOPページ（独自<head>、header/footer直接include）
-├── about.php              # ABOUTページ
-├── concept.php            # CONCEPTページ
-├── evidence.php           # EVIDENCEページ
-├── company.php            # COMPANYページ
-├── contact.php            # CONTACTページ（現在は情報掲載のみ）
-├── work01.php〜work08.php # WORK詳細8ページ
-├── components/            # 共通PHPパーツ（※最重要）
-│   ├── header.php             # グローバルナビ（5項目 + CTA）
-│   ├── footer.php             # フッター（4カラムグリッド）
-│   ├── head-meta.php          # OGP / metaタグ（<head>内でinclude）
-│   ├── page-template.php      # 下層ページ共通テンプレート
-│   ├── work-detail-template.php # WORK詳細テンプレート
-│   ├── cta-work.php           # WORK用CTA
-│   ├── cta_consult.php        # 相談CTA
-│   └── faq_mini.php           # FAQミニ
-├── assets/
-│   ├── css/
-│   │   ├── design-system.css  # デザイントークン（CSS変数定義）
-│   │   ├── page.css           # 下層ページ用スタイル
-│   │   └── main.css           # TOPページ専用スタイル
-│   ├── img/                   # ヒーロー画像・favicon等
-│   │   └── work/              # WORK用画像（work-1.jpg〜work-8.jpg）
-│   └── js/
-│       └── main.js            # JS（スライダー等）
-├── data/
-│   └── work.json              # WORK項目データ（ID "1"〜"8"）
-├── admin/                     # 管理画面（WORKデータのCRUD）
-│   ├── index.php              # 一覧
-│   ├── edit.php               # 編集
-│   └── save.php               # 保存（POST）
-├── pages/                     # ⚠️ レガシー（index.phpから一部参照あり）
-│   ├── blocks/
-│   ├── slides/
-│   └── works/
+├── index.php              # ルーティングモーダル（Cookie分岐 → /consult/ or /clinic/）
+├── sitemap.xml             # 統合サイトマップ
+├── robots.txt              # クロール設定
+├── consult/               # B2C — 個人向け相談サイト
+│   ├── index.php              # TOPページ（ヒーロースライダー + WORK一覧）
+│   ├── about.php〜contact.php # 下層ページ群
+│   ├── work01.php〜work08.php # WORK詳細8ページ
+│   ├── components/            # B2C共通PHPパーツ
+│   │   ├── header.php         # グローバルナビ + サイト切り替えバー
+│   │   ├── footer.php         # フッター + 医療機関リンク
+│   │   ├── head-meta.php      # OGP / metaタグ
+│   │   ├── page-template.php  # 下層ページテンプレート
+│   │   ├── work-detail-template.php # WORK詳細テンプレート
+│   │   └── faq_full.php       # FAQ 15問 + JSON-LD
+│   ├── assets/css/            # design-system.css / page.css / main.css
+│   ├── assets/img/            # ヒーロー画像・favicon等
+│   ├── assets/js/main.js      # スライダー・FAQ・ステップフォーム
+│   ├── data/work.json         # WORKデータ
+│   └── admin/                 # 管理画面（CRUD）
+├── clinic/                # B2B — 医療機関向けサイト
+│   ├── index.php              # TOPページ（UNIQUE Grid System）
+│   ├── concept.php〜contact.php # 下層ページ群
+│   ├── products.php           # 製品情報
+│   ├── components/            # B2B共通PHPパーツ
+│   ├── assets/css/            # main.css / reset.css
+│   ├── assets/images/         # B2B用画像
+│   └── assets/js/script.js    # B2Bスクリプト
+├── common/                # 共有ページ
+│   ├── privacy.php            # プライバシーポリシー
+│   └── tokusho.php            # 特商法表記
 └── .github/workflows/
     └── deploy.yml             # FTPデプロイ設定
 ```
@@ -140,25 +135,32 @@ stemcell-b2c/
 - [x] LiftKit 1:1.6比率適用
 - [x] Lucide SVGアイコン導入
 - [x] CLAUDE.md テンプレート再構成
+- [x] B2C/B2B統合サイト構築（/consult/ + /clinic/ + /common/ + ルーティングモーダル）
+- [x] Cookie分岐ルーティングモーダル（index.php）
+- [x] sitemap.xml / robots.txt 統合版作成
+- [x] 薬機法NGワードチェック完了
+- [x] コンテンツ境界検証（consult/にB2B情報なし、clinic/に個人販売情報なし）
 - [ ] バックアップファイル（*.bak_*, *.fix_*）の整理・削除
-- [ ] OGP / SEO meta情報の充実
-- [ ] CONTACTフォームの実装（現在は情報掲載のみ）
+- [ ] CONTACTフォームのバックエンド実装（現在はフロントのみ）
+- [ ] GA4タグ設置
 
 ## よくあるトラブル・注意点
 
-- **バックアップファイルが多数残っている**: `*.bak_*`, `*.fix_*` がローカルの各所にある。`.gitignore` で除外済みだがローカルには存在。邪魔なら手動削除OK
-- **pages/ は旧構成**: `pages/blocks/`, `pages/slides/`, `pages/works/` はレガシー。`index.php` から一部参照されているが、`work01〜08.php` が正規版
-- **CSSは3層構造を守る**: `design-system.css`（トークン）→ `page.css`（下層ページ）→ `main.css`（TOP専用）。`<style>` タグをPHPに書かない
-- **デザイン構造を崩さない**: 1920/480グリッド + LiftKit 1:1.6比率が基本
+- **サイト構造が3層に分かれている**: `/consult/`（個人向けB2C）、`/clinic/`（医療機関向けB2B）、`/common/`（共有ページ）。ルート `index.php` はCookie分岐モーダル
+- **Cookie `user_type`**: `individual` → /consult/、`clinic` → /clinic/。`?reset=1` でクリアしてモーダルに戻る。有効期限30日
+- **B2CのCSSは3層構造を守る**: `design-system.css`（トークン）→ `page.css`（下層ページ）→ `main.css`（TOP専用）。`<style>` タグをPHPに書かない
+- **B2BのCSSは別体系**: `reset.css` + `main.css`（UNIQUE Grid System）。B2Cとは完全に独立
+- **コンテンツ境界を守る**: `/consult/` に試薬スペック・価格を載せない。`/clinic/` に個人向け販売・相談を載せない
 - **deploy.ymlにlintなし**: CI/CDにPHP構文チェックがないため、push前に手元で `php -l` すること
-- **FTP cleanup=true**: リポジトリから消したファイルはサーバーからも消える。意図しない削除に注意
+- **FTP cleanup=true**: リポジトリから消したファイルはサーバーからも消える。旧URLは404になる
+- **バックアップファイルが残っている**: `*.bak_*`, `*.fix_*` がローカルにある。`.gitignore` で除外済み
 
 ## 最終更新
 
-- **日付**: 2026-03-03
-- **更新者**: Hide
-- **内容**: CLAUDE.md をテンプレートに沿って全面再構成
-- **次回やること**: バックアップファイル整理、CONTACTフォーム実装
+- **日付**: 2026-03-07
+- **更新者**: Hide + Claude
+- **内容**: B2C/B2B統合サイト構築（ルーティングモーダル + /consult/ + /clinic/ + /common/）
+- **次回やること**: バックアップファイル整理、CONTACTフォームバックエンド実装、GA4タグ設置
 
 ---
 
