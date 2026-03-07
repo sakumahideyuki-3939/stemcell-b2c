@@ -169,7 +169,7 @@ stemcell-b2c/
 
 - **日付**: 2026-03-07
 - **更新者**: Hide + Claude
-- **内容**: OGP画像作成、未使用ファイル削除（clinic/about_a.php, consult/components/page_nav.php）
+- **内容**: サイト全体チェック→canonical統一(8ファイル)・フッター修正・OGP画像作成・未使用ファイル削除(about_a.php, page_nav.php)・blog.phpリンク修正
 - **次回やること**: CONTACTフォームバックエンド実装（consult/）、B2Bモバイル対応、不妊ペルソナカード追加、GA4タグ設置
 
 ---
