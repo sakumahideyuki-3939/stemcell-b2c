@@ -140,9 +140,18 @@ stemcell-b2c/
 - [x] sitemap.xml / robots.txt 統合版作成
 - [x] 薬機法NGワードチェック完了
 - [x] コンテンツ境界検証（consult/にB2B情報なし、clinic/に個人販売情報なし）
+- [x] evidence.php大幅強化（特許6件・学術研究・安全性・エビデンス限界）
+- [x] 医療サイト多角的チェック（MEDICAL/WEB/DOCTOR/PATIENT/LEGAL 5エージェント）
+- [x] P0法的リスク修正（clinic/誇大表現・プレースホルダー・ダミーデータ削除）
+- [x] P1コンテンツ改善（evidence.php表現緩和・フッターリンク・同意チェック）
+- [x] P2技術基盤（404.php・.htaccess・canonical・Cookie Secure・sitemap強化）
 - [ ] バックアップファイル（*.bak_*, *.fix_*）の整理・削除
 - [ ] CONTACTフォームのバックエンド実装（現在はフロントのみ）
 - [ ] GA4タグ設置
+- [ ] OGP画像作成（consult/assets/img/ogp.jpg）
+- [ ] B2B（clinic/）モバイル対応
+- [ ] clinic/のcanonicalドメイン統一（cells→lab）
+- [ ] 不妊ペルソナカード追加（consult/index.php）
 
 ## よくあるトラブル・注意点
 
@@ -159,8 +168,8 @@ stemcell-b2c/
 
 - **日付**: 2026-03-07
 - **更新者**: Hide + Claude
-- **内容**: B2C/B2B統合サイト構築（ルーティングモーダル + /consult/ + /clinic/ + /common/）
-- **次回やること**: バックアップファイル整理、CONTACTフォームバックエンド実装、GA4タグ設置
+- **内容**: evidence.php強化、5エージェント多角的チェック実施、P0/P1/P2修正28件（誇大表現・法的リスク・技術基盤）
+- **次回やること**: CONTACTフォームバックエンド実装、OGP画像作成、B2Bモバイル対応、clinic canonicalドメイン統一、不妊ペルソナカード追加、GA4タグ設置
 
 ---
 
