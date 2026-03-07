@@ -4,3 +4,6 @@
 # backups / fixes (generated)
 *.bak_*
 *.fix_*
+
+# local data
+data/
