@@ -145,10 +145,11 @@ stemcell-b2c/
 - [x] P0法的リスク修正（clinic/誇大表現・プレースホルダー・ダミーデータ削除）
 - [x] P1コンテンツ改善（evidence.php表現緩和・フッターリンク・同意チェック）
 - [x] P2技術基盤（404.php・.htaccess・canonical・Cookie Secure・sitemap強化）
+- [x] 未使用ファイル削除（clinic/about_a.php, consult/components/page_nav.php）
 - [ ] バックアップファイル（*.bak_*, *.fix_*）の整理・削除
 - [ ] CONTACTフォームのバックエンド実装（現在はフロントのみ）
 - [ ] GA4タグ設置
-- [ ] OGP画像作成（consult/assets/img/ogp.jpg）
+- [x] OGP画像作成（consult/assets/img/ogp.jpg）
 - [ ] B2B（clinic/）モバイル対応
 - [x] clinic/のcanonicalドメイン統一（cells→lab）
 - [ ] 不妊ペルソナカード追加（consult/index.php）
@@ -168,8 +169,8 @@ stemcell-b2c/
 
 - **日付**: 2026-03-07
 - **更新者**: Hide + Claude
-- **内容**: サイト全体チェック実施、clinic/ canonical/og:url全8ページをlab.algo-cosme.comに統一、フッターブランド名修正、GA4プレースホルダー削除、blog.phpリンク修正
-- **次回やること**: CONTACTフォームバックエンド実装（consult/）、OGP画像作成、B2Bモバイル対応、不妊ペルソナカード追加、GA4タグ設置
+- **内容**: OGP画像作成、未使用ファイル削除（clinic/about_a.php, consult/components/page_nav.php）
+- **次回やること**: CONTACTフォームバックエンド実装（consult/）、B2Bモバイル対応、不妊ペルソナカード追加、GA4タグ設置
 
 ---
 

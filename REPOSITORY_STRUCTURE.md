@@ -38,7 +38,6 @@
 │   ├── layout_open.php
 │   ├── page-template.php
 │   ├── page_frame.php
-│   ├── page_nav.php
 │   └── work-detail-template.php
 ├── concept.php (+ .bak + .fix backups)
 ├── config.php
