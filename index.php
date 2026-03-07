@@ -2,7 +2,12 @@
 // Cookie-based routing for lab.algo-cosme.com
 // ?reset=1 clears the user_type cookie and shows the selection modal
 if (isset($_GET['reset'])) {
-    setcookie('user_type', '', time() - 3600, '/');
+    setcookie('user_type', '', [
+        'expires' => time() - 3600,
+        'path' => '/',
+        'secure' => true,
+        'samesite' => 'Lax'
+    ]);
 } elseif (isset($_COOKIE['user_type'])) {
     $type = $_COOKIE['user_type'];
     if ($type === 'individual') {
@@ -32,6 +37,7 @@ if (isset($_GET['reset'])) {
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="ALGO LAB | 幹細胞治療の情報整理">
     <meta name="twitter:description" content="幹細胞治療に関する情報整理プラットフォーム。個人の方への無料相談、医療機関向け製品情報・導入相談を提供します。">
+    <link rel="canonical" href="https://lab.algo-cosme.com/">
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -237,7 +243,7 @@ if (isset($_GET['reset'])) {
         function selectType(type) {
             var expires = new Date();
             expires.setTime(expires.getTime() + (30 * 24 * 60 * 60 * 1000));
-            document.cookie = 'user_type=' + type + ';expires=' + expires.toUTCString() + ';path=/;SameSite=Lax';
+            document.cookie = 'user_type=' + type + ';expires=' + expires.toUTCString() + ';path=/;SameSite=Lax;Secure';
 
             if (type === 'individual') {
                 window.location.href = '/consult/';

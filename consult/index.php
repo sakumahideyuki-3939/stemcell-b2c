@@ -21,7 +21,7 @@ ksort($works, SORT_NATURAL);
   <link rel="stylesheet" href="./assets/css/main.css?v=<?php echo time(); ?>">
   <title><?php echo htmlspecialchars($page_title, ENT_QUOTES, 'UTF-8'); ?>｜ALGO LAB</title>
   <?php include __DIR__ . '/components/head-meta.php'; ?>
-  <script src="https://unpkg.com/lucide@latest"></script>
+  <script src="https://unpkg.com/lucide@0.263.1"></script>
 </head>
 <body>
 
@@ -44,7 +44,7 @@ ksort($works, SORT_NATURAL);
     <div class="hero-slider__slide hero-slider__slide--bg-2">
       <div class="l-container t-center">
         <p class="t-micro">BEYOND SUPERNATANT</p>
-        <h2 class="t-hero" style="margin-top:var(--sp-4);">上清だけでは届かない領域へ。</h2>
+        <h2 class="t-hero" style="margin-top:var(--sp-4);">分泌成分以外に注目するアプローチ。</h2>
         <p class="t-body-lg t-secondary" style="margin-top:var(--sp-5);max-width:600px;margin-inline:auto;">"分泌された成分だけ"ではなく、細胞内に眠るタンパク質や情報分子まで視野に入れたアプローチが注目されています。<br>大切なのは、言葉の強さではなく「説明の透明性」。納得して選ぶための基準を、ここで整えます。</p>
         <div style="margin-top:var(--sp-7);">
           <a href="./contact.php" class="c-btn c-btn--primary c-btn--lg">まずは情報を整理してみる（無料・約2分）</a>

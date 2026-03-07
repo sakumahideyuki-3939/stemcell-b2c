@@ -49,7 +49,7 @@
                 </p>
                 <ul class="feature-list">
                     <li>
-                        <b>がん化リスクの回避</b>
+                        <b>がん化リスクへの対策</b>
                         生きた細胞を含まないため、腫瘍形成や拒絶反応のリスク低減が期待されます。
                     </li>
                     <li>
@@ -151,6 +151,7 @@
                 <p class="evidence-text" style="text-align: center; margin-bottom: 40px;">
                     幹細胞破砕濾液（Lysate）に関する研究成果は、国内外の学会で発表されています。
                 </p>
+                <?php /*
                 <div style="text-align: left;">
                     <div style="border-bottom: 1px solid #eee; padding: 20px 0;">
                         <span style="font-size: 11px; color: #888;">【学会名】</span>
@@ -168,6 +169,7 @@
                         <span style="font-size: 11px; color: #999; margin-top: 5px; display: block;">発表年：【年】</span>
                     </div>
                 </div>
+                */ ?>
                 <p style="font-size: 11px; color: #999; margin-top: 30px;">※ 学会名・発表タイトル・年は確定次第更新いたします。詳細資料はお問い合わせください。</p>
             </div>
         </div>
@@ -213,6 +215,10 @@
             <a href="./contact.php?category=資料請求" style="display: inline-block; border: 1px solid #2f2f2f; color: #2f2f2f; padding: 12px 30px; font-size: 12px; letter-spacing: 0.15em; text-decoration: none;">特許技術の詳細について相談する</a>
         </div>
     </section>
+
+    <p style="font-size:13px;color:#888;text-align:center;margin:40px 0 20px;">
+本製品は研究用試薬です。臨床応用にあたっては、医師の医学的判断に基づき、適切なインフォームド・コンセントと安全管理のもとでご使用ください。
+</p>
 
     <?php include(__DIR__ . '/components/footer.php'); ?>
 </div>

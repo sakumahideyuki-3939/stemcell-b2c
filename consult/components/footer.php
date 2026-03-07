@@ -23,7 +23,7 @@
           <li><a href="./about.php">仕組みを知る</a></li>
           <li><a href="./work03.php">安全性</a></li>
           <li><a href="./work04.php">費用</a></li>
-          <li><a href="./work07.php">無料相談</a></li>
+          <li><a href="./contact.php">無料相談</a></li>
           <li><a href="../common/privacy.php">プライバシーポリシー</a></li>
           <li><a href="../common/tokusho.php">特商法表記</a></li>
         </ul>
@@ -33,7 +33,7 @@
         <ul class="c-footer__list">
           <li><a href="./work.php">コンテンツ一覧</a></li>
           <li><a href="./evidence.php">根拠・研究</a></li>
-          <li><a href="./concept.php">相談者の声</a></li>
+          <li><a href="./concept.php">CONCEPT</a></li>
         </ul>
       </div>
       <div>

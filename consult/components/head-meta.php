@@ -17,3 +17,8 @@ $_meta_image = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? 'https'
   <meta name="twitter:title" content="<?php echo htmlspecialchars($_meta_title, ENT_QUOTES, 'UTF-8'); ?>">
   <meta name="twitter:description" content="<?php echo htmlspecialchars($_meta_desc, ENT_QUOTES, 'UTF-8'); ?>">
   <link rel="icon" href="./assets/img/favicon.svg" type="image/svg+xml">
+<?php
+$canonical_path = $_SERVER['REQUEST_URI'] ?? '';
+$canonical_url = 'https://lab.algo-cosme.com' . strtok($canonical_path, '?');
+?>
+  <link rel="canonical" href="<?php echo htmlspecialchars($canonical_url, ENT_QUOTES, 'UTF-8'); ?>">

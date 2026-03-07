@@ -98,7 +98,7 @@
                 <div class="addr-tag">ADDRESS: P7 - B8 / QUALITY CONTROL</div>
                 <h3 style="font-size: 20px; margin-bottom: 30px; letter-spacing: 0.2em;">成分プロファイルと安全性</h3>
                 <p class="product-text">
-                    「細胞そのもの」ではなく「成分」だからこそ可能な、高水準の品質管理。マイコプラズマ・無菌・エンドトキシン試験に適合し、0.2μmフィルタリングにより、がん化リスクとなる「細胞核（DNA）」を物理的に完全除去しています。
+                    「細胞そのもの」ではなく「成分」だからこそ可能な、高水準の品質管理。マイコプラズマ・無菌・エンドトキシン試験に適合し、0.2μmフィルタリングにより、がん化リスクとなる「細胞核（DNA）」を物理的に除去する工程を経ています。
                 </p>
                 <ul class="product-text" style="list-style: square; padding-left: 20px;">
                     <li>エクソソーム：細胞間コミュニケーションに関与するとされるメッセージ物質</li>
@@ -146,6 +146,10 @@
             </div>
         </div>
     </section>
+
+    <p style="font-size:13px;color:#888;text-align:center;margin:40px 0 20px;">
+本製品は研究用試薬です。臨床応用にあたっては、医師の医学的判断に基づき、適切なインフォームド・コンセントと安全管理のもとでご使用ください。
+</p>
 
     <?php include(__DIR__ . '/components/footer.php'); ?>
 </div>

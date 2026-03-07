@@ -60,7 +60,7 @@
         .comp-label { display: block; font-size: 12px; color: #999; margin-bottom: 10px; }
         .comp-title { font-size: 20px; color: #333; margin-bottom: 15px; display: block; }
         .comp-desc { font-size: 15px; line-height: 2; color: #666; }
-        .highlight { color: #bca88e; font-weight: 600; }
+        .highlight { color: #333; font-weight: 600; }
 
         /* 3. 成分カード */
         .ingredient-grid { display: flex; justify-content: space-between; gap: 30px; margin-top: 60px; }
@@ -100,17 +100,17 @@
         <section class="hero-section">
             <p>TECHNOLOGY & PHILOSOPHY</p>
             <h1>CONCEPT</h1>
-            <p>「細胞破壊」という逆転の発想が、再生医療を更新する。</p>
+            <p>「細胞破壊」という逆転の発想が、もうひとつのアプローチ。</p>
         </section>
 
         <div class="container">
             <span class="section-label">01 / ORIGIN</span>
-            <h2 class="section-title">培養上清の、その先へ。<br>「幹細胞生搾り」という到達点。</h2>
+            <h2 class="section-title">培養上清の、その先へ。<br>「幹細胞生搾り」という新たな選択肢。</h2>
 
             <div class="intro-box">
                 <div class="intro-text">
                     <p>再生医療の現場で広く使われてきた「幹細胞培養上清液」。それは、細胞を培養する過程で外へ分泌した成分のみを利用するものでした。しかし、細胞が持つ本来のポテンシャルは、分泌されるものだけではありません。</p>
-                    <p>私たちがたどり着いたのは、<strong>「幹細胞そのものを物理的に破砕し、中身を丸ごと抽出する」</strong>という、まったく新しいアプローチです。これを私たちは『幹細胞生搾り（Stem Cell Lysate / FADRCL）』と名付けました。</p>
+                    <p>私たちがたどり着いたのは、<strong>「幹細胞そのものを物理的に破砕し、中身を丸ごと抽出する」</strong>という、独自のアプローチです。これを私たちは『幹細胞生搾り（Stem Cell Lysate / FADRCL）』と名付けました。</p>
                     <p>従来の手法では捨てられていた「細胞の内側」にある数千種類の生理活性物質。それらを余すことなく取り出し、かつリスクとなる細胞核をフィルターで完全に取り除く。それが、私たちの独自技術による新しい抽出アプローチです。</p>
                 </div>
                 <div class="intro-visual" style="display: flex; align-items: center; justify-content: center; background: linear-gradient(135deg, #f9f9f9 0%, #f0ede8 100%);">
@@ -122,7 +122,7 @@
             </div>
 
             <span class="section-label">02 / COMPARISON</span>
-            <h2 class="section-title">従来の上清液との決定的な違い</h2>
+            <h2 class="section-title">従来の上清液との主な違い</h2>
 
             <table class="comparison-table">
                 <tr>
@@ -136,12 +136,12 @@
                         </p>
                     </td>
 
-                    <td style="background: #f9f6f2;">
-                        <span class="comp-label highlight">INNOVATION</span>
-                        <span class="comp-title highlight">私たちの「生搾り（濾液）」</span>
+                    <td>
+                        <span class="comp-label">LYSATE</span>
+                        <span class="comp-title">私たちの「生搾り（濾液）」</span>
                         <p class="comp-desc">
                             製法：幹細胞を凍結融解や超音波で物理的に破壊し、精密濾過を行う独自の抽出技術。<br>
-                            成分：分泌物に加え、<span class="highlight">細胞質・細胞内小器官の有用タンパク質</span>も高濃度に含有。<br>
+                            成分：分泌物に加え、細胞質・細胞内小器官の有用タンパク質も高濃度に含有。<br>
                             特徴：創傷治癒や組織再生に関する基礎研究データが報告されています。
                         </p>
                     </td>
@@ -153,32 +153,32 @@
                 <tr>
                     <th style="width: 25%; font-size: 12px; letter-spacing: 0.1em; color: #999;">比較項目</th>
                     <th style="width: 37.5%; font-size: 12px; letter-spacing: 0.1em; color: #999;">培養上清液</th>
-                    <th style="width: 37.5%; font-size: 12px; letter-spacing: 0.1em; color: #999; background: #f9f6f2;">幹細胞生搾り（Lysate）</th>
+                    <th style="width: 37.5%; font-size: 12px; letter-spacing: 0.1em; color: #999;">幹細胞生搾り（Lysate）</th>
                 </tr>
                 <tr>
                     <td style="font-size: 13px; font-weight: bold; color: #555;">含有成分</td>
                     <td style="font-size: 13px; color: #666;">分泌物（サイトカイン等）のみ</td>
-                    <td style="font-size: 13px; color: #555; background: #f9f6f2;"><span class="highlight">細胞内成分まで含む</span>（分泌物＋細胞質タンパク質）</td>
+                    <td style="font-size: 13px; color: #555;">細胞内成分まで含む（分泌物＋細胞質タンパク質）</td>
                 </tr>
                 <tr>
                     <td style="font-size: 13px; font-weight: bold; color: #555;">HSP47 / HSP70</td>
                     <td style="font-size: 13px; color: #666;">ほぼ含まない</td>
-                    <td style="font-size: 13px; color: #555; background: #f9f6f2;"><span class="highlight">高濃度含有</span></td>
+                    <td style="font-size: 13px; color: #555;">高濃度含有</td>
                 </tr>
                 <tr>
                     <td style="font-size: 13px; font-weight: bold; color: #555;">がん化リスク対策</td>
                     <td style="font-size: 13px; color: #666;">核混入リスクあり（製法による）</td>
-                    <td style="font-size: 13px; color: #555; background: #f9f6f2;"><span class="highlight">Cell-nucleus Free</span>（0.2μm濾過で核除去）</td>
+                    <td style="font-size: 13px; color: #555;">Cell-nucleus Free（0.2μm濾過で核除去）</td>
                 </tr>
                 <tr>
                     <td style="font-size: 13px; font-weight: bold; color: #555;">特許</td>
                     <td style="font-size: 13px; color: #666;">一般的な製法のため特許なし（多数）</td>
-                    <td style="font-size: 13px; color: #555; background: #f9f6f2;"><span class="highlight">4領域で特許取得済み</span></td>
+                    <td style="font-size: 13px; color: #555;">4領域で特許取得済み</td>
                 </tr>
                 <tr>
                     <td style="font-size: 13px; font-weight: bold; color: #555;">製品位置づけ</td>
                     <td style="font-size: 13px; color: #666;">各社により異なる</td>
-                    <td style="font-size: 13px; color: #555; background: #f9f6f2;">研究用試薬</td>
+                    <td style="font-size: 13px; color: #555;">研究用試薬</td>
                 </tr>
             </table>
         </div>
@@ -186,7 +186,7 @@
         <div style="background: #fcfcfc; padding: 120px 0;">
             <div class="container">
                 <span class="section-label">03 / COMPONENTS</span>
-                <h2 class="section-title">物理的破砕がもたらす「細胞内成分」のチカラ</h2>
+                <h2 class="section-title">物理的破砕がもたらす抽出される細胞内成分</h2>
 
                 <div class="ingredient-grid">
                     <div class="ing-card">
@@ -236,6 +236,10 @@
         </p>
         <a href="./contact.php?category=資料請求" style="display: inline-block; border: 1px solid #2f2f2f; color: #2f2f2f; padding: 12px 30px; font-size: 12px; letter-spacing: 0.15em; text-decoration: none;">技術資料をご請求ください</a>
     </section>
+
+    <p style="font-size:13px;color:#888;text-align:center;margin:40px 0 20px;">
+本製品は研究用試薬です。臨床応用にあたっては、医師の医学的判断に基づき、適切なインフォームド・コンセントと安全管理のもとでご使用ください。
+</p>
 
     <!-- ✅ PRODUCTSと同じフッター -->
     <?php include(__DIR__ . '/components/footer.php'); ?>
