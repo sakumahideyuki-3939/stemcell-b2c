@@ -22,3 +22,4 @@ $canonical_path = $_SERVER['REQUEST_URI'] ?? '';
 $canonical_url = 'https://lab.algo-cosme.com' . strtok($canonical_path, '?');
 ?>
   <link rel="canonical" href="<?php echo htmlspecialchars($canonical_url, ENT_QUOTES, 'UTF-8'); ?>">
+  <?php include $_SERVER['DOCUMENT_ROOT'] . '/ga4.php'; ?>

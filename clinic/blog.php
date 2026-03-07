@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BLOG｜幹細胞・再生医療の最新情報 | ALGO Inc.</title>
+    <?php include $_SERVER['DOCUMENT_ROOT'] . '/ga4.php'; ?>
     <meta name="description" content="幹細胞生搾り濾液（Lysate）・再生医療・自由診療に関する最新情報をお届け。培養上清液との違い、特許技術、導入事例など。">
     <meta property="og:title" content="BLOG｜幹細胞・再生医療の最新情報">
     <meta property="og:description" content="幹細胞生搾り濾液・再生医療・自由診療に関する最新情報をお届け。">

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EVIDENCE｜幹細胞Lysate特許技術・HSP47/70・Cell-nucleus Free | ALGO Inc.</title>
+    <?php include $_SERVER['DOCUMENT_ROOT'] . '/ga4.php'; ?>
     <meta name="description" content="幹細胞破砕濾液（Lysate）の特許ポートフォリオと研究データ。下部尿路機能障害・ED・皮膚保護・変形性膝関節症の4領域で特許取得。Cell-nucleus Free技術の科学的根拠。">
     <meta property="og:title" content="EVIDENCE｜幹細胞Lysate特許技術・研究データ">
     <meta property="og:description" content="幹細胞破砕濾液の特許ポートフォリオと研究データ。4領域で特許取得。Cell-nucleus Free技術の科学的根拠。">

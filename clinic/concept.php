@@ -6,6 +6,7 @@
     <!-- ✅ PRODUCTSと同じ viewport -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CONCEPT｜培養上清液との違い・生搾り濾液の仕組み | ALGO Inc.</title>
+    <?php include $_SERVER['DOCUMENT_ROOT'] . '/ga4.php'; ?>
     <meta name="description" content="幹細胞生搾り濾液（Lysate）と培養上清液の違いを解説。物理的破砕により細胞内成分（HSP47/70・AnnexinA6・HMGB1）を高濃度抽出。Cell-nucleus Free技術の仕組み。">
     <meta property="og:title" content="CONCEPT｜培養上清液との違い・生搾り濾液の仕組み">
     <meta property="og:description" content="幹細胞生搾り濾液と培養上清液の違いを解説。物理的破砕による細胞内成分の高濃度抽出技術。">

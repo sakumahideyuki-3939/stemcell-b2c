@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PRODUCTS｜幹細胞濾液Lysate 研究用試薬 点鼻用・注射用 | ALGO Inc.</title>
+    <?php include $_SERVER['DOCUMENT_ROOT'] . '/ga4.php'; ?>
     <meta name="description" content="幹細胞破砕濾液（Lysate）の製品ラインナップ。点鼻用Nasal Sprayと注射用Pro Vialの2種。研究用試薬として自由診療クリニックへ提供。導入フロー・品質管理体制のご案内。">
     <meta property="og:title" content="PRODUCTS｜幹細胞濾液Lysate 研究用試薬">
     <meta property="og:description" content="点鼻用・注射用の2種類の幹細胞破砕濾液。研究用試薬として自由診療クリニックへ提供。">

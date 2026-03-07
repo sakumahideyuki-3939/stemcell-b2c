@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ALGO本社サイト公開のお知らせ | BLOG | ALGO Inc.</title>
+    <?php include $_SERVER['DOCUMENT_ROOT'] . '/ga4.php'; ?>
     <link rel="stylesheet" href="./assets/css/main.css?v=20260114_master">
     <style>
         /* 記事詳細専用の微調整 */

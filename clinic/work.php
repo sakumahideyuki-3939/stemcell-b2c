@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WORK | ALGO Inc. 制作実績</title>
+    <?php include $_SERVER['DOCUMENT_ROOT'] . '/ga4.php'; ?>
     <link rel="stylesheet" href="./assets/css/main.css?v=20260114_master">
 </head>
 <body class="page-work">

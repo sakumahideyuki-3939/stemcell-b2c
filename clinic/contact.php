@@ -175,6 +175,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CONTACT｜導入相談・資料請求・お問い合わせ | ALGO Inc.</title>
+    <?php include $_SERVER['DOCUMENT_ROOT'] . '/ga4.php'; ?>
     <meta name="description" content="幹細胞生搾り濾液（Lysate）の導入相談・資料請求・サンプル依頼はこちら。クリニック・法人様向けお問い合わせフォーム。">
     <meta property="og:title" content="CONTACT｜導入相談・資料請求・お問い合わせ">
     <meta property="og:description" content="幹細胞生搾り濾液の導入相談・資料請求・サンプル依頼。クリニック・法人様向け。">

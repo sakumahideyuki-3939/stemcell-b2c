@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ABOUT｜幹細胞生搾りプロジェクトの背景｜ALGO Inc.</title>
+    <?php include $_SERVER['DOCUMENT_ROOT'] . '/ga4.php'; ?>
     <meta name="description" content="ALGO Inc.の事業コンセプト。培養上清液の限界から生まれた幹細胞生搾り（Lysate）の発想と、特許取得に至るまでのストーリー。">
     <meta property="og:title" content="ABOUT｜幹細胞生搾りプロジェクトの背景">
     <meta property="og:description" content="培養上清液の限界から生まれた幹細胞生搾りの発想。特許取得に至るまでのストーリー。">

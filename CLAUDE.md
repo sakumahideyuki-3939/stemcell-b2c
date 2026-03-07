@@ -148,7 +148,7 @@ stemcell-b2c/
 - [x] 未使用ファイル削除（clinic/about_a.php, consult/components/page_nav.php）
 - [ ] バックアップファイル（*.bak_*, *.fix_*）の整理・削除
 - [ ] CONTACTフォームのバックエンド実装（現在はフロントのみ）
-- [ ] GA4タグ設置
+- [x] GA4タグ設置（G-XXXXXXXXXXプレースホルダー、ga4.php一元管理）
 - [x] OGP画像作成（consult/assets/img/ogp.jpg）
 - [ ] B2B（clinic/）モバイル対応
 - [x] clinic/のcanonicalドメイン統一（cells→lab）
@@ -167,10 +167,10 @@ stemcell-b2c/
 
 ## 最終更新
 
-- **日付**: 2026-03-07
+- **日付**: 2026-03-08
 - **更新者**: Hide + Claude
-- **内容**: サイト全体チェック→canonical統一(8ファイル)・フッター修正・OGP画像作成・未使用ファイル削除(about_a.php, page_nav.php)・blog.phpリンク修正
-- **次回やること**: CONTACTフォームバックエンド実装（consult/）、B2Bモバイル対応、不妊ペルソナカード追加、GA4タグ設置
+- **内容**: GA4タグをプレースホルダー(G-XXXXXXXXXX)で全ページに設置（ga4.php一元管理、15ファイルにinclude）
+- **次回やること**: CONTACTフォームバックエンド実装（consult/）、B2Bモバイル対応、不妊ペルソナカード追加、GA4のIDをAlgoが本番IDに差し替え
 
 ---
 

@@ -38,6 +38,7 @@ if (isset($_GET['reset'])) {
     <meta name="twitter:title" content="ALGO LAB | 幹細胞治療の情報整理">
     <meta name="twitter:description" content="幹細胞治療に関する情報整理プラットフォーム。個人の方への無料相談、医療機関向け製品情報・導入相談を提供します。">
     <link rel="canonical" href="https://lab.algo-cosme.com/">
+    <?php include $_SERVER['DOCUMENT_ROOT'] . '/ga4.php'; ?>
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">

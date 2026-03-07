@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>COMPANY｜株式会社アルゴ 会社概要 | ALGO Inc.</title>
+    <?php include $_SERVER['DOCUMENT_ROOT'] . '/ga4.php'; ?>
     <meta name="description" content="株式会社アルゴ（ALGO Inc.）の会社概要。東京都渋谷区。美容皮膚科向けEC・再生医療支援・幹細胞生搾りプロジェクト・AI導入支援事業を展開。">
     <meta property="og:title" content="COMPANY｜株式会社アルゴ 会社概要">
     <meta property="og:description" content="株式会社アルゴの会社概要。美容皮膚科向けEC・再生医療支援・幹細胞生搾りプロジェクトを展開。">

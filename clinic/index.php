@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>幹細胞生搾り濾液（Lysate）クリニック導入｜特許4件・Cell-nucleus Free｜ALGO Inc.</title>
+    <?php include $_SERVER['DOCUMENT_ROOT'] . '/ga4.php'; ?>
     <meta name="description" content="特許4件取得の幹細胞破砕濾液（Lysate）。培養上清液では得られない細胞内成分HSP47/70を高濃度含有。Cell-nucleus Freeで安全性に配慮した設計の研究用試薬を自由診療クリニックへ。">
     <meta property="og:title" content="幹細胞生搾り濾液（Lysate）クリニック導入｜ALGO Inc.">
     <meta property="og:description" content="特許4件取得の幹細胞破砕濾液。培養上清液では得られない細胞内成分を高濃度含有。研究用試薬として自由診療クリニックへ提供。">
