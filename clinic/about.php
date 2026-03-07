@@ -8,9 +8,9 @@
     <meta property="og:title" content="ABOUT｜幹細胞生搾りプロジェクトの背景">
     <meta property="og:description" content="培養上清液の限界から生まれた幹細胞生搾りの発想。特許取得に至るまでのストーリー。">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://cells.algo-cosme.com/cells/about.php">
+    <meta property="og:url" content="https://lab.algo-cosme.com/clinic/about.php">
     <meta property="og:site_name" content="ALGO Inc. | 幹細胞生搾り">
-    <link rel="canonical" href="https://cells.algo-cosme.com/cells/about.php">
+    <link rel="canonical" href="https://lab.algo-cosme.com/clinic/about.php">
     <link rel="stylesheet" href="./assets/css/main.css?v=<?php echo time(); ?>">
     <style>
         .inner-pad-center { padding: 80px 60px; height: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; }

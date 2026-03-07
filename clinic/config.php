@@ -17,7 +17,7 @@ $hero_sub_title   = "思考で仕組みを革新する未来へと";
 $philosophy_title = "それは、問いを構造化し、答えを仕組みとして実装すること。";
 
 // 3. パートナー情報（フッター用）
-$partner_link     = "https://cells.algo-cosme.com/";
+$partner_link     = "https://lab.algo-cosme.com/";
 $partner_img      = "images/m15.kansaibou.png";
 $partner_text     = "最新のバイオテクノロジーとデザインが融合する、次世代のウェルネス体験。";
 

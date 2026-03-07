@@ -150,7 +150,7 @@ stemcell-b2c/
 - [ ] GA4タグ設置
 - [ ] OGP画像作成（consult/assets/img/ogp.jpg）
 - [ ] B2B（clinic/）モバイル対応
-- [ ] clinic/のcanonicalドメイン統一（cells→lab）
+- [x] clinic/のcanonicalドメイン統一（cells→lab）
 - [ ] 不妊ペルソナカード追加（consult/index.php）
 
 ## よくあるトラブル・注意点
@@ -168,8 +168,8 @@ stemcell-b2c/
 
 - **日付**: 2026-03-07
 - **更新者**: Hide + Claude
-- **内容**: evidence.php強化、5エージェント多角的チェック実施、P0/P1/P2修正28件（誇大表現・法的リスク・技術基盤）
-- **次回やること**: CONTACTフォームバックエンド実装、OGP画像作成、B2Bモバイル対応、clinic canonicalドメイン統一、不妊ペルソナカード追加、GA4タグ設置
+- **内容**: サイト全体チェック実施、clinic/ canonical/og:url全8ページをlab.algo-cosme.comに統一、フッターブランド名修正、GA4プレースホルダー削除、blog.phpリンク修正
+- **次回やること**: CONTACTフォームバックエンド実装（consult/）、OGP画像作成、B2Bモバイル対応、不妊ペルソナカード追加、GA4タグ設置
 
 ---
 

@@ -8,10 +8,9 @@
     <meta property="og:title" content="幹細胞生搾り濾液（Lysate）クリニック導入｜ALGO Inc.">
     <meta property="og:description" content="特許4件取得の幹細胞破砕濾液。培養上清液では得られない細胞内成分を高濃度含有。研究用試薬として自由診療クリニックへ提供。">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://cells.algo-cosme.com/cells/">
+    <meta property="og:url" content="https://lab.algo-cosme.com/clinic/">
     <meta property="og:site_name" content="ALGO Inc. | 幹細胞生搾り">
-    <link rel="canonical" href="https://cells.algo-cosme.com/cells/">
-    <!-- GA4: GTM-XXXXXXXX ここに設置 -->
+    <link rel="canonical" href="https://lab.algo-cosme.com/clinic/">
     <link rel="stylesheet" href="./assets/css/main.css?v=<?php echo time(); ?>">
     <style>
         /* 文字密度と可読性を両立させるスタイルガード */

@@ -37,7 +37,7 @@
         </ul>
       </div>
       <div>
-        <div class="c-footer__heading">cells.algo-cosme</div>
+        <div class="c-footer__heading">lab.algo-cosme</div>
         <p style="font-size:var(--fs-caption);opacity:0.72;line-height:var(--lh-body);">
           幹細胞治療の情報整理と、あなたに合う医療機関への相談・紹介をサポートします。押し売りのない相談窓口です。
         </p>

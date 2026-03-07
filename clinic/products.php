@@ -8,9 +8,9 @@
     <meta property="og:title" content="PRODUCTS｜幹細胞濾液Lysate 研究用試薬">
     <meta property="og:description" content="点鼻用・注射用の2種類の幹細胞破砕濾液。研究用試薬として自由診療クリニックへ提供。">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://cells.algo-cosme.com/cells/products.php">
+    <meta property="og:url" content="https://lab.algo-cosme.com/clinic/products.php">
     <meta property="og:site_name" content="ALGO Inc. | 幹細胞生搾り">
-    <link rel="canonical" href="https://cells.algo-cosme.com/cells/products.php">
+    <link rel="canonical" href="https://lab.algo-cosme.com/clinic/products.php">
     <link rel="stylesheet" href="./assets/css/main.css?v=<?php echo time(); ?>">
     <style>
         .inner-pad-center { padding: 80px 60px; height: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; }

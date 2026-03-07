@@ -8,9 +8,9 @@
     <meta property="og:title" content="COMPANY｜株式会社アルゴ 会社概要">
     <meta property="og:description" content="株式会社アルゴの会社概要。美容皮膚科向けEC・再生医療支援・幹細胞生搾りプロジェクトを展開。">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://cells.algo-cosme.com/cells/company.php">
+    <meta property="og:url" content="https://lab.algo-cosme.com/clinic/company.php">
     <meta property="og:site_name" content="ALGO Inc. | 幹細胞生搾り">
-    <link rel="canonical" href="https://cells.algo-cosme.com/cells/company.php">
+    <link rel="canonical" href="https://lab.algo-cosme.com/clinic/company.php">
     <link rel="stylesheet" href="./assets/css/main.css?v=<?php echo time(); ?>">
     <style>
         .inner-pad-center { padding: 80px 60px; height: 100%; display: flex; flex-direction: column; justify-content: center; }

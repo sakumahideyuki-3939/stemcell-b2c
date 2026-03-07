@@ -10,9 +10,9 @@
     <meta property="og:title" content="CONCEPT｜培養上清液との違い・生搾り濾液の仕組み">
     <meta property="og:description" content="幹細胞生搾り濾液と培養上清液の違いを解説。物理的破砕による細胞内成分の高濃度抽出技術。">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://cells.algo-cosme.com/cells/concept.php">
+    <meta property="og:url" content="https://lab.algo-cosme.com/clinic/concept.php">
     <meta property="og:site_name" content="ALGO Inc. | 幹細胞生搾り">
-    <link rel="canonical" href="https://cells.algo-cosme.com/cells/concept.php">
+    <link rel="canonical" href="https://lab.algo-cosme.com/clinic/concept.php">
 
     <!-- ✅ PRODUCTSと同じ共通CSS -->
     <link rel="stylesheet" href="./assets/css/main.css?v=<?php echo time(); ?>">

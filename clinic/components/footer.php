@@ -36,7 +36,7 @@
     </div>
 
     <div style="width: 480px; padding: 100px 60px;">
-      <div style="font-weight:bold; margin-bottom:40px; font-size:15px; letter-spacing:0.3em;">cells.algo-cosme</div>
+      <div style="font-weight:bold; margin-bottom:40px; font-size:15px; letter-spacing:0.3em;">lab.algo-cosme</div>
       <p style="font-size:13px; line-height:2.5; color:#777;">
         〒150-0011<br>
         脂肪組織や骨髄由来の幹細胞を高度に濾過した研究用試薬です。細胞核を含まない濾液として提供しています。再生医療・美容分野における基礎研究が進められています。

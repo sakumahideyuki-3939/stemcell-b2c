@@ -8,9 +8,9 @@
     <meta property="og:title" content="EVIDENCE｜幹細胞Lysate特許技術・研究データ">
     <meta property="og:description" content="幹細胞破砕濾液の特許ポートフォリオと研究データ。4領域で特許取得。Cell-nucleus Free技術の科学的根拠。">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://cells.algo-cosme.com/cells/evidence.php">
+    <meta property="og:url" content="https://lab.algo-cosme.com/clinic/evidence.php">
     <meta property="og:site_name" content="ALGO Inc. | 幹細胞生搾り">
-    <link rel="canonical" href="https://cells.algo-cosme.com/cells/evidence.php">
+    <link rel="canonical" href="https://lab.algo-cosme.com/clinic/evidence.php">
     <link rel="stylesheet" href="./assets/css/main.css?v=<?php echo time(); ?>">
     <style>
         .inner-pad-center { padding: 80px 60px; height: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; }

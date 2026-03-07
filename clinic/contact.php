@@ -179,9 +179,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <meta property="og:title" content="CONTACT｜導入相談・資料請求・お問い合わせ">
     <meta property="og:description" content="幹細胞生搾り濾液の導入相談・資料請求・サンプル依頼。クリニック・法人様向け。">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://cells.algo-cosme.com/cells/contact.php">
+    <meta property="og:url" content="https://lab.algo-cosme.com/clinic/contact.php">
     <meta property="og:site_name" content="ALGO Inc. | 幹細胞生搾り">
-    <link rel="canonical" href="https://cells.algo-cosme.com/cells/contact.php">
+    <link rel="canonical" href="https://lab.algo-cosme.com/clinic/contact.php">
   <link rel="stylesheet" href="./assets/css/main.css?v=<?php echo time(); ?>">
 
   <style>

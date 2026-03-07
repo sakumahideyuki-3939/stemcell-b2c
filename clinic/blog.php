@@ -8,9 +8,9 @@
     <meta property="og:title" content="BLOG｜幹細胞・再生医療の最新情報">
     <meta property="og:description" content="幹細胞生搾り濾液・再生医療・自由診療に関する最新情報をお届け。">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://cells.algo-cosme.com/cells/blog.php">
+    <meta property="og:url" content="https://lab.algo-cosme.com/clinic/blog.php">
     <meta property="og:site_name" content="ALGO Inc. | 幹細胞生搾り">
-    <link rel="canonical" href="https://cells.algo-cosme.com/cells/blog.php">
+    <link rel="canonical" href="https://lab.algo-cosme.com/clinic/blog.php">
     <link rel="stylesheet" href="./assets/css/main.css?v=<?php echo time(); ?>">
     <style>
         .post-item { display: flex; gap: 50px; margin-bottom: 80px; width: 100%; }
@@ -55,7 +55,7 @@
                     <div class="post-thumb"></div>
                     <div class="post-info">
                         <div class="post-meta">2026.01.05 | PROJECT</div>
-                        <h2 class="post-title"><a href="#">美容教育におけるAI導入の現場報告</a></h2>
+                        <h2 class="post-title"><a href="./single.php">美容教育におけるAI導入の現場報告</a></h2>
                         <p class="post-excerpt">IBCAでの実例を元にした、クリエイティブとAIの共生についての考察。現場の「わからない」を「できる」に変えるフロー構築の舞台裏を公開します。</p>
                     </div>
                 </article>
@@ -67,10 +67,10 @@
                 <div class="addr-tag">ADDRESS: D3 - D12 / CATEGORY</div>
                 <div class="sidebar-title">CATEGORY</div>
                 <ul style="list-style:none; font-size:11px; letter-spacing:0.1em; line-height:3; color:#666; width: 100%;">
-                    <li><a href="#">> ALL POSTS</a></li>
-                    <li><a href="#">> NEWS</a></li>
-                    <li><a href="#">> PROJECT</a></li>
-                    <li><a href="#">> COLUMN</a></li>
+                    <li><a href="./blog.php">> ALL POSTS</a></li>
+                    <li><a href="./blog.php?cat=news">> NEWS</a></li>
+                    <li><a href="./blog.php?cat=project">> PROJECT</a></li>
+                    <li><a href="./blog.php?cat=column">> COLUMN</a></li>
                 </ul>
             </div>
         </div>
