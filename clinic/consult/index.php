@@ -52,8 +52,8 @@
     <section class="consult-hero">
         <div>
             <p class="addr-tag">FOR INDIVIDUALS</p>
-            <h1>幹細胞治療の情報整理。</h1>
-            <p class="lead">あなたに合うクリニックを、一緒に探します。<br>美容・エイジングケア・薄毛・更年期——<br>決める前に、整理する。押し売りのない相談窓口です。</p>
+            <h1>培養上清液の次へ。</h1>
+            <p class="lead">あなたに合うクリニックを、一緒に探します。</p>
             <a href="./contact.php" class="cta-link">まずは情報を整理してみる（無料・約2分）</a>
         </div>
     </section>
