@@ -15,8 +15,8 @@
 session_start();
 
 /* ====== 設定（ここだけ調整） ====== */
-$ADMIN_NOTIFY_EMAIL = 'info@algo-inc.com';          // 運営側の受信先（法人問い合わせ）
-$ADMIN_FROM_EMAIL   = 'no-reply@algo-inc.com';     // 送信元（あなたのドメイン推奨）
+$ADMIN_NOTIFY_EMAIL = 'lab@algo-cosme.com';          // 運営側の受信先（法人問い合わせ）
+$ADMIN_FROM_EMAIL   = 'lab@algo-cosme.com';     // 送信元（あなたのドメイン推奨）
 $SITE_NAME          = 'ALGO Inc.';
 $SUBJECT_ADMIN      = '【法人問い合わせ】コンタクトフォーム受信';
 $SUBJECT_USER       = '【受付完了】法人お問い合わせを承りました（ALGO Inc.）';
@@ -261,13 +261,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
           <div class="contact-info-block">
             <h3>一般のお問い合わせ</h3>
             <p>ALGO Inc. 全般に関するご質問、その他全般的なお問い合わせはこちらから。</p>
-            <p>Email: info@algo-inc.com / Tel: 03-6805-0781</p>
+            <p>Email: lab@algo-cosme.com / Tel: 03-6805-0781</p>
           </div>
 
           <div class="contact-info-block" style="margin-bottom:0;">
             <h3>メディア・講演依頼</h3>
             <p>取材・セミナー登壇・社内研修などのご依頼。</p>
-            <p>Email: pr@algo-inc.com</p>
+            <p>Email: lab@algo-cosme.com</p>
           </div>
         </div>
       </div>
