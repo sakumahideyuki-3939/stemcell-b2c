@@ -25,7 +25,7 @@ if (!isset($page_description) && isset($page_lead)) { $page_description = $page_
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   "itemListElement": [
-    {"@type": "ListItem", "position": 1, "name": "HOME", "item": "https://lab.algo-cosme.com/consult/"},
+    {"@type": "ListItem", "position": 1, "name": "HOME", "item": "https://lab.algo-cosme.com/clinic/consult/"},
     {"@type": "ListItem", "position": 2, "name": "<?php echo htmlspecialchars($page_title, ENT_QUOTES, 'UTF-8'); ?>"}
   ]
 }

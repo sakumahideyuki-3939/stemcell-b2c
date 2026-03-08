@@ -222,7 +222,7 @@
     <script>
         function selectType(type) {
             if (type === 'individual') {
-                window.location.href = '/consult/';
+                window.location.href = '/clinic/consult/';
             } else if (type === 'clinic') {
                 window.location.href = '/clinic/';
             }

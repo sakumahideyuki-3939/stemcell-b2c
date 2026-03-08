@@ -47,7 +47,7 @@
     <div style="width: 25%; padding: 100px 60px;">
       <div style="font-weight:bold; margin-bottom:40px; font-size:15px; letter-spacing:0.3em;">COPYRIGHT</div>
       <p style="font-size:12px; color:#999;">&copy; 2026 株式会社アルゴ. All Rights Reserved.</p>
-      <p style="font-size:12px; color:#888; margin-top: 15px;">個人の方の相談窓口は<a href='../consult/' style="color:#666; text-decoration:underline;">こちら</a></p>
+      <p style="font-size:12px; color:#888; margin-top: 15px;">個人の方の相談窓口は<a href='./consult/' style="color:#666; text-decoration:underline;">こちら</a></p>
       <div style="margin-top: 30px; display: flex; gap: 10px; flex-wrap: wrap;">
         <span style="font-size: 10px; border: 1px solid #ddd; padding: 4px 10px; color: #888; letter-spacing: 0.05em;">研究用試薬</span>
         <span style="font-size: 10px; border: 1px solid #ddd; padding: 4px 10px; color: #888; letter-spacing: 0.05em;">再生医療等安全性確保法 届出不要</span>

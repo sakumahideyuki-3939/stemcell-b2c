@@ -24,8 +24,8 @@
           <li><a href="./work03.php">安全性</a></li>
           <li><a href="./work04.php">費用</a></li>
           <li><a href="./contact.php">無料相談</a></li>
-          <li><a href="../common/privacy.php">プライバシーポリシー</a></li>
-          <li><a href="../common/tokusho.php">特商法表記</a></li>
+          <li><a href="../../common/privacy.php">プライバシーポリシー</a></li>
+          <li><a href="../../common/tokusho.php">特商法表記</a></li>
         </ul>
       </div>
       <div>
@@ -47,7 +47,7 @@
       当サイトは医療機関ではありません。掲載情報は参考情報であり、診断・治療を目的とするものではありません。治療に関するご判断は必ず医師にご相談ください。
     </div>
     <div style="text-align:center;margin-top:var(--sp-4);font-size:var(--fs-caption);">
-      医療機関の方は<a href="../index.php?reset=1">こちら</a>
+      医療機関の方は<a href="../../index.php?reset=1">こちら</a>
     </div>
     <div class="c-footer__bottom">
       &copy; 2026 株式会社アルゴ. All Rights Reserved.

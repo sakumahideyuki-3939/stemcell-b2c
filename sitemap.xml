@@ -8,93 +8,93 @@
     <priority>1.0</priority>
   </url>
 
-  <!-- B2C: /consult/ -->
+  <!-- B2C: /clinic/consult/ -->
   <url>
-    <loc>https://lab.algo-cosme.com/consult/</loc>
+    <loc>https://lab.algo-cosme.com/clinic/consult/</loc>
     <lastmod>2026-03-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://lab.algo-cosme.com/consult/about.php</loc>
+    <loc>https://lab.algo-cosme.com/clinic/consult/about.php</loc>
     <lastmod>2026-03-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://lab.algo-cosme.com/consult/concept.php</loc>
+    <loc>https://lab.algo-cosme.com/clinic/consult/concept.php</loc>
     <lastmod>2026-03-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://lab.algo-cosme.com/consult/evidence.php</loc>
+    <loc>https://lab.algo-cosme.com/clinic/consult/evidence.php</loc>
     <lastmod>2026-03-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://lab.algo-cosme.com/consult/company.php</loc>
+    <loc>https://lab.algo-cosme.com/clinic/consult/company.php</loc>
     <lastmod>2026-03-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://lab.algo-cosme.com/consult/contact.php</loc>
+    <loc>https://lab.algo-cosme.com/clinic/consult/contact.php</loc>
     <lastmod>2026-03-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://lab.algo-cosme.com/consult/work.php</loc>
+    <loc>https://lab.algo-cosme.com/clinic/consult/work.php</loc>
     <lastmod>2026-03-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://lab.algo-cosme.com/consult/work01.php</loc>
+    <loc>https://lab.algo-cosme.com/clinic/consult/work01.php</loc>
     <lastmod>2026-03-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://lab.algo-cosme.com/consult/work02.php</loc>
+    <loc>https://lab.algo-cosme.com/clinic/consult/work02.php</loc>
     <lastmod>2026-03-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://lab.algo-cosme.com/consult/work03.php</loc>
+    <loc>https://lab.algo-cosme.com/clinic/consult/work03.php</loc>
     <lastmod>2026-03-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://lab.algo-cosme.com/consult/work04.php</loc>
+    <loc>https://lab.algo-cosme.com/clinic/consult/work04.php</loc>
     <lastmod>2026-03-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://lab.algo-cosme.com/consult/work05.php</loc>
+    <loc>https://lab.algo-cosme.com/clinic/consult/work05.php</loc>
     <lastmod>2026-03-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://lab.algo-cosme.com/consult/work06.php</loc>
+    <loc>https://lab.algo-cosme.com/clinic/consult/work06.php</loc>
     <lastmod>2026-03-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://lab.algo-cosme.com/consult/work07.php</loc>
+    <loc>https://lab.algo-cosme.com/clinic/consult/work07.php</loc>
     <lastmod>2026-03-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://lab.algo-cosme.com/consult/work08.php</loc>
+    <loc>https://lab.algo-cosme.com/clinic/consult/work08.php</loc>
     <lastmod>2026-03-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>

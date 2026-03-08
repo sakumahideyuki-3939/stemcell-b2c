@@ -43,8 +43,8 @@ $page_description = $page_title . ' — ' . mb_substr($work['text'], 0, 80, 'UTF
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   "itemListElement": [
-    {"@type": "ListItem", "position": 1, "name": "HOME", "item": "https://lab.algo-cosme.com/consult/"},
-    {"@type": "ListItem", "position": 2, "name": "WORKS", "item": "https://lab.algo-cosme.com/consult/work.php"},
+    {"@type": "ListItem", "position": 1, "name": "HOME", "item": "https://lab.algo-cosme.com/clinic/consult/"},
+    {"@type": "ListItem", "position": 2, "name": "WORKS", "item": "https://lab.algo-cosme.com/clinic/consult/work.php"},
     {"@type": "ListItem", "position": 3, "name": "<?php echo htmlspecialchars($page_title, ENT_QUOTES, 'UTF-8'); ?>"}
   ]
 }

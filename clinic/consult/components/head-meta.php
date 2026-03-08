@@ -4,7 +4,7 @@
 $_meta_title = isset($page_title) ? $page_title . '｜ALGO LAB' : 'ALGO LAB';
 $_meta_desc  = isset($page_description) ? $page_description : 'ALGO LAB — 幹細胞治療の情報整理と無料相談サポート。売り込みなし・匿名可・営業電話なし。';
 $_meta_url   = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? 'https' : 'http') . '://' . (isset($_SERVER['HTTP_HOST']) ? $_SERVER['HTTP_HOST'] : 'localhost') . (isset($_SERVER['REQUEST_URI']) ? $_SERVER['REQUEST_URI'] : '/');
-$_meta_image = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? 'https' : 'http') . '://' . (isset($_SERVER['HTTP_HOST']) ? $_SERVER['HTTP_HOST'] : 'localhost') . '/consult/assets/img/ogp.jpg';
+$_meta_image = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? 'https' : 'http') . '://' . (isset($_SERVER['HTTP_HOST']) ? $_SERVER['HTTP_HOST'] : 'localhost') . '/clinic/consult/assets/img/ogp.jpg';
 ?>
   <meta name="description" content="<?php echo htmlspecialchars($_meta_desc, ENT_QUOTES, 'UTF-8'); ?>">
   <meta property="og:title" content="<?php echo htmlspecialchars($_meta_title, ENT_QUOTES, 'UTF-8'); ?>">

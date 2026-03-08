@@ -4,4 +4,4 @@ Allow: /
 Sitemap: https://lab.algo-cosme.com/sitemap.xml
 
 # Admin areas
-Disallow: /consult/admin/
+Disallow: /clinic/consult/admin/
