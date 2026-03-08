@@ -169,8 +169,8 @@ stemcell-b2c/
 
 - **日付**: 2026-03-08
 - **更新者**: Hide + Claude
-- **内容**: GA4タグをプレースホルダー(G-XXXXXXXXXX)で全ページに設置（ga4.php一元管理、15ファイルにinclude）
-- **次回やること**: CONTACTフォームバックエンド実装（consult/）、B2Bモバイル対応、不妊ペルソナカード追加、GA4のIDをAlgoが本番IDに差し替え
+- **内容**: consult/・clinic/の現状分析完了。コンテンツ充実の変更案を3領域（B2C追加セクション・B2B追加セクション・SEO改善）で策定
+- **次回やること**: コンテンツ充実の変更案を実装（consult/index.phpに3セクション追加、clinic/index.phpに4セクション追加、clinic/components/head-meta.php新設）、CONTACTフォームバックエンド実装、B2Bモバイル対応、不妊ペルソナカード追加
 
 ---
 

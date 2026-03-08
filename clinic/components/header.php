@@ -50,6 +50,9 @@
   }
 </style>
 
+<div style="background:#f5f5f5;text-align:center;padding:4px 0;font-size:12px;">
+  <a href="../index.php?reset=1" style="color:#0071E3;text-decoration:none;">サイト切り替え</a>
+</div>
 <header class="algo-header-fixed">
   <div class="algo-header-fixed__inner">
     <div class="algo-header-fixed__logo">
@@ -64,7 +67,7 @@
         <li><a href="./company.php">COMPANY</a></li>
         <li><a href="./blog.php">BLOG</a></li>
         <li><a href="./contact.php" class="nav-contact-btn">CONTACT</a></li>
-        <li><a href="../consult/" style="font-size:10px; color:#999;">個人の方はこちら</a></li>
+        <li><a href="../index.php?reset=1" style="font-size:10px; color:#999;">個人の方はこちら</a></li>
       </ul>
     </nav>
   </div>
