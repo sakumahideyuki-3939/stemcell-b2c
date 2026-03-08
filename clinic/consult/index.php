@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>幹細胞由来成分を用いた施術の無料相談・情報整理｜ALGO LAB</title>
-    <meta name="description" content="幹細胞由来成分を用いた施術の情報を整理し、あなたに合う医療機関への無料相談をサポート。美容エイジングへのアプローチ・AGA・更年期——売り込みなし・匿名可・営業電話なし。">
-    <meta property="og:title" content="幹細胞由来成分を用いた施術の無料相談・情報整理｜ALGO LAB">
-    <meta property="og:description" content="幹細胞由来成分を用いた施術の情報を整理し、あなたに合う医療機関への無料相談をサポート。売り込みなし・匿名可・営業電話なし。">
+    <title>培養上清液の次のステップ｜Lysate美容クリニック相談・幹細胞由来成分 施術情報｜ALGO LAB</title>
+    <meta name="description" content="培養上清液の次のステップをお探しの方へ。Lysateを扱う美容クリニックの情報整理と、幹細胞由来成分を用いた施術の無料相談をサポート。売り込みなし・匿名可・営業電話なし。">
+    <meta property="og:title" content="培養上清液の次のステップ｜Lysate美容クリニック相談・幹細胞由来成分 施術情報｜ALGO LAB">
+    <meta property="og:description" content="培養上清液の次のステップをお探しの方へ。Lysateを扱う美容クリニックの情報整理と、幹細胞由来成分を用いた施術の無料相談をサポート。">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://lab.algo-cosme.com/clinic/consult/">
     <meta property="og:site_name" content="ALGO LAB">
