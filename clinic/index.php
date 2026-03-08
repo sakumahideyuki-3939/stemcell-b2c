@@ -148,51 +148,59 @@
     </section>
 
     <section class="grid-row">
-        <div class="u-unit h-960 bg-white">
+        <div class="u-unit h-960 bg-white" style="width:25%; flex:0 0 25%;">
             <div class="inner-pad-center">
                 <div class="addr-tag">ADDRESS: T2-1</div>
                 <h2>独自製法による純度管理</h2>
                 <p class="work-desc-rich">従来の「培養上清液」は、細胞が分泌した成分のみを回収していました。対して本製品は、幹細胞そのものを凍結融解や超音波処理によって物理的に「破砕」し、細胞内部の成分まで丸ごと抽出する「生搾り（Lysate）」製法を採用しています。これにより、分泌されたサイトカインだけでなく、通常は細胞内に留まるHSP（ヒートショックプロテイン）などの有用タンパク質をも高濃度に含有させることに含有しています。</p>
             </div>
         </div>
-        <div class="u-unit h-960 bg-light">
+        <div class="u-unit h-960 bg-light" style="width:25%; flex:0 0 25%;">
             <div class="inner-pad-center">
                 <div class="addr-tag">ADDRESS: T2-2</div>
                 <h2>研究の背景</h2>
                 <p class="work-desc-rich">本技術は、「下部尿路機能障害」「勃起不全（ED）」「変形性膝関節症」「皮膚保護剤」など多岐にわたる分野で特許を取得・出願済みの技術に基づいています。脂肪組織由来幹細胞の破砕濾液には、創傷治癒への関与が報告されているHSP47やHSP70、抗炎症作用への関与が報告されているAnnexinA6などが含まれることが確認されており、培養上清液とは異なる成分プロファイルを有しています。</p>
             </div>
         </div>
-        <div class="u-double h-960 bg-soft">
+        <div class="u-unit h-960 bg-soft" style="width:25%; flex:0 0 25%;">
             <div class="inner-pad-center">
-                <div class="addr-tag">ADDRESS: T2-3</div>
-                <h2>生搾り（Lysate）という新しいアプローチ</h2>
-                <p class="content-text-rich">
-                    再生医療の現場では、「細胞移植（Cell Therapy）」への期待と、コストや定着率、そして腫瘍化リスクという課題がありました。一方で「培養上清液」は手軽ですが、細胞内部の成分は含まれていません。<br><br>
-                    「幹細胞生搾り（濾液）」は、細胞そのものは含まず、細胞の中身（細胞質・オルガネラ成分）を含有する研究用試薬です。多種多様な成長因子やエクソソームを含有しており、複数の領域で特許を取得しています。関連する基礎研究データについては、<a href="./evidence.php" style="color:#2f2f2f; text-decoration:underline;">EVIDENCEページ</a>をご参照ください。
-                </p>
+                <div class="addr-tag">ADDRESS: T2-3a</div>
+                <h2>生搾り（Lysate）という<br>新しいアプローチ</h2>
+                <p class="work-desc-rich">再生医療の現場では、「細胞移植（Cell Therapy）」への期待と、コストや定着率、そして腫瘍化リスクという課題がありました。一方で「培養上清液」は手軽ですが、細胞内部の成分は含まれていません。「幹細胞生搾り（濾液）」は、細胞そのものは含まず、細胞の中身（細胞質・オルガネラ成分）を含有する研究用試薬です。</p>
+            </div>
+        </div>
+        <div class="u-unit h-960 bg-soft" style="width:25%; flex:0 0 25%;">
+            <div class="inner-pad-center">
+                <div class="addr-tag">ADDRESS: T2-3b</div>
+                <h2>含有成分と特許技術</h2>
+                <p class="work-desc-rich">本製品は多種多様な成長因子やエクソソームを含有しており、複数の領域で特許を取得しています。培養上清液では得られない細胞内成分まで丸ごと抽出することで、独自の成分プロファイルを実現しました。関連する基礎研究データについては、<a href="./evidence.php" style="color:#2f2f2f; text-decoration:underline;">EVIDENCEページ</a>をご参照ください。</p>
             </div>
         </div>
     </section>
 
     <section class="grid-row">
-        <div class="u-double h-960 bg-soft" style="border-right: 1px solid #eee;">
+        <div class="u-unit h-960 bg-soft" style="width:25%; flex:0 0 25%; border-right: 1px solid #eee;">
             <div class="inner-pad-center">
-                <div class="addr-tag">ADDRESS: T2-4</div>
+                <div class="addr-tag">ADDRESS: T2-4a</div>
                 <h2>安全性への設計思想</h2>
-                <p class="content-text-rich">
-                    幹細胞治療において最大の懸念は「がん化（腫瘍形成）」のリスクです。特に未分化な幹細胞や、CD133などのマーカーを持つ細胞の混入はリスク因子となり得ます。本製品は、細胞を破砕した後、0.2μm等のフィルターで精密濾過を行っています。<br><br>
-                    この工程により、がん化の原因となり得る「細胞核（DNA）」や「ミトコンドリア」、そして細胞そのものを物理的に除去しています。「核を含まない（Cell-nucleus Free）」という特性により、腫瘍形成リスクの低減が理論上期待されます。また、製造は厳格な管理下で行われ、マイコプラズマ否定試験や滅菌処理を徹底しています。
-                </p>
+                <p class="work-desc-rich">幹細胞治療において最大の懸念は「がん化（腫瘍形成）」のリスクです。特に未分化な幹細胞や、CD133などのマーカーを持つ細胞の混入はリスク因子となり得ます。本製品は、細胞を破砕した後、0.2μm等のフィルターで精密濾過を行っています。</p>
             </div>
         </div>
-        <div class="u-unit h-960 bg-white">
+        <div class="u-unit h-960 bg-soft" style="width:25%; flex:0 0 25%; border-right: 1px solid #eee;">
+            <div class="inner-pad-center">
+                <div class="addr-tag">ADDRESS: T2-4b</div>
+                <h2>Cell-nucleus Free</h2>
+                <p class="work-desc-rich">この工程により、がん化の原因となり得る「細胞核（DNA）」や「ミトコンドリア」、そして細胞そのものを物理的に除去しています。「核を含まない（Cell-nucleus Free）」という特性により、腫瘍形成リスクの低減が理論上期待されます。また、製造は厳格な管理下で行われ、マイコプラズマ否定試験や滅菌処理を徹底しています。</p>
+            </div>
+        </div>
+        <div class="u-unit h-960 bg-white" style="width:25%; flex:0 0 25%;">
             <div class="inner-pad-center">
                 <div class="addr-tag">ADDRESS: T2-5</div>
                 <h3>製品の特長</h3>
                 <p class="work-desc-rich">本製品は研究用試薬として、多くの医療機関にご採用いただいております。培養上清液とは異なる成分プロファイル（細胞内タンパク質HSP47/70等を含有）と、Cell-nucleus Free技術による細胞核除去が特長です。<br><br>点鼻用・局所注射用の2種類をご用意しており、医師の判断のもと、各種用途にご検討いただけます。導入に関するご相談は<a href="./contact.php" style="color:#2f2f2f; text-decoration:underline;">こちら</a>から承ります。</p>
             </div>
         </div>
-        <div class="u-unit h-960 bg-light">
+        <div class="u-unit h-960 bg-light" style="width:25%; flex:0 0 25%;">
             <div class="inner-pad-center">
                 <div class="addr-tag">ADDRESS: T2-6</div>
                 <h3>スムーズな導入</h3>
@@ -214,7 +222,7 @@
             ["cat"=>"FLOW", "ttl"=>"法規制・導入フロー", "txt"=>"リスク管理とコンプライアンス。研究用試薬の適正な取り扱い、同意書取得、広告規制の遵守。"]
         ];
         foreach($work_items as $item): ?>
-        <div class="u-unit h-480 bg-white" style="border: 0.5px solid #f9f9f9;">
+        <div class="u-unit h-480 bg-white" style="width:25%; flex:0 0 25%; border: 0.5px solid #f9f9f9;">
             <?php if (!empty($item['link'])): ?>
             <a href="<?php echo $item['link']; ?>" style="text-decoration: none; color: inherit; display: block; height: 100%;">
             <?php endif; ?>
