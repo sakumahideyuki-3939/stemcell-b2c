@@ -64,35 +64,6 @@
 </footer>
 
 <!-- スマホ固定CTAバー -->
-<style>
-  .sp-fixed-cta { display: none; }
-  @media screen and (max-width: 768px) {
-    .sp-fixed-cta {
-      display: flex;
-      position: fixed;
-      bottom: 0;
-      left: 0;
-      width: 100%;
-      z-index: 10000;
-      background: #2f2f2f;
-      border-top: 1px solid #555;
-    }
-    .sp-fixed-cta a {
-      flex: 1;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 14px 0;
-      color: #fff;
-      text-decoration: none;
-      font-size: 12px;
-      letter-spacing: 0.1em;
-    }
-    .sp-fixed-cta a:first-child { border-right: 1px solid #555; }
-    .sp-fixed-cta a:hover { background: #444; }
-    footer { margin-bottom: 48px !important; }
-  }
-</style>
 <div class="sp-fixed-cta">
   <a href="./contact.php?category=資料請求">資料請求</a>
   <a href="./contact.php?category=導入相談">導入相談・お問い合わせ</a>
