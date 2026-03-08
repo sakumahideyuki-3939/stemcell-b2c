@@ -71,8 +71,7 @@ h1, h2, h3 { font-weight: 400; letter-spacing: 0.25em; line-height: 1.6; }
 /* 6. レスポンシブ (iPhone SE / 959px以下) */
 @media (max-width: 1919px) {
     /* 1920px未満では2列ずつに */
-    .u-unit { width: 50%; flex: 0 0 50%; }
-    .u-double { width: 100%; flex: 0 0 100%; }
+    .u-unit, .u-double { width: 50%; flex: 0 0 50%; }
 }
 @media (max-width: 959px) {
     /* スマホサイズでは全幅1列に */

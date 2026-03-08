@@ -11,7 +11,7 @@
 <footer style="width: 100%; border-top: 1px solid #333; background: #fff; clear: both; margin-top: 100px; position: relative; z-index: 10;">
   <div style="max-width: 1920px; margin: 0 auto; display: flex; flex-wrap: wrap;">
     
-    <div style="width: 25%; padding: 100px 60px;">
+    <div style="width: 480px; padding: 100px 60px;">
       <div style="font-weight:bold; margin-bottom:40px; font-size:15px; letter-spacing:0.3em;">ALGO-INC</div>
       <p style="font-size:13px; line-height:2.5; color:#777;">
         〒150-0011<br>
@@ -20,7 +20,7 @@
       </p>
     </div>
 
-    <div style="width: 25%; padding: 100px 60px;">
+    <div style="width: 480px; padding: 100px 60px;">
       <div style="font-weight:bold; margin-bottom:40px; font-size:15px; letter-spacing:0.3em;">NAVIGATE</div>
       <ul style="list-style:none; font-size:13px; line-height:3; margin:0; padding:0;">
         <li><a href="./index.php" style="color:#777; text-decoration:none;">HOME</a></li>
@@ -35,7 +35,7 @@
       </ul>
     </div>
 
-    <div style="width: 25%; padding: 100px 60px;">
+    <div style="width: 480px; padding: 100px 60px;">
       <div style="font-weight:bold; margin-bottom:40px; font-size:15px; letter-spacing:0.3em;">lab.algo-cosme</div>
       <p style="font-size:13px; line-height:2.5; color:#777;">
         〒150-0011<br>
@@ -44,7 +44,7 @@
     </div>
 
 
-    <div style="width: 25%; padding: 100px 60px;">
+    <div style="width: 480px; padding: 100px 60px;">
       <div style="font-weight:bold; margin-bottom:40px; font-size:15px; letter-spacing:0.3em;">COPYRIGHT</div>
       <p style="font-size:12px; color:#999;">&copy; 2026 株式会社アルゴ. All Rights Reserved.</p>
       <p style="font-size:12px; color:#888; margin-top: 15px;">個人の方の相談窓口は<a href='../consult/' style="color:#666; text-decoration:underline;">こちら</a></p>
