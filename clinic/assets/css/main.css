@@ -168,3 +168,152 @@ h1, h2, h3 { font-weight: 400; letter-spacing: 0.25em; line-height: 1.6; }
     .sp-fixed-cta a:hover { background: #444; }
     footer { margin-bottom: 48px !important; }
 }
+
+/* ==========================================================================
+   7. B2B モバイル対応 (768px以下)
+   ========================================================================== */
+/* ハンバーガーボタン（デスクトップ非表示） */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    z-index: 10001;
+}
+.hamburger span {
+    display: block;
+    width: 22px;
+    height: 2px;
+    background: #2f2f2f;
+    transition: all 0.3s;
+}
+.hamburger span:nth-child(2) { margin: 5px 0; }
+.hamburger.is-open span:nth-child(1) { transform: rotate(45deg) translate(5px, 5px); }
+.hamburger.is-open span:nth-child(2) { opacity: 0; }
+.hamburger.is-open span:nth-child(3) { transform: rotate(-45deg) translate(5px, -5px); }
+
+@media (max-width: 768px) {
+    /* --- Header --- */
+    .algo-header { height: 60px; }
+    .algo-header__inner {
+        flex-direction: row !important;
+        height: 60px !important;
+        padding: 0 16px !important;
+        gap: 0 !important;
+    }
+    .algo-header__logo { font-size: 16px; }
+    .hamburger { display: flex; }
+    .algo-header__nav {
+        display: none;
+        position: fixed;
+        top: 60px;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: #fff;
+        z-index: 9998;
+        overflow-y: auto;
+    }
+    .algo-header__nav.is-open { display: block; }
+    .algo-header__nav ul {
+        flex-direction: column !important;
+        gap: 0 !important;
+        padding: 20px !important;
+        flex-wrap: nowrap !important;
+        margin-top: 0 !important;
+    }
+    .algo-header__nav li {
+        border-bottom: 1px solid #f0f0f0;
+    }
+    .algo-header__nav a {
+        display: flex !important;
+        align-items: center;
+        font-size: 14px !important;
+        padding: 16px 0 !important;
+        min-height: 44px;
+        letter-spacing: 0.15em !important;
+    }
+    .nav-contact-btn {
+        border: none !important;
+        padding: 16px 0 !important;
+        text-align: left;
+    }
+
+    /* --- Grid 1列化 --- */
+    .grid-row { display: block !important; }
+    .u-unit, .u-double {
+        width: 100% !important;
+        flex: 0 0 100% !important;
+        border-right: none !important;
+        min-height: auto !important;
+    }
+    .h-480, .h-960 { height: auto !important; min-height: auto !important; }
+
+    /* --- Inner padding --- */
+    .inner-pad-center, .inner-pad-blog {
+        padding: 40px 20px !important;
+        height: auto !important;
+    }
+
+    /* --- Typography --- */
+    h1 { font-size: clamp(1.3rem, 5vw, 1.8rem) !important; }
+    h2 { font-size: clamp(1.1rem, 4vw, 1.4rem) !important; }
+    h3 { font-size: clamp(1rem, 3.5vw, 1.2rem) !important; }
+
+    /* --- テーブルスクロール --- */
+    table { display: block; overflow-x: auto; -webkit-overflow-scrolling: touch; white-space: nowrap; }
+    table thead, table tbody, table tr, table th, table td { white-space: normal; }
+
+    /* --- ボタン・リンクのタップターゲット --- */
+    .biz-form button,
+    .nav-contact-btn,
+    .sp-fixed-cta a {
+        min-height: 44px;
+    }
+    .biz-form input,
+    .biz-form select,
+    .biz-form textarea {
+        font-size: 16px !important; /* iOS zoom防止 */
+        padding: 12px !important;
+    }
+
+    /* --- Footer --- */
+    .footer-grid { display: block !important; }
+    .footer-grid > div {
+        width: 100% !important;
+        padding: 30px 20px !important;
+        border-bottom: 1px solid #f0f0f0;
+    }
+    .footer-bottom { padding: 20px 16px !important; }
+
+    /* --- Blog 記事一覧 --- */
+    .post-item { flex-direction: column !important; gap: 16px !important; }
+    .post-thumb { width: 100% !important; height: 200px !important; }
+    .grid-row-flex { flex-direction: column !important; }
+    .u-blog-side { width: 100% !important; flex: 0 0 auto !important; border-left: none !important; }
+
+    /* --- Slider --- */
+    .slider-section { height: 65vh !important; min-height: 380px !important; }
+
+    /* --- Contact固定高さ解除 --- */
+    .page-contact .grid-row { height: auto !important; }
+    .page-contact .u-double { height: auto !important; }
+
+    /* --- 本文テキスト最適化 --- */
+    .content-text-rich, .work-desc-rich, .evidence-text, .product-text {
+        font-size: 13px !important;
+        line-height: 2 !important;
+    }
+
+    /* --- カード・flexレイアウト --- */
+    .patent-card { padding: 24px 16px !important; }
+
+    /* --- 免責・注釈 --- */
+    .disclaimer { font-size: 11px !important; }
+}

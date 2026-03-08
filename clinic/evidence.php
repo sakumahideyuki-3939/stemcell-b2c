@@ -24,6 +24,11 @@
         .patent-no { font-size: 11px; color: #888; letter-spacing: 0.1em; display: block; margin-bottom: 10px; }
         .patent-title { font-size: 18px; font-weight: bold; margin-bottom: 15px; color: #2f2f2f; }
         .data-label { display: inline-block; background: #2f2f2f; color: #fff; font-size: 10px; padding: 2px 8px; margin-top: 15px; margin-bottom: 10px; }
+        @media (max-width: 768px) {
+            .evidence-lead { font-size: 18px !important; }
+            .patent-card { padding: 24px 16px; }
+            .feature-list li { margin-bottom: 18px; }
+        }
     </style>
 </head>
 <body class="page-evidence">

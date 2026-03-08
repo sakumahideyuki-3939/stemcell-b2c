@@ -9,8 +9,8 @@
 </section>
 
 <footer style="width: 100%; border-top: 1px solid #333; background: #fff; clear: both; margin-top: 100px; position: relative; z-index: 10;">
-  <div style="max-width: 1920px; margin: 0 auto; display: flex; flex-wrap: wrap;">
-    
+  <div class="footer-grid" style="max-width: 1920px; margin: 0 auto; display: flex; flex-wrap: wrap;">
+
     <div style="width: 25%; padding: 100px 60px;">
       <div style="font-weight:bold; margin-bottom:40px; font-size:15px; letter-spacing:0.3em;">ALGO-INC</div>
       <p style="font-size:13px; line-height:2.5; color:#777;">
@@ -55,7 +55,7 @@
     </div>
 
   </div>
-  <div style="width: 100%; background: #f9f9f9; border-top: 1px solid #eee; padding: 20px 60px; text-align: center;">
+  <div class="footer-bottom" style="width: 100%; background: #f9f9f9; border-top: 1px solid #eee; padding: 20px 60px; text-align: center;">
     <p style="font-size: 11px; color: #999; line-height: 1.8;">
       本サイトは医療従事者・研究者向けの情報提供を目的としています。一般の方への医療相談・診断は行っておりません。<br>
       掲載情報は基礎研究に基づくものであり、特定の疾患に対する治療効果を保証するものではありません。

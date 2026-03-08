@@ -322,6 +322,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     .alert-ok    { background: #fff; color:#2f6b2f; }
 
     .hp-field{ position:absolute; left:-9999px; top:-9999px; height:0; overflow:hidden; }
+
+    @media (max-width: 768px) {
+        .biz-form button { min-height: 44px; padding: 12px 20px; }
+        .contact-info-block h3 { font-size: 13px; }
+        .contact-info-block p { font-size: 12px; }
+    }
   </style>
 </head>
 

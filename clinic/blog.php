@@ -21,6 +21,10 @@
         .post-title { font-size: 18px; line-height: 1.6; margin-bottom: 15px; font-weight: bold; }
         .post-excerpt { font-size: 13px; color: #666; line-height: 2.2; }
         .sidebar-title { font-size: 12px; font-weight: bold; letter-spacing: 0.2em; border-bottom: 1px solid #000; padding-bottom: 15px; margin-bottom: 30px; width: 100%; }
+        @media (max-width: 768px) {
+            .post-title { font-size: 15px; }
+            .post-excerpt { font-size: 12px; line-height: 2; }
+        }
     </style>
 </head>
 <body class="page-blog">

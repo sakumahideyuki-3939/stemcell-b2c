@@ -19,6 +19,10 @@
         .company-table th, .company-table td { padding: 20px 0; border-bottom: 1px solid #eee; font-size: 13px; text-align: left; }
         .company-table th { width: 100px; font-weight: 400; color: #999; }
         .service-list { margin-top: 20px; font-size: 12px; line-height: 2.2; color: #555; list-style: none; }
+        @media (max-width: 768px) {
+            .company-table th { width: 80px; font-size: 12px; }
+            .company-table td { font-size: 12px; }
+        }
     </style>
 </head>
 <body class="page-company">

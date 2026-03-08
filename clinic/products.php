@@ -22,6 +22,12 @@
         .spec-box dd { font-size: 13px; margin-bottom: 15px; color: #2f2f2f; }
         .tag-main { font-size: 10px; border: 1px solid #2f2f2f; padding: 2px 8px; letter-spacing: 0.1em; display: inline-block; margin-bottom: 15px; }
         .disclaimer { font-size: 11px; line-height: 1.8; color: #888; text-align: left; max-width: 700px; margin-top: 40px; border-top: 1px solid #eee; padding-top: 20px; }
+        @media (max-width: 768px) {
+            .product-lead { font-size: 18px !important; }
+            .spec-box { padding: 20px 16px; }
+            .spec-box dt { font-size: 11px; }
+            .spec-box dd { font-size: 12px; }
+        }
     </style>
 </head>
 <body class="page-products">

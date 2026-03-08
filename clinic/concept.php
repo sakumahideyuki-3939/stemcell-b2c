@@ -87,6 +87,11 @@
             .comparison-table td { display: block; width: 100%; }
             .safety-grid { flex-direction: column; }
         }
+        @media (max-width: 768px) {
+            .hero-section { height: 400px; padding: 40px 20px; }
+            .hero-section h1 { font-size: clamp(22px, 5vw, 32px); letter-spacing: 0.15em; }
+            .container { padding: 40px 20px; }
+        }
     </style>
 </head>
 

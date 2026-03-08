@@ -52,48 +52,27 @@
         h2 { font-size: 24px; line-height: 1.6; font-weight: bold; margin-bottom: 10px; }
         h3 { font-size: 20px; line-height: 1.5; font-weight: bold; }
 
-        /* --- iPhone SE / スマホ用：物理ロック解除と中央配置（追加分） --- */
-        @media screen and (max-width: 480px) {
-            /* 1. 高さを「固定」から「中身に合わせる」に変更 */
-            .slider-section, .u-unit, .u-double, .h-480, .h-960 {
-                height: auto !important;
-                min-height: 380px !important; /* iPhone SEでも突き抜けない高さ */
-            }
-
-            /* 2. スマホでもメインビジュアルの高さを確保 */
+        /* --- スマホ用：物理ロック解除と中央配置 --- */
+        @media screen and (max-width: 768px) {
             .slider-section {
-                height: 75vh !important;
+                height: 65vh !important;
+                min-height: 380px !important;
             }
-
-            /* 3. 配置を「上下中央」に強制ロック */
             .inner-pad-center {
-                padding: 40px 20px !important;
-                display: flex !important;
-                flex-direction: column !important;
-                justify-content: center !important; /* 縦：中央 */
-                align-items: center !important;    /* 横：中央 */
-                height: 100% !important;
+                justify-content: center !important;
+                align-items: center !important;
                 text-align: center !important;
             }
-
-            /* 4. 文字サイズの最適化（一行の溢れ防止） */
-            h1 { font-size: 1.35rem !important; line-height: 1.5 !important; }
-            h2 { font-size: 1.2rem !important; }
             .content-text-rich, .work-desc-rich {
-                font-size: 12px !important;
                 text-align: center !important;
                 margin-left: auto !important;
                 margin-right: auto !important;
-                line-height: 1.8 !important;
             }
-
-            /* 5. グリッドの横並びを解除 */
-            .grid-row { display: block !important; }
-            .u-unit, .u-double {
-                width: 100% !important;
-                flex: 0 0 100% !important;
-                border-right: none !important;
-                border-bottom: 1px solid #f0f0f0;
+            /* 比較テーブルをスクロール対応 */
+            .u-unit table, .u-double table {
+                display: block;
+                overflow-x: auto;
+                -webkit-overflow-scrolling: touch;
             }
         }
     </style>
