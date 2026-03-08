@@ -153,13 +153,15 @@ stemcell-b2c/
 - [ ] B2B（clinic/）モバイル対応
 - [x] clinic/のcanonicalドメイン統一（cells→lab）
 - [ ] 不妊ペルソナカード追加（consult/index.php）
+- [x] consult/をclinic/配下に移動（デプロイパス対応）
+- [x] consult/をclinic/デザインシステム（UNIQUE Grid System）で完全再構築
+- [x] consult/薬機法リスク表現全置換（幹細胞治療→幹細胞由来成分を用いた施術 等）
 
 ## よくあるトラブル・注意点
 
-- **サイト構造が3層に分かれている**: `/consult/`（個人向けB2C）、`/clinic/`（医療機関向けB2B）、`/common/`（共有ページ）。ルート `index.php` はCookie分岐モーダル
-- **Cookie `user_type`**: `individual` → /consult/、`clinic` → /clinic/。`?reset=1` でクリアしてモーダルに戻る。有効期限30日
-- **B2CのCSSは3層構造を守る**: `design-system.css`（トークン）→ `page.css`（下層ページ）→ `main.css`（TOP専用）。`<style>` タグをPHPに書かない
-- **B2BのCSSは別体系**: `reset.css` + `main.css`（UNIQUE Grid System）。B2Cとは完全に独立
+- **サイト構造**: `/clinic/`（B2B医療機関向け）、`/clinic/consult/`（B2C個人向け）、`/common/`（共有ページ）。ルート `index.php` はCookie分岐モーダル
+- **Cookie `user_type`**: `individual` → /clinic/consult/、`clinic` → /clinic/。`?reset=1` でクリアしてモーダルに戻る。有効期限30日
+- **CSSは統一**: clinic/ も consult/ も同じ `clinic/assets/css/main.css`（UNIQUE Grid System）を使用。consult/index.phpは `../assets/css/main.css` で参照
 - **コンテンツ境界を守る**: `/consult/` に試薬スペック・価格を載せない。`/clinic/` に個人向け販売・相談を載せない
 - **deploy.ymlにlintなし**: CI/CDにPHP構文チェックがないため、push前に手元で `php -l` すること
 - **FTP cleanup=true**: リポジトリから消したファイルはサーバーからも消える。旧URLは404になる
@@ -167,10 +169,10 @@ stemcell-b2c/
 
 ## 最終更新
 
-- **日付**: 2026-03-08
+- **日付**: 2026-03-09
 - **更新者**: Hide + Claude
-- **内容**: clinic/index.php コンテンツ初期実装完了（ヒーローコピー更新、上清液比較表、特許一覧、Lysate作用機序図解、ダーマペン切り替えガイド、更年期・レディース領域、導入フロー3ステップ、小ブロック×8刷新）
-- **次回やること**: consult/index.phpに3セクション追加、CONTACTフォームバックエンド実装、B2Bモバイル対応、不妊ペルソナカード追加
+- **内容**: consult/をclinic/配下に移動、clinic/デザインシステムで完全再構築（header/footer/index.php）、薬機法リスク表現全置換
+- **次回やること**: CONTACTフォームバックエンド実装、B2Bモバイル対応、consult/下層ページのデザイン統一（about/work/evidence等）
 
 ---
 
