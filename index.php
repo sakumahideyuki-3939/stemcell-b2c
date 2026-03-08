@@ -1,24 +1,3 @@
-<?php
-// Cookie-based routing for lab.algo-cosme.com
-// ?reset=1 clears the user_type cookie and shows the selection modal
-if (isset($_GET['reset'])) {
-    setcookie('user_type', '', [
-        'expires' => time() - 3600,
-        'path' => '/',
-        'secure' => true,
-        'samesite' => 'Lax'
-    ]);
-} elseif (isset($_COOKIE['user_type'])) {
-    $type = $_COOKIE['user_type'];
-    if ($type === 'individual') {
-        header('Location: /consult/');
-        exit;
-    } elseif ($type === 'clinic') {
-        header('Location: /clinic/');
-        exit;
-    }
-}
-?>
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -242,10 +221,6 @@ if (isset($_GET['reset'])) {
 
     <script>
         function selectType(type) {
-            var expires = new Date();
-            expires.setTime(expires.getTime() + (30 * 24 * 60 * 60 * 1000));
-            document.cookie = 'user_type=' + type + ';expires=' + expires.toUTCString() + ';path=/;SameSite=Lax;Secure';
-
             if (type === 'individual') {
                 window.location.href = '/consult/';
             } else if (type === 'clinic') {
