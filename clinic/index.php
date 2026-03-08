@@ -222,7 +222,7 @@
             ["cat"=>"FLOW", "ttl"=>"法規制・導入フロー", "txt"=>"リスク管理とコンプライアンス。研究用試薬の適正な取り扱い、同意書取得、広告規制の遵守。"]
         ];
         foreach($work_items as $item): ?>
-        <div class="u-unit h-480 bg-white" style="border: 0.5px solid #f9f9f9;">
+        <div class="u-unit h-480 bg-white" style="border: 0.5px solid #f9f9f9; width: 25%; flex: 0 0 25%;">
             <?php if (!empty($item['link'])): ?>
             <a href="<?php echo $item['link']; ?>" style="text-decoration: none; color: inherit; display: block; height: 100%;">
             <?php endif; ?>
