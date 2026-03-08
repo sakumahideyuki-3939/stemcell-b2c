@@ -147,7 +147,7 @@ stemcell-b2c/
 - [x] P2技術基盤（404.php・.htaccess・canonical・Cookie Secure・sitemap強化）
 - [x] 未使用ファイル削除（clinic/about_a.php, consult/components/page_nav.php）
 - [ ] バックアップファイル（*.bak_*, *.fix_*）の整理・削除
-- [ ] CONTACTフォームのバックエンド実装（現在はフロントのみ）
+- [x] CONTACTフォームのバックエンド実装（consult/contact.php → lab@algo-cosme.com）
 - [x] GA4タグ設置（G-XXXXXXXXXXプレースホルダー、ga4.php一元管理）
 - [x] OGP画像作成（consult/assets/img/ogp.jpg）
 - [ ] B2B（clinic/）モバイル対応
@@ -156,6 +156,9 @@ stemcell-b2c/
 - [x] consult/をclinic/配下に移動（デプロイパス対応）
 - [x] consult/をclinic/デザインシステム（UNIQUE Grid System）で完全再構築
 - [x] consult/薬機法リスク表現全置換（幹細胞治療→幹細胞由来成分を用いた施術 等）
+- [x] 相互導線設計（clinic/⇔consult/ CTAボタン設置）
+- [x] consult/index.php SEOキーワード最適化（培養上清液 次のステップ / Lysate 美容クリニック）
+- [x] SEOブログ第1弾「培養上清液とLysateの違い」（clinic/blog/）
 
 ## よくあるトラブル・注意点
 
@@ -171,8 +174,8 @@ stemcell-b2c/
 
 - **日付**: 2026-03-09
 - **更新者**: Hide + Claude
-- **内容**: consult/をclinic/配下に移動、clinic/デザインシステムで完全再構築（header/footer/index.php）、薬機法リスク表現全置換
-- **次回やること**: CONTACTフォームバックエンド実装、B2Bモバイル対応、consult/下層ページのデザイン統一（about/work/evidence等）
+- **内容**: 相互導線設計（clinic/⇔consult/ CTAボタン）、consult/フォームバックエンド実装（CSRF・レート制限・mail()）、SEOブログ第1弾（上清液 vs Lysate）、SEOキーワード最適化
+- **次回やること**: B2Bモバイル対応、consult/下層ページのデザイン統一（about/work/evidence等）、SEOブログ第2弾以降、不妊ペルソナカード追加、バックアップファイル整理
 
 ---
 
