@@ -5,6 +5,5 @@
 *.bak_*
 *.fix_*
 
-# local data
-data/
-data/
+# local data (研究資料・論文PDF等、本番公開禁止)
+/data/
