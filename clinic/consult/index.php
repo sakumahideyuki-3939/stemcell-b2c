@@ -13,6 +13,12 @@
     <link rel="canonical" href="https://lab.algo-cosme.com/clinic/consult/">
     <link rel="stylesheet" href="../assets/css/main.css?v=<?php echo time(); ?>">
     <style>
+        /* ヒーロー背景画像
+           差し替え手順：clinic/assets/images/hero/ に画像を置いて
+           下記URLをファイルパスに変更する
+           現在：Unsplash仮画像
+           例：background: linear-gradient(...), url('../assets/images/hero/hero-consult.jpg') center/cover no-repeat;
+        */
         .consult-hero { width: 100%; height: 600px; background: linear-gradient(rgba(255,255,255,0.6), rgba(255,255,255,0.6)), url('https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=1920&q=80') center/cover no-repeat; display: flex; align-items: center; justify-content: center; text-align: center; border-bottom: 1px solid #f0f0f0; }
         .consult-hero h1 { font-size: clamp(28px, 4vw, 44px); line-height: 1.4; font-weight: 600; }
         .consult-hero .lead { font-size: 13px; line-height: 2.2; color: #555; margin-top: 25px; max-width: 600px; }
