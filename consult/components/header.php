@@ -1,5 +1,3 @@
-<link rel="stylesheet" href="./assets/css/design-system.css">
-<link rel="stylesheet" href="./assets/css/page.css">
 <div class="site-switch-bar" style="background:var(--color-neutral-100,#f5f5f5);text-align:center;padding:4px 0;font-size:12px;">
   <a href="../index.php?reset=1" style="color:var(--color-primary,#0071E3);text-decoration:none;">サイト切り替え</a>
 </div>
