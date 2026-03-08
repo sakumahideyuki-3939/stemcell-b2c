@@ -172,7 +172,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         "Content-Type: text/plain; charset=UTF-8",
       ];
 
-      $ok1 = @mail($ADMIN_NOTIFY_EMAIL, '【サンプル請求】幹細胞生搾り濾液 無償サンプル', $adminBody, implode("\r\n", $adminHeaders));
+      $ok1 = @mail($ADMIN_NOTIFY_EMAIL, '【サンプル請求】幹細胞生搾り濾液', $adminBody, implode("\r\n", $adminHeaders));
       $ok2 = @mail($sample_form['sample_email'], '【受付完了】サンプル請求を承りました（ALGO Inc.）', $userBody, implode("\r\n", $userHeaders));
 
       if ($ok1 && $ok2) {
@@ -534,8 +534,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <div class="addr-tag">SAMPLE REQUEST</div>
 
         <div class="contact-info-block" style="margin-bottom:16px;">
-          <h3>無償サンプル請求フォーム</h3>
-          <p>幹細胞生搾り濾液の無償サンプルをお送りします。<br>まずはお気軽にお試しください。</p>
+          <h3>サンプル請求フォーム</h3>
+          <p>サンプルは無償配布していません。サンプル価格についてはご相談に応じます。</p>
           <p class="help" style="margin-top:8px;">※ 医療機関様限定。原則1〜2営業日以内にご連絡いたします。</p>
         </div>
 
@@ -628,7 +628,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <div class="u-double bg-light" style="min-height:960px;">
       <div class="inner-pad-center" style="align-items:center; text-align:center;">
         <div class="addr-tag">SAMPLE INFO</div>
-        <h2 style="font-size:20px; letter-spacing:0.2em; margin-bottom:30px;">無償サンプルについて</h2>
+        <h2 style="font-size:20px; letter-spacing:0.2em; margin-bottom:30px;">サンプルについて</h2>
         <div style="max-width:480px; text-align:left;">
           <div style="padding:20px 0; border-bottom:1px solid #e8e8e8;">
             <p style="font-size:10px; color:#0071E3; letter-spacing:0.15em; font-weight:600;">STEP 1</p>
@@ -638,7 +638,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
           <div style="padding:20px 0; border-bottom:1px solid #e8e8e8;">
             <p style="font-size:10px; color:#0071E3; letter-spacing:0.15em; font-weight:600;">STEP 2</p>
             <p style="font-size:13px; font-weight:600; margin-top:4px;">サンプル発送</p>
-            <p style="font-size:11px; color:#555; margin-top:4px; line-height:1.7;">担当よりご連絡のうえ、無償サンプルと製品資料をお送りします。</p>
+            <p style="font-size:11px; color:#555; margin-top:4px; line-height:1.7;">担当よりご連絡のうえ、サンプルと製品資料をお送りします。</p>
           </div>
           <div style="padding:20px 0;">
             <p style="font-size:10px; color:#0071E3; letter-spacing:0.15em; font-weight:600;">STEP 3</p>
