@@ -34,8 +34,8 @@ ksort($works, SORT_NATURAL);
   <div class="hero-slider__track">
     <div class="hero-slider__slide hero-slider__slide--bg-1 is-active">
       <div class="l-container t-center">
-        <h1 class="t-hero" style="margin-top:var(--sp-4);">培養上清液の次へ。</h1>
-        <p class="t-body-lg t-secondary" style="margin-top:var(--sp-5);max-width:600px;margin-inline:auto;">あなたに合うクリニックを、一緒に探します。<br>美容・エイジングケア・薄毛・更年期——幹細胞治療の情報整理と無料相談。</p>
+        <h1 class="t-hero" style="margin-top:var(--sp-4);">幹細胞治療、調べすぎて<br>分からなくなっていませんか？</h1>
+        <p class="t-body-lg t-secondary" style="margin-top:var(--sp-5);max-width:600px;margin-inline:auto;">売り込みません。一緒に、整理します。<br>幹細胞治療の情報整理と、あなたに合う医療機関への無料相談。</p>
         <div style="margin-top:var(--sp-7);">
           <a href="./contact.php" class="c-btn c-btn--primary c-btn--lg">まずは情報を整理してみる（無料・約2分）</a>
         </div>
@@ -143,19 +143,29 @@ ksort($works, SORT_NATURAL);
     </div>
     <div class="persona-grid reveal-stagger">
       <div class="persona-card reveal">
+        <div class="persona-card__icon"><i data-lucide="heart-pulse"></i></div>
+        <div class="persona-card__title">ED（男性機能）でお悩みの方</div>
+        <p class="persona-card__text">40〜65歳男性。人に相談しづらいからこそ、匿名で情報整理から始められます。</p>
+      </div>
+      <div class="persona-card reveal">
+        <div class="persona-card__icon"><i data-lucide="activity"></i></div>
+        <div class="persona-card__title">慢性的な痛みに向き合っている方</div>
+        <p class="persona-card__text">45〜70歳。さまざまな治療を試してきた方へ、選択肢の整理をお手伝いします。</p>
+      </div>
+      <div class="persona-card reveal">
+        <div class="persona-card__icon"><i data-lucide="brain"></i></div>
+        <div class="persona-card__title">脳梗塞後遺症のご家族の方</div>
+        <p class="persona-card__text">ご家族が代わりに情報収集されるケースも多くあります。一緒に整理しましょう。</p>
+      </div>
+      <div class="persona-card reveal">
         <div class="persona-card__icon"><i data-lucide="sparkles"></i></div>
-        <div class="persona-card__title">美容エイジングケアの次を探している方</div>
-        <p class="persona-card__text">ヒアルロン酸・ボトックス・レーザーなど従来の美容施術とは異なるアプローチとして、幹細胞治療の情報を整理してお伝えします。</p>
+        <div class="persona-card__title">AGA（薄毛）で既存治療に限界を感じている方</div>
+        <p class="persona-card__text">内服薬・外用薬の次のステップとして、再生医療の選択肢を整理します。</p>
       </div>
       <div class="persona-card reveal">
         <div class="persona-card__icon"><i data-lucide="sun"></i></div>
-        <div class="persona-card__title">AGA・薄毛で既存治療に限界を感じている方</div>
-        <p class="persona-card__text">内服薬・外用薬の次のステップとして、再生医療の選択肢を整理します。ダーマペン×幹細胞濾液など新しいアプローチもご案内できます。</p>
-      </div>
-      <div class="persona-card reveal">
-        <div class="persona-card__icon"><i data-lucide="heart"></i></div>
-        <div class="persona-card__title">更年期ケアを医療で考えたい女性</div>
-        <p class="persona-card__text">肌質変化・体調の揺らぎなど、更年期に伴うお悩みに対して、幹細胞治療という選択肢を一緒に整理します。</p>
+        <div class="persona-card__title">美容エイジングケアの次を探している方</div>
+        <p class="persona-card__text">従来の美容施術とは異なるアプローチとして、情報を整理してお伝えします。</p>
       </div>
     </div>
   </div>
