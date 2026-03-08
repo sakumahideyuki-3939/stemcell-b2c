@@ -13,7 +13,7 @@
     <link rel="canonical" href="https://lab.algo-cosme.com/clinic/consult/">
     <link rel="stylesheet" href="../assets/css/main.css?v=<?php echo time(); ?>">
     <style>
-        .consult-hero { width: 100%; height: 600px; background: #fff; display: flex; align-items: center; justify-content: center; text-align: center; border-bottom: 1px solid #f0f0f0; }
+        .consult-hero { width: 100%; height: 600px; background: linear-gradient(rgba(255,255,255,0.6), rgba(255,255,255,0.6)), url('https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=1920&q=80') center/cover no-repeat; display: flex; align-items: center; justify-content: center; text-align: center; border-bottom: 1px solid #f0f0f0; }
         .consult-hero h1 { font-size: clamp(28px, 4vw, 44px); line-height: 1.4; font-weight: 600; }
         .consult-hero .lead { font-size: 13px; line-height: 2.2; color: #555; margin-top: 25px; max-width: 600px; }
         .consult-hero .cta-link { display: inline-block; margin-top: 35px; padding: 14px 44px; border: 1px solid #2f2f2f; font-size: 11px; letter-spacing: 0.15em; color: #2f2f2f; text-decoration: none; transition: all 0.3s; }
