@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>幹細胞治療の無料相談・情報整理｜ALGO LAB</title>
-    <meta name="description" content="幹細胞治療の情報を整理し、あなたに合う医療機関への無料相談をサポート。美容エイジングケア・AGA・更年期——売り込みなし・匿名可・営業電話なし。">
-    <meta property="og:title" content="幹細胞治療の無料相談・情報整理｜ALGO LAB">
-    <meta property="og:description" content="幹細胞治療の情報を整理し、あなたに合う医療機関への無料相談をサポート。売り込みなし・匿名可・営業電話なし。">
+    <title>幹細胞由来成分を用いた施術の無料相談・情報整理｜ALGO LAB</title>
+    <meta name="description" content="幹細胞由来成分を用いた施術の情報を整理し、あなたに合う医療機関への無料相談をサポート。美容エイジングへのアプローチ・AGA・更年期——売り込みなし・匿名可・営業電話なし。">
+    <meta property="og:title" content="幹細胞由来成分を用いた施術の無料相談・情報整理｜ALGO LAB">
+    <meta property="og:description" content="幹細胞由来成分を用いた施術の情報を整理し、あなたに合う医療機関への無料相談をサポート。売り込みなし・匿名可・営業電話なし。">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://lab.algo-cosme.com/clinic/consult/">
     <meta property="og:site_name" content="ALGO LAB">
@@ -83,22 +83,22 @@
         <div class="u-unit h-960 bg-white" style="width:25%; flex:0 0 25%;">
             <div class="inner-pad-center">
                 <p class="persona-tag">BEAUTY / AGING</p>
-                <h2>美容エイジングケアの<br>次を探している方</h2>
-                <p class="persona-desc">ヒアルロン酸・ボトックス・レーザーなど従来の美容施術とは異なるアプローチとして、幹細胞治療が注目されています。<br><br>「何が違うのか」「自分に合うのか」——まずは情報を整理して、納得して選ぶための準備をお手伝いします。<br><br>ダーマペン×幹細胞濾液など、新しい施術メニューについてもご案内できます。</p>
+                <h2>美容エイジングへのアプローチで<br>次を探している方</h2>
+                <p class="persona-desc">ヒアルロン酸・ボトックス・レーザーなど従来の美容施術とは異なるアプローチとして、幹細胞由来成分を用いた施術が注目されています。<br><br>「何が違うのか」「自分に合うのか」——まずは情報を整理して、納得して選ぶための準備をお手伝いします。<br><br>ダーマペン×幹細胞濾液など、新しい施術メニューについてもご案内できます。</p>
             </div>
         </div>
         <div class="u-unit h-960 bg-light" style="width:25%; flex:0 0 25%;">
             <div class="inner-pad-center">
                 <p class="persona-tag">AGA / HAIR LOSS</p>
                 <h2>AGA・薄毛で既存治療に<br>限界を感じている方</h2>
-                <p class="persona-desc">内服薬（フィナステリド・デュタステリド）や外用薬（ミノキシジル）で満足できていない方へ。<br><br>再生医療の選択肢として、幹細胞由来の成長因子を活用したアプローチが研究されています。<br><br>費用感・通院頻度・期待できる変化の範囲を、事前に整理してからクリニック選びに進めます。</p>
+                <p class="persona-desc">内服薬（フィナステリド・デュタステリド）や外用薬（ミノキシジル）で満足できていない方へ。<br><br>先端医療領域の施術における選択肢として、幹細胞由来の成長因子を活用したアプローチが研究されています。<br><br>費用感・通院頻度・期待できる変化の範囲を、事前に整理してからクリニック選びに進めます。</p>
             </div>
         </div>
         <div class="u-unit h-960 bg-white" style="width:25%; flex:0 0 25%;">
             <div class="inner-pad-center">
                 <p class="persona-tag">MENOPAUSE</p>
-                <h2>更年期ケアを医療で<br>考えたい女性</h2>
-                <p class="persona-desc">肌質変化・体調の揺らぎ・気力の低下など、更年期に伴うお悩みに対して、幹細胞治療という選択肢があります。<br><br>HRT（ホルモン補充療法）との違いや併用の可能性、費用の目安などを整理してお伝えします。<br><br>「何を聞けばいいかわからない」方こそ、まずは情報整理から。</p>
+                <h2>更年期に関する医療相談を<br>考えている女性</h2>
+                <p class="persona-desc">肌質変化・体調の揺らぎ・気力の低下など、更年期に伴うお悩みに対して、幹細胞由来成分を用いた施術という選択肢があります。<br><br>HRT（ホルモン補充療法）との違いや併用の可能性、費用の目安などを整理してお伝えします。<br><br>「何を聞けばいいかわからない」方こそ、まずは情報整理から。</p>
             </div>
         </div>
         <div class="u-unit h-960 bg-soft" style="width:25%; flex:0 0 25%;">
@@ -216,7 +216,7 @@
     <section class="grid-row">
         <?php
         $work_items = [
-            ["cat"=>"START HERE",    "ttl"=>"はじめての方へ",  "txt"=>"幹細胞治療とは何か。検討のスタートラインに立つための基礎知識を整理します。",          "link"=>"./work01.php"],
+            ["cat"=>"START HERE",    "ttl"=>"はじめての方へ",  "txt"=>"幹細胞由来成分を用いた施術とは何か。検討のスタートラインに立つための基礎知識を整理します。",          "link"=>"./work01.php"],
             ["cat"=>"MECHANISM",     "ttl"=>"仕組みを知る",    "txt"=>"培養上清液・エクソソーム・Lysate——種類ごとの違いと、それぞれの考え方を解説。",        "link"=>"./about.php"],
             ["cat"=>"SAFETY",        "ttl"=>"安全性",          "txt"=>"副作用・リスク・品質管理。受診前に確認しておくべき安全性の情報を整理します。",        "link"=>"./work03.php"],
             ["cat"=>"COST",          "ttl"=>"費用",            "txt"=>"相場感・保険適用の有無・追加費用の有無。お金の不安を事前に解消します。",              "link"=>"./work04.php"],
