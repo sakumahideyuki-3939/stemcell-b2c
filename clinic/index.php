@@ -108,7 +108,7 @@
             <div class="slide bg-white">
                 <div class="inner-pad-center">
                     <p class="addr-tag">ADDRESS: T1-1 / MAIN VISUAL</p>
-                    <h1>特許4件取得の独自技術。<br>培養上清液の"その先"へ。</h1>
+                    <h1>培養上清液の、その先へ。<br>特許4件取得の幹細胞生搾り濾液。</h1>
                     <p class="content-text-rich" style="text-align:center;">幹細胞を物理破砕し、細胞内成分まで丸ごと抽出。<br>Cell-nucleus Freeで安全性に配慮した設計の研究用試薬。</p>
                 </div>
             </div>
@@ -150,23 +150,104 @@
     <section class="grid-row">
         <div class="u-unit h-960 bg-white" style="width:25%; flex:0 0 25%;">
             <div class="inner-pad-center">
-                <div class="addr-tag">ADDRESS: T2-1</div>
-                <h2>独自製法による純度管理</h2>
-                <p class="work-desc-rich">従来の「培養上清液」は、細胞が分泌した成分のみを回収していました。対して本製品は、幹細胞そのものを凍結融解や超音波処理によって物理的に「破砕」し、細胞内部の成分まで丸ごと抽出する「生搾り（Lysate）」製法を採用しています。これにより、分泌されたサイトカインだけでなく、通常は細胞内に留まるHSP（ヒートショックプロテイン）などの有用タンパク質をも高濃度に含有させることに含有しています。</p>
+                <div class="addr-tag">ADDRESS: T2-1 / DIFFERENCE</div>
+                <h2>培養上清液との違い</h2>
+                <p class="work-desc-rich">従来の「培養上清液」は、細胞が培地中に分泌した成分（上澄み）のみを回収したものです。対して「生搾り濾液（Lysate）」は、幹細胞そのものを凍結融解・超音波処理で物理的に破砕し、細胞内部の成分まで丸ごと抽出します。</p>
+                <table style="width:100%; border-collapse:collapse; margin-top:20px; font-size:11px;">
+                    <thead>
+                        <tr style="border-bottom:2px solid #2f2f2f;">
+                            <th style="padding:8px 6px; text-align:left; font-weight:600;"></th>
+                            <th style="padding:8px 6px; text-align:center; font-weight:600;">培養上清液</th>
+                            <th style="padding:8px 6px; text-align:center; font-weight:600; color:#0071E3;">生搾り濾液</th>
+                        </tr>
+                    </thead>
+                    <tbody style="color:#555;">
+                        <tr style="border-bottom:1px solid #eee;">
+                            <td style="padding:8px 6px;">抽出方法</td>
+                            <td style="padding:8px 6px; text-align:center;">培地の上澄みを回収</td>
+                            <td style="padding:8px 6px; text-align:center;">細胞を物理破砕</td>
+                        </tr>
+                        <tr style="border-bottom:1px solid #eee;">
+                            <td style="padding:8px 6px;">細胞内成分</td>
+                            <td style="padding:8px 6px; text-align:center;">含まれない</td>
+                            <td style="padding:8px 6px; text-align:center;">HSP47/70等を含有</td>
+                        </tr>
+                        <tr style="border-bottom:1px solid #eee;">
+                            <td style="padding:8px 6px;">特許</td>
+                            <td style="padding:8px 6px; text-align:center;">—</td>
+                            <td style="padding:8px 6px; text-align:center;">4件取得</td>
+                        </tr>
+                        <tr>
+                            <td style="padding:8px 6px;">核酸除去</td>
+                            <td style="padding:8px 6px; text-align:center;">—</td>
+                            <td style="padding:8px 6px; text-align:center;">Cell-nucleus Free</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </div>
         <div class="u-unit h-960 bg-light" style="width:25%; flex:0 0 25%;">
             <div class="inner-pad-center">
-                <div class="addr-tag">ADDRESS: T2-2</div>
-                <h2>研究の背景</h2>
-                <p class="work-desc-rich">本技術は、「下部尿路機能障害」「勃起不全（ED）」「変形性膝関節症」「皮膚保護剤」など多岐にわたる分野で特許を取得・出願済みの技術に基づいています。脂肪組織由来幹細胞の破砕濾液には、創傷治癒への関与が報告されているHSP47やHSP70、抗炎症作用への関与が報告されているAnnexinA6などが含まれることが確認されており、培養上清液とは異なる成分プロファイルを有しています。</p>
+                <div class="addr-tag">ADDRESS: T2-2 / PATENTS</div>
+                <h2>特許取得一覧</h2>
+                <p class="work-desc-rich">幹細胞破砕濾液に関する特許を4件取得。多領域の診療科で応用可能な技術基盤です。</p>
+                <div style="margin-top:25px; width:100%;">
+                    <div style="border-bottom:1px solid #eee; padding:14px 0;">
+                        <p style="font-size:10px; color:#999; letter-spacing:0.15em;">PATENT 01 — 泌尿器科</p>
+                        <p style="font-size:13px; font-weight:600; margin-top:4px;">下部尿路機能障害</p>
+                    </div>
+                    <div style="border-bottom:1px solid #eee; padding:14px 0;">
+                        <p style="font-size:10px; color:#999; letter-spacing:0.15em;">PATENT 02 — 泌尿器科</p>
+                        <p style="font-size:13px; font-weight:600; margin-top:4px;">勃起不全（ED）</p>
+                    </div>
+                    <div style="border-bottom:1px solid #eee; padding:14px 0;">
+                        <p style="font-size:10px; color:#999; letter-spacing:0.15em;">PATENT 03 — 整形外科</p>
+                        <p style="font-size:13px; font-weight:600; margin-top:4px;">変形性膝関節症</p>
+                    </div>
+                    <div style="border-bottom:1px solid #eee; padding:14px 0;">
+                        <p style="font-size:10px; color:#999; letter-spacing:0.15em;">PATENT 04 — 皮膚科</p>
+                        <p style="font-size:13px; font-weight:600; margin-top:4px;">皮膚保護剤</p>
+                    </div>
+                    <div style="border-bottom:1px solid #eee; padding:14px 0;">
+                        <p style="font-size:10px; color:#999; letter-spacing:0.15em;">出願中 — 生殖医療</p>
+                        <p style="font-size:13px; font-weight:600; margin-top:4px;">卵子成熟促進</p>
+                    </div>
+                    <div style="padding:14px 0;">
+                        <p style="font-size:10px; color:#999; letter-spacing:0.15em;">出願中 — 生殖医療</p>
+                        <p style="font-size:13px; font-weight:600; margin-top:4px;">精子活性剤</p>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="u-unit h-960 bg-soft" style="width:50%; flex:0 0 50%; min-height:960px;">
             <div class="inner-pad-center">
-                <div class="addr-tag">ADDRESS: T2-3</div>
-                <h2>生搾り（Lysate）という<br>新しいアプローチ</h2>
-                <p class="work-desc-rich">再生医療の現場では、「細胞移植（Cell Therapy）」への期待と、コストや定着率、そして腫瘍化リスクという課題がありました。一方で「培養上清液」は手軽ですが、細胞内部の成分は含まれていません。「幹細胞生搾り（濾液）」は、細胞そのものは含まず、細胞の中身（細胞質・オルガネラ成分）を含有する研究用試薬です。</p>
+                <div class="addr-tag">ADDRESS: T2-3 / MECHANISM</div>
+                <h2>Lysate 作用機序</h2>
+                <p class="work-desc-rich">幹細胞生搾り濾液は、細胞を物理的に破砕することで、通常は細胞内に留まるタンパク質群を抽出します。培養上清液が「細胞の分泌物」であるのに対し、Lysateは「細胞の中身そのもの」です。</p>
+                <div style="margin-top:30px; width:100%; max-width:600px;">
+                    <div style="display:flex; align-items:center; gap:20px; margin-bottom:20px;">
+                        <div style="width:80px; height:80px; border-radius:50%; border:2px solid #2f2f2f; display:flex; align-items:center; justify-content:center; flex-shrink:0;">
+                            <span style="font-size:10px; text-align:center; line-height:1.3;">幹細胞<br>Stem Cell</span>
+                        </div>
+                        <div style="font-size:20px; color:#999; flex-shrink:0;">→</div>
+                        <div style="font-size:11px; color:#555; line-height:1.8;">凍結融解・超音波処理により<br>細胞膜を物理的に破砕</div>
+                    </div>
+                    <div style="display:flex; align-items:center; gap:20px; margin-bottom:20px;">
+                        <div style="width:80px; height:80px; border-radius:50%; border:2px dashed #999; display:flex; align-items:center; justify-content:center; flex-shrink:0;">
+                            <span style="font-size:10px; text-align:center; line-height:1.3;">破砕物<br>Lysate</span>
+                        </div>
+                        <div style="font-size:20px; color:#999; flex-shrink:0;">→</div>
+                        <div style="font-size:11px; color:#555; line-height:1.8;">0.2μmフィルターで精密濾過<br>細胞核・細胞残骸を物理除去</div>
+                    </div>
+                    <div style="display:flex; align-items:center; gap:20px;">
+                        <div style="width:80px; height:80px; border-radius:50%; background:#f9f9f9; border:2px solid #0071E3; display:flex; align-items:center; justify-content:center; flex-shrink:0;">
+                            <span style="font-size:9px; text-align:center; line-height:1.3; color:#0071E3;">Cell-nucleus<br>Free<br>濾液</span>
+                        </div>
+                        <div style="font-size:20px; color:#999; flex-shrink:0;">→</div>
+                        <div style="font-size:11px; color:#555; line-height:1.8;">HSP47 / HSP70 / AnnexinA6<br>サイトカイン・エクソソーム等を含有</div>
+                    </div>
+                </div>
+                <p style="font-size:10px; color:#aaa; margin-top:25px; text-align:center;">※ 上記は製造工程の概要です。成分含有量は研究用試薬としての分析値に基づきます。</p>
             </div>
         </div>
     </section>
@@ -174,38 +255,79 @@
     <section class="grid-row">
         <div class="u-unit h-960 bg-soft" style="width:50%; flex:0 0 50%; min-height:960px; border-right: 1px solid #eee;">
             <div class="inner-pad-center">
-                <div class="addr-tag">ADDRESS: T2-4</div>
-                <h2>安全性への設計思想</h2>
-                <p class="work-desc-rich">幹細胞治療において最大の懸念は「がん化（腫瘍形成）」のリスクです。特に未分化な幹細胞や、CD133などのマーカーを持つ細胞の混入はリスク因子となり得ます。本製品は、細胞を破砕した後、0.2μm等のフィルターで精密濾過を行っています。</p>
+                <div class="addr-tag">ADDRESS: T2-4 / DERMAPEN SWITCH</div>
+                <h2>ダーマペン切り替えガイド</h2>
+                <p class="work-desc-rich">現在、培養上清液でダーマペン施術を行っているクリニック様へ。生搾り濾液への切り替えを3ステップでサポートします。</p>
+                <div style="margin-top:30px; width:100%; max-width:560px;">
+                    <div style="display:flex; align-items:flex-start; gap:20px; margin-bottom:28px;">
+                        <div style="width:48px; height:48px; border-radius:50%; background:#2f2f2f; color:#fff; display:flex; align-items:center; justify-content:center; font-size:14px; font-weight:600; flex-shrink:0;">1</div>
+                        <div>
+                            <p style="font-size:14px; font-weight:600; margin-bottom:4px;">無償サンプル申し込み</p>
+                            <p style="font-size:11px; color:#555; line-height:1.8;">まずは製品をお試しください。クリニック様向けに無償サンプルをご用意しています。お問い合わせフォームまたはお電話にてお申し込みいただけます。</p>
+                        </div>
+                    </div>
+                    <div style="display:flex; align-items:flex-start; gap:20px; margin-bottom:28px;">
+                        <div style="width:48px; height:48px; border-radius:50%; background:#2f2f2f; color:#fff; display:flex; align-items:center; justify-content:center; font-size:14px; font-weight:600; flex-shrink:0;">2</div>
+                        <div>
+                            <p style="font-size:14px; font-weight:600; margin-bottom:4px;">現行上清液と比較施術</p>
+                            <p style="font-size:11px; color:#555; line-height:1.8;">実際の施術で現行の培養上清液と比較してください。テクスチャ・使用感・施術後の経過を医師ご自身でご評価いただけます。</p>
+                        </div>
+                    </div>
+                    <div style="display:flex; align-items:flex-start; gap:20px;">
+                        <div style="width:48px; height:48px; border-radius:50%; background:#2f2f2f; color:#fff; display:flex; align-items:center; justify-content:center; font-size:14px; font-weight:600; flex-shrink:0;">3</div>
+                        <div>
+                            <p style="font-size:14px; font-weight:600; margin-bottom:4px;">導入可否をご判断</p>
+                            <p style="font-size:11px; color:#555; line-height:1.8;">サンプル評価の結果をもとに、導入をご判断ください。ご契約後は同意書雛形・院内資料・教育マニュアルを無償でご提供します。</p>
+                        </div>
+                    </div>
+                </div>
+                <a href="./contact.php" style="display:inline-block; margin-top:30px; padding:12px 40px; border:1px solid #2f2f2f; font-size:11px; letter-spacing:0.15em; color:#2f2f2f; text-decoration:none;">サンプル請求はこちら</a>
             </div>
         </div>
         <div class="u-unit h-960 bg-white" style="width:25%; flex:0 0 25%;">
             <div class="inner-pad-center">
-                <div class="addr-tag">ADDRESS: T2-5</div>
-                <h3>製品の特長</h3>
-                <p class="work-desc-rich">本製品は研究用試薬として、多くの医療機関にご採用いただいております。培養上清液とは異なる成分プロファイル（細胞内タンパク質HSP47/70等を含有）と、Cell-nucleus Free技術による細胞核除去が特長です。<br><br>点鼻用・局所注射用の2種類をご用意しており、医師の判断のもと、各種用途にご検討いただけます。導入に関するご相談は<a href="./contact.php" style="color:#2f2f2f; text-decoration:underline;">こちら</a>から承ります。</p>
+                <div class="addr-tag">ADDRESS: T2-5 / LADIES</div>
+                <h3>更年期・レディース領域</h3>
+                <p class="work-desc-rich">幹細胞破砕濾液の研究は、泌尿器科・整形外科にとどまりません。卵子成熟促進・精子活性剤に関する特許を出願中であり、生殖医療分野での応用研究が進んでいます。<br><br>更年期に伴う肌質変化や、女性特有のQOL課題に対して、幹細胞由来の成長因子・HSPがどのような可能性を持つか——基礎研究レベルでの知見が蓄積されつつあります。<br><br><span style="font-size:10px; color:#999;">※ 本項目は研究段階の情報です。特定の効能効果を示すものではありません。</span></p>
             </div>
         </div>
         <div class="u-unit h-960 bg-light" style="width:25%; flex:0 0 25%;">
             <div class="inner-pad-center">
-                <div class="addr-tag">ADDRESS: T2-6</div>
-                <h3>スムーズな導入</h3>
-                <p class="work-desc-rich">本製品は「研究用試薬」としての取り扱いとなるため、再生医療等安全性確保法の届出は不要ですが、患者様への説明責任は重要です。当院では、弁護士監修の「同意書（承諾書）」雛形や、院内掲示用の説明資料、スタッフ向け教育マニュアルを完備しています。法的な位置づけを明確にしつつ、安全に自由診療メニューに組み込んでいただけるよう、導入から運用までトータルでサポートいたします。</p>
+                <div class="addr-tag">ADDRESS: T2-6 / FLOW</div>
+                <h3>導入フロー</h3>
+                <p class="work-desc-rich" style="margin-bottom:20px;">研究用試薬としてのお取り扱い。再生医療等安全性確保法の届出は不要です。</p>
+                <div style="width:100%;">
+                    <div style="padding:18px 0; border-bottom:1px solid #eee;">
+                        <p style="font-size:10px; color:#0071E3; letter-spacing:0.15em; font-weight:600;">STEP 1</p>
+                        <p style="font-size:13px; font-weight:600; margin-top:4px;">お問い合わせ・サンプル請求</p>
+                        <p style="font-size:11px; color:#555; margin-top:4px; line-height:1.7;">フォームまたはお電話にてご連絡ください。無償サンプルと製品資料をお送りします。</p>
+                    </div>
+                    <div style="padding:18px 0; border-bottom:1px solid #eee;">
+                        <p style="font-size:10px; color:#0071E3; letter-spacing:0.15em; font-weight:600;">STEP 2</p>
+                        <p style="font-size:13px; font-weight:600; margin-top:4px;">評価・ご契約</p>
+                        <p style="font-size:11px; color:#555; margin-top:4px; line-height:1.7;">サンプルをご評価いただき、導入を決定されましたらご契約手続きに進みます。</p>
+                    </div>
+                    <div style="padding:18px 0;">
+                        <p style="font-size:10px; color:#0071E3; letter-spacing:0.15em; font-weight:600;">STEP 3</p>
+                        <p style="font-size:13px; font-weight:600; margin-top:4px;">導入サポート開始</p>
+                        <p style="font-size:11px; color:#555; margin-top:4px; line-height:1.7;">同意書雛形・院内掲示資料・スタッフ教育マニュアルを無償提供。運用までトータルでサポートします。</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
     <section class="grid-row">
-        <?php 
+        <?php
         $work_items = [
-            ["cat"=>"LINEUP", "ttl"=>"製品ラインナップ", "txt"=>"「点鼻用」と「局所注射用」。独自の抽出技術で高濃度化. 目的に合わせて選べる2つのシステム。"],
-            ["cat"=>"MECHANISM", "ttl"=>"成分・メカニズム", "txt"=>"HSP70・エクソソーム等を含有。細胞破砕により抽出される細胞内タンパク質の成分プロファイル。"],
-            ["cat"=>"PATENT / ED", "ttl"=>"特許技術：ED領域", "txt"=>"幹細胞濾液に関する特許技術の研究データ。基礎研究における知見をご紹介します。"],
-            ["cat"=>"PATENT / JOINT", "ttl"=>"特許技術：関節領域", "txt"=>"変形性膝関節症に関する基礎研究データ。関節内投与に関する特許技術。"],
-            ["cat"=>"PATENT / SKIN", "ttl"=>"特許技術：皮膚保護", "txt"=>"皮膚保護に関する基礎研究データ。破砕濾液の皮膚科学領域における研究。"],
-            ["cat"=>"BEAUTY / AGA", "ttl"=>"美容皮膚科・AGA", "txt"=>"美容皮膚科・AGA領域における基礎研究。成長因子と毛包に関する学術的知見。"],
-            ["cat"=>"ACADEMIC", "ttl"=>"学会・論文レポート", "txt"=>"最新の学術データを公開。国内外の学会で発表された「濾液（Lysate）」に関する研究成果。特許ポートフォリオもご覧いただけます。", "link"=>"./evidence.php"],
-            ["cat"=>"FLOW", "ttl"=>"法規制・導入フロー", "txt"=>"リスク管理とコンプライアンス。研究用試薬の適正な取り扱い、同意書取得、広告規制の遵守。"]
+            ["cat"=>"COMPARISON", "ttl"=>"成分比較", "txt"=>"培養上清液 vs 生搾り濾液。HSP47/70・AnnexinA6など細胞内タンパク質の含有量を比較した分析データ。"],
+            ["cat"=>"CELL-NUCLEUS FREE", "ttl"=>"Cell-nucleus Free", "txt"=>"0.2μmフィルターによる細胞核の物理除去。腫瘍化リスクに配慮した安全設計の技術詳細。"],
+            ["cat"=>"PATENT PORTFOLIO", "ttl"=>"特許一覧", "txt"=>"下部尿路障害・ED・変形性膝関節症・皮膚保護の4件取得。卵子成熟促進・精子活性剤を出願中。"],
+            ["cat"=>"COMPLIANCE", "ttl"=>"コンプライアンス", "txt"=>"研究用試薬の法的位置づけ、広告規制の遵守、同意書取得のガイドライン。薬機法対応の要点を整理。"],
+            ["cat"=>"HAIR / AGA", "ttl"=>"育毛エビデンス", "txt"=>"成長因子と毛包に関する基礎研究データ。美容皮膚科・AGA領域における学術的知見をご紹介。"],
+            ["cat"=>"PRP COMPARE", "ttl"=>"PRP比較", "txt"=>"PRP（多血小板血漿）療法との違い。採血不要・ロット管理による品質安定性という運用面の特長。"],
+            ["cat"=>"SAMPLE REQUEST", "ttl"=>"サンプル請求", "txt"=>"無償サンプルで製品をお試しください。お申し込みは最短翌営業日に発送いたします。", "link"=>"./contact.php"],
+            ["cat"=>"CONTACT", "ttl"=>"お問い合わせ", "txt"=>"導入のご相談・製品資料のご請求・お見積もりなど、お気軽にお問い合わせください。", "link"=>"./contact.php"]
         ];
         foreach($work_items as $item): ?>
         <div class="u-unit h-480 bg-white" style="width:25%; flex:0 0 25%; border: 0.5px solid #f9f9f9;">
