@@ -1,309 +1,249 @@
-<?php
-$page_title = "幹細胞治療の無料相談・情報整理サイト";
-$page_description = "幹細胞治療の情報を整理し、あなたに合う医療機関への無料相談をサポート。売り込みなし・匿名可・営業電話なし。研究が進む再生医療分野の判断材料を提供します。";
-
-// Load work data
-$work_json = file_get_contents(__DIR__ . '/data/work.json');
-$works = json_decode($work_json, true);
-if (!is_array($works)) { $works = []; }
-ksort($works, SORT_NATURAL);
-?>
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./assets/css/design-system.css?v=<?php echo time(); ?>">
-  <link rel="stylesheet" href="./assets/css/page.css?v=<?php echo time(); ?>">
-  <link rel="stylesheet" href="./assets/css/main.css?v=<?php echo time(); ?>">
-  <title><?php echo htmlspecialchars($page_title, ENT_QUOTES, 'UTF-8'); ?>｜ALGO LAB</title>
-  <?php include __DIR__ . '/components/head-meta.php'; ?>
-  <script src="https://unpkg.com/lucide@0.263.1"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>幹細胞治療の無料相談・情報整理｜ALGO LAB</title>
+    <meta name="description" content="幹細胞治療の情報を整理し、あなたに合う医療機関への無料相談をサポート。美容エイジングケア・AGA・更年期——売り込みなし・匿名可・営業電話なし。">
+    <meta property="og:title" content="幹細胞治療の無料相談・情報整理｜ALGO LAB">
+    <meta property="og:description" content="幹細胞治療の情報を整理し、あなたに合う医療機関への無料相談をサポート。売り込みなし・匿名可・営業電話なし。">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://lab.algo-cosme.com/clinic/consult/">
+    <meta property="og:site_name" content="ALGO LAB">
+    <link rel="canonical" href="https://lab.algo-cosme.com/clinic/consult/">
+    <link rel="stylesheet" href="../assets/css/main.css?v=<?php echo time(); ?>">
+    <style>
+        .consult-hero { width: 100%; height: 600px; background: #fff; display: flex; align-items: center; justify-content: center; text-align: center; border-bottom: 1px solid #f0f0f0; }
+        .consult-hero h1 { font-size: clamp(28px, 4vw, 44px); line-height: 1.4; font-weight: 600; }
+        .consult-hero .lead { font-size: 13px; line-height: 2.2; color: #555; margin-top: 25px; max-width: 600px; }
+        .consult-hero .cta-link { display: inline-block; margin-top: 35px; padding: 14px 44px; border: 1px solid #2f2f2f; font-size: 11px; letter-spacing: 0.15em; color: #2f2f2f; text-decoration: none; transition: all 0.3s; }
+        .consult-hero .cta-link:hover { background: #2f2f2f; color: #fff; }
+
+        .trust-bar { display: flex; justify-content: center; align-items: center; gap: 60px; flex-wrap: wrap; padding: 40px 20px; border-bottom: 1px solid #f0f0f0; }
+        .trust-bar__item { text-align: center; }
+        .trust-bar__label { font-size: 10px; color: #999; letter-spacing: 0.15em; margin-top: 8px; }
+        .trust-bar__value { font-size: 14px; font-weight: 200; color: #2f2f2f; letter-spacing: 0.1em; }
+
+        .persona-desc { font-size: 11px; line-height: 2.0; text-align: left; margin-top: 15px; color: #555; }
+        .persona-tag { font-size: 10px; letter-spacing: 0.15em; color: #0071E3; font-weight: 600; margin-bottom: 8px; }
+
+        @media screen and (max-width: 480px) {
+            .consult-hero { height: auto; min-height: 400px; padding: 60px 20px; }
+            .consult-hero h1 { font-size: 1.35rem; line-height: 1.5; }
+            .trust-bar { gap: 30px; }
+            .grid-row { display: block; }
+            .u-unit, .u-double {
+                width: 100% !important;
+                flex: 0 0 100% !important;
+                border-right: none !important;
+                border-bottom: 1px solid #f0f0f0;
+            }
+            .h-480, .h-960 { height: auto !important; min-height: 380px !important; }
+            .inner-pad-center { padding: 40px 20px !important; }
+        }
+    </style>
 </head>
-<body>
+<body class="page-index">
+<div class="algo-site">
 
-<?php include __DIR__ . "/components/header.php"; ?>
+    <?php include(__DIR__ . '/components/header.php'); ?>
 
-<main>
-
-<!-- T1: Hero Slider -->
-<section class="hero-slider" aria-label="Hero">
-  <div class="hero-slider__track">
-    <div class="hero-slider__slide hero-slider__slide--bg-1 is-active">
-      <div class="l-container t-center">
-        <h1 class="t-hero" style="margin-top:var(--sp-4);">培養上清液の次へ。</h1>
-        <p class="t-body-lg t-secondary" style="margin-top:var(--sp-5);max-width:600px;margin-inline:auto;">あなたに合うクリニックを、一緒に探します。<br>美容・エイジングケア・薄毛・更年期——幹細胞治療の情報整理と無料相談。</p>
-        <div style="margin-top:var(--sp-7);">
-          <a href="./contact.php" class="c-btn c-btn--primary c-btn--lg">まずは情報を整理してみる（無料・約2分）</a>
+    <!-- Hero -->
+    <section class="consult-hero">
+        <div>
+            <p class="addr-tag">FOR INDIVIDUALS</p>
+            <h1>幹細胞治療の情報整理。</h1>
+            <p class="lead">あなたに合うクリニックを、一緒に探します。<br>美容・エイジングケア・薄毛・更年期——<br>決める前に、整理する。押し売りのない相談窓口です。</p>
+            <a href="./contact.php" class="cta-link">まずは情報を整理してみる（無料・約2分）</a>
         </div>
-      </div>
-    </div>
-    <div class="hero-slider__slide hero-slider__slide--bg-2">
-      <div class="l-container t-center">
-        <p class="t-micro">BEYOND SUPERNATANT</p>
-        <h2 class="t-hero" style="margin-top:var(--sp-4);">分泌成分以外に注目するアプローチ。</h2>
-        <p class="t-body-lg t-secondary" style="margin-top:var(--sp-5);max-width:600px;margin-inline:auto;">"分泌された成分だけ"ではなく、細胞内に眠るタンパク質や情報分子まで視野に入れたアプローチが注目されています。<br>大切なのは、言葉の強さではなく「説明の透明性」。納得して選ぶための基準を、ここで整えます。</p>
-        <div style="margin-top:var(--sp-7);">
-          <a href="./contact.php" class="c-btn c-btn--primary c-btn--lg">まずは情報を整理してみる（無料・約2分）</a>
-        </div>
-      </div>
-    </div>
-    <div class="hero-slider__slide hero-slider__slide--bg-3">
-      <div class="l-container t-center">
-        <p class="t-micro">GETTING STARTED</p>
-        <h2 class="t-hero" style="margin-top:var(--sp-4);">あなたに合う進み方を、先に決める。</h2>
-        <p class="t-body-lg t-secondary" style="margin-top:var(--sp-5);max-width:600px;margin-inline:auto;">この領域は、調べるほど情報が増えて迷いやすいです。<br>だからこそ、最初に「何を目的に」「何が不安で」「どこで判断するか」を決めると、検討が一気にラクになります。</p>
-        <div style="margin-top:var(--sp-7);">
-          <a href="./contact.php" class="c-btn c-btn--primary c-btn--lg">まずは情報を整理してみる（無料・約2分）</a>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="hero-slider__dots">
-    <button class="hero-slider__dot is-active" data-slide="0" aria-label="Slide 1"></button>
-    <button class="hero-slider__dot" data-slide="1" aria-label="Slide 2"></button>
-    <button class="hero-slider__dot" data-slide="2" aria-label="Slide 3"></button>
-  </div>
-</section>
+    </section>
 
-<!-- CTA: FV直下 -->
-<section class="l-section cta-section">
-  <div class="l-container t-center">
-    <a href="./contact.php" class="c-btn c-btn--primary c-btn--lg">まずは情報を整理してみる（無料・約2分）</a>
-    <div class="cta-microcopy">
-      <span>相談＝契約ではありません</span>
-      <span>匿名でのご相談も可能です</span>
-      <span>営業電話は一切いたしません</span>
-    </div>
-  </div>
-</section>
-
-<!-- T2: Mosaic -->
-<section class="l-section">
-  <div class="l-container">
-    <div class="t-center" style="margin-bottom:var(--sp-9);">
-      <p class="t-micro">CONCEPT</p>
-      <h2 class="t-h1" style="margin-top:var(--sp-3);">選ぶ前に、整える。</h2>
-    </div>
-    <div class="l-grid-3 reveal-stagger">
-      <div class="c-card c-card--glass reveal">
-        <div class="c-card__body t-center">
-          <div class="c-card__icon"><i data-lucide="microscope"></i></div>
-          <div class="c-card__eyebrow">CONCEPT 01</div>
-          <div class="c-card__title">選ぶ前に、仕組みを知る。</div>
-          <p class="c-card__text">幹細胞関連のケアにはいくつかの系統があります。その中で「生搾り（Lysate）」は、幹細胞を物理的に処理して、内部成分まで含む"濾液"として設計された考え方です。</p>
+    <!-- Trust Bar -->
+    <section class="trust-bar">
+        <div class="trust-bar__item">
+            <p class="trust-bar__value">相談無料</p>
+            <p class="trust-bar__label">費用は一切かかりません</p>
         </div>
-      </div>
-      <div class="c-card c-card--glass reveal">
-        <div class="c-card__body t-center">
-          <div class="c-card__icon"><i data-lucide="file-check"></i></div>
-          <div class="c-card__eyebrow">CONCEPT 02</div>
-          <div class="c-card__title">根拠は、言い切りではなく提示。</div>
-          <p class="c-card__text">どんな医療でも、重要なのは「すごい」ではなく「何が分かっていて、何が分かっていないか」。研究・特許・学会発表などの情報は、万能な保証ではありませんが、説明の土台になります。</p>
+        <div class="trust-bar__item">
+            <p class="trust-bar__value">匿名可</p>
+            <p class="trust-bar__label">ニックネームでOK</p>
         </div>
-      </div>
-      <div class="c-card c-card--glass reveal">
-        <div class="c-card__body t-center">
-          <div class="c-card__icon"><i data-lucide="scale"></i></div>
-          <div class="c-card__eyebrow">CONCEPT 03</div>
-          <div class="c-card__title">"期待しすぎない"が、後悔を減らす。</div>
-          <p class="c-card__text">大切なのは、あなたの目的に対して、どんな説明が必要かを整理すること。このページは、受診の判断を急がせるためではなく、「納得して選ぶ」ための下準備を整える場所です。</p>
+        <div class="trust-bar__item">
+            <p class="trust-bar__value">営業電話なし</p>
+            <p class="trust-bar__label">メールのみでご連絡</p>
         </div>
-      </div>
-      <div class="c-card c-card--glass reveal">
-        <div class="c-card__body t-center">
-          <div class="c-card__icon"><i data-lucide="shield-check"></i></div>
-          <div class="c-card__eyebrow">CONCERNS</div>
-          <div class="c-card__title">不安の中心は、いつも同じ。</div>
-          <p class="c-card__text">相談で多い不安は、だいたい3つに集約されます。安全性、費用、自分に合うか。当サイトは、これらを「短時間で整理」し、受診先で聞くべき質問リストまで落とし込みます。</p>
+        <div class="trust-bar__item">
+            <p class="trust-bar__value">24h以内</p>
+            <p class="trust-bar__label">返信目安</p>
         </div>
-      </div>
-      <!-- ビジネスモデル透明開示 -->
-      <div class="c-card c-card--glass reveal">
-        <div class="c-card__body t-center">
-          <div class="c-card__icon"><i data-lucide="eye"></i></div>
-          <div class="c-card__eyebrow">TRANSPARENCY</div>
-          <div class="c-card__title">運営の仕組みについて</div>
-          <p class="c-card__text">当サイトは提携クリニックからの紹介報酬で運営しています。相談者から費用はいただきません。</p>
+    </section>
+
+    <!-- Row 1: 3 Personas + Concept -->
+    <section class="grid-row">
+        <div class="u-unit h-960 bg-white" style="width:25%; flex:0 0 25%;">
+            <div class="inner-pad-center">
+                <p class="persona-tag">BEAUTY / AGING</p>
+                <h2>美容エイジングケアの<br>次を探している方</h2>
+                <p class="persona-desc">ヒアルロン酸・ボトックス・レーザーなど従来の美容施術とは異なるアプローチとして、幹細胞治療が注目されています。<br><br>「何が違うのか」「自分に合うのか」——まずは情報を整理して、納得して選ぶための準備をお手伝いします。<br><br>ダーマペン×幹細胞濾液など、新しい施術メニューについてもご案内できます。</p>
+            </div>
         </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- こんな方がご相談されています -->
-<section class="l-section persona-section">
-  <div class="l-container">
-    <div class="t-center" style="margin-bottom:var(--sp-9);">
-      <p class="t-micro">TARGET</p>
-      <h2 class="t-h1" style="margin-top:var(--sp-3);">こんな方がご相談されています</h2>
-    </div>
-    <div class="persona-grid reveal-stagger">
-      <div class="persona-card reveal">
-        <div class="persona-card__icon"><i data-lucide="sparkles"></i></div>
-        <div class="persona-card__title">美容エイジングケアの次を探している方</div>
-        <p class="persona-card__text">ヒアルロン酸・ボトックス・レーザーなど従来の美容施術とは異なるアプローチとして、幹細胞治療の情報を整理してお伝えします。</p>
-      </div>
-      <div class="persona-card reveal">
-        <div class="persona-card__icon"><i data-lucide="sun"></i></div>
-        <div class="persona-card__title">AGA・薄毛で既存治療に限界を感じている方</div>
-        <p class="persona-card__text">内服薬・外用薬の次のステップとして、再生医療の選択肢を整理します。ダーマペン×幹細胞濾液など新しいアプローチもご案内できます。</p>
-      </div>
-      <div class="persona-card reveal">
-        <div class="persona-card__icon"><i data-lucide="heart"></i></div>
-        <div class="persona-card__title">更年期ケアを医療で考えたい女性</div>
-        <p class="persona-card__text">肌質変化・体調の揺らぎなど、更年期に伴うお悩みに対して、幹細胞治療という選択肢を一緒に整理します。</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- VOICES -->
-<section class="l-section l-section--sunken">
-  <div class="l-container">
-    <div class="t-center" style="margin-bottom:var(--sp-9);">
-      <p class="t-micro">VOICES</p>
-      <h2 class="t-h1" style="margin-top:var(--sp-3);">相談者の声</h2>
-    </div>
-    <div class="l-grid-3 reveal-stagger">
-      <div class="c-card c-card--glass reveal">
-        <div class="c-card__body t-center">
-          <div class="c-card__icon"><i data-lucide="message-circle"></i></div>
-          <div class="c-card__eyebrow">VOICES</div>
-          <div class="c-card__title">情報が整理できた</div>
-          <p class="c-card__text">「情報が整理できて、何を確認すべきかが分かった」「売り込みではなく、判断基準を一緒に作ってもらえた」まずは"焦らずに整える"。そこからで十分間に合います。</p>
+        <div class="u-unit h-960 bg-light" style="width:25%; flex:0 0 25%;">
+            <div class="inner-pad-center">
+                <p class="persona-tag">AGA / HAIR LOSS</p>
+                <h2>AGA・薄毛で既存治療に<br>限界を感じている方</h2>
+                <p class="persona-desc">内服薬（フィナステリド・デュタステリド）や外用薬（ミノキシジル）で満足できていない方へ。<br><br>再生医療の選択肢として、幹細胞由来の成長因子を活用したアプローチが研究されています。<br><br>費用感・通院頻度・期待できる変化の範囲を、事前に整理してからクリニック選びに進めます。</p>
+            </div>
         </div>
-      </div>
-      <div class="c-card c-card--glass reveal">
-        <div class="c-card__body t-center">
-          <div class="c-card__icon"><i data-lucide="handshake"></i></div>
-          <div class="c-card__eyebrow">CONSULT</div>
-          <div class="c-card__title">相談から紹介まで、ここで完結。</div>
-          <p class="c-card__text">無料相談では、あなたの目的・地域・希望時期をもとに、候補となる医療機関の情報を整理してご案内します。押し売りのない相談窓口としてご利用ください。</p>
+        <div class="u-unit h-960 bg-white" style="width:25%; flex:0 0 25%;">
+            <div class="inner-pad-center">
+                <p class="persona-tag">MENOPAUSE</p>
+                <h2>更年期ケアを医療で<br>考えたい女性</h2>
+                <p class="persona-desc">肌質変化・体調の揺らぎ・気力の低下など、更年期に伴うお悩みに対して、幹細胞治療という選択肢があります。<br><br>HRT（ホルモン補充療法）との違いや併用の可能性、費用の目安などを整理してお伝えします。<br><br>「何を聞けばいいかわからない」方こそ、まずは情報整理から。</p>
+            </div>
         </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- 相談の流れ -->
-<section class="l-section flow-section">
-  <div class="l-container">
-    <div class="t-center" style="margin-bottom:var(--sp-9);">
-      <p class="t-micro">FLOW</p>
-      <h2 class="t-h1" style="margin-top:var(--sp-3);">相談の流れ</h2>
-    </div>
-    <div class="flow-steps reveal-stagger">
-      <div class="flow-step reveal">
-        <div class="flow-step__number">STEP 1</div>
-        <div class="flow-step__icon"><i data-lucide="message-square"></i></div>
-        <div class="flow-step__title">LINEまたはフォームで相談</div>
-        <p class="flow-step__text">匿名でのご相談も可能です。お名前なしでもお気軽にどうぞ。</p>
-        <span class="flow-step__safe">ここでやめてもOK</span>
-      </div>
-      <div class="flow-step reveal">
-        <div class="flow-step__number">STEP 2</div>
-        <div class="flow-step__icon"><i data-lucide="list-checks"></i></div>
-        <div class="flow-step__title">状況を一緒に整理</div>
-        <p class="flow-step__text">売り込みは一切ありません。あなたの目的や不安を一緒に整理します。</p>
-        <span class="flow-step__safe">ここでやめてもOK</span>
-      </div>
-      <div class="flow-step reveal">
-        <div class="flow-step__number">STEP 3</div>
-        <div class="flow-step__icon"><i data-lucide="building-2"></i></div>
-        <div class="flow-step__title">合うクリニックを2〜3件提案</div>
-        <p class="flow-step__text">地域・目的・ご予算に合わせて、候補となる医療機関をご案内します。</p>
-        <span class="flow-step__safe">ここでやめてもOK</span>
-      </div>
-      <div class="flow-step reveal">
-        <div class="flow-step__number">STEP 4</div>
-        <div class="flow-step__icon"><i data-lucide="calendar-check"></i></div>
-        <div class="flow-step__title">予約・来院サポート</div>
-        <p class="flow-step__text">予約の取り方や当日の流れなど、来院までの不安をサポートします。</p>
-        <span class="flow-step__safe">ここでやめてもOK</span>
-      </div>
-      <div class="flow-step reveal">
-        <div class="flow-step__number">STEP 5</div>
-        <div class="flow-step__icon"><i data-lucide="phone-call"></i></div>
-        <div class="flow-step__title">来院後のフォロー</div>
-        <p class="flow-step__text">来院後に気になることがあれば、いつでもご相談いただけます。</p>
-        <span class="flow-step__safe">ここでやめてもOK</span>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- CTA: CONCEPT後 -->
-<section class="l-section cta-section">
-  <div class="l-container t-center">
-    <a href="./contact.php" class="c-btn c-btn--primary c-btn--lg">まずは情報を整理してみる（無料・約2分）</a>
-    <div class="cta-microcopy">
-      <span>相談＝契約ではありません</span>
-      <span>匿名でのご相談も可能です</span>
-      <span>営業電話は一切いたしません</span>
-    </div>
-  </div>
-</section>
-
-<!-- Work Cards -->
-<section class="l-section l-section--sunken">
-  <div class="l-container l-container--wide">
-    <div class="t-center" style="margin-bottom:var(--sp-9);">
-      <p class="t-micro">WORKS</p>
-      <h2 class="t-h1" style="margin-top:var(--sp-3);">コンテンツ一覧</h2>
-    </div>
-    <div class="l-grid-4 reveal-stagger">
-      <?php
-      $work_icons = [
-        '1' => 'compass',
-        '2' => 'list-checks',
-        '3' => 'shield',
-        '4' => 'calculator',
-        '5' => 'flask-conical',
-        '6' => 'book-open',
-        '7' => 'message-square',
-        '8' => 'building-2',
-      ];
-      ?>
-      <?php foreach ($works as $id => $w): ?>
-      <a href="./work<?php echo sprintf('%02d', (int)$id); ?>.php" class="c-card c-card--compact reveal" style="text-decoration:none;color:inherit;">
-        <div class="c-card__thumb">
-          <i data-lucide="<?php echo htmlspecialchars($work_icons[$id] ?? 'circle', ENT_QUOTES, 'UTF-8'); ?>"></i>
+        <div class="u-unit h-960 bg-soft" style="width:25%; flex:0 0 25%;">
+            <div class="inner-pad-center">
+                <div class="addr-tag">CONCEPT</div>
+                <h2>選ぶ前に、整える。</h2>
+                <p class="persona-desc">この領域は、調べるほど情報が増えて迷いやすいです。<br><br>当サイトは、受診の判断を急がせるためではなく、「納得して選ぶ」ための下準備を整える場所です。<br><br>安全性、費用、自分に合うか——不安の中心はだいたい3つに集約されます。それを短時間で整理し、受診先で聞くべき質問リストまで落とし込みます。</p>
+                <div style="margin-top:25px; width:100%;">
+                    <div style="border-bottom:1px solid #eee; padding:12px 0;">
+                        <p style="font-size:10px; color:#999; letter-spacing:0.1em;">01</p>
+                        <p style="font-size:13px; font-weight:600; margin-top:2px;">仕組みを知る</p>
+                    </div>
+                    <div style="border-bottom:1px solid #eee; padding:12px 0;">
+                        <p style="font-size:10px; color:#999; letter-spacing:0.1em;">02</p>
+                        <p style="font-size:13px; font-weight:600; margin-top:2px;">根拠を確認する</p>
+                    </div>
+                    <div style="padding:12px 0;">
+                        <p style="font-size:10px; color:#999; letter-spacing:0.1em;">03</p>
+                        <p style="font-size:13px; font-weight:600; margin-top:2px;">期待しすぎない判断基準</p>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="c-card__body">
-          <div class="c-card__eyebrow"><?php echo htmlspecialchars(isset($w['cat']) ? $w['cat'] : 'WORK ' . sprintf('%02d', (int)$id), ENT_QUOTES, 'UTF-8'); ?></div>
-          <div class="c-card__title"><?php echo htmlspecialchars($w['title'], ENT_QUOTES, 'UTF-8'); ?></div>
-          <p class="c-card__text"><?php echo htmlspecialchars($w['text'], ENT_QUOTES, 'UTF-8'); ?></p>
+    </section>
+
+    <!-- Row 2: Flow + Voices + Transparency -->
+    <section class="grid-row">
+        <div class="u-unit h-960 bg-light" style="width:50%; flex:0 0 50%; min-height:960px; border-right: 1px solid #eee;">
+            <div class="inner-pad-center">
+                <div class="addr-tag">FLOW</div>
+                <h2>相談の流れ</h2>
+                <p class="persona-desc" style="margin-bottom:20px;">すべてのステップで「ここでやめてもOK」です。</p>
+                <div style="width:100%; max-width:560px;">
+                    <div style="display:flex; align-items:flex-start; gap:20px; margin-bottom:28px;">
+                        <div style="width:48px; height:48px; border-radius:50%; background:#2f2f2f; color:#fff; display:flex; align-items:center; justify-content:center; font-size:14px; font-weight:600; flex-shrink:0;">1</div>
+                        <div>
+                            <p style="font-size:14px; font-weight:600; margin-bottom:4px;">LINEまたはフォームで相談</p>
+                            <p style="font-size:11px; color:#555; line-height:1.8;">匿名でのご相談も可能です。お名前なしでもお気軽にどうぞ。約2分で完了します。</p>
+                        </div>
+                    </div>
+                    <div style="display:flex; align-items:flex-start; gap:20px; margin-bottom:28px;">
+                        <div style="width:48px; height:48px; border-radius:50%; background:#2f2f2f; color:#fff; display:flex; align-items:center; justify-content:center; font-size:14px; font-weight:600; flex-shrink:0;">2</div>
+                        <div>
+                            <p style="font-size:14px; font-weight:600; margin-bottom:4px;">状況を一緒に整理</p>
+                            <p style="font-size:11px; color:#555; line-height:1.8;">売り込みは一切ありません。あなたの目的・不安・希望時期を一緒に整理します。</p>
+                        </div>
+                    </div>
+                    <div style="display:flex; align-items:flex-start; gap:20px; margin-bottom:28px;">
+                        <div style="width:48px; height:48px; border-radius:50%; background:#2f2f2f; color:#fff; display:flex; align-items:center; justify-content:center; font-size:14px; font-weight:600; flex-shrink:0;">3</div>
+                        <div>
+                            <p style="font-size:14px; font-weight:600; margin-bottom:4px;">合うクリニックを2〜3件提案</p>
+                            <p style="font-size:11px; color:#555; line-height:1.8;">地域・目的・ご予算に合わせて、候補となる医療機関をご案内します。</p>
+                        </div>
+                    </div>
+                    <div style="display:flex; align-items:flex-start; gap:20px; margin-bottom:28px;">
+                        <div style="width:48px; height:48px; border-radius:50%; background:#2f2f2f; color:#fff; display:flex; align-items:center; justify-content:center; font-size:14px; font-weight:600; flex-shrink:0;">4</div>
+                        <div>
+                            <p style="font-size:14px; font-weight:600; margin-bottom:4px;">予約・来院サポート</p>
+                            <p style="font-size:11px; color:#555; line-height:1.8;">予約の取り方や当日の流れなど、来院までの不安をサポートします。</p>
+                        </div>
+                    </div>
+                    <div style="display:flex; align-items:flex-start; gap:20px;">
+                        <div style="width:48px; height:48px; border-radius:50%; background:#2f2f2f; color:#fff; display:flex; align-items:center; justify-content:center; font-size:14px; font-weight:600; flex-shrink:0;">5</div>
+                        <div>
+                            <p style="font-size:14px; font-weight:600; margin-bottom:4px;">来院後のフォロー</p>
+                            <p style="font-size:11px; color:#555; line-height:1.8;">来院後に気になることがあれば、いつでもご相談いただけます。</p>
+                        </div>
+                    </div>
+                </div>
+                <a href="./contact.php" style="display:inline-block; margin-top:30px; padding:12px 40px; border:1px solid #2f2f2f; font-size:11px; letter-spacing:0.15em; color:#2f2f2f; text-decoration:none;">無料相談はこちら</a>
+            </div>
         </div>
-      </a>
-      <?php endforeach; ?>
-    </div>
-  </div>
-</section>
+        <div class="u-unit h-960 bg-white" style="width:25%; flex:0 0 25%;">
+            <div class="inner-pad-center">
+                <div class="addr-tag">VOICES</div>
+                <h3>相談者の声</h3>
+                <div style="margin-top:25px; width:100%;">
+                    <div style="border-bottom:1px solid #eee; padding:18px 0;">
+                        <p style="font-size:10px; color:#999; letter-spacing:0.1em;">40代女性 / 美容</p>
+                        <p style="font-size:12px; color:#333; margin-top:6px; line-height:1.8;">「情報が整理できて、何を確認すべきかが分かった。売り込みではなく、判断基準を一緒に作ってもらえた。」</p>
+                    </div>
+                    <div style="border-bottom:1px solid #eee; padding:18px 0;">
+                        <p style="font-size:10px; color:#999; letter-spacing:0.1em;">50代男性 / AGA</p>
+                        <p style="font-size:12px; color:#333; margin-top:6px; line-height:1.8;">「内服薬の次のステップがわからなかったが、選択肢を整理してもらえて助かった。」</p>
+                    </div>
+                    <div style="padding:18px 0;">
+                        <p style="font-size:10px; color:#999; letter-spacing:0.1em;">40代女性 / 更年期</p>
+                        <p style="font-size:12px; color:#333; margin-top:6px; line-height:1.8;">「HRTとの違いを知りたかった。比較情報をもらえたので、かかりつけ医に相談しやすくなった。」</p>
+                    </div>
+                </div>
+                <p style="font-size:10px; color:#aaa; margin-top:15px;">※ 個人の感想であり、効果を保証するものではありません。</p>
+            </div>
+        </div>
+        <div class="u-unit h-960 bg-soft" style="width:25%; flex:0 0 25%;">
+            <div class="inner-pad-center">
+                <div class="addr-tag">TRANSPARENCY</div>
+                <h3>運営の仕組みについて</h3>
+                <p class="persona-desc">当サイトは提携クリニックからの紹介報酬で運営しています。相談者から費用をいただくことはありません。<br><br>この仕組みがあるからこそ、無料で相談を提供できます。ただし、紹介先はすべて「説明の透明性」を基準に選定しており、報酬の多寡で優先することはありません。<br><br>「なぜ無料なのか」を隠さない。それが私たちの信頼の基盤です。</p>
+                <div style="margin-top:30px; width:100%;">
+                    <div style="border-bottom:1px solid #eee; padding:12px 0;">
+                        <p style="font-size:11px; color:#333;"><span style="color:#0071E3; font-weight:600;">✓</span> 相談者の費用負担：なし</p>
+                    </div>
+                    <div style="border-bottom:1px solid #eee; padding:12px 0;">
+                        <p style="font-size:11px; color:#333;"><span style="color:#0071E3; font-weight:600;">✓</span> 収益源：提携クリニックからの紹介料</p>
+                    </div>
+                    <div style="padding:12px 0;">
+                        <p style="font-size:11px; color:#333;"><span style="color:#0071E3; font-weight:600;">✓</span> 紹介基準：説明の透明性・安全管理体制</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<?php include __DIR__ . '/components/faq_full.php'; ?>
+    <!-- Row 3: Work Cards (8 items) -->
+    <section class="grid-row">
+        <?php
+        $work_items = [
+            ["cat"=>"START HERE",    "ttl"=>"はじめての方へ",  "txt"=>"幹細胞治療とは何か。検討のスタートラインに立つための基礎知識を整理します。",          "link"=>"./work01.php"],
+            ["cat"=>"MECHANISM",     "ttl"=>"仕組みを知る",    "txt"=>"培養上清液・エクソソーム・Lysate——種類ごとの違いと、それぞれの考え方を解説。",        "link"=>"./about.php"],
+            ["cat"=>"SAFETY",        "ttl"=>"安全性",          "txt"=>"副作用・リスク・品質管理。受診前に確認しておくべき安全性の情報を整理します。",        "link"=>"./work03.php"],
+            ["cat"=>"COST",          "ttl"=>"費用",            "txt"=>"相場感・保険適用の有無・追加費用の有無。お金の不安を事前に解消します。",              "link"=>"./work04.php"],
+            ["cat"=>"EVIDENCE",      "ttl"=>"根拠・研究",      "txt"=>"特許・学会発表・研究データ。「何が分かっていて、何が分かっていないか」を提示。",      "link"=>"./evidence.php"],
+            ["cat"=>"Q&amp;A",       "ttl"=>"よくある質問",    "txt"=>"相談で多い質問と、率直な回答。不安の中心を事前に解消します。",                      "link"=>"./work.php"],
+            ["cat"=>"CONSULT",       "ttl"=>"無料相談",        "txt"=>"まずは情報整理から。匿名OK・営業電話なし・約2分で完了します。",                      "link"=>"./contact.php"],
+            ["cat"=>"CONCEPT",       "ttl"=>"私たちの考え方",  "txt"=>"「期待しすぎない」が後悔を減らす。このサイトの運営方針と情報提供の姿勢。",            "link"=>"./concept.php"]
+        ];
+        foreach($work_items as $item): ?>
+        <div class="u-unit h-480 bg-white" style="width:25%; flex:0 0 25%; border: 0.5px solid #f9f9f9;">
+            <a href="<?php echo $item['link']; ?>" style="text-decoration: none; color: inherit; display: block; height: 100%;">
+            <div class="inner-pad-center" style="padding: 40px;">
+                <div style="font-size: 9px; color: #999; margin-bottom: 10px; letter-spacing: 0.15em;"><?php echo $item['cat']; ?></div>
+                <div style="font-size: 15px; font-weight: bold; letter-spacing: 0.1em; line-height: 1.4;"><?php echo $item['ttl']; ?></div>
+                <p class="persona-desc" style="text-align: center;"><?php echo $item['txt']; ?></p>
+            </div>
+            </a>
+        </div>
+        <?php endforeach; ?>
+    </section>
 
-<!-- CTA Band（ラストCTA） -->
-<section class="l-section l-section--dark">
-  <div class="l-container t-center">
-    <h2 class="t-h2" style="color:var(--text-inverse);">まずは、話すことから。</h2>
-    <p class="t-body-lg" style="color:var(--text-inverse);opacity:0.72;margin-top:var(--sp-4);max-width:600px;margin-inline:auto;">決める前に、整理する。押し売りのない相談窓口として、お気軽にご利用ください。</p>
-    <div style="margin-top:var(--sp-7);">
-      <a href="./contact.php" class="c-btn c-btn--primary c-btn--lg">まずは情報を整理してみる（無料・約2分）</a>
-    </div>
-    <div class="cta-microcopy cta-microcopy--dark">
-      <span>相談＝契約ではありません</span>
-      <span>匿名でのご相談も可能です</span>
-      <span>営業電話は一切いたしません</span>
-    </div>
-  </div>
-</section>
+    <p style="font-size:13px;color:#888;text-align:center;margin:40px 0 20px;">
+当サイトは医療機関ではありません。掲載情報は参考情報であり、診断・治療を目的とするものではありません。治療に関するご判断は必ず医師にご相談ください。
+</p>
 
-</main>
+    <?php include(__DIR__ . '/components/footer.php'); ?>
 
-<script>lucide.createIcons();</script>
-<?php include __DIR__ . "/components/footer.php"; ?>
-<!-- auto-deploy smoke test -->
+</div>
+</body>
+</html>
