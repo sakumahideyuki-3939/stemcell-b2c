@@ -30,10 +30,14 @@
         .trust-bar__label { font-size: 10px; color: #999; letter-spacing: 0.15em; margin-top: 8px; }
         .trust-bar__value { font-size: 14px; font-weight: 200; color: #2f2f2f; letter-spacing: 0.1em; }
 
-        .persona-desc { font-size: 11px; line-height: 2.0; text-align: left; margin-top: 15px; color: #555; }
+        .persona-desc { font-size: 14px; line-height: 1.8; text-align: left; margin-top: 20px; color: #555; }
         .persona-tag { font-size: 10px; letter-spacing: 0.15em; color: #0071E3; font-weight: 600; margin-bottom: 8px; }
+        .persona-link { display: inline-block; margin-top: 28px; font-size: 12px; color: #2f2f2f; letter-spacing: 0.1em; text-decoration: none; border-bottom: 1px solid #ccc; padding-bottom: 2px; transition: border-color 0.3s; }
+        .persona-link:hover { border-color: #2f2f2f; }
+        .row1-pad { padding: 60px 40px !important; }
+        .row1-pad h2 { font-size: clamp(18px, 2vw, 22px); line-height: 1.5; margin-top: 0; }
 
-        .picto-icon { display: block; margin: 0 auto 16px; width: 48px; height: 48px; }
+        .picto-icon { display: block; margin: 0 auto 24px; width: 48px; height: 48px; }
         .picto-icon svg { width: 48px; height: 48px; }
 
         .card-diagram { margin-top: 18px; }
@@ -101,49 +105,39 @@
     <!-- Row 1: 3 Personas + Concept -->
     <section class="grid-row">
         <div class="u-unit h-960 bg-white" style="width:25%; flex:0 0 25%;">
-            <div class="inner-pad-center">
+            <div class="inner-pad-center row1-pad">
                 <div class="picto-icon"><svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M24 4C24 4 18 14 18 22c0 4 2.5 7 6 7s6-3 6-7C30 14 24 4 24 4z" stroke="#2f2f2f" stroke-width="1.5" fill="none"/><path d="M24 29v15" stroke="#2f2f2f" stroke-width="1.5"/><path d="M24 34c-4-3-8-2-10 1" stroke="#2f2f2f" stroke-width="1.5" fill="none"/><path d="M24 38c4-3 8-2 10 1" stroke="#2f2f2f" stroke-width="1.5" fill="none"/></svg></div>
                 <p class="persona-tag">BEAUTY / AGING</p>
-                <h2>美容エイジングへのアプローチで<br>次を探している方</h2>
-                <p class="persona-desc">ヒアルロン酸・ボトックス・レーザーなど従来の美容施術とは異なるアプローチとして、幹細胞由来成分を用いた施術が注目されています。<br><br>「何が違うのか」「自分に合うのか」——まずは情報を整理して、納得して選ぶための準備をお手伝いします。<br><br>ダーマペン×幹細胞濾液など、新しい施術メニューについてもご案内できます。</p>
+                <h2>美容の「次の選択肢」を<br>探している方へ</h2>
+                <p class="persona-desc">従来施術との違いを整理し、<br>納得して選ぶ準備をお手伝いします。</p>
+                <a href="./work01.php" class="persona-link">詳しく見る →</a>
             </div>
         </div>
         <div class="u-unit h-960 bg-light" style="width:25%; flex:0 0 25%;">
-            <div class="inner-pad-center">
+            <div class="inner-pad-center row1-pad">
                 <div class="picto-icon"><svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="24" cy="16" r="8" stroke="#2f2f2f" stroke-width="1.5" fill="none"/><path d="M12 44c0-8 5.4-14 12-14s12 6 12 14" stroke="#2f2f2f" stroke-width="1.5" fill="none"/><path d="M17 12c1-4 4-7 7-8 3 1 6 4 7 8" stroke="#2f2f2f" stroke-width="1.5" fill="none" stroke-linecap="round"/></svg></div>
                 <p class="persona-tag">AGA / HAIR LOSS</p>
-                <h2>AGA・薄毛で既存治療に<br>限界を感じている方</h2>
-                <p class="persona-desc">内服薬（フィナステリド・デュタステリド）や外用薬（ミノキシジル）で満足できていない方へ。<br><br>先端医療領域の施術における選択肢として、幹細胞由来の成長因子を活用したアプローチが研究されています。<br><br>費用感・通院頻度・期待できる変化の範囲を、事前に整理してからクリニック選びに進めます。</p>
+                <h2>内服薬の次を<br>検討している方へ</h2>
+                <p class="persona-desc">費用・通院頻度・期待できる範囲を<br>事前に整理してクリニック選びへ。</p>
+                <a href="./work01.php" class="persona-link">詳しく見る →</a>
             </div>
         </div>
         <div class="u-unit h-960 bg-white" style="width:25%; flex:0 0 25%;">
-            <div class="inner-pad-center">
+            <div class="inner-pad-center row1-pad">
                 <div class="picto-icon"><svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 28c4-6 8-10 12-6s4 8 8 2 4-10 8-4 4 8 8 2 4-8 4-8" stroke="#2f2f2f" stroke-width="1.5" fill="none" stroke-linecap="round"/><path d="M4 34c4-6 8-10 12-6s4 8 8 2 4-10 8-4 4 8 8 2 4-8 4-8" stroke="#2f2f2f" stroke-width="1.5" fill="none" stroke-linecap="round" opacity="0.3"/></svg></div>
                 <p class="persona-tag">MENOPAUSE</p>
-                <h2>更年期に関する医療相談を<br>考えている女性</h2>
-                <p class="persona-desc">肌質変化・体調の揺らぎ・気力の低下など、更年期に伴うお悩みに対して、幹細胞由来成分を用いた施術という選択肢があります。<br><br>HRT（ホルモン補充療法）との違いや併用の可能性、費用の目安などを整理してお伝えします。<br><br>「何を聞けばいいかわからない」方こそ、まずは情報整理から。</p>
+                <h2>更年期の変化に<br>向き合いたい方へ</h2>
+                <p class="persona-desc">HRTとの違い・費用の目安を整理。<br>「何を聞けばいいか」から一緒に。</p>
+                <a href="./work01.php" class="persona-link">詳しく見る →</a>
             </div>
         </div>
         <div class="u-unit h-960 bg-soft" style="width:25%; flex:0 0 25%;">
-            <div class="inner-pad-center">
+            <div class="inner-pad-center row1-pad">
                 <div class="picto-icon"><svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="24" cy="24" r="18" stroke="#2f2f2f" stroke-width="1.5" fill="none"/><path d="M24 6v6M24 36v6M6 24h6M36 24h6" stroke="#2f2f2f" stroke-width="1.5"/><path d="M24 14l2 8 8 2-8 2-2 8-2-8-8-2 8-2z" fill="#2f2f2f" opacity="0.8"/></svg></div>
                 <div class="addr-tag">CONCEPT</div>
                 <h2>選ぶ前に、整える。</h2>
-                <p class="persona-desc">この領域は、調べるほど情報が増えて迷いやすいです。<br><br>当サイトは、受診の判断を急がせるためではなく、「納得して選ぶ」ための下準備を整える場所です。<br><br>安全性、費用、自分に合うか——不安の中心はだいたい3つに集約されます。それを短時間で整理し、受診先で聞くべき質問リストまで落とし込みます。</p>
-                <div style="margin-top:25px; width:100%;">
-                    <div style="border-bottom:1px solid #eee; padding:12px 0;">
-                        <p style="font-size:10px; color:#999; letter-spacing:0.1em;">01</p>
-                        <p style="font-size:13px; font-weight:600; margin-top:2px;">仕組みを知る</p>
-                    </div>
-                    <div style="border-bottom:1px solid #eee; padding:12px 0;">
-                        <p style="font-size:10px; color:#999; letter-spacing:0.1em;">02</p>
-                        <p style="font-size:13px; font-weight:600; margin-top:2px;">根拠を確認する</p>
-                    </div>
-                    <div style="padding:12px 0;">
-                        <p style="font-size:10px; color:#999; letter-spacing:0.1em;">03</p>
-                        <p style="font-size:13px; font-weight:600; margin-top:2px;">期待しすぎない判断基準</p>
-                    </div>
-                </div>
+                <p class="persona-desc">不安の中心は3つに集約されます。<br>それを短時間で整理する場所です。</p>
+                <a href="./concept.php" class="persona-link">考え方を見る →</a>
             </div>
         </div>
     </section>
