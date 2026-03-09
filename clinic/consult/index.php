@@ -33,6 +33,20 @@
         .persona-desc { font-size: 11px; line-height: 2.0; text-align: left; margin-top: 15px; color: #555; }
         .persona-tag { font-size: 10px; letter-spacing: 0.15em; color: #0071E3; font-weight: 600; margin-bottom: 8px; }
 
+        .picto-icon { display: block; margin: 0 auto 16px; width: 48px; height: 48px; }
+        .picto-icon svg { width: 48px; height: 48px; }
+
+        .card-diagram { margin-top: 18px; }
+        .step-flow { display: flex; align-items: center; justify-content: center; gap: 6px; flex-wrap: wrap; }
+        .step-flow__item { background: #f5f5f5; border-radius: 4px; padding: 6px 12px; font-size: 10px; font-weight: 600; color: #2f2f2f; letter-spacing: 0.05em; }
+        .step-flow__arrow { font-size: 12px; color: #999; }
+        .check-list { list-style: none; padding: 0; margin: 0; }
+        .check-list li { font-size: 11px; color: #333; padding: 4px 0; }
+        .check-list li span { color: #0071E3; font-weight: 600; margin-right: 6px; }
+        .cost-box { border: 2px solid #0071E3; border-radius: 6px; padding: 14px 20px; text-align: center; }
+        .cost-box__label { font-size: 10px; color: #999; letter-spacing: 0.1em; }
+        .cost-box__value { font-size: 18px; font-weight: 700; color: #0071E3; margin-top: 4px; }
+
         @media screen and (max-width: 480px) {
             .consult-hero { height: auto; min-height: 400px; padding: 60px 20px; }
             .consult-hero h1 { font-size: 1.35rem; line-height: 1.5; }
@@ -88,6 +102,7 @@
     <section class="grid-row">
         <div class="u-unit h-960 bg-white" style="width:25%; flex:0 0 25%;">
             <div class="inner-pad-center">
+                <div class="picto-icon"><svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M24 4C24 4 18 14 18 22c0 4 2.5 7 6 7s6-3 6-7C30 14 24 4 24 4z" stroke="#2f2f2f" stroke-width="1.5" fill="none"/><path d="M24 29v15" stroke="#2f2f2f" stroke-width="1.5"/><path d="M24 34c-4-3-8-2-10 1" stroke="#2f2f2f" stroke-width="1.5" fill="none"/><path d="M24 38c4-3 8-2 10 1" stroke="#2f2f2f" stroke-width="1.5" fill="none"/></svg></div>
                 <p class="persona-tag">BEAUTY / AGING</p>
                 <h2>美容エイジングへのアプローチで<br>次を探している方</h2>
                 <p class="persona-desc">ヒアルロン酸・ボトックス・レーザーなど従来の美容施術とは異なるアプローチとして、幹細胞由来成分を用いた施術が注目されています。<br><br>「何が違うのか」「自分に合うのか」——まずは情報を整理して、納得して選ぶための準備をお手伝いします。<br><br>ダーマペン×幹細胞濾液など、新しい施術メニューについてもご案内できます。</p>
@@ -95,6 +110,7 @@
         </div>
         <div class="u-unit h-960 bg-light" style="width:25%; flex:0 0 25%;">
             <div class="inner-pad-center">
+                <div class="picto-icon"><svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="24" cy="16" r="8" stroke="#2f2f2f" stroke-width="1.5" fill="none"/><path d="M12 44c0-8 5.4-14 12-14s12 6 12 14" stroke="#2f2f2f" stroke-width="1.5" fill="none"/><path d="M17 12c1-4 4-7 7-8 3 1 6 4 7 8" stroke="#2f2f2f" stroke-width="1.5" fill="none" stroke-linecap="round"/></svg></div>
                 <p class="persona-tag">AGA / HAIR LOSS</p>
                 <h2>AGA・薄毛で既存治療に<br>限界を感じている方</h2>
                 <p class="persona-desc">内服薬（フィナステリド・デュタステリド）や外用薬（ミノキシジル）で満足できていない方へ。<br><br>先端医療領域の施術における選択肢として、幹細胞由来の成長因子を活用したアプローチが研究されています。<br><br>費用感・通院頻度・期待できる変化の範囲を、事前に整理してからクリニック選びに進めます。</p>
@@ -102,6 +118,7 @@
         </div>
         <div class="u-unit h-960 bg-white" style="width:25%; flex:0 0 25%;">
             <div class="inner-pad-center">
+                <div class="picto-icon"><svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 28c4-6 8-10 12-6s4 8 8 2 4-10 8-4 4 8 8 2 4-8 4-8" stroke="#2f2f2f" stroke-width="1.5" fill="none" stroke-linecap="round"/><path d="M4 34c4-6 8-10 12-6s4 8 8 2 4-10 8-4 4 8 8 2 4-8 4-8" stroke="#2f2f2f" stroke-width="1.5" fill="none" stroke-linecap="round" opacity="0.3"/></svg></div>
                 <p class="persona-tag">MENOPAUSE</p>
                 <h2>更年期に関する医療相談を<br>考えている女性</h2>
                 <p class="persona-desc">肌質変化・体調の揺らぎ・気力の低下など、更年期に伴うお悩みに対して、幹細胞由来成分を用いた施術という選択肢があります。<br><br>HRT（ホルモン補充療法）との違いや併用の可能性、費用の目安などを整理してお伝えします。<br><br>「何を聞けばいいかわからない」方こそ、まずは情報整理から。</p>
@@ -109,6 +126,7 @@
         </div>
         <div class="u-unit h-960 bg-soft" style="width:25%; flex:0 0 25%;">
             <div class="inner-pad-center">
+                <div class="picto-icon"><svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="24" cy="24" r="18" stroke="#2f2f2f" stroke-width="1.5" fill="none"/><path d="M24 6v6M24 36v6M6 24h6M36 24h6" stroke="#2f2f2f" stroke-width="1.5"/><path d="M24 14l2 8 8 2-8 2-2 8-2-8-8-2 8-2z" fill="#2f2f2f" opacity="0.8"/></svg></div>
                 <div class="addr-tag">CONCEPT</div>
                 <h2>選ぶ前に、整える。</h2>
                 <p class="persona-desc">この領域は、調べるほど情報が増えて迷いやすいです。<br><br>当サイトは、受診の判断を急がせるためではなく、「納得して選ぶ」ための下準備を整える場所です。<br><br>安全性、費用、自分に合うか——不安の中心はだいたい3つに集約されます。それを短時間で整理し、受診先で聞くべき質問リストまで落とし込みます。</p>
@@ -222,14 +240,18 @@
     <section class="grid-row">
         <?php
         $work_items = [
-            ["cat"=>"START HERE",    "ttl"=>"はじめての方へ",  "txt"=>"幹細胞由来成分を用いた施術とは何か。検討のスタートラインに立つための基礎知識を整理します。",          "link"=>"./work01.php"],
-            ["cat"=>"MECHANISM",     "ttl"=>"仕組みを知る",    "txt"=>"培養上清液・エクソソーム・Lysate——種類ごとの違いと、それぞれの考え方を解説。",        "link"=>"./about.php"],
-            ["cat"=>"SAFETY",        "ttl"=>"安全性",          "txt"=>"副作用・リスク・品質管理。受診前に確認しておくべき安全性の情報を整理します。",        "link"=>"./work03.php"],
-            ["cat"=>"COST",          "ttl"=>"費用",            "txt"=>"相場感・保険適用の有無・追加費用の有無。お金の不安を事前に解消します。",              "link"=>"./work04.php"],
-            ["cat"=>"EVIDENCE",      "ttl"=>"根拠・研究",      "txt"=>"特許・学会発表・研究データ。「何が分かっていて、何が分かっていないか」を提示。",      "link"=>"./evidence.php"],
-            ["cat"=>"Q&amp;A",       "ttl"=>"よくある質問",    "txt"=>"相談で多い質問と、率直な回答。不安の中心を事前に解消します。",                      "link"=>"./work.php"],
-            ["cat"=>"CONSULT",       "ttl"=>"無料相談",        "txt"=>"まずは情報整理から。匿名OK・営業電話なし・約2分で完了します。",                      "link"=>"./contact.php"],
-            ["cat"=>"CONCEPT",       "ttl"=>"私たちの考え方",  "txt"=>"「期待しすぎない」が後悔を減らす。このサイトの運営方針と情報提供の姿勢。",            "link"=>"./concept.php"]
+            ["cat"=>"START HERE",    "ttl"=>"はじめての方へ",  "txt"=>"幹細胞由来成分を用いた施術とは何か。検討のスタートラインに立つための基礎知識を整理します。",          "link"=>"./work01.php",
+             "diagram"=>'<div class="card-diagram"><div class="step-flow"><span class="step-flow__item">STEP 1</span><span class="step-flow__arrow">→</span><span class="step-flow__item">STEP 2</span><span class="step-flow__arrow">→</span><span class="step-flow__item">STEP 3</span></div></div>'],
+            ["cat"=>"MECHANISM",     "ttl"=>"仕組みを知る",    "txt"=>"培養上清液・エクソソーム・Lysate——種類ごとの違いと、それぞれの考え方を解説。",        "link"=>"./about.php",
+             "diagram"=>'<div class="card-diagram"><div class="step-flow"><span class="step-flow__item">上清液</span><span class="step-flow__arrow">→</span><span class="step-flow__item">Lysate</span><span class="step-flow__arrow">→</span><span class="step-flow__item">あなたへ</span></div></div>'],
+            ["cat"=>"SAFETY",        "ttl"=>"安全性",          "txt"=>"副作用・リスク・品質管理。受診前に確認しておくべき安全性の情報を整理します。",        "link"=>"./work03.php",
+             "diagram"=>'<div class="card-diagram"><ul class="check-list"><li><span>✓</span>医師監修</li><li><span>✓</span>実績あり</li><li><span>✓</span>匿名OK</li></ul></div>'],
+            ["cat"=>"COST",          "ttl"=>"費用",            "txt"=>"相場感・保険適用の有無・追加費用の有無。お金の不安を事前に解消します。",              "link"=>"./work04.php",
+             "diagram"=>'<div class="card-diagram"><div class="cost-box"><p class="cost-box__label">FIRST CONSULTATION</p><p class="cost-box__value">初回相談 無料</p></div></div>'],
+            ["cat"=>"EVIDENCE",      "ttl"=>"根拠・研究",      "txt"=>"特許・学会発表・研究データ。「何が分かっていて、何が分かっていないか」を提示。",      "link"=>"./evidence.php", "diagram"=>""],
+            ["cat"=>"Q&amp;A",       "ttl"=>"よくある質問",    "txt"=>"相談で多い質問と、率直な回答。不安の中心を事前に解消します。",                      "link"=>"./work.php", "diagram"=>""],
+            ["cat"=>"CONSULT",       "ttl"=>"無料相談",        "txt"=>"まずは情報整理から。匿名OK・営業電話なし・約2分で完了します。",                      "link"=>"./contact.php", "diagram"=>""],
+            ["cat"=>"CONCEPT",       "ttl"=>"私たちの考え方",  "txt"=>"「期待しすぎない」が後悔を減らす。このサイトの運営方針と情報提供の姿勢。",            "link"=>"./concept.php", "diagram"=>""]
         ];
         foreach($work_items as $item): ?>
         <div class="u-unit h-480 bg-white" style="width:25%; flex:0 0 25%; border: 0.5px solid #f9f9f9;">
@@ -238,6 +260,9 @@
                 <div style="font-size: 9px; color: #999; margin-bottom: 10px; letter-spacing: 0.15em;"><?php echo $item['cat']; ?></div>
                 <div style="font-size: 15px; font-weight: bold; letter-spacing: 0.1em; line-height: 1.4;"><?php echo $item['ttl']; ?></div>
                 <p class="persona-desc" style="text-align: center;"><?php echo $item['txt']; ?></p>
+                <?php if(!empty($item['diagram'])): ?>
+                <?php echo $item['diagram']; ?>
+                <?php endif; ?>
             </div>
             </a>
         </div>
