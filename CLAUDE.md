@@ -159,6 +159,7 @@ stemcell-b2c/
 - [x] 相互導線設計（clinic/⇔consult/ CTAボタン設置）
 - [x] consult/index.php SEOキーワード最適化（培養上清液 次のステップ / Lysate 美容クリニック）
 - [x] SEOブログ第1弾「培養上清液とLysateの違い」（clinic/blog/）
+- [x] consult/個人向け動線改善P0+P1（CTAボタン塗りつぶし・ヒーローコピー変更・ペルソナカード個別リンク・薬機法修正・信頼情報追加・TRANSPARENCY移動・VOICES後CTA・FAQ抜粋5問）
 
 ## よくあるトラブル・注意点
 
@@ -172,10 +173,10 @@ stemcell-b2c/
 
 ## 最終更新
 
-- **日付**: 2026-03-09
+- **日付**: 2026-03-11
 - **更新者**: Hide + Claude
-- **内容**: 相互導線設計（clinic/⇔consult/ CTAボタン）、consult/フォームバックエンド実装（CSRF・レート制限・mail()）、SEOブログ第1弾（上清液 vs Lysate）、SEOキーワード最適化
-- **次回やること**: B2Bモバイル対応、consult/下層ページのデザイン統一（about/work/evidence等）、SEOブログ第2弾以降、不妊ペルソナカード追加、バックアップファイル整理
+- **内容**: consult/個人向け動線改善P0+P1（CTAボタン塗りつぶし・ヒーローコピー変更・ペルソナカード個別リンク・薬機法修正・company.php代表者名＋監修プレースホルダー・TRANSPARENCY移動・VOICES後CTA・FAQ抜粋5問・contact.php更年期選択肢＋GETパラメータ対応）
+- **次回やること**: B2Bモバイル対応、consult/下層ページのデザイン統一（about/work/evidence等）、SEOブログ第2弾以降、不妊ペルソナカード追加、バックアップファイル整理、監修医師名の正式掲載
 
 ---
 
