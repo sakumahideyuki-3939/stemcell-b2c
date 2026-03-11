@@ -181,8 +181,12 @@ stemcell-b2c/
 
 ## 終了時ルール
 
-Hideが「終了」「終わり」「おわり」と言ったら、以下を実行すること：
+Hideが「終了」「終わり」「おわり」と言ったら、以下を順番に実行すること：
 1. 作業ステータスを更新（完了したものに[x]をつける）
 2. 最終更新の日付・次回やることを更新
-3. git add → commit → push
+3. 完了したタスクに対応するGitHub Issueをcloseする
+   - リポジトリ：sakumahideyuki-3939/algo-os
+   - トークン：Macのキーチェーン（osxkeychain）から取得
+   - 対応するIssueタイトルを検索してclose
+4. git add → commit → push
 
