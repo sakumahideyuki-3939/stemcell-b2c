@@ -22,8 +22,8 @@
         .consult-hero { width: 100%; height: 600px; background: linear-gradient(rgba(255,255,255,0.6), rgba(255,255,255,0.6)), url('https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=1920&q=80') center/cover no-repeat; display: flex; align-items: center; justify-content: center; text-align: center; border-bottom: 1px solid #f0f0f0; }
         .consult-hero h1 { font-size: clamp(28px, 4vw, 44px); line-height: 1.4; font-weight: 600; }
         .consult-hero .lead { font-size: 13px; line-height: 2.2; color: #555; margin-top: 25px; max-width: 600px; }
-        .consult-hero .cta-link { display: inline-block; margin-top: 35px; padding: 14px 44px; border: 1px solid #2f2f2f; font-size: 11px; letter-spacing: 0.15em; color: #2f2f2f; text-decoration: none; transition: all 0.3s; }
-        .consult-hero .cta-link:hover { background: #2f2f2f; color: #fff; }
+        .consult-hero .cta-link { display: inline-block; margin-top: 35px; padding: 14px 44px; background: #0071E3; font-size: 11px; letter-spacing: 0.15em; color: #fff; text-decoration: none; transition: all 0.3s; border: none; border-radius: 6px; }
+        .consult-hero .cta-link:hover { background: #005bb5; }
 
         .trust-bar { display: flex; justify-content: center; align-items: center; gap: 60px; flex-wrap: wrap; padding: 40px 20px; border-bottom: 1px solid #f0f0f0; }
         .trust-bar__item { text-align: center; }
@@ -76,9 +76,10 @@
     <section class="consult-hero">
         <div>
             <p class="addr-tag">FOR INDIVIDUALS</p>
-            <h1>培養上清液の次へ。</h1>
-            <p class="lead">あなたに合うクリニックを、一緒に探します。</p>
+            <h1>幹細胞の美容施術、気になるけど不安。<br>まずは情報整理から。</h1>
+            <p class="lead">売り込みなし。匿名で、約2分。<br>あなたの「何を聞けばいいか」を一緒に整理します。</p>
             <a href="./contact.php" class="cta-link">まずは情報を整理してみる（無料・約2分）</a>
+            <p style="margin-top:12px; font-size:11px; color:#888; letter-spacing:0.05em;">入力は約2分 / 営業電話なし / 匿名OK</p>
         </div>
     </section>
 
@@ -102,6 +103,20 @@
         </div>
     </section>
 
+    <!-- Transparency（Trust Bar直後） -->
+    <section style="padding:50px 20px; border-bottom:1px solid #f0f0f0; background:#fafafa;">
+        <div style="max-width:800px; margin:0 auto; text-align:center;">
+            <div class="addr-tag">TRANSPARENCY</div>
+            <h3 style="font-size:18px; font-weight:600; margin-top:12px;">運営の仕組みについて</h3>
+            <p class="persona-desc" style="text-align:center; max-width:640px; margin:20px auto 0;">当サイトは提携クリニックからの紹介報酬で運営しています。相談者から費用をいただくことはありません。「なぜ無料なのか」を隠さない。それが私たちの信頼の基盤です。</p>
+            <div style="display:flex; justify-content:center; gap:40px; flex-wrap:wrap; margin-top:30px;">
+                <p style="font-size:11px; color:#333;"><span style="color:#0071E3; font-weight:600;">✓</span> 相談者の費用負担：なし</p>
+                <p style="font-size:11px; color:#333;"><span style="color:#0071E3; font-weight:600;">✓</span> 収益源：提携クリニックからの紹介料</p>
+                <p style="font-size:11px; color:#333;"><span style="color:#0071E3; font-weight:600;">✓</span> 紹介基準：説明の透明性・安全管理体制</p>
+            </div>
+        </div>
+    </section>
+
     <!-- Row 1: 3 Personas + Concept -->
     <section class="grid-row">
         <div class="u-unit h-960 bg-white" style="width:25%; flex:0 0 25%;">
@@ -110,7 +125,7 @@
                 <p class="persona-tag">BEAUTY / AGING</p>
                 <h2>美容の「次の選択肢」を<br>探している方へ</h2>
                 <p class="persona-desc">従来施術との違いを整理し、<br>納得して選ぶ準備をお手伝いします。</p>
-                <a href="./work01.php" class="persona-link">詳しく見る →</a>
+                <a href="./contact.php?purpose=美容エイジングケア" class="persona-link">詳しく見る →</a>
             </div>
         </div>
         <div class="u-unit h-960 bg-light" style="width:25%; flex:0 0 25%;">
@@ -119,7 +134,7 @@
                 <p class="persona-tag">AGA / HAIR LOSS</p>
                 <h2>内服薬の次を<br>検討している方へ</h2>
                 <p class="persona-desc">費用・通院頻度・期待できる範囲を<br>事前に整理してクリニック選びへ。</p>
-                <a href="./work01.php" class="persona-link">詳しく見る →</a>
+                <a href="./contact.php?purpose=AGA" class="persona-link">詳しく見る →</a>
             </div>
         </div>
         <div class="u-unit h-960 bg-white" style="width:25%; flex:0 0 25%;">
@@ -128,7 +143,7 @@
                 <p class="persona-tag">MENOPAUSE</p>
                 <h2>更年期の変化に<br>向き合いたい方へ</h2>
                 <p class="persona-desc">HRTとの違い・費用の目安を整理。<br>「何を聞けばいいか」から一緒に。</p>
-                <a href="./work01.php" class="persona-link">詳しく見る →</a>
+                <a href="./contact.php?purpose=更年期" class="persona-link">詳しく見る →</a>
             </div>
         </div>
         <div class="u-unit h-960 bg-soft" style="width:25%; flex:0 0 25%;">
@@ -186,14 +201,14 @@
                         </div>
                     </div>
                 </div>
-                <a href="./contact.php" style="display:inline-block; margin-top:30px; padding:12px 40px; border:1px solid #2f2f2f; font-size:11px; letter-spacing:0.15em; color:#2f2f2f; text-decoration:none;">無料相談はこちら</a>
+                <a href="./contact.php" style="display:inline-block; margin-top:30px; padding:12px 40px; background:#0071E3; font-size:11px; letter-spacing:0.15em; color:#fff; text-decoration:none; border-radius:6px;">無料相談はこちら</a>
             </div>
         </div>
-        <div class="u-unit h-960 bg-white" style="width:25%; flex:0 0 25%;">
+        <div class="u-unit h-960 bg-white" style="width:50%; flex:0 0 50%;">
             <div class="inner-pad-center">
                 <div class="addr-tag">VOICES</div>
                 <h3>相談者の声</h3>
-                <div style="margin-top:25px; width:100%;">
+                <div style="margin-top:25px; width:100%; max-width:480px;">
                     <div style="border-bottom:1px solid #eee; padding:18px 0;">
                         <p style="font-size:10px; color:#999; letter-spacing:0.1em;">40代女性 / 美容</p>
                         <p style="font-size:12px; color:#333; margin-top:6px; line-height:1.8;">「情報が整理できて、何を確認すべきかが分かった。売り込みではなく、判断基準を一緒に作ってもらえた。」</p>
@@ -208,24 +223,7 @@
                     </div>
                 </div>
                 <p style="font-size:10px; color:#aaa; margin-top:15px;">※ 個人の感想であり、効果を保証するものではありません。</p>
-            </div>
-        </div>
-        <div class="u-unit h-960 bg-soft" style="width:25%; flex:0 0 25%;">
-            <div class="inner-pad-center">
-                <div class="addr-tag">TRANSPARENCY</div>
-                <h3>運営の仕組みについて</h3>
-                <p class="persona-desc">当サイトは提携クリニックからの紹介報酬で運営しています。相談者から費用をいただくことはありません。<br><br>この仕組みがあるからこそ、無料で相談を提供できます。ただし、紹介先はすべて「説明の透明性」を基準に選定しており、報酬の多寡で優先することはありません。<br><br>「なぜ無料なのか」を隠さない。それが私たちの信頼の基盤です。</p>
-                <div style="margin-top:30px; width:100%;">
-                    <div style="border-bottom:1px solid #eee; padding:12px 0;">
-                        <p style="font-size:11px; color:#333;"><span style="color:#0071E3; font-weight:600;">✓</span> 相談者の費用負担：なし</p>
-                    </div>
-                    <div style="border-bottom:1px solid #eee; padding:12px 0;">
-                        <p style="font-size:11px; color:#333;"><span style="color:#0071E3; font-weight:600;">✓</span> 収益源：提携クリニックからの紹介料</p>
-                    </div>
-                    <div style="padding:12px 0;">
-                        <p style="font-size:11px; color:#333;"><span style="color:#0071E3; font-weight:600;">✓</span> 紹介基準：説明の透明性・安全管理体制</p>
-                    </div>
-                </div>
+                <a href="./contact.php" style="display:inline-block; margin-top:20px; padding:12px 40px; background:#0071E3; font-size:11px; letter-spacing:0.15em; color:#fff; text-decoration:none; border-radius:6px;">まずは無料で相談してみる（匿名OK・約2分）</a>
             </div>
         </div>
     </section>
@@ -239,7 +237,7 @@
             ["cat"=>"MECHANISM",     "ttl"=>"仕組みを知る",    "txt"=>"培養上清液・エクソソーム・Lysate——種類ごとの違いと、それぞれの考え方を解説。",        "link"=>"./about.php",
              "diagram"=>'<div class="card-diagram"><div class="step-flow"><span class="step-flow__item">上清液</span><span class="step-flow__arrow">→</span><span class="step-flow__item">Lysate</span><span class="step-flow__arrow">→</span><span class="step-flow__item">あなたへ</span></div></div>'],
             ["cat"=>"SAFETY",        "ttl"=>"安全性",          "txt"=>"副作用・リスク・品質管理。受診前に確認しておくべき安全性の情報を整理します。",        "link"=>"./work03.php",
-             "diagram"=>'<div class="card-diagram"><ul class="check-list"><li><span>✓</span>医師監修</li><li><span>✓</span>実績あり</li><li><span>✓</span>匿名OK</li></ul></div>'],
+             "diagram"=>'<div class="card-diagram"><ul class="check-list"><li><span>✓</span>品質管理基準を開示</li><li><span>✓</span>リスク情報も掲載</li><li><span>✓</span>匿名OK</li></ul></div>'],
             ["cat"=>"COST",          "ttl"=>"費用",            "txt"=>"相場感・保険適用の有無・追加費用の有無。お金の不安を事前に解消します。",              "link"=>"./work04.php",
              "diagram"=>'<div class="card-diagram"><div class="cost-box"><p class="cost-box__label">FIRST CONSULTATION</p><p class="cost-box__value">初回相談 無料</p></div></div>'],
             ["cat"=>"EVIDENCE",      "ttl"=>"根拠・研究",      "txt"=>"特許・学会発表・研究データ。「何が分かっていて、何が分かっていないか」を提示。",      "link"=>"./evidence.php", "diagram"=>""],
@@ -261,6 +259,34 @@
             </a>
         </div>
         <?php endforeach; ?>
+    </section>
+
+    <!-- FAQ抜粋5問 -->
+    <section style="padding:60px 20px; border-top:1px solid #f0f0f0;">
+        <div style="max-width:720px; margin:0 auto;">
+            <div class="addr-tag" style="text-align:center;">FAQ</div>
+            <h3 style="font-size:18px; font-weight:600; text-align:center; margin-top:12px;">よくある質問</h3>
+            <?php
+            $faq_mini = [
+                ['q'=>'相談は本当に無料ですか？', 'a'=>'はい、完全無料です。当サイトは提携クリニックからの紹介料で運営しており、相談者から費用をいただくことはありません。'],
+                ['q'=>'営業されたり、契約を迫られたりしませんか？', 'a'=>'当サイトのコンセプトは「売り込まない・整理する」です。無料相談は情報整理の場であり、契約の勧誘は行いません。'],
+                ['q'=>'匿名でも相談できますか？', 'a'=>'はい、ニックネームでのご相談も可能です。お名前なしでもお気軽にどうぞ。'],
+                ['q'=>'提携クリニックはどのような基準で選ばれていますか？', 'a'=>'再生医療等安全性確保法に基づく届出、品質管理体制、費用の透明性、セカンドオピニオンへの姿勢などを基準としています。'],
+                ['q'=>'なぜ無料で相談できるのですか？', 'a'=>'提携クリニックからの紹介報酬で運営しています。ただし、報酬の多寡で紹介先を優先することはありません。'],
+            ];
+            foreach ($faq_mini as $i => $fq): ?>
+            <details style="border-bottom:1px solid #eee; padding:16px 0;">
+                <summary style="font-size:14px; font-weight:600; color:#2f2f2f; cursor:pointer; list-style:none; display:flex; justify-content:space-between; align-items:center;">
+                    <?php echo htmlspecialchars($fq['q'], ENT_QUOTES, 'UTF-8'); ?>
+                    <span style="font-size:18px; color:#999; flex-shrink:0; margin-left:12px;">+</span>
+                </summary>
+                <p style="font-size:13px; color:#555; line-height:1.8; margin-top:12px;"><?php echo htmlspecialchars($fq['a'], ENT_QUOTES, 'UTF-8'); ?></p>
+            </details>
+            <?php endforeach; ?>
+            <div style="text-align:center; margin-top:24px;">
+                <a href="./work.php" style="font-size:12px; color:#0071E3; text-decoration:none; border-bottom:1px solid #0071E3; padding-bottom:2px;">すべてのFAQを見る →</a>
+            </div>
+        </div>
     </section>
 
     <p style="font-size:13px;color:#888;text-align:center;margin:40px 0 20px;">
