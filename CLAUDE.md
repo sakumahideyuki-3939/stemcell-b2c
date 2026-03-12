@@ -188,9 +188,10 @@ stemcell-b2c/
 Hideが「終了」「終わり」「おわり」と言ったら、以下を順番に実行すること：
 1. 作業ステータスを更新（完了したものに[x]をつける）
 2. 最終更新の日付・次回やることを更新
-3. 完了したタスクに対応するGitHub Issueをcloseする
+3. 今回の作業内容でGitHub Issueを新規作成して即closeする
    - リポジトリ：sakumahideyuki-3939/algo-os
    - トークン：Macのキーチェーン（osxkeychain）から取得
-   - 対応するIssueタイトルを検索してclose
+   - 既存Issueと重複していても必ず新規作成してclose
+   - 「Issueがない」理由でスキップしない
 4. git add → commit → push
 
