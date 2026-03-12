@@ -49,7 +49,7 @@
             <div class="inner-pad-center">
                 <h2 class="product-lead">培養上清液の、その先へ。</h2>
                 <p class="product-text" style="text-align: center;">
-                    独自の物理的破砕技術により、細胞内部のポテンシャルを解放した「濾液（Lysate）」。<br>
+                    物理的破砕技術により、細胞内部の成分を抽出した「濾液（Lysate）」。<br>
                     細胞核を除去した濾液です。自由診療における新たな選択肢としてご検討ください。
                 </p>
             </div>
@@ -128,6 +128,12 @@
                 <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
                     <a href="./contact.php?category=資料請求" style="display: inline-block; border: 1px solid #2f2f2f; color: #2f2f2f; padding: 12px 30px; font-size: 12px; letter-spacing: 0.15em; text-decoration: none;">製品資料のご請求</a>
                     <a href="./contact.php?category=見積・発注" style="display: inline-block; background: #2f2f2f; color: #fff; padding: 12px 30px; font-size: 12px; letter-spacing: 0.15em; text-decoration: none;">価格・お見積りのご相談</a>
+                </div>
+                <div style="margin-top: 40px; text-align: left; max-width: 600px; margin-left: auto; margin-right: auto;">
+                    <p style="font-size: 12px; color: #555; line-height: 2;">
+                        <strong>お支払い方法：</strong>銀行振込／請求書払い<br>
+                        <strong>返品・キャンセル：</strong>サービス提供前のみ可。提供後の返品はお受けできません。
+                    </p>
                 </div>
             </div>
         </div>

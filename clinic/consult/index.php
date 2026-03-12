@@ -112,7 +112,7 @@
             <div style="display:flex; justify-content:center; gap:40px; flex-wrap:wrap; margin-top:30px;">
                 <p style="font-size:11px; color:#333;"><span style="color:#0071E3; font-weight:600;">✓</span> 相談者の費用負担：なし</p>
                 <p style="font-size:11px; color:#333;"><span style="color:#0071E3; font-weight:600;">✓</span> 収益源：提携クリニックからの紹介料</p>
-                <p style="font-size:11px; color:#333;"><span style="color:#0071E3; font-weight:600;">✓</span> 紹介基準：説明の透明性・安全管理体制</p>
+                <p style="font-size:11px; color:#333;"><span style="color:#0071E3; font-weight:600;">✓</span> 紹介基準：厚生労働省への届出済み医療機関を対象に、安全性・実績を基準に紹介</p>
             </div>
         </div>
     </section>
@@ -208,6 +208,7 @@
             <div class="inner-pad-center">
                 <div class="addr-tag">VOICES</div>
                 <h3>相談者の声</h3>
+                <p style="font-size:11px; color:#999; margin-top:10px;">※個人の感想です。効果・効能を保証するものではありません。</p>
                 <div style="margin-top:25px; width:100%; max-width:480px;">
                     <div style="border-bottom:1px solid #eee; padding:18px 0;">
                         <p style="font-size:10px; color:#999; letter-spacing:0.1em;">40代女性 / 美容</p>

@@ -49,9 +49,9 @@
         <div class="u-double h-960 bg-light">
             <div class="inner-pad-center">
                 <div class="addr-tag">ADDRESS: E3 - B4 / MECHANISM</div>
-                <h2 class="evidence-lead">細胞を使わない、細胞のチカラ。<br>「幹細胞破砕濾液」の優位性</h2>
+                <h2 class="evidence-lead">細胞を使わない、細胞のチカラ。<br>「幹細胞破砕濾液」の特徴</h2>
                 <p class="evidence-text">
-                    本技術の中核は、脂肪組織や骨髄由来の幹細胞を物理的に破砕し、フィルター処理によって得られる「幹細胞破砕濾液（Lysate/Filtrate）」です。従来の幹細胞移植とは異なり、細胞そのものを投与しないため、画期的なメリットを有しています。
+                    本技術の中核は、脂肪組織や骨髄由来の幹細胞を物理的に破砕し、フィルター処理によって得られる「幹細胞破砕濾液（Lysate/Filtrate）」です。従来の幹細胞移植とは異なり、細胞そのものを投与しないため、以下の特徴を有しています。
                 </p>
                 <ul class="feature-list">
                     <li>
