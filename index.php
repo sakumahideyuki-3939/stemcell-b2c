@@ -3,19 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ALGO LAB | 幹細胞治療の情報整理</title>
-    <meta name="description" content="幹細胞治療に関する情報整理プラットフォーム。個人の方への無料相談、医療機関向け製品情報・導入相談を提供します。">
+    <title>ALGO LAB | 幹細胞由来成分の情報整理</title>
+    <meta name="description" content="幹細胞由来成分に関する情報整理プラットフォーム。個人の方への無料相談、医療機関向け製品情報・導入相談を提供します。">
 
     <!-- OGP Meta Tags -->
-    <meta property="og:title" content="ALGO LAB | 幹細胞治療の情報整理">
-    <meta property="og:description" content="幹細胞治療に関する情報整理プラットフォーム。個人の方への無料相談、医療機関向け製品情報・導入相談を提供します。">
+    <meta property="og:title" content="ALGO LAB | 幹細胞由来成分の情報整理">
+    <meta property="og:description" content="幹細胞由来成分に関する情報整理プラットフォーム。個人の方への無料相談、医療機関向け製品情報・導入相談を提供します。">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://lab.algo-cosme.com/">
     <meta property="og:site_name" content="ALGO LAB">
     <meta property="og:locale" content="ja_JP">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="ALGO LAB | 幹細胞治療の情報整理">
-    <meta name="twitter:description" content="幹細胞治療に関する情報整理プラットフォーム。個人の方への無料相談、医療機関向け製品情報・導入相談を提供します。">
+    <meta name="twitter:title" content="ALGO LAB | 幹細胞由来成分の情報整理">
+    <meta name="twitter:description" content="幹細胞由来成分に関する情報整理プラットフォーム。個人の方への無料相談、医療機関向け製品情報・導入相談を提供します。">
     <link rel="canonical" href="https://lab.algo-cosme.com/">
     <?php include $_SERVER['DOCUMENT_ROOT'] . '/ga4.php'; ?>
 
@@ -182,7 +182,7 @@
 <body>
     <div class="container">
         <div class="logo">ALGO LAB</div>
-        <h1 class="site-title">幹細胞治療の情報整理</h1>
+        <h1 class="site-title">幹細胞由来成分の情報整理</h1>
         <p class="site-subtitle">あなたに合ったご案内を選択してください</p>
 
         <div class="cards">
@@ -195,7 +195,7 @@
                     </svg>
                 </div>
                 <div class="card-title">個人の方</div>
-                <div class="card-description">幹細胞治療の情報整理と無料相談</div>
+                <div class="card-description">幹細胞由来成分の情報整理と無料相談</div>
             </div>
 
             <!-- Clinic Card -->

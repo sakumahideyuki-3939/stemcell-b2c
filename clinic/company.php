@@ -46,7 +46,7 @@
                 <h2 style="font-size: 20px; letter-spacing: 0.2em;">CORPORATE PROFILE</h2>
                 <table class="company-table">
                     <tr><th>会社名</th><td>株式会社アルゴ（ALGO Inc.）</td></tr>
-                    <tr><th>所在地</th><td>〒150-0075 東京都渋谷区東2-29-7-201</td></tr>
+                    <tr><th>所在地</th><td>〒150-0011 東京都渋谷区東2-29-7-201</td></tr>
                     <tr><th>設立</th><td>2014年 9月</td></tr>
                     <tr><th>代表者</th><td>代表取締役 佐久間 秀行</td></tr>
                     <tr><th>連絡先</th><td>TEL：03-6805-0781 / FAX：03-5539-4937</td></tr>
@@ -98,7 +98,7 @@
         <div class="u-4 bg-soft">
             <div class="inner-pad-center" style="align-items: center;">
                 <div class="addr-tag">ADDRESS: A5 - D6 / ACCESS</div>
-                <p style="font-size: 13px; letter-spacing: 0.1em; color: #666;">GOOGLE MAP AREA / 〒150-0075 東京都渋谷区東2-29-7-201</p>
+                <p style="font-size: 13px; letter-spacing: 0.1em; color: #666;">GOOGLE MAP AREA / 〒150-0011 東京都渋谷区東2-29-7-201</p>
                 </div>
         </div>
     </section>
