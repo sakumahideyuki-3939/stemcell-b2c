@@ -1,6 +1,6 @@
 <?php
 $page_title = 'コンテンツ一覧';
-$page_description = '幹細胞治療を検討するための8つのコンテンツ。仕組み・安全性・費用・選び方・相談の流れまで、知ることから始められる情報整理ページです。';
+$page_description = '幹細胞由来成分を検討するための8つのコンテンツ。仕組み・安全性・費用・選び方・相談の流れまで、知ることから始められる情報整理ページです。';
 
 // Load work data
 $work_json = file_get_contents(__DIR__ . '/data/work.json');

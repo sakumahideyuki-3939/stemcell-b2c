@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>幹細胞生搾り濾液（Lysate）クリニック導入｜特許4件・Cell-nucleus Free｜ALGO Inc.</title>
     <?php include $_SERVER['DOCUMENT_ROOT'] . '/ga4.php'; ?>
-    <meta name="description" content="特許4件取得の幹細胞破砕濾液（Lysate）。培養上清液では得られない細胞内成分HSP47/70を高濃度含有。Cell-nucleus Freeで安全性に配慮した設計の研究用試薬を自由診療クリニックへ。">
+    <meta name="description" content="特許4件取得の幹細胞破砕濾液（Lysate）。培養上清液では得られない細胞内成分HSP47/70を含有。Cell-nucleus Freeにより細胞核を除去した研究用試薬を医療機関へ。">
     <meta property="og:title" content="幹細胞生搾り濾液（Lysate）クリニック導入｜ALGO Inc.">
     <meta property="og:description" content="特許4件取得の幹細胞破砕濾液。培養上清液では得られない細胞内成分を高濃度含有。研究用試薬として自由診療クリニックへ提供。">
     <meta property="og:type" content="website">
@@ -87,14 +87,14 @@
             <div class="slide bg-white">
                 <div class="inner-pad-center">
                     <p class="addr-tag">ADDRESS: T1-1 / MAIN VISUAL</p>
-                    <h1>培養上清液の、その先へ。<br>特許4件取得の幹細胞生搾り濾液。</h1>
-                    <p class="content-text-rich" style="text-align:center;">幹細胞を物理破砕し、細胞内成分まで丸ごと抽出。<br>Cell-nucleus Freeで安全性に配慮した設計の研究用試薬。</p>
+                    <h1>培養上清液とは異なるアプローチ。<br>特許4件取得の幹細胞破砕濾液。</h1>
+                    <p class="content-text-rich" style="text-align:center;">幹細胞を物理破砕し、細胞内成分まで抽出。<br>Cell-nucleus Freeにより細胞核を除去した研究用試薬。</p>
                 </div>
             </div>
             <div class="slide bg-light">
                 <div class="inner-pad-center">
                     <p class="addr-tag">ADDRESS: T1-2 / VISION</p>
-                    <h1>Cell-nucleus Free。<br>核を除去した、安全設計の濾液。</h1>
+                    <h1>Cell-nucleus Free。<br>核を除去した濾液。</h1>
                     <p class="content-text-rich" style="text-align:center;">0.2μmフィルターで細胞核を物理的に除去。<br>研究データに基づく成分プロファイルを、製品資料でご確認いただけます。</p>
                 </div>
             </div>
@@ -189,7 +189,7 @@
                     </div>
                     <div style="border-bottom:1px solid #eee; padding:14px 0;">
                         <p style="font-size:10px; color:#999; letter-spacing:0.15em;">出願中 — 生殖医療</p>
-                        <p style="font-size:13px; font-weight:600; margin-top:4px;">卵子成熟促進</p>
+                        <p style="font-size:13px; font-weight:600; margin-top:4px;">卵子成熟に関する研究</p>
                     </div>
                     <div style="padding:14px 0;">
                         <p style="font-size:10px; color:#999; letter-spacing:0.15em;">出願中 — 生殖医療</p>
@@ -248,8 +248,8 @@
                     <div style="display:flex; align-items:flex-start; gap:20px; margin-bottom:28px;">
                         <div style="width:48px; height:48px; border-radius:50%; background:#2f2f2f; color:#fff; display:flex; align-items:center; justify-content:center; font-size:14px; font-weight:600; flex-shrink:0;">2</div>
                         <div>
-                            <p style="font-size:14px; font-weight:600; margin-bottom:4px;">現行上清液と比較施術</p>
-                            <p style="font-size:11px; color:#555; line-height:1.8;">実際の施術で現行の培養上清液と比較してください。テクスチャ・使用感・施術後の経過を医師ご自身でご評価いただけます。</p>
+                            <p style="font-size:14px; font-weight:600; margin-bottom:4px;">現行上清液との比較</p>
+                            <p style="font-size:11px; color:#555; line-height:1.8;">現行の培養上清液と比較してください。テクスチャ・使用感・経過を医師ご自身でご評価いただけます。</p>
                         </div>
                     </div>
                     <div style="display:flex; align-items:flex-start; gap:20px;">
@@ -267,7 +267,7 @@
             <div class="inner-pad-center">
                 <div class="addr-tag">ADDRESS: T2-5 / LADIES</div>
                 <h3>更年期・レディース領域</h3>
-                <p class="work-desc-rich">幹細胞破砕濾液の研究は、泌尿器科・整形外科にとどまりません。卵子成熟促進・精子活性剤に関する特許を出願中であり、生殖医療分野での応用研究が進んでいます。<br><br>更年期に伴う肌質変化や、女性特有のQOL課題に対して、幹細胞由来の成長因子・HSPがどのような可能性を持つか——基礎研究レベルでの知見が蓄積されつつあります。<br><br><span style="font-size:10px; color:#999;">※ 本項目は研究段階の情報です。特定の効能効果を示すものではありません。</span></p>
+                <p class="work-desc-rich">幹細胞破砕濾液の研究は、泌尿器科・整形外科にとどまりません。卵子成熟・精子活性剤に関する特許を出願中であり、生殖医療分野での応用研究が進んでいます。<br><br>更年期に伴う肌質変化に関して、幹細胞由来成分に含まれるHSPなどの物質についての基礎研究が進んでいます。ただし、現時点では臨床的な有効性は確認されていません。<br><br><span style="font-size:10px; color:#999;">※ 本項目は研究段階の情報です。特定の効能効果を示すものではありません。</span></p>
             </div>
         </div>
         <div class="u-unit h-960 bg-light" style="width:25%; flex:0 0 25%;">
@@ -300,8 +300,8 @@
         <?php
         $work_items = [
             ["cat"=>"COMPARISON", "ttl"=>"成分比較", "txt"=>"培養上清液 vs 生搾り濾液。HSP47/70・AnnexinA6など細胞内タンパク質の含有量を比較した分析データ。"],
-            ["cat"=>"CELL-NUCLEUS FREE", "ttl"=>"Cell-nucleus Free", "txt"=>"0.2μmフィルターによる細胞核の物理除去。腫瘍化リスクに配慮した安全設計の技術詳細。"],
-            ["cat"=>"PATENT PORTFOLIO", "ttl"=>"特許一覧", "txt"=>"下部尿路障害・ED・変形性膝関節症・皮膚保護の4件取得。卵子成熟促進・精子活性剤を出願中。"],
+            ["cat"=>"CELL-NUCLEUS FREE", "ttl"=>"Cell-nucleus Free", "txt"=>"0.2μmフィルターによる細胞核の物理除去。核除去技術の詳細。"],
+            ["cat"=>"PATENT PORTFOLIO", "ttl"=>"特許一覧", "txt"=>"下部尿路障害・ED・変形性膝関節症・皮膚保護の4件取得。卵子成熟に関する研究・精子活性剤を出願中。"],
             ["cat"=>"COMPLIANCE", "ttl"=>"コンプライアンス", "txt"=>"研究用試薬の法的位置づけ、広告規制の遵守、同意書取得のガイドライン。薬機法対応の要点を整理。"],
             ["cat"=>"HAIR / AGA", "ttl"=>"育毛エビデンス", "txt"=>"成長因子と毛包に関する基礎研究データ。美容皮膚科・AGA領域における学術的知見をご紹介。"],
             ["cat"=>"PRP COMPARE", "ttl"=>"PRP比較", "txt"=>"PRP（多血小板血漿）療法との違い。採血不要・ロット管理による品質安定性という運用面の特長。"],

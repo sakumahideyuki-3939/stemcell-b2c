@@ -649,7 +649,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
           <div style="padding:20px 0;">
             <p style="font-size:10px; color:#0071E3; letter-spacing:0.15em; font-weight:600;">STEP 3</p>
             <p style="font-size:13px; font-weight:600; margin-top:4px;">比較・ご評価</p>
-            <p style="font-size:11px; color:#555; margin-top:4px; line-height:1.7;">現行の培養上清液と比較施術していただき、導入可否をご判断ください。</p>
+            <p style="font-size:11px; color:#555; margin-top:4px; line-height:1.7;">現行の培養上清液と比較していただき、導入可否をご判断ください。</p>
           </div>
         </div>
         <p style="font-size:10px; color:#999; margin-top:30px; line-height:1.8;">

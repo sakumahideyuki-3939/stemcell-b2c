@@ -56,7 +56,7 @@
                 <ul class="feature-list">
                     <li>
                         <b>がん化リスクへの対策</b>
-                        生きた細胞を含まないため、腫瘍形成や拒絶反応のリスク低減が期待されます。
+                        生きた細胞を含まないため、細胞移植に伴うリスク要因が設計上排除されています。ただし、安全性を保証するものではありません。
                     </li>
                     <li>
                         <b>細胞内タンパク質の含有</b>
@@ -93,9 +93,9 @@
 
                 <div class="patent-card">
                     <span class="patent-no">特許公開: JP2021-116257A</span>
-                    <h3 class="patent-title">下部尿路機能障害治療剤</h3>
+                    <h3 class="patent-title">下部尿路機能障害に関する研究</h3>
                     <p class="evidence-text" style="font-size: 12px;">
-                        脂肪由来または骨髄由来幹細胞の破砕濾液を用いた、間質性膀胱炎や過活動膀胱の治療剤。
+                        脂肪由来または骨髄由来幹細胞の破砕濾液を用いた、下部尿路機能障害領域での基礎研究。
                     </p>
                     <span class="data-label">実証データ</span>
                     <p class="evidence-text" style="font-size: 12px;">
@@ -105,7 +105,7 @@
 
                 <div class="patent-card">
                     <span class="patent-no">特許公開: JP2019-142831A</span>
-                    <h3 class="patent-title">勃起不全（ED）治療剤</h3>
+                    <h3 class="patent-title">勃起不全（ED）領域の研究</h3>
                     <p class="evidence-text" style="font-size: 12px;">
                         陰茎海綿体への投与に関する基礎研究が行われています。（特許名称としての記載）
                     </p>
@@ -117,13 +117,13 @@
 
                 <div class="patent-card">
                     <span class="patent-no">特許技術</span>
-                    <h3 class="patent-title">皮膚保護剤</h3>
+                    <h3 class="patent-title">皮膚領域の研究</h3>
                     <p class="evidence-text" style="font-size: 12px;">
-                        脂肪組織由来幹細胞の破砕濾液を含有する皮膚保護剤。難治性潰瘍や創傷に対する組織修復への応用が期待されています。
+                        脂肪組織由来幹細胞の破砕濾液を含有する研究用試薬。皮膚領域での基礎研究が進んでいます。
                     </p>
                     <span class="data-label">研究データ</span>
                     <p class="evidence-text" style="font-size: 12px;">
-                        基礎研究において、破砕濾液に含まれるHSP47やAnnexinA6等のタンパク質が、創傷治癒プロセスに関与する可能性が報告されています。
+                        基礎研究において、破砕濾液に含まれるHSP47やAnnexinA6等のタンパク質の性質が報告されています。ヒトでの有効性は未確認です。
                     </p>
                 </div>
 
@@ -131,7 +131,7 @@
                     <span class="patent-no">特許技術</span>
                     <h3 class="patent-title">変形性膝関節症への応用</h3>
                     <p class="evidence-text" style="font-size: 12px;">
-                        幹細胞破砕濾液の関節内投与による、変形性膝関節症に対するアプローチ。抗炎症タンパク質による軟骨保護の可能性が研究されています。
+                        幹細胞破砕濾液の関節領域における基礎研究。メカニズムに関する研究が進められています。
                     </p>
                     <span class="data-label">研究データ</span>
                     <p class="evidence-text" style="font-size: 12px;">
@@ -193,15 +193,15 @@
                 <div style="display: flex; flex-wrap: wrap; gap: 30px; justify-content: center;">
                     <div style="flex: 1; min-width: 200px; max-width: 400px; background: #fff; padding: 30px; border: 1px solid #eee; text-align: left;">
                         <h4 style="font-size: 16px; color: #2f2f2f; margin-bottom: 12px; border-bottom: 1px solid #eee; padding-bottom: 10px;">HSP47</h4>
-                        <p style="font-size: 12px; line-height: 2; color: #555;">コラーゲン特異的なシャペロンタンパク質。コラーゲンの正常な折りたたみと分泌に関与するとされ、皮膚組織の構造維持との関連が基礎研究で報告されています。</p>
+                        <p style="font-size: 12px; line-height: 2; color: #555;">コラーゲン特異的なシャペロンタンパク質。コラーゲンの折りたたみに関与するとされるシャペロンタンパク質。基礎研究レベルでの報告があります。ヒトへの作用は未確認です。</p>
                     </div>
                     <div style="flex: 1; min-width: 200px; max-width: 400px; background: #fff; padding: 30px; border: 1px solid #eee; text-align: left;">
                         <h4 style="font-size: 16px; color: #2f2f2f; margin-bottom: 12px; border-bottom: 1px solid #eee; padding-bottom: 10px;">HSP70</h4>
-                        <p style="font-size: 12px; line-height: 2; color: #555;">細胞保護に関与するヒートショックプロテイン。ストレス応答における細胞の恒常性維持との関連が報告されており、抗炎症作用に関する基礎研究が進められています。</p>
+                        <p style="font-size: 12px; line-height: 2; color: #555;">ストレス応答に関与するヒートショックプロテイン。基礎研究レベルでの報告があります。ヒトへの作用は未確認です。</p>
                     </div>
                     <div style="flex: 1; min-width: 200px; max-width: 400px; background: #fff; padding: 30px; border: 1px solid #eee; text-align: left;">
                         <h4 style="font-size: 16px; color: #2f2f2f; margin-bottom: 12px; border-bottom: 1px solid #eee; padding-bottom: 10px;">Annexin A6</h4>
-                        <p style="font-size: 12px; line-height: 2; color: #555;">細胞膜の修復や脂質代謝に関与するタンパク質。過剰な炎症反応の抑制や組織の安定化への関与が基礎研究で示唆されています。</p>
+                        <p style="font-size: 12px; line-height: 2; color: #555;">細胞膜やカルシウムシグナルに関与するタンパク質。基礎研究レベルでの報告があります。ヒトへの作用は未確認です。</p>
                     </div>
                     <div style="flex: 1; min-width: 200px; max-width: 400px; background: #fff; padding: 30px; border: 1px solid #eee; text-align: left;">
                         <h4 style="font-size: 16px; color: #2f2f2f; margin-bottom: 12px; border-bottom: 1px solid #eee; padding-bottom: 10px;">HMGB1</h4>

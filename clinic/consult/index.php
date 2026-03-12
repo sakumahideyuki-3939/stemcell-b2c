@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>培養上清液の次のステップ｜Lysate美容クリニック相談・幹細胞由来成分 施術情報｜ALGO LAB</title>
-    <meta name="description" content="培養上清液の次のステップをお探しの方へ。Lysateを扱う美容クリニックの情報整理と、幹細胞由来成分を用いた施術の無料相談をサポート。売り込みなし・匿名可・営業電話なし。">
-    <meta property="og:title" content="培養上清液の次のステップ｜Lysate美容クリニック相談・幹細胞由来成分 施術情報｜ALGO LAB">
-    <meta property="og:description" content="培養上清液の次のステップをお探しの方へ。Lysateを扱う美容クリニックの情報整理と、幹細胞由来成分を用いた施術の無料相談をサポート。">
+    <title>培養上清液の次のステップ｜Lysate美容クリニック相談・幹細胞由来成分の情報整理｜ALGO LAB</title>
+    <meta name="description" content="培養上清液の次のステップをお探しの方へ。Lysateを扱う美容クリニックの情報整理と、幹細胞由来成分についての無料相談をサポート。売り込みなし・匿名可・営業電話なし。">
+    <meta property="og:title" content="培養上清液の次のステップ｜Lysate美容クリニック相談・幹細胞由来成分の情報整理｜ALGO LAB">
+    <meta property="og:description" content="培養上清液の次のステップをお探しの方へ。Lysateを扱う美容クリニックの情報整理と、幹細胞由来成分についての無料相談をサポート。">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://lab.algo-cosme.com/clinic/consult/">
     <meta property="og:site_name" content="ALGO LAB">
@@ -76,7 +76,7 @@
     <section class="consult-hero">
         <div>
             <p class="addr-tag">FOR INDIVIDUALS</p>
-            <h1>幹細胞の美容施術、気になるけど不安。<br>まずは情報整理から。</h1>
+            <h1>幹細胞由来成分の活用、気になるけど不安。<br>まずは情報整理から。</h1>
             <p class="lead">売り込みなし。匿名で、約2分。<br>あなたの「何を聞けばいいか」を一緒に整理します。</p>
             <a href="./contact.php" class="cta-link">まずは情報を整理してみる（無料・約2分）</a>
             <p style="margin-top:12px; font-size:11px; color:#888; letter-spacing:0.05em;">入力は約2分 / 営業電話なし / 匿名OK</p>
@@ -98,8 +98,8 @@
             <p class="trust-bar__label">メールのみでご連絡</p>
         </div>
         <div class="trust-bar__item">
-            <p class="trust-bar__value">24h以内</p>
-            <p class="trust-bar__label">返信目安</p>
+            <p class="trust-bar__value">営業日24h以内</p>
+            <p class="trust-bar__label">返信目安（土日祝は翌営業日）</p>
         </div>
     </section>
 
@@ -112,7 +112,7 @@
             <div style="display:flex; justify-content:center; gap:40px; flex-wrap:wrap; margin-top:30px;">
                 <p style="font-size:11px; color:#333;"><span style="color:#0071E3; font-weight:600;">✓</span> 相談者の費用負担：なし</p>
                 <p style="font-size:11px; color:#333;"><span style="color:#0071E3; font-weight:600;">✓</span> 収益源：提携クリニックからの紹介料</p>
-                <p style="font-size:11px; color:#333;"><span style="color:#0071E3; font-weight:600;">✓</span> 紹介基準：厚生労働省への届出済み医療機関を対象に、安全性・実績を基準に紹介</p>
+                <p style="font-size:11px; color:#333;"><span style="color:#0071E3; font-weight:600;">✓</span> 紹介基準：再生医療等安全性確保法に基づく届出済み医療機関のうち、品質管理体制・インフォームド・コンセント手続きを確認のうえ紹介</p>
             </div>
         </div>
     </section>
@@ -208,7 +208,7 @@
             <div class="inner-pad-center">
                 <div class="addr-tag">VOICES</div>
                 <h3>相談者の声</h3>
-                <p style="font-size:11px; color:#999; margin-top:10px;">※個人の感想です。効果・効能を保証するものではありません。</p>
+                <p style="font-size:13px; color:#666; margin-top:10px; padding:10px; background:#f5f5f5; border-left:3px solid #0071E3;"><strong>※個人の感想です。</strong>効果・効能を保証するものではありません。結果には個人差があります。</p>
                 <div style="margin-top:25px; width:100%; max-width:480px;">
                     <div style="border-bottom:1px solid #eee; padding:18px 0;">
                         <p style="font-size:10px; color:#999; letter-spacing:0.1em;">40代女性 / 美容</p>
@@ -223,7 +223,7 @@
                         <p style="font-size:12px; color:#333; margin-top:6px; line-height:1.8;">「HRTとの違いを知りたかった。比較情報をもらえたので、かかりつけ医に相談しやすくなった。」</p>
                     </div>
                 </div>
-                <p style="font-size:10px; color:#aaa; margin-top:15px;">※ 個人の感想であり、効果を保証するものではありません。</p>
+                <p style="font-size:13px; color:#666; margin-top:15px; padding:10px; background:#f5f5f5; border-left:3px solid #0071E3;"><strong>※個人の感想です。</strong>効果を保証するものではありません。結果には個人差があります。</p>
                 <a href="./contact.php" style="display:inline-block; margin-top:20px; padding:12px 40px; background:#0071E3; font-size:11px; letter-spacing:0.15em; color:#fff; text-decoration:none; border-radius:6px;">まずは無料で相談してみる（匿名OK・約2分）</a>
             </div>
         </div>
@@ -233,7 +233,7 @@
     <section class="grid-row">
         <?php
         $work_items = [
-            ["cat"=>"START HERE",    "ttl"=>"はじめての方へ",  "txt"=>"幹細胞由来成分を用いた施術とは何か。検討のスタートラインに立つための基礎知識を整理します。",          "link"=>"./work01.php",
+            ["cat"=>"START HERE",    "ttl"=>"はじめての方へ",  "txt"=>"幹細胞由来成分とは何か。検討のスタートラインに立つための基礎知識を整理します。",          "link"=>"./work01.php",
              "diagram"=>'<div class="card-diagram"><div class="step-flow"><span class="step-flow__item">STEP 1</span><span class="step-flow__arrow">→</span><span class="step-flow__item">STEP 2</span><span class="step-flow__arrow">→</span><span class="step-flow__item">STEP 3</span></div></div>'],
             ["cat"=>"MECHANISM",     "ttl"=>"仕組みを知る",    "txt"=>"培養上清液・エクソソーム・Lysate——種類ごとの違いと、それぞれの考え方を解説。",        "link"=>"./about.php",
              "diagram"=>'<div class="card-diagram"><div class="step-flow"><span class="step-flow__item">上清液</span><span class="step-flow__arrow">→</span><span class="step-flow__item">Lysate</span><span class="step-flow__arrow">→</span><span class="step-flow__item">あなたへ</span></div></div>'],

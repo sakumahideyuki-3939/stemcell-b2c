@@ -47,10 +47,10 @@
     <section class="grid-row">
         <div class="u-4 bg-light">
             <div class="inner-pad-center">
-                <h2 class="product-lead">培養上清液の、その先へ。</h2>
+                <h2 class="product-lead">培養上清液とは異なるアプローチ。</h2>
                 <p class="product-text" style="text-align: center;">
                     物理的破砕技術により、細胞内部の成分を抽出した「濾液（Lysate）」。<br>
-                    細胞核を除去した濾液です。自由診療における新たな選択肢としてご検討ください。
+                    細胞核を除去した研究用試薬です。医師の医学的判断に基づきご検討ください。
                 </p>
             </div>
         </div>
@@ -63,12 +63,12 @@
                 <span class="tag-main">点鼻用</span>
                 <h2 class="product-lead">Stem Cell Lysate - Nasal Spray</h2>
                 <p class="product-text">
-                    <strong>鼻腔経路からの投与を想定した研究用試薬。</strong><br><br>
+                    <strong>鼻腔経路からの使用を想定した研究用試薬。</strong><br><br>
                     鼻腔粘膜からの吸収を想定した研究用試薬です。Nose-to-Brain経路に関する基礎研究が報告されています。ホームケアとして処方しやすく、継続的にご利用いただける製品です。
                 </p>
                 <dl class="spec-box">
                     <dt>原料</dt><dd>ヒト臍帯由来間葉系幹細胞（MSC）</dd>
-                    <dt>濃度</dt><dd>高濃度エクソソーム 7,000pg/mL以上含有</dd>
+                    <dt>濃度</dt><dd>エクソソーム 7,000pg/mL以上含有</dd>
                     <dt>安全性</dt><dd>Cell-nucleus Free（0.2μmフィルター処理済）</dd>
                     <dt>内容量</dt><dd>11mL / 本（約30日分・1日2回使用想定） / 1セット（2本入り）〜</dd>
                     <dt>保存方法</dt><dd>冷凍保存（-20℃以下）※ 詳細はお問い合わせください</dd>
@@ -83,13 +83,13 @@
                 <span class="tag-main">クリニック施術専用</span>
                 <h2 class="product-lead">Stem Cell Lysate - Pro Vial</h2>
                 <p class="product-text">
-                    <strong>高濃度・高純度。物理的破砕が実現した「細胞内成分」含有の研究用試薬。</strong><br><br>
+                    <strong>物理的破砕により「細胞内成分」を含有する研究用試薬。</strong><br><br>
                     通常の上清液には含まれない、HSP等の細胞内タンパク質を含有する研究用試薬です。各種施術への応用可能性について、医師の判断のもとご検討いただけます。
                 </p>
                 <dl class="spec-box">
                     <dt>原料</dt><dd>ヒト脂肪組織由来 または 臍帯由来間葉系幹細胞</dd>
                     <dt>特徴成分</dt><dd>HSP47、HSP70、Annexin A6、HMGB1等</dd>
-                    <dt>技術背景</dt><dd>ED治療、皮膚保護、関節炎等の特許技術をベースに製造</dd>
+                    <dt>技術背景</dt><dd>泌尿器・皮膚・関節等の複数領域における特許技術をベースに製造</dd>
                     <dt>内容量</dt><dd>1mL / Vial（フリーズドライ または 凍結原液） / 1箱（10 Vials）〜</dd>
                     <dt>保存方法</dt><dd>冷凍保存（-20℃以下）※ 詳細はお問い合わせください</dd>
                     <dt>使用期限</dt><dd>製造日より（詳細はお問い合わせください）</dd>
@@ -109,7 +109,7 @@
                 </p>
                 <ul class="product-text" style="list-style: square; padding-left: 20px;">
                     <li>エクソソーム：細胞間コミュニケーションに関与するとされるメッセージ物質</li>
-                    <li>HSP70 / 47：細胞保護、コラーゲン産生補助、抗炎症作用</li>
+                    <li>HSP70 / 47：基礎研究でタンパク質としての性質が報告されている成分</li>
                     <li>成長因子群：VEGF, HGF, KGF, TIMP等 数百種類</li>
                 </ul>
             </div>
@@ -154,7 +154,7 @@
                 
                 <div class="disclaimer">
                     【免責事項・法規】<br>
-                    本製品は研究用試薬であり、医薬品医療機器等法上の承認を得た医薬品ではありません。再生医療等安全性確保法の対象外ですが、自由診療（研究治療）として医師の責任のもとご使用ください。
+                    本製品は研究用試薬であり、医薬品医療機器等法上の承認を得た医薬品ではありません。再生医療等安全性確保法の対象外ですが、自由診療として医師の責任のもとご使用ください。
                 </div>
             </div>
         </div>
