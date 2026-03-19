@@ -147,7 +147,7 @@ stemcell-b2c/
 - [x] P2技術基盤（404.php・.htaccess・canonical・Cookie Secure・sitemap強化）
 - [x] 未使用ファイル削除（clinic/about_a.php, consult/components/page_nav.php）
 - [ ] バックアップファイル（*.bak_*, *.fix_*）の整理・削除
-- [x] CONTACTフォームのバックエンド実装（consult/contact.php → lab@algo-cosme.com）
+- [x] CONTACTフォームのバックエンド実装（consult/contact.php → celllab@algo-cosme.com）
 - [x] GA4タグ設置（G-XXXXXXXXXXプレースホルダー、ga4.php一元管理）
 - [x] OGP画像作成（consult/assets/img/ogp.jpg）
 - [ ] B2B（clinic/）モバイル対応
