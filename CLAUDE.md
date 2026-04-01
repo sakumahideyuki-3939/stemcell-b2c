@@ -185,6 +185,13 @@ stemcell-b2c/
 
 ---
 
+## 「スタート」トリガーのルーティン
+「スタート」と言われたら、以下を順番に実行すること：
+1. git pull して ~/algo-os/hide-clone-v2.md・~/algo-os/task-master.md を最新化する
+2. task-master.md とこのCLAUDE.md を読み込む
+3. 番号付きタスク一覧を優先度順に表示する
+4. 「VS Codeで作業しますか？」と聞く
+
 ## 終了時ルール
 
 Hideが「終了」「終わり」「おわり」と言ったら、以下を順番に実行すること：
