@@ -21,7 +21,7 @@ jobs:
           remote_folder: ${{ secrets.DEPLOY_PATH }}
           local_folder: ./
           cleanup: true
-          pasv: true
+          passive: true
 
       - name: Notify
         if: always()
