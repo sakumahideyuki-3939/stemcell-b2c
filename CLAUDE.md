@@ -194,8 +194,11 @@ stemcell-b2c/
 
 ## 終了時ルール
 
-Hideが「終了」「終わり」「おわり」と言ったら、以下を順番に実行すること：
-1. このCLAUDE.mdを本日の作業内容で更新する（作業履歴セクションに追記）
-2. ~/algo-os/task-master.md を完了・新規タスクで更新する
-3. ~/algo-os/hide-clone-v2.md に本日の判断・気づきを直接追記する
-4. git add -A && git commit -m "session: YYYY-MM-DD" && git push
+「終了」「終わり」「おわり」と言われたら確認なしで即実行：
+1. このCLAUDE.mdを本日の作業内容で自動更新（作業履歴セクションに追記）
+2. ~/algo-os/task-master.mdを完了・次回タスクで自動更新
+3. ~/algo-os/hide-clone-v2.mdに本日の判断・気づきを自動追記
+4. git add -A && git commit -m "session: $(date +%Y-%m-%d)" && git push を自動実行
+5. 完了報告のみ出力する
+
+※ yes/no・確認・承認を一切求めない。全て自動で実行すること。
